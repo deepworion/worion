@@ -1,0 +1,38 @@
+{
+  "id": "conversation-1779403596220-sj9we9",
+  "title": "De onde surgiu o nome da cidade de Ubaí-mg?",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "De onde surgiu o nome da cidade de Ubaí-mg?",
+      "createdAt": "2026-05-21T22:46:36.220Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O nome da cidade de **Ubaí-MG** vem de um termo indígena que significa **canoa** — aquela utilizada pelos índios para fazer a travessia de rios na região, principalmente o Rio São Francisco.\n\nA própria prefeitura registra isso no histórico oficial do município: o nome reflete a influência dos povos originários e dos aventureiros que desbravaram terras e navegaram rios em busca de riquezas e terras férteis no norte de Minas.\n\nAntes de se chamar Ubaí, o município teve o nome de **Santa Rita de Canoas** — o que reforça a ligação com a canoa, presente tanto no primeiro nome quanto no definitivo.\n\n<small>Fonte: [Prefeitura Municipal de Ubaí — História e dados](https://ubai.mg.gov.br/historia-e-dados/)</small>",
+      "createdAt": "2026-05-21T22:46:58.243Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-22T21:21:55.973Z",
+      "previousActivityAt": "2026-05-21T22:46:36.425Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-21T22:46:35.992Z",
+  "projectId": null,
+  "updatedAt": "2026-05-21T22:46:58.254Z",
+  "chatSource": "home",
+  "lastOpenedAt": "2026-05-22T21:21:55.973Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": false,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": ""
+}

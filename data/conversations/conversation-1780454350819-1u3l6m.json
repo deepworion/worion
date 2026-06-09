@@ -1,0 +1,50 @@
+{
+  "id": "conversation-1780454350819-1u3l6m",
+  "title": "Boa noite...",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite...",
+      "createdAt": "2026-06-03T02:39:10.818Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Como foi seu dia?",
+      "createdAt": "2026-06-03T02:39:15.403Z"
+    },
+    {
+      "role": "user",
+      "content": "tranquilo e o seu?",
+      "createdAt": "2026-06-03T02:39:34.278Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Estou aqui, pronto para ajudar. O que você gostaria de discutir ou explorar hoje?",
+      "createdAt": "2026-06-03T02:39:36.624Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-06-03T02:39:10.202Z",
+  "projectId": null,
+  "updatedAt": "2026-06-03T02:45:01.556Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780454350819-1u3l6m",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-03T02:39:10.202Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-03T02:50:20.872Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-03T02:50:20.872Z",
+      "previousActivityAt": "2026-06-03T02:45:01.556Z"
+    }
+  ]
+}

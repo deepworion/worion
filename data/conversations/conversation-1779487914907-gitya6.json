@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779487914907-gitya6",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "me conte a história de brasilia de minas e os prefeitos eleitos",
+      "createdAt": "2026-05-22T22:11:54.907Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vou pesquisar os prefeitos históricos, porque as fontes que tenho aqui cobrem bem a história da cidade, mas a lista de prefeitos ainda está incompleta.\n\nVou atrás disso agora.\n\n<search>\n<query>prefeitos Brasília de Minas história lista eleitos</query>\n<source>brave</source>\n</search>\n<search>\n<query>\"Brasília de Minas\" prefeitos eleitos história lista \"desde a fundação\"</query>\n<source>tavily</source>\n</search>",
+      "createdAt": "2026-05-22T22:12:11.696Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:11:54.547Z"
+}

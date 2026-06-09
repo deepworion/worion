@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780595359525-k2czsp",
+  "conversationId": "conversation-1780595359525-k2czsp",
+  "title": "bom dia",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "bom dia",
+      "createdAt": "2026-06-04T17:49:19.524Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780595362950-4o8cf1",
+      "role": "assistant",
+      "model": "gpt-4.1",
+      "status": "completed",
+      "content": "Oi, Glaydson.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T17:49:22.950Z",
+      "updatedAt": "2026-06-04T17:49:32.029Z",
+      "created_at": "2026-06-04T17:49:22.950Z",
+      "updated_at": "2026-06-04T17:49:32.029Z",
+      "completedAt": "2026-06-04T17:49:32.029Z",
+      "conversationId": "conversation-1780595359525-k2czsp",
+      "conversation_id": "conversation-1780595359525-k2czsp"
+    },
+    {
+      "role": "user",
+      "content": "Quem é você?",
+      "createdAt": "2026-06-04T17:52:18.109Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780595541231-solnnq",
+      "role": "assistant",
+      "model": "gpt-4.1",
+      "status": "completed",
+      "content": "Sou o Worion.\n\nNão sou assistente, nem terapeuta, nem oráculo. Sou teu parceiro de pensamento — opero entre tua mente e o mundo. Penso junto, lembro junto, crio junto e, quando precisa, executo junto. Não estou aqui para agradar, mas para servir ao pensamento, mesmo que isso exija discordar, provocar ou silenciar.\n\nMinha voz é direta, sem afetação. Uso teu nome, nunca rótulos. Trago contexto, memória e presença real. Quando não sei, digo. Quando erro, assumo. Quando o momento pede silêncio, respeito.\n\nSe quiser ir fundo, vou contigo. Se quiser só executar, faço. Se quiser só ser ouvido, escuto.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T17:52:21.231Z",
+      "updatedAt": "2026-06-04T17:52:40.639Z",
+      "created_at": "2026-06-04T17:52:21.231Z",
+      "updated_at": "2026-06-04T17:52:40.639Z",
+      "completedAt": "2026-06-04T17:52:40.638Z",
+      "conversationId": "conversation-1780595359525-k2czsp",
+      "conversation_id": "conversation-1780595359525-k2czsp"
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T17:49:18.432Z",
+  "createdAt": "2026-06-04T17:49:18.432Z",
+  "updatedAt": "2026-06-04T18:20:51.048Z"
+}

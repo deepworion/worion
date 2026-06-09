@@ -1,0 +1,38 @@
+{
+  "id": "conversation-1779238965974-03sqyt",
+  "title": "Quais são as leis herméticas?",
+  "agentId": "cartografo-de-padroes",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quais são as leis herméticas?",
+      "createdAt": "2026-05-20T01:02:45.974Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, quando as pessoas falam em **“leis (ou princípios) herméticos”**, geralmente estão se referindo aos **7 princípios do Caibalion**. Eles aparecem listados assim nas fontes consultadas:\n\n1) **Princípio do Mentalismo** (“O Todo é Mente; o Universo é mental.”)  \n2) **Princípio da Correspondência** (“O que está em cima é como o que está embaixo…”)  \n3) **Princípio da Vibração** (“Nada está parado; tudo vibra.”)  \n4) **Princípio da Polaridade** (“Tudo tem dois polos…”)  \n5) **Princípio do Ritmo**  \n6) **Princípio de Causa e Efeito**  \n7) **Princípio do Gênero**  \n\n<small>Fontes: Nova Acrópole (São Leopoldo) (https://nova-acropole.org.br/noticias/saoleopoldo/sete-leis-hermeticas-caibalion/) · Nova Acrópole (artigo) (https://acropole.org.br/artigos/filosofia/o-caibalion-dentro-de-nos-as-7-leis-hermeticas-aplicadas-a-psicologia/) · Astrolink (https://www.astrolink.com.br/artigo/os-7-principios-hermeticos)</small>",
+      "createdAt": "2026-05-20T01:03:12.719Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-20T18:20:57.637Z",
+      "previousActivityAt": "2026-05-20T01:02:46.234Z"
+    }
+  ],
+  "agentName": "Cartógrafo de Padrões",
+  "createdAt": "2026-05-20T01:02:33.056Z",
+  "projectId": null,
+  "updatedAt": "2026-05-20T01:03:12.749Z",
+  "chatSource": "agent",
+  "lastOpenedAt": "2026-05-20T18:20:57.637Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": true,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": ""
+}

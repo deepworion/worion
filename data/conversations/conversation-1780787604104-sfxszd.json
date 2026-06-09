@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780787604104-sfxszd",
+  "conversationId": "conversation-1780787604104-sfxszd",
+  "title": "busque na memoria sobre a dharma.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "busque na memoria sobre a dharma.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:13:24.101Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787604489-02ep9a",
+      "conversation_id": "conversation-1780787604104-sfxszd",
+      "conversationId": "conversation-1780787604104-sfxszd",
+      "role": "assistant",
+      "content": "Encontrei 10 registros na memória sobre a dharma.\n\n1. memória · f3852f4a-8378-4351-b861-1899cf72d861 · chunk -\n2. memória · 6ffb4cd3-a411-5f70-ab91-ea646ae1d581 · chunk -\n3. memória · 6ffb4cd3-a411-5f70-ab91-ea646ae1d581 · chunk -\n4. memória · 832df620-8e9c-4f85-9a5e-e1ffcaaef12b · chunk -\n5. memória · f3852f4a-8378-4351-b861-1899cf72d861 · chunk -",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T23:13:24.489Z",
+      "createdAt": "2026-06-06T23:13:24.489Z",
+      "updated_at": "2026-06-06T23:13:29.648Z",
+      "updatedAt": "2026-06-06T23:13:29.648Z",
+      "completedAt": "2026-06-06T23:13:29.646Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:13:23.714Z",
+  "createdAt": "2026-06-06T23:13:23.714Z",
+  "updatedAt": "2026-06-06T23:13:31.653Z"
+}

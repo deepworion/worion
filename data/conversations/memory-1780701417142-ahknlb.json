@@ -1,0 +1,90 @@
+{
+  "id": "memory-1780701417142-ahknlb",
+  "conversationId": "memory-1780701417142-ahknlb",
+  "title": "TCC & Escrita Acadêmica",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:17:02.725Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780701422753-ongzpu",
+      "conversation_id": "memory-1780701417142-ahknlb",
+      "conversationId": "memory-1780701417142-ahknlb",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T23:17:02.753Z",
+      "createdAt": "2026-06-05T23:17:02.753Z",
+      "updated_at": "2026-06-05T23:17:03.585Z",
+      "updatedAt": "2026-06-05T23:17:03.585Z",
+      "completedAt": "2026-06-05T23:17:03.583Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "o que você tem de memoria pra me contar",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:17:16.482Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780701436499-xkefnf",
+      "conversation_id": "memory-1780701417142-ahknlb",
+      "conversationId": "memory-1780701417142-ahknlb",
+      "role": "assistant",
+      "content": "Não tenho “memória” que eu possa listar como um arquivo pra você ver agora.\n\nO que eu sei, com base no que já apareceu pra mim neste ambiente:\n- Seu nome é **Glaydson**.\n- Hoje é **sexta-feira, 05/06/2026, 20:17**.\n\nSe você quiser, eu posso puxar o que eu tenho registrado sobre **um tema específico** (ex: seu projeto, automações, metas, decisões que você tomou). Qual tema?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:17:16.499Z",
+      "createdAt": "2026-06-05T23:17:16.499Z",
+      "updated_at": "2026-06-05T23:17:25.139Z",
+      "updatedAt": "2026-06-05T23:17:25.139Z",
+      "completedAt": "2026-06-05T23:17:25.139Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "me fala o que tem...",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:17:36.004Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780701456029-hxb6dz",
+      "conversation_id": "memory-1780701417142-ahknlb",
+      "conversationId": "memory-1780701417142-ahknlb",
+      "role": "assistant",
+      "content": "Glaydson, do que eu tenho registrado aqui pra te contar agora, o que é “fixo” é só isso:\n\n- **Seu nome:** Glaydson\n- **Data/hora do ambiente:** sexta-feira, 05/06/2026, 20:17\n- **O resto eu só consigo dizer se você me apontar um tema**, porque não tenho um “inventário” aberto do seu histórico nesta conversa.\n\nSe você disser **“me fala tudo sobre [tema]”**, eu puxo e organizo. Qual tema?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:17:36.029Z",
+      "createdAt": "2026-06-05T23:17:36.029Z",
+      "updated_at": "2026-06-05T23:17:43.643Z",
+      "updatedAt": "2026-06-05T23:17:43.643Z",
+      "completedAt": "2026-06-05T23:17:43.643Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T23:16:57.143Z",
+  "createdAt": "2026-06-05T23:16:57.143Z",
+  "updatedAt": "2026-06-05T23:23:21.606Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "conversation-1779307248076-cpdllz",
+  "title": "Liste os prefeitos eleitos de brasilia de minas. desde a emancipação.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "home",
+  "isAgentSession": false,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-20T20:00:47.804Z",
+  "updatedAt": "2026-05-20T20:02:19.212Z",
+  "lastOpenedAt": "2026-05-20T20:00:48.281Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Liste os prefeitos eleitos de brasilia de minas. desde a emancipação.",
+      "createdAt": "2026-05-20T20:00:48.076Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Aqui está a lista dos prefeitos eleitos de Brasília de Minas desde a emancipação:\n\n1. **João Evangelista de Sene** (1894-1898)\n   - Categoria: Agente Executivo\n   - Fonte: [Wikipédia](https://pt.wikipedia.org/wiki/Lista_de_prefeitos_de_Bras%C3%ADlia_de_Minas)\n   - Confiança: Alta\n\n2. **Vicente Parrela Brasileiro** (1898-1902)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n3. **Ursulino Gonçalves de Brito** (1902-1906)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n4. **Vicente Parrela Brasileiro** (1906-1909)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n5. **Horácio Artur Pinto Coelho** (1909-1914)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n6. **Jovino Rodrigues Trindade** (1914-1918)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n7. **João Pereira da Cunha** (1918-1922)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n8. **Adeodato de Sousa Cunha** (1922-1924)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n9. **Joaquim Rocha** (1924-1926)\n   - Categoria: Agente Executivo\n   - Confiança: Alta\n\n10. **Manuel Luís Cardoso** (1926-1927)\n    - Categoria: Agente Executivo\n    - Confiança: Alta\n\n11. **Joaquim Rocha** (1927-1928)\n    - Categoria: Agente Executivo\n    - Confiança: Alta\n\n12. **Crispim Felicíssimo** (1928-1929)\n    - Categoria: Vice-Presidente da Câmara\n    - Confiança: Alta\n\n13. **Francisco Augusto de Andrade** (1929-1930)\n    - Categoria: Agente Executivo\n    - Confiança: Alta\n\n14. **José Simões Júnior** (1930)\n    - Categoria: Agente Executivo\n    - Confiança: Alta\n\n15. **Joaquim Rocha** (1930-1931)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n16. **Manoel Gonçalves Passos** (1931-1945)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n17. **José Grego** (1945-1946)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n18. **Francisco de Paula Antunes** (1946-1947)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n19. **Francisco Xavier Antunes, Chico Coqueiro** (1947)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n20. **José Milo Silqueira, Juca Milo** (1947)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n21. **Ramiro Lopes Silqueira** (1947)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n22. **José Milo Silqueira** (1947)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n23. **Cirilo Pereira da Fonseca** (1947-1948)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n24. **Francisco Florentino Diniz Pacheco** (1948)\n    - Categoria: Prefeito nomeado\n    - Confiança: Alta\n\n25. **Cirilo Pereira da Fonseca** (1948)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n26. **Lindolfo Gonçalves Rocha** (1948-1951)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n27. **Francisco de Paula Antunes** (1951-1953)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n28. **Argemiro Francisco de Almeida** (1953-1955)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n29. **Manoel Gonçalves Passos** (1955-1959)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n30. **Cassiano Alves de Oliveira** (1959-1963)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n31. **Antônio Antunes Pinto** (1963-1967)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n32. **Cassiano Alves de Oliveira** (1967-1971)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n33. **Antônio Gonçalves da Silva** (1971-1973)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n34. **Cassiano Alves de Oliveira** (1973-1977)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n35. **José Oliva** (1977-1983)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n36. **Francisco de Assis Simões** (1983-1988)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n37. **Paulo Antônio Antunes Lima** (1989-1992)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n38. **Francisco de Assis Simões** (1993-1996)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n39. **Getúlio Andrade Braga** (1997-2000)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n40. **Francisco de Assis Simões, Dr. Xikin** (2005-2008)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n41. **Jair Oliva Júnior, Jairzinho** (2009-2012)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n42. **Paulo Antônio Antunes Lima** (2013-2016)\n    - Categoria: Prefeito reeleito em sufrágio universal\n    - Confiança: Alta\n\n43. **Geélison Ferreira da Silva, Professor Geélison** (2017-2020)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\n44. **Marcus Vinicius Ferreira Carvalho, Dr. Marcus Vinicius** (2021-atualmente)\n    - Categoria: Prefeito eleito em sufrágio universal\n    - Confiança: Alta\n\nEssa lista foi extraída da Wikipédia e abrange os prefeitos desde a emancipação do município. Se precisar de mais informações, é só avisar!",
+      "createdAt": "2026-05-20T20:02:19.170Z"
+    }
+  ]
+}

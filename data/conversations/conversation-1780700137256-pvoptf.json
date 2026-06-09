@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780700137256-pvoptf",
+  "conversationId": "conversation-1780700137256-pvoptf",
+  "title": "Espiritualidade / Sonhos / Hermetismo",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T22:55:37.254Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780700137262-8hnhs4",
+      "conversation_id": "conversation-1780700137256-pvoptf",
+      "conversationId": "conversation-1780700137256-pvoptf",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T22:55:37.262Z",
+      "createdAt": "2026-06-05T22:55:37.262Z",
+      "updated_at": "2026-06-05T22:55:38.081Z",
+      "updatedAt": "2026-06-05T22:55:38.081Z",
+      "completedAt": "2026-06-05T22:55:38.078Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T22:55:35.524Z",
+  "createdAt": "2026-06-05T22:55:35.524Z",
+  "updatedAt": "2026-06-05T22:55:40.086Z"
+}

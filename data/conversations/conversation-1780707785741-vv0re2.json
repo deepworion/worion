@@ -1,0 +1,102 @@
+{
+  "id": "conversation-1780707785741-vv0re2",
+  "conversationId": "conversation-1780707785741-vv0re2",
+  "title": "o que eu disse sobre o maneki-neko (gato da sorte) frequentement",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "o que eu disse sobre o maneki-neko (gato da sorte) frequentemente aparece na versão preta para afastar o mal?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T01:03:05.738Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707792941-vo332a",
+      "conversation_id": "conversation-1780707785741-vv0re2",
+      "conversationId": "conversation-1780707785741-vv0re2",
+      "role": "assistant",
+      "content": "Você disse que o **maneki-neko (gato da sorte)**, quando aparece na **versão preta**, é usado **para afastar o mal**.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T01:03:12.941Z",
+      "createdAt": "2026-06-06T01:03:12.941Z",
+      "updated_at": "2026-06-06T01:03:16.233Z",
+      "updatedAt": "2026-06-06T01:03:16.233Z",
+      "completedAt": "2026-06-06T01:03:16.232Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "o que mais?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T01:03:28.367Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707813972-b7wy3d",
+      "conversation_id": "conversation-1780707785741-vv0re2",
+      "conversationId": "conversation-1780707785741-vv0re2",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T01:03:33.972Z",
+      "createdAt": "2026-06-06T01:03:33.972Z",
+      "updated_at": "2026-06-06T01:03:33.972Z",
+      "updatedAt": "2026-06-06T01:03:33.972Z"
+    },
+    {
+      "id": "message-1780707815989-fawc2i",
+      "conversation_id": "conversation-1780707785741-vv0re2",
+      "conversationId": "conversation-1780707785741-vv0re2",
+      "role": "assistant",
+      "content": "Não confirmado. Não encontrei evidência externa suficiente para afirmar com segurança o que “mais” você disse além disso.\n\nPra eu completar sem inventar, cola aqui o trecho exato (ou a frase) onde você falou do maneki-neko/preto.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T01:03:35.989Z",
+      "createdAt": "2026-06-06T01:03:35.989Z",
+      "updated_at": "2026-06-06T01:03:38.852Z",
+      "updatedAt": "2026-06-06T01:03:38.852Z",
+      "completedAt": "2026-06-06T01:03:38.850Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "eu colei",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T01:03:49.440Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707830636-yzilv5",
+      "conversation_id": "conversation-1780707785741-vv0re2",
+      "conversationId": "conversation-1780707785741-vv0re2",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T01:03:50.636Z",
+      "createdAt": "2026-06-06T01:03:50.636Z",
+      "updated_at": "2026-06-06T01:03:50.636Z",
+      "updatedAt": "2026-06-06T01:03:50.636Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T01:03:04.796Z",
+  "createdAt": "2026-06-06T01:03:04.796Z",
+  "updatedAt": "2026-06-06T01:03:52.643Z"
+}

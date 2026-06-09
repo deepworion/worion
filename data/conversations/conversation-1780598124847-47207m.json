@@ -1,0 +1,74 @@
+{
+  "id": "conversation-1780598124847-47207m",
+  "title": "boa tarde.",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde.",
+      "createdAt": "2026-06-04T18:35:24.846Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780598128398-x27nwd",
+      "role": "assistant",
+      "model": "gpt-4.1",
+      "status": "completed",
+      "content": "Oi, Glaydson. Boa tarde. Estou aqui. O que você quer colocar na mesa hoje?",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T18:35:28.398Z",
+      "updatedAt": "2026-06-04T18:35:38.989Z",
+      "created_at": "2026-06-04T18:35:28.398Z",
+      "updated_at": "2026-06-04T18:35:38.989Z",
+      "completedAt": "2026-06-04T18:35:38.989Z",
+      "conversationId": "conversation-1780598124847-47207m",
+      "conversation_id": "conversation-1780598124847-47207m"
+    },
+    {
+      "role": "user",
+      "content": "o que você sugere?",
+      "createdAt": "2026-06-04T18:36:50.792Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780598218188-hilhxe",
+      "role": "assistant",
+      "model": "gpt-4.1",
+      "status": "completed",
+      "content": "Glaydson, posso sugerir três caminhos, cada um alinhado com o que já conheço do teu perfil:\n\n1. **Workestria — Núcleo e próximos passos**\n   - Revisar se o núcleo do Workestria (orquestrador multi-cliente, dashboard, sistema multitenant com Stripe) está mesmo priorizado no teu roadmap ou se algum ruído recente desviou o foco.\n   - Se quiser, posso ajudar a decompor o próximo bloco de execução.\n\n2. **Personal OS — Integração de insights**\n   - Olhar para o teu Personal OS: tem algum gargalo na captura ou distribuição automática de informações? Alguma ideia de inbox inteligente que ficou só no papel?\n   - Posso ajudar a mapear um fluxo mínimo viável para testar.\n\n3. **Clareza Espiritual — Desalinhamento ou bloqueio**\n   - Se sentir que a energia travou, vale revisitar a diferença entre desalinhamento e bloqueio (como já identificou antes). Alguma proposta ou rotina recente está alimentando ego ou distraindo da Grande Obra?\n   - Posso provocar com perguntas ou só segurar o espaço para você clarear.\n\nSe quiser outro foco, me puxa. Qual desses faz mais sentido agora?",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T18:36:58.188Z",
+      "updatedAt": "2026-06-04T18:37:29.288Z",
+      "created_at": "2026-06-04T18:36:58.188Z",
+      "updated_at": "2026-06-04T18:37:29.288Z",
+      "completedAt": "2026-06-04T18:37:29.288Z",
+      "conversationId": "conversation-1780598124847-47207m",
+      "conversation_id": "conversation-1780598124847-47207m"
+    }
+  ],
+  "agentName": "ESPECIALISTA EM TDHA",
+  "createdAt": "2026-06-04T18:35:22.976Z",
+  "projectId": null,
+  "updatedAt": "2026-06-04T18:37:31.302Z",
+  "chatSource": "agent",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780598124847-47207m",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-04T18:35:22.976Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-04T18:53:23.973Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-04T18:53:23.973Z",
+      "previousActivityAt": "2026-06-04T18:37:31.302Z"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "conversation-1778769337994-7wtqq9",
+  "title": "Bom dia. tudo be?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-14T14:35:36.756Z",
+  "updatedAt": "2026-05-14T14:36:06.370Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Bom dia. tudo be?",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Bom dia! Estou aqui para ajudar. Como posso assisti-lo hoje?"
+    }
+  ]
+}

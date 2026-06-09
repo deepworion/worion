@@ -1,0 +1,29 @@
+{
+  "id": "conversation-1779061221205-w32k5s",
+  "title": "Boa noite. Leia as ultimas tres sessões do link: https://www.notion.so",
+  "agentId": "diario-reflexivo-facilitador-pessoal",
+  "agentName": "Diário Reflexivo — Facilitador Pessoal",
+  "chatSource": "agent",
+  "isAgentSession": true,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T23:37:21.615Z",
+  "updatedAt": "2026-05-17T23:40:46.924Z",
+  "lastOpenedAt": "2026-05-17T23:40:21.205Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite. Leia as ultimas tres sessões do link: https://www.notion.so/Sess-es-de-Desenvolvimento-3638bcbfb9ad81aa87c9e4d3eee61d14?source=copy_link. Se itere. Vamos começar de onde paramos. acesse o notion e recupere o contexto.",
+      "createdAt": "2026-05-17T23:40:19.625Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: OpenAI error 404: {\n  \"error\": {\n    \"message\": \"This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"model\",\n    \"code\": null\n  }\n}",
+      "createdAt": "2026-05-17T23:40:26.362Z"
+    }
+  ]
+}

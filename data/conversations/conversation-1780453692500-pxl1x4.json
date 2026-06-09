@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1780453692500-pxl1x4",
+  "conversationId": "conversation-1780453692500-pxl1x4",
+  "title": "boa noite",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite",
+      "createdAt": "2026-06-03T02:28:12.499Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Como foi seu dia?",
+      "createdAt": "2026-06-03T02:28:16.956Z"
+    },
+    {
+      "role": "user",
+      "content": "foi um dia ótimo. o que você tem pra me animar mais ainda°",
+      "createdAt": "2026-06-03T02:29:52.435Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Que bom saber que seu dia foi ótimo! Aqui vão algumas sugestões para animar ainda mais sua noite:\n\n### 1. **Música Energizante**\n   - Crie uma playlist com suas músicas favoritas ou descubra novas canções animadas.\n\n### 2. **Atividade Criativa**\n   - Que tal desenhar, pintar ou escrever algo? A criatividade pode ser um ótimo combustível para a alegria.\n\n### 3. **Filme ou Série**\n   - Escolha um filme ou série que você ama ou que está na sua lista para assistir. Uma boa comédia pode ser uma ótima pedida.\n\n### 4. **Reflexão Positiva**\n   - Faça uma lista de coisas pelas quais você é grato hoje. Isso pode ajudar a elevar ainda mais seu humor.\n\n### 5. **Conexão com Amigos**\n   - Converse com um amigo ou alguém que você gosta. Às vezes, uma boa conversa pode trazer muita alegria.\n\nO que você acha? Alguma dessas ideias te anima?",
+      "createdAt": "2026-06-03T02:30:01.352Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T02:28:11.629Z",
+  "createdAt": "2026-06-03T02:28:11.629Z",
+  "updatedAt": "2026-06-03T02:30:17.385Z"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "conversation-1779909800340-cbb1y6",
+  "title": "allow pasting",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "allow pasting",
+      "createdAt": "2026-05-27T19:23:20.337Z",
+      "attachments": []
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-27T19:23:19.662Z",
+  "projectId": null,
+  "updatedAt": "2026-05-27T19:23:24.860Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779909800340-cbb1y6",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-27T19:23:19.662Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T17:32:56.632Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:32:56.632Z",
+      "previousActivityAt": "2026-05-27T19:23:24.860Z"
+    }
+  ]
+}

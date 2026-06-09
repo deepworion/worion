@@ -1,0 +1,47 @@
+{
+  "id": "conversation-1780972078324-jc1k4j",
+  "conversationId": "conversation-1780972078324-jc1k4j",
+  "title": "O que é o hermetismo?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": "smart-research",
+  "activeWorkModeIds": [
+    "smart-research",
+    "deep-thinking"
+  ],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "O que é o hermetismo?",
+      "quoteContext": "",
+      "createdAt": "2026-06-09T02:27:58.320Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780972083981-luo20v",
+      "conversation_id": "conversation-1780972078324-jc1k4j",
+      "conversationId": "conversation-1780972078324-jc1k4j",
+      "role": "assistant",
+      "content": "Hermetismo é um conjunto de ideias e práticas **ligadas à tradição “hermética”**, que se atribui ao lendário **Hermes Trismegisto** (uma figura que mistura traços de Hermes, do mundo grego, com Thoth, do egípcio).\n\nEm termos gerais, o hermetismo costuma defender que:\n\n- existe uma **realidade espiritual** por trás do mundo visível;\n- o ser humano pode **conhecer essa realidade** por meio de **conhecimento interior**, símbolos e disciplina;\n- há uma **correspondência** entre “o que está em cima” e “o que está embaixo” (a ideia de que níveis diferentes do real se refletem);\n- a transformação do indivíduo (mente/consciência) é parte do caminho.\n\nNa prática histórica, o hermetismo aparece em textos e correntes como:\n- **filosofia esotérica** (interpretação simbólica do mundo),\n- **alquimia** (muitas vezes entendida também como transformação espiritual),\n- **astrologia/astronomia simbólica** (leituras do cosmos como linguagem),\n- e tradições de **magia cerimonial** em alguns períodos (dependendo do autor e da época).\n\nSe você quiser, eu deixo isso mais concreto em uma direção: **(1)** origem histórica, **(2)** ideias centrais (tipo “tabula smaragdina”), ou **(3)** como isso se conecta com alquimia e magia. Qual das três?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-09T02:28:03.981Z",
+      "createdAt": "2026-06-09T02:28:03.981Z",
+      "updated_at": "2026-06-09T02:28:21.209Z",
+      "updatedAt": "2026-06-09T02:28:21.209Z",
+      "completedAt": "2026-06-09T02:28:21.208Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-09T02:27:57.972Z",
+  "createdAt": "2026-06-09T02:27:57.972Z",
+  "updatedAt": "2026-06-09T02:28:23.234Z"
+}

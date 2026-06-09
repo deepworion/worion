@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778979664421-t3174z",
+  "title": "hoje eu trabalhei igual gente grande.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T01:01:03.508Z",
+  "updatedAt": "2026-05-17T01:01:31.591Z",
+  "lastOpenedAt": "2026-05-17T01:01:04.421Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "hoje eu trabalhei igual gente grande.",
+      "createdAt": "2026-05-17T01:01:04.215Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Que bom ouvir isso! O que você fez que te deixou com essa sensação de realização?",
+      "createdAt": "2026-05-17T01:01:09.026Z"
+    },
+    {
+      "role": "user",
+      "content": "Construi você.",
+      "createdAt": "2026-05-17T01:01:28.907Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Incrível! Fico feliz em saber que você teve essa experiência. O que mais você aprendeu ou descobriu enquanto me construía?",
+      "createdAt": "2026-05-17T01:01:31.587Z"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779478828243-8ddms6",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Em que ano o Império Bizantino deixou de existir e qual evento militar selou esse fim? Forneça também o nome do sultão otomano que liderou a conquista.",
+      "createdAt": "2026-05-22T19:40:28.243Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, vou pesquisar para confirmar os dados.\n\n<search>Império Bizantino ano da queda Constantinopla 1453 Mehmed II</search>",
+      "createdAt": "2026-05-22T19:40:39.006Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T19:40:27.891Z"
+}

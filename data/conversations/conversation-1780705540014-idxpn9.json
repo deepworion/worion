@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780705540014-idxpn9",
+  "conversationId": "conversation-1780705540014-idxpn9",
+  "title": "Boa noite. Que que tem de bom?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite. Que que tem de bom?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:25:40.010Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780705547693-ax93ua",
+      "conversation_id": "conversation-1780705540014-idxpn9",
+      "conversationId": "conversation-1780705540014-idxpn9",
+      "role": "assistant",
+      "content": "Boa noite, Glaydson.\n\nDe bom? A sexta à noite tem cara de descompressão.\nTem Workestria rondando como bicho grande, Worion tentando não virar burocracia, e uma janela boa pra conversar sem transformar tudo em tarefa.\n\nEu iria por aí: baixar o ruído e pegar um assunto com gosto.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "created_at": "2026-06-06T00:25:47.693Z",
+      "createdAt": "2026-06-06T00:25:47.693Z",
+      "updated_at": "2026-06-06T00:26:01.055Z",
+      "updatedAt": "2026-06-06T00:26:01.055Z",
+      "completedAt": "2026-06-06T00:26:01.055Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Qual foi a resposta pra um dia que eu perguntei: Qual a vantagem espiritual de um gato preto? Você sabe?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:28:13.367Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780705701070-0izma4",
+      "conversation_id": "conversation-1780705540014-idxpn9",
+      "conversationId": "conversation-1780705540014-idxpn9",
+      "role": "assistant",
+      "content": "Glaydson, a resposta exata eu **não tenho confirmada aqui**.\n\nO que eu tenho de memória próxima é o símbolo da **gata como guardiã do templo**: memória, proteção, presença liminar, aquela inteligência silenciosa que percebe antes da mente racional.\n\nSe eu reconstruir pelo eixo espiritual, a resposta provavelmente iria nesta direção:\n\n**A vantagem espiritual de um gato preto é que ele não “traz sorte” nem “azar”. Ele revela sombra.**\n\nO gato preto funciona como um animal de limiar:\n\n- atravessa silêncio, noite e invisível sem precisar explicar nada;\n- protege o campo por presença, não por força;\n- encarna a sombra sem ser corrompido por ela;\n- ensina a conviver com o que os outros projetam como medo;\n- transforma superstição em discernimento.\n\nA vantagem espiritual, então, seria esta:\n\n**ele é um guardião daquilo que a consciência comum evita olhar.**\n\nNão porque seja “místico” no sentido decorativo, mas porque carrega um arquétipo muito específico: o ser que caminha no escuro sem perder soberania.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "created_at": "2026-06-06T00:28:21.070Z",
+      "createdAt": "2026-06-06T00:28:21.070Z",
+      "updated_at": "2026-06-06T00:28:49.462Z",
+      "updatedAt": "2026-06-06T00:28:49.462Z",
+      "completedAt": "2026-06-06T00:28:49.462Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T00:25:39.796Z",
+  "createdAt": "2026-06-06T00:25:39.796Z",
+  "updatedAt": "2026-06-06T00:28:51.472Z"
+}

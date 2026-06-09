@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1780458292276-iweu8i",
+  "conversationId": "conversation-1780458292276-iweu8i",
+  "title": "sim, me fale sobre a segunda guerra mundial.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "sim, me fale sobre a segunda guerra mundial.",
+      "createdAt": "2026-06-03T03:44:52.275Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "sobre algum aspecto específico, é só avisar!",
+      "createdAt": "2026-06-03T03:45:15.145Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T03:44:51.905Z",
+  "createdAt": "2026-06-03T03:44:51.905Z",
+  "updatedAt": "2026-06-03T03:45:17.931Z"
+}

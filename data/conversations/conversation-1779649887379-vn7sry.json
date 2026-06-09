@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1779649887379-vn7sry",
+  "conversationId": "conversation-1779649887379-vn7sry",
+  "title": "/deepworion",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "/deepworion",
+      "createdAt": "2026-05-24T19:11:27.378Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "**Sobre \"/deepworion\"**\n\nNão encontrei fontes que tratem desse termo. Ele não apareceu como conceito, projeto, ferramenta ou nome próprio nos materiais consultados.\n\nO que a busca trouxe foi conteúdo **genérico sobre como identificar fontes confiáveis de pesquisa** — dicas para avaliar autor, atualidade, viés e credibilidade de sites. Isso claramente não tem relação direta com a palavra que você usou.\n\nSe a intenção era pesquisar algo sobre o Worion, tenta de novo com a grafia ou contexto mais específico — por exemplo, “Worion projeto”, “Worion significado” ou o que você quer saber de fato. Se era um comando interno, me avisa que eu ajusto.",
+      "createdAt": "2026-05-24T19:11:57.692Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T19:11:27.000Z",
+  "createdAt": "2026-05-24T19:11:27.000Z",
+  "updatedAt": "2026-05-24T19:12:08.269Z"
+}

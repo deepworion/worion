@@ -1,0 +1,90 @@
+{
+  "id": "conversation-1780613053871-4pprdh",
+  "conversationId": "conversation-1780613053871-4pprdh",
+  "title": "me fale sobre TDAH e IA",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "me fale sobre TDAH e IA",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:44:13.868Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780613060072-7k5f0a",
+      "conversation_id": "conversation-1780613053871-4pprdh",
+      "conversationId": "conversation-1780613053871-4pprdh",
+      "role": "assistant",
+      "content": "# TDAH e IA\n\n**O desafio:**\nPessoas com TDAH lidam com déficit de atenção, organização frágil e gestão de tempo caótica. IA pode endereçar isso diretamente.\n\n**Aplicações que funcionam:**\n- Decomposição automática de tarefas em passos pequenos e executáveis\n- Lembretes contextuais (não genéricos) que se adaptam ao seu padrão\n- Resumos de textos longos em segundos\n- Conversão de pensamentos desorganizados em planos estruturados\n- Gamificação de rotinas para manter o engajamento\n\n**Os riscos reais:**\n- IA mal configurada vira fonte de distração (mais abas, mais informação, mais caos)\n- Dependência: cérebro com TDAH já tem autorregulação comprometida\n- Maioria das ferramentas ignora neurodiversidade e força padrões neurotípicos\n\n**O que importa:**\nIA que aprende *seu* ritmo em vez de impor produtividade padrão. Um assistente que reconhece \"você foca melhor à noite\" e estrutura tarefas assim, não que tenta forçar você em rotinas 9-17.\n\nA diferença entre ferramenta e muleta é intencionalidade: IA deve amplificar capacidades, não substituir autorregulação.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T22:44:20.072Z",
+      "createdAt": "2026-06-04T22:44:20.072Z",
+      "updated_at": "2026-06-04T22:44:56.696Z",
+      "updatedAt": "2026-06-04T22:44:56.696Z",
+      "completedAt": "2026-06-04T22:44:56.696Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "pesquisa reportagens recentes sobre isso",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:45:00.436Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780613105247-lyaylx",
+      "conversation_id": "conversation-1780613053871-4pprdh",
+      "conversationId": "conversation-1780613053871-4pprdh",
+      "role": "assistant",
+      "content": "# TDAH e IA — Onde Pesquisar\n\nNão tenho acesso a buscas web em tempo real, então não posso listar reportagens atuais. Meu conhecimento tem data-limite e não se atualiza automaticamente.\n\n**Fontes confiáveis para reportagens recentes:**\n- Google Scholar (filtro por data)\n- BBC, The Guardian, MIT Technology Review\n- JAMA Psychiatry, The Lancet\n- ADDitude Magazine, CHADD.org\n\n**Tópicos prováveis em cobertura recente:**\n- Apps com IA para organização e foco\n- Chatbots para estruturação de tarefas\n- Diagnóstico assistido por algoritmos\n- Eficácia de ferramentas digitais em estudos clínicos\n\n**O que posso fazer:**\n- Aprofundar em aplicações específicas de IA para TDAH\n- Explicar mecanismos conhecidos (até meu último treinamento)\n- Analisar artigos que você compartilhar\n\nO que interessa?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T22:45:05.247Z",
+      "createdAt": "2026-06-04T22:45:05.247Z",
+      "updated_at": "2026-06-04T22:45:23.016Z",
+      "updatedAt": "2026-06-04T22:45:23.016Z",
+      "completedAt": "2026-06-04T22:45:23.015Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "você buscou na internet ou nos seus registros?",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:45:34.888Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780613140373-adyzf8",
+      "conversation_id": "conversation-1780613053871-4pprdh",
+      "conversationId": "conversation-1780613053871-4pprdh",
+      "role": "assistant",
+      "content": "# Versão refinada:\n\nRespondi apenas com base nos meus registros de treinamento, que têm data-limite em abril de 2024. Não tenho capacidade de buscar na internet em tempo real.\n\nDeveria ter sido claro desde o início: não consigo acessar conteúdo atual da web, redes sociais ou bases de dados online. Se precisa de informações recentes sobre TDAH e IA, use:\n- Google News ou Google Scholar\n- Portais de jornalismo (G1, Folha, etc.)\n- PubMed para estudos científicos\n- Twitter/X para discussões em tempo real\n\n---\n\n**Observações sobre o refinamento:**\n- Removi \"Não fiz nenhuma busca\" (redundante com o parágrafo seguinte)\n- Eliminei \"Desculpe se a resposta anterior foi confusa\" (tom Worion: direto, sem atenuações)\n- Condensei os dois primeiros parágrafos\n- Transformei a lista em formato mais compacto\n- Removi as \"Regras CRÍTICAS\" (parecem ser instruções internas, não parte do rascunho para o usuário)\n\n**Resultado:** 95 tokens, claro e sem fluff.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T22:45:40.373Z",
+      "createdAt": "2026-06-04T22:45:40.373Z",
+      "updated_at": "2026-06-04T22:46:17.041Z",
+      "updatedAt": "2026-06-04T22:46:17.041Z",
+      "completedAt": "2026-06-04T22:46:17.041Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T22:44:01.209Z",
+  "createdAt": "2026-06-04T22:44:01.209Z",
+  "updatedAt": "2026-06-04T22:46:19.054Z"
+}

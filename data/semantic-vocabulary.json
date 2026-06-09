@@ -1,0 +1,2872 @@
+{
+  "generated_at": "2026-05-25T02:34:09.566Z",
+  "sources": [
+    "claude",
+    "worion-doc"
+  ],
+  "strategy": {
+    "description": "Lexico local extraido de memory_chunks para ampliar recuperacao semantica textual do Worion.",
+    "max_chunks_per_source": 6000,
+    "max_content_chars_per_chunk": 1800
+  },
+  "vocabulary": {
+    "domain_hints": [
+      "worion",
+      "deepworion",
+      "memoria",
+      "semantica",
+      "agente",
+      "agentes",
+      "contexto",
+      "notion",
+      "supabase",
+      "workflow",
+      "workflows",
+      "n8n",
+      "openai",
+      "claude",
+      "chatgpt",
+      "modelo",
+      "prompt",
+      "router",
+      "pesquisa",
+      "grounding",
+      "evidencia",
+      "conector",
+      "conectores",
+      "arquitetura",
+      "pipeline",
+      "automacao",
+      "workestria",
+      "shopify",
+      "bling",
+      "tdah",
+      "hiperfoco",
+      "carga",
+      "execucao",
+      "continuidade",
+      "identidade",
+      "retomada"
+    ],
+    "global_terms": [
+      {
+        "term": "workflow",
+        "count": 2460
+      },
+      {
+        "term": "supabase",
+        "count": 2208
+      },
+      {
+        "term": "shopify",
+        "count": 1908
+      },
+      {
+        "term": "claude",
+        "count": 1740
+      },
+      {
+        "term": "worion",
+        "count": 1724
+      },
+      {
+        "term": "workestria",
+        "count": 1604
+      },
+      {
+        "term": "notion",
+        "count": 1556
+      },
+      {
+        "term": "contexto",
+        "count": 1256
+      },
+      {
+        "term": "bling",
+        "count": 1084
+      },
+      {
+        "term": "user",
+        "count": 1078
+      },
+      {
+        "term": "agora",
+        "count": 984
+      },
+      {
+        "term": "prompt",
+        "count": 976
+      },
+      {
+        "term": "pipeline",
+        "count": 884
+      },
+      {
+        "term": "this",
+        "count": 870
+      },
+      {
+        "term": "arquitetura",
+        "count": 860
+      },
+      {
+        "term": "openai",
+        "count": 808
+      },
+      {
+        "term": "modelo",
+        "count": 804
+      },
+      {
+        "term": "with",
+        "count": 771
+      },
+      {
+        "term": "agente",
+        "count": 740
+      },
+      {
+        "term": "workflows",
+        "count": 704
+      },
+      {
+        "term": "code",
+        "count": 695
+      },
+      {
+        "term": "that",
+        "count": 694
+      },
+      {
+        "term": "tdah",
+        "count": 688
+      },
+      {
+        "term": "real",
+        "count": 678
+      },
+      {
+        "term": "precisa",
+        "count": 675
+      },
+      {
+        "term": "memoria",
+        "count": 660
+      },
+      {
+        "term": "json",
+        "count": 582
+      },
+      {
+        "term": "from",
+        "count": 569
+      },
+      {
+        "term": "execucao",
+        "count": 556
+      },
+      {
+        "term": "logo",
+        "count": 539
+      },
+      {
+        "term": "imagem",
+        "count": 529
+      },
+      {
+        "term": "produto",
+        "count": 500
+      },
+      {
+        "term": "hoje",
+        "count": 499
+      },
+      {
+        "term": "they",
+        "count": 478
+      },
+      {
+        "term": "what",
+        "count": 472
+      },
+      {
+        "term": "image",
+        "count": 461
+      },
+      {
+        "term": "current",
+        "count": 460
+      },
+      {
+        "term": "about",
+        "count": 455
+      },
+      {
+        "term": "node",
+        "count": 455
+      },
+      {
+        "term": "wants",
+        "count": 454
+      },
+      {
+        "term": "need",
+        "count": 451
+      },
+      {
+        "term": "problema",
+        "count": 450
+      },
+      {
+        "term": "quer",
+        "count": 445
+      },
+      {
+        "term": "https",
+        "count": 426
+      },
+      {
+        "term": "your",
+        "count": 419
+      },
+      {
+        "term": "codigo",
+        "count": 416
+      },
+      {
+        "term": "conversa",
+        "count": 414
+      },
+      {
+        "term": "imagens",
+        "count": 402
+      },
+      {
+        "term": "should",
+        "count": 394
+      },
+      {
+        "term": "sistema",
+        "count": 390
+      },
+      {
+        "term": "agentes",
+        "count": 384
+      },
+      {
+        "term": "block",
+        "count": 380
+      },
+      {
+        "term": "actually",
+        "count": 372
+      },
+      {
+        "term": "pesquisa",
+        "count": 372
+      },
+      {
+        "term": "device",
+        "count": 359
+      },
+      {
+        "term": "supported",
+        "count": 359
+      },
+      {
+        "term": "final",
+        "count": 356
+      },
+      {
+        "term": "cloudinary",
+        "count": 355
+      },
+      {
+        "term": "pergunta",
+        "count": 355
+      },
+      {
+        "term": "preciso",
+        "count": 348
+      },
+      {
+        "term": "data",
+        "count": 338
+      },
+      {
+        "term": "have",
+        "count": 326
+      },
+      {
+        "term": "dentro",
+        "count": 325
+      },
+      {
+        "term": "which",
+        "count": 322
+      },
+      {
+        "term": "const",
+        "count": 321
+      },
+      {
+        "term": "http",
+        "count": 316
+      },
+      {
+        "term": "qual",
+        "count": 316
+      },
+      {
+        "term": "type",
+        "count": 310
+      },
+      {
+        "term": "direto",
+        "count": 307
+      },
+      {
+        "term": "text",
+        "count": 307
+      },
+      {
+        "term": "looking",
+        "count": 305
+      },
+      {
+        "term": "images",
+        "count": 303
+      },
+      {
+        "term": "exatamente",
+        "count": 300
+      },
+      {
+        "term": "resposta",
+        "count": 298
+      },
+      {
+        "term": "completo",
+        "count": 296
+      },
+      {
+        "term": "glaydson",
+        "count": 295
+      },
+      {
+        "term": "just",
+        "count": 294
+      },
+      {
+        "term": "forma",
+        "count": 288
+      },
+      {
+        "term": "existe",
+        "count": 286
+      },
+      {
+        "term": "verdade",
+        "count": 275
+      },
+      {
+        "term": "file",
+        "count": 274
+      },
+      {
+        "term": "asking",
+        "count": 272
+      },
+      {
+        "term": "null",
+        "count": 271
+      },
+      {
+        "term": "upload",
+        "count": 269
+      },
+      {
+        "term": "first",
+        "count": 268
+      },
+      {
+        "term": "tenho",
+        "count": 267
+      },
+      {
+        "term": "nome",
+        "count": 266
+      },
+      {
+        "term": "primeiro",
+        "count": 266
+      },
+      {
+        "term": "base",
+        "count": 263
+      },
+      {
+        "term": "resultado",
+        "count": 263
+      },
+      {
+        "term": "gerar",
+        "count": 262
+      },
+      {
+        "term": "novo",
+        "count": 259
+      },
+      {
+        "term": "arquivo",
+        "count": 258
+      },
+      {
+        "term": "item",
+        "count": 255
+      },
+      {
+        "term": "fica",
+        "count": 253
+      },
+      {
+        "term": "deepworion",
+        "count": 252
+      },
+      {
+        "term": "their",
+        "count": 251
+      },
+      {
+        "term": "manda",
+        "count": 250
+      },
+      {
+        "term": "produtos",
+        "count": 250
+      },
+      {
+        "term": "estou",
+        "count": 249
+      },
+      {
+        "term": "qualquer",
+        "count": 246
+      },
+      {
+        "term": "tempo",
+        "count": 246
+      },
+      {
+        "term": "certo",
+        "count": 245
+      },
+      {
+        "term": "think",
+        "count": 245
+      },
+      {
+        "term": "criar",
+        "count": 244
+      },
+      {
+        "term": "erro",
+        "count": 240
+      },
+      {
+        "term": "simples",
+        "count": 240
+      },
+      {
+        "term": "fluxo",
+        "count": 239
+      },
+      {
+        "term": "product",
+        "count": 239
+      },
+      {
+        "term": "output",
+        "count": 236
+      },
+      {
+        "term": "javascript",
+        "count": 234
+      },
+      {
+        "term": "vision",
+        "count": 234
+      },
+      {
+        "term": "return",
+        "count": 233
+      },
+      {
+        "term": "custo",
+        "count": 232
+      },
+      {
+        "term": "padrao",
+        "count": 231
+      },
+      {
+        "term": "query",
+        "count": 231
+      },
+      {
+        "term": "chat",
+        "count": 230
+      },
+      {
+        "term": "trabalho",
+        "count": 230
+      },
+      {
+        "term": "conteudo",
+        "count": 229
+      },
+      {
+        "term": "dados",
+        "count": 229
+      },
+      {
+        "term": "funciona",
+        "count": 226
+      },
+      {
+        "term": "busca",
+        "count": 225
+      },
+      {
+        "term": "disse",
+        "count": 220
+      },
+      {
+        "term": "sentido",
+        "count": 220
+      },
+      {
+        "term": "atual",
+        "count": 218
+      },
+      {
+        "term": "issue",
+        "count": 217
+      },
+      {
+        "term": "identidade",
+        "count": 216
+      },
+      {
+        "term": "usuario",
+        "count": 216
+      },
+      {
+        "term": "there",
+        "count": 214
+      },
+      {
+        "term": "amanha",
+        "count": 213
+      },
+      {
+        "term": "overlay",
+        "count": 212
+      },
+      {
+        "term": "local",
+        "count": 211
+      },
+      {
+        "term": "them",
+        "count": 209
+      },
+      {
+        "term": "through",
+        "count": 209
+      },
+      {
+        "term": "momento",
+        "count": 207
+      },
+      {
+        "term": "campo",
+        "count": 206
+      },
+      {
+        "term": "google",
+        "count": 206
+      },
+      {
+        "term": "like",
+        "count": 204
+      },
+      {
+        "term": "system",
+        "count": 204
+      },
+      {
+        "term": "cliente",
+        "count": 203
+      },
+      {
+        "term": "estrutura",
+        "count": 202
+      },
+      {
+        "term": "more",
+        "count": 202
+      },
+      {
+        "term": "estava",
+        "count": 201
+      },
+      {
+        "term": "melhor",
+        "count": 201
+      },
+      {
+        "term": "estao",
+        "count": 200
+      },
+      {
+        "term": "roda",
+        "count": 198
+      },
+      {
+        "term": "then",
+        "count": 198
+      },
+      {
+        "term": "check",
+        "count": 197
+      },
+      {
+        "term": "since",
+        "count": 194
+      },
+      {
+        "term": "posso",
+        "count": 193
+      },
+      {
+        "term": "already",
+        "count": 192
+      },
+      {
+        "term": "drive",
+        "count": 192
+      },
+      {
+        "term": "products",
+        "count": 190
+      },
+      {
+        "term": "original",
+        "count": 189
+      },
+      {
+        "term": "ponto",
+        "count": 189
+      },
+      {
+        "term": "where",
+        "count": 189
+      },
+      {
+        "term": "want",
+        "count": 186
+      },
+      {
+        "term": "dashboard",
+        "count": 185
+      },
+      {
+        "term": "name",
+        "count": 185
+      },
+      {
+        "term": "automacao",
+        "count": 184
+      },
+      {
+        "term": "only",
+        "count": 184
+      },
+      {
+        "term": "pronto",
+        "count": 183
+      },
+      {
+        "term": "diferente",
+        "count": 182
+      },
+      {
+        "term": "search",
+        "count": 182
+      },
+      {
+        "term": "title",
+        "count": 182
+      },
+      {
+        "term": "gera",
+        "count": 181
+      },
+      {
+        "term": "needs",
+        "count": 181
+      },
+      {
+        "term": "sessao",
+        "count": 181
+      },
+      {
+        "term": "quero",
+        "count": 180
+      },
+      {
+        "term": "without",
+        "count": 180
+      },
+      {
+        "term": "body",
+        "count": 179
+      },
+      {
+        "term": "fetch",
+        "count": 179
+      },
+      {
+        "term": "nunca",
+        "count": 179
+      },
+      {
+        "term": "pagina",
+        "count": 179
+      },
+      {
+        "term": "error",
+        "count": 177
+      },
+      {
+        "term": "muda",
+        "count": 177
+      },
+      {
+        "term": "than",
+        "count": 177
+      },
+      {
+        "term": "chatgpt",
+        "count": 176
+      },
+      {
+        "term": "dele",
+        "count": 174
+      },
+      {
+        "term": "ficou",
+        "count": 174
+      }
+    ],
+    "global_phrases": [
+      {
+        "term": "this block",
+        "count": 928
+      },
+      {
+        "term": "block supported",
+        "count": 926
+      },
+      {
+        "term": "supported your",
+        "count": 925
+      },
+      {
+        "term": "your current",
+        "count": 925
+      },
+      {
+        "term": "current device",
+        "count": 921
+      },
+      {
+        "term": "override_x override_y",
+        "count": 603
+      },
+      {
+        "term": "override_y override_scale",
+        "count": 550
+      },
+      {
+        "term": "claude code",
+        "count": 462
+      },
+      {
+        "term": "user wants",
+        "count": 398
+      },
+      {
+        "term": "override_scale 0.22",
+        "count": 387
+      },
+      {
+        "term": "0.22 override_angle_offset",
+        "count": 370
+      },
+      {
+        "term": "device this",
+        "count": 333
+      },
+      {
+        "term": "local node_modules",
+        "count": 274
+      },
+      {
+        "term": "node_modules node_modules",
+        "count": 273
+      },
+      {
+        "term": "node_modules pnpm",
+        "count": 273
+      },
+      {
+        "term": "file packages",
+        "count": 267
+      },
+      {
+        "term": "users user",
+        "count": 239
+      },
+      {
+        "term": "google drive",
+        "count": 234
+      },
+      {
+        "term": "text text",
+        "count": 190
+      },
+      {
+        "term": "type text",
+        "count": 187
+      },
+      {
+        "term": "they want",
+        "count": 176
+      },
+      {
+        "term": "http request",
+        "count": 169
+      },
+      {
+        "term": "flags null",
+        "count": 168
+      },
+      {
+        "term": "null type",
+        "count": 168
+      },
+      {
+        "term": "text citations",
+        "count": 168
+      },
+      {
+        "term": "think about",
+        "count": 160
+      },
+      {
+        "term": "user asking",
+        "count": 158
+      },
+      {
+        "term": "edges node",
+        "count": 154
+      },
+      {
+        "term": "rather than",
+        "count": 152
+      },
+      {
+        "term": "image upload",
+        "count": 146
+      },
+      {
+        "term": "opentelemetry 1.9.0",
+        "count": 142
+      },
+      {
+        "term": "javascript const",
+        "count": 127
+      },
+      {
+        "term": "crlf next",
+        "count": 125
+      },
+      {
+        "term": "replaced crlf",
+        "count": 125
+      },
+      {
+        "term": "next time",
+        "count": 124
+      },
+      {
+        "term": "will replaced",
+        "count": 124
+      },
+      {
+        "term": "https res.cloudinary.com",
+        "count": 123
+      },
+      {
+        "term": "time touches",
+        "count": 122
+      },
+      {
+        "term": "warning working",
+        "count": 122
+      },
+      {
+        "term": "working copy",
+        "count": 122
+      },
+      {
+        "term": "n8n-core file",
+        "count": 119
+      },
+      {
+        "term": "pnpm n8n-core",
+        "count": 119
+      },
+      {
+        "term": "touches warning",
+        "count": 119
+      },
+      {
+        "term": "packages core",
+        "count": 115
+      },
+      {
+        "term": "core opentelemetry",
+        "count": 114
+      },
+      {
+        "term": "1.9.0 opentelemetry",
+        "count": 111
+      },
+      {
+        "term": "return json",
+        "count": 111
+      },
+      {
+        "term": "about what",
+        "count": 109
+      },
+      {
+        "term": "code node",
+        "count": 106
+      },
+      {
+        "term": "logo puppila",
+        "count": 106
+      },
+      {
+        "term": "user openclaw",
+        "count": 105
+      },
+      {
+        "term": "issue that",
+        "count": 104
+      },
+      {
+        "term": "opentelemetry node_modules",
+        "count": 103
+      },
+      {
+        "term": "vision payload",
+        "count": 103
+      },
+      {
+        "term": "node_modules n8n-core",
+        "count": 99
+      },
+      {
+        "term": "n8n-core execution-engine",
+        "count": 98
+      },
+      {
+        "term": "auth supabase",
+        "count": 92
+      },
+      {
+        "term": "first edges",
+        "count": 92
+      },
+      {
+        "term": "about this",
+        "count": 88
+      },
+      {
+        "term": "build vision",
+        "count": 87
+      },
+      {
+        "term": "they need",
+        "count": 87
+      },
+      {
+        "term": "asking about",
+        "count": 83
+      },
+      {
+        "term": "fundo branco",
+        "count": 83
+      },
+      {
+        "term": "system prompt",
+        "count": 83
+      },
+      {
+        "term": "what actually",
+        "count": 83
+      },
+      {
+        "term": "code detect",
+        "count": 82
+      },
+      {
+        "term": "sweet friend",
+        "count": 81
+      },
+      {
+        "term": "copy node_modules",
+        "count": 79
+      },
+      {
+        "term": "download imagem",
+        "count": 79
+      },
+      {
+        "term": "daily report",
+        "count": 77
+      },
+      {
+        "term": "what they",
+        "count": 77
+      },
+      {
+        "term": "body html",
+        "count": 75
+      },
+      {
+        "term": "buscador imagens",
+        "count": 75
+      },
+      {
+        "term": "device have",
+        "count": 75
+      },
+      {
+        "term": "execution-engine workflow-execute.ts",
+        "count": 72
+      },
+      {
+        "term": "override_y override_angle_offset",
+        "count": 72
+      },
+      {
+        "term": "queue mode",
+        "count": 72
+      },
+      {
+        "term": "overlay logo",
+        "count": 70
+      },
+      {
+        "term": "tempo real",
+        "count": 70
+      },
+      {
+        "term": "n8n-workflow file",
+        "count": 69
+      },
+      {
+        "term": "node_modules n8n-workflow",
+        "count": 69
+      },
+      {
+        "term": "packages workflow",
+        "count": 69
+      },
+      {
+        "term": "pnpm n8n-workflow",
+        "count": 69
+      },
+      {
+        "term": "workflow json",
+        "count": 69
+      },
+      {
+        "term": "workflow node_modules",
+        "count": 69
+      },
+      {
+        "term": "code build",
+        "count": 68
+      },
+      {
+        "term": "https n8n.workestria.cloud",
+        "count": 68
+      },
+      {
+        "term": "di1hrsu6b image",
+        "count": 67
+      },
+      {
+        "term": "edit fields",
+        "count": 67
+      },
+      {
+        "term": "gerar final",
+        "count": 67
+      },
+      {
+        "term": "hosted binarydatamode",
+        "count": 67
+      },
+      {
+        "term": "override_scale 0.45",
+        "count": 67
+      },
+      {
+        "term": "self hosted",
+        "count": 67
+      },
+      {
+        "term": "upload cloudinary",
+        "count": 67
+      },
+      {
+        "term": "user showing",
+        "count": 67
+      },
+      {
+        "term": "white label",
+        "count": 66
+      },
+      {
+        "term": "2.16.0 self",
+        "count": 65
+      },
+      {
+        "term": "binarydatamode database",
+        "count": 65
+      },
+      {
+        "term": "n8nversion 2.16.0",
+        "count": 65
+      },
+      {
+        "term": "0.45 override_angle_offset",
+        "count": 64
+      },
+      {
+        "term": "cloudinary upload",
+        "count": 64
+      },
+      {
+        "term": "res.cloudinary.com di1hrsu6b",
+        "count": 64
+      },
+      {
+        "term": "throw error",
+        "count": 64
+      },
+      {
+        "term": "database stacktrace",
+        "count": 63
+      },
+      {
+        "term": "fabricante produto",
+        "count": 63
+      },
+      {
+        "term": "proximo passo",
+        "count": 63
+      },
+      {
+        "term": "shopify bling",
+        "count": 63
+      },
+      {
+        "term": "store logo",
+        "count": 63
+      },
+      {
+        "term": "daily reports",
+        "count": 61
+      },
+      {
+        "term": "n8n-workflow dist",
+        "count": 61
+      },
+      {
+        "term": "more carefully",
+        "count": 58
+      },
+      {
+        "term": "this conversation",
+        "count": 58
+      },
+      {
+        "term": "products first",
+        "count": 57
+      },
+      {
+        "term": "real issue",
+        "count": 56
+      },
+      {
+        "term": "supabase vault",
+        "count": 56
+      },
+      {
+        "term": "front face",
+        "count": 55
+      },
+      {
+        "term": "item const",
+        "count": 55
+      },
+      {
+        "term": "openai gpt-4o-mini",
+        "count": 55
+      },
+      {
+        "term": "detect template1",
+        "count": 54
+      },
+      {
+        "term": "l_overlays logos",
+        "count": 54
+      }
+    ]
+  },
+  "by_source": {
+    "claude": {
+      "chunks": 5786,
+      "terms": [
+        {
+          "term": "workflow",
+          "count": 2428
+        },
+        {
+          "term": "shopify",
+          "count": 1904
+        },
+        {
+          "term": "supabase",
+          "count": 1868
+        },
+        {
+          "term": "workestria",
+          "count": 1544
+        },
+        {
+          "term": "claude",
+          "count": 1324
+        },
+        {
+          "term": "notion",
+          "count": 1088
+        },
+        {
+          "term": "bling",
+          "count": 1084
+        },
+        {
+          "term": "user",
+          "count": 1045
+        },
+        {
+          "term": "contexto",
+          "count": 864
+        },
+        {
+          "term": "this",
+          "count": 858
+        },
+        {
+          "term": "pipeline",
+          "count": 844
+        },
+        {
+          "term": "agora",
+          "count": 828
+        },
+        {
+          "term": "with",
+          "count": 745
+        },
+        {
+          "term": "openai",
+          "count": 684
+        },
+        {
+          "term": "that",
+          "count": 678
+        },
+        {
+          "term": "workflows",
+          "count": 676
+        },
+        {
+          "term": "code",
+          "count": 641
+        },
+        {
+          "term": "real",
+          "count": 623
+        },
+        {
+          "term": "prompt",
+          "count": 612
+        },
+        {
+          "term": "from",
+          "count": 564
+        },
+        {
+          "term": "precisa",
+          "count": 559
+        },
+        {
+          "term": "json",
+          "count": 542
+        },
+        {
+          "term": "logo",
+          "count": 535
+        },
+        {
+          "term": "imagem",
+          "count": 515
+        },
+        {
+          "term": "tdah",
+          "count": 504
+        },
+        {
+          "term": "arquitetura",
+          "count": 492
+        },
+        {
+          "term": "worion",
+          "count": 488
+        },
+        {
+          "term": "produto",
+          "count": 475
+        },
+        {
+          "term": "they",
+          "count": 473
+        },
+        {
+          "term": "what",
+          "count": 469
+        },
+        {
+          "term": "image",
+          "count": 460
+        },
+        {
+          "term": "current",
+          "count": 458
+        },
+        {
+          "term": "wants",
+          "count": 448
+        },
+        {
+          "term": "need",
+          "count": 441
+        },
+        {
+          "term": "about",
+          "count": 433
+        },
+        {
+          "term": "hoje",
+          "count": 424
+        },
+        {
+          "term": "node",
+          "count": 424
+        },
+        {
+          "term": "your",
+          "count": 416
+        },
+        {
+          "term": "imagens",
+          "count": 393
+        },
+        {
+          "term": "problema",
+          "count": 393
+        },
+        {
+          "term": "modelo",
+          "count": 388
+        },
+        {
+          "term": "should",
+          "count": 387
+        },
+        {
+          "term": "https",
+          "count": 382
+        },
+        {
+          "term": "block",
+          "count": 375
+        },
+        {
+          "term": "actually",
+          "count": 372
+        },
+        {
+          "term": "device",
+          "count": 359
+        },
+        {
+          "term": "supported",
+          "count": 359
+        },
+        {
+          "term": "cloudinary",
+          "count": 355
+        },
+        {
+          "term": "quer",
+          "count": 345
+        },
+        {
+          "term": "memoria",
+          "count": 336
+        },
+        {
+          "term": "have",
+          "count": 324
+        },
+        {
+          "term": "execucao",
+          "count": 316
+        },
+        {
+          "term": "which",
+          "count": 316
+        },
+        {
+          "term": "looking",
+          "count": 305
+        },
+        {
+          "term": "conversa",
+          "count": 303
+        },
+        {
+          "term": "images",
+          "count": 302
+        },
+        {
+          "term": "http",
+          "count": 301
+        },
+        {
+          "term": "data",
+          "count": 297
+        },
+        {
+          "term": "codigo",
+          "count": 291
+        },
+        {
+          "term": "sistema",
+          "count": 290
+        },
+        {
+          "term": "just",
+          "count": 288
+        },
+        {
+          "term": "type",
+          "count": 288
+        },
+        {
+          "term": "dentro",
+          "count": 282
+        },
+        {
+          "term": "agente",
+          "count": 268
+        },
+        {
+          "term": "asking",
+          "count": 267
+        },
+        {
+          "term": "qual",
+          "count": 267
+        },
+        {
+          "term": "upload",
+          "count": 267
+        },
+        {
+          "term": "direto",
+          "count": 266
+        },
+        {
+          "term": "first",
+          "count": 261
+        },
+        {
+          "term": "text",
+          "count": 253
+        },
+        {
+          "term": "final",
+          "count": 252
+        },
+        {
+          "term": "const",
+          "count": 251
+        },
+        {
+          "term": "file",
+          "count": 250
+        },
+        {
+          "term": "tenho",
+          "count": 250
+        },
+        {
+          "term": "produtos",
+          "count": 249
+        },
+        {
+          "term": "preciso",
+          "count": 248
+        },
+        {
+          "term": "their",
+          "count": 248
+        },
+        {
+          "term": "completo",
+          "count": 247
+        },
+        {
+          "term": "existe",
+          "count": 246
+        },
+        {
+          "term": "manda",
+          "count": 245
+        },
+        {
+          "term": "null",
+          "count": 245
+        },
+        {
+          "term": "think",
+          "count": 244
+        },
+        {
+          "term": "exatamente",
+          "count": 243
+        },
+        {
+          "term": "item",
+          "count": 243
+        },
+        {
+          "term": "verdade",
+          "count": 243
+        },
+        {
+          "term": "product",
+          "count": 236
+        },
+        {
+          "term": "vision",
+          "count": 233
+        },
+        {
+          "term": "output",
+          "count": 230
+        },
+        {
+          "term": "novo",
+          "count": 229
+        },
+        {
+          "term": "forma",
+          "count": 226
+        },
+        {
+          "term": "pergunta",
+          "count": 225
+        },
+        {
+          "term": "fica",
+          "count": 223
+        },
+        {
+          "term": "nome",
+          "count": 220
+        },
+        {
+          "term": "gerar",
+          "count": 219
+        },
+        {
+          "term": "certo",
+          "count": 217
+        },
+        {
+          "term": "primeiro",
+          "count": 217
+        },
+        {
+          "term": "query",
+          "count": 217
+        },
+        {
+          "term": "issue",
+          "count": 213
+        },
+        {
+          "term": "overlay",
+          "count": 212
+        },
+        {
+          "term": "custo",
+          "count": 211
+        },
+        {
+          "term": "tempo",
+          "count": 211
+        },
+        {
+          "term": "there",
+          "count": 210
+        },
+        {
+          "term": "resultado",
+          "count": 208
+        },
+        {
+          "term": "through",
+          "count": 208
+        },
+        {
+          "term": "them",
+          "count": 205
+        },
+        {
+          "term": "google",
+          "count": 202
+        },
+        {
+          "term": "sentido",
+          "count": 201
+        },
+        {
+          "term": "estou",
+          "count": 198
+        },
+        {
+          "term": "like",
+          "count": 198
+        },
+        {
+          "term": "since",
+          "count": 193
+        },
+        {
+          "term": "cliente",
+          "count": 192
+        },
+        {
+          "term": "disse",
+          "count": 192
+        },
+        {
+          "term": "erro",
+          "count": 192
+        },
+        {
+          "term": "more",
+          "count": 190
+        },
+        {
+          "term": "products",
+          "count": 190
+        },
+        {
+          "term": "then",
+          "count": 190
+        },
+        {
+          "term": "already",
+          "count": 189
+        },
+        {
+          "term": "drive",
+          "count": 189
+        },
+        {
+          "term": "roda",
+          "count": 189
+        },
+        {
+          "term": "where",
+          "count": 189
+        }
+      ],
+      "phrases": [
+        {
+          "term": "this block",
+          "count": 928
+        },
+        {
+          "term": "block supported",
+          "count": 926
+        },
+        {
+          "term": "supported your",
+          "count": 925
+        },
+        {
+          "term": "your current",
+          "count": 925
+        },
+        {
+          "term": "current device",
+          "count": 921
+        },
+        {
+          "term": "override_x override_y",
+          "count": 603
+        },
+        {
+          "term": "override_y override_scale",
+          "count": 550
+        },
+        {
+          "term": "user wants",
+          "count": 394
+        },
+        {
+          "term": "claude code",
+          "count": 392
+        },
+        {
+          "term": "override_scale 0.22",
+          "count": 387
+        },
+        {
+          "term": "0.22 override_angle_offset",
+          "count": 370
+        },
+        {
+          "term": "device this",
+          "count": 333
+        },
+        {
+          "term": "local node_modules",
+          "count": 274
+        },
+        {
+          "term": "node_modules node_modules",
+          "count": 273
+        },
+        {
+          "term": "node_modules pnpm",
+          "count": 273
+        },
+        {
+          "term": "file packages",
+          "count": 267
+        },
+        {
+          "term": "google drive",
+          "count": 230
+        },
+        {
+          "term": "users user",
+          "count": 204
+        },
+        {
+          "term": "text text",
+          "count": 189
+        },
+        {
+          "term": "type text",
+          "count": 187
+        },
+        {
+          "term": "they want",
+          "count": 175
+        },
+        {
+          "term": "http request",
+          "count": 169
+        },
+        {
+          "term": "flags null",
+          "count": 168
+        },
+        {
+          "term": "null type",
+          "count": 168
+        },
+        {
+          "term": "text citations",
+          "count": 168
+        },
+        {
+          "term": "think about",
+          "count": 159
+        },
+        {
+          "term": "user asking",
+          "count": 156
+        },
+        {
+          "term": "edges node",
+          "count": 154
+        },
+        {
+          "term": "rather than",
+          "count": 150
+        },
+        {
+          "term": "image upload",
+          "count": 146
+        },
+        {
+          "term": "opentelemetry 1.9.0",
+          "count": 142
+        },
+        {
+          "term": "https res.cloudinary.com",
+          "count": 123
+        },
+        {
+          "term": "n8n-core file",
+          "count": 119
+        },
+        {
+          "term": "pnpm n8n-core",
+          "count": 119
+        },
+        {
+          "term": "javascript const",
+          "count": 117
+        },
+        {
+          "term": "packages core",
+          "count": 115
+        },
+        {
+          "term": "core opentelemetry",
+          "count": 114
+        },
+        {
+          "term": "1.9.0 opentelemetry",
+          "count": 111
+        },
+        {
+          "term": "return json",
+          "count": 111
+        },
+        {
+          "term": "about what",
+          "count": 109
+        },
+        {
+          "term": "code node",
+          "count": 106
+        },
+        {
+          "term": "logo puppila",
+          "count": 106
+        },
+        {
+          "term": "user openclaw",
+          "count": 105
+        },
+        {
+          "term": "issue that",
+          "count": 104
+        },
+        {
+          "term": "opentelemetry node_modules",
+          "count": 103
+        },
+        {
+          "term": "vision payload",
+          "count": 103
+        },
+        {
+          "term": "node_modules n8n-core",
+          "count": 99
+        },
+        {
+          "term": "n8n-core execution-engine",
+          "count": 98
+        },
+        {
+          "term": "first edges",
+          "count": 92
+        },
+        {
+          "term": "auth supabase",
+          "count": 91
+        },
+        {
+          "term": "about this",
+          "count": 88
+        },
+        {
+          "term": "build vision",
+          "count": 87
+        },
+        {
+          "term": "they need",
+          "count": 86
+        },
+        {
+          "term": "fundo branco",
+          "count": 83
+        },
+        {
+          "term": "what actually",
+          "count": 83
+        },
+        {
+          "term": "code detect",
+          "count": 82
+        },
+        {
+          "term": "asking about",
+          "count": 81
+        },
+        {
+          "term": "sweet friend",
+          "count": 81
+        },
+        {
+          "term": "download imagem",
+          "count": 79
+        },
+        {
+          "term": "daily report",
+          "count": 77
+        },
+        {
+          "term": "what they",
+          "count": 77
+        },
+        {
+          "term": "body html",
+          "count": 75
+        },
+        {
+          "term": "buscador imagens",
+          "count": 75
+        },
+        {
+          "term": "device have",
+          "count": 75
+        },
+        {
+          "term": "execution-engine workflow-execute.ts",
+          "count": 72
+        },
+        {
+          "term": "override_y override_angle_offset",
+          "count": 72
+        },
+        {
+          "term": "queue mode",
+          "count": 72
+        },
+        {
+          "term": "overlay logo",
+          "count": 70
+        },
+        {
+          "term": "n8n-workflow file",
+          "count": 69
+        },
+        {
+          "term": "node_modules n8n-workflow",
+          "count": 69
+        },
+        {
+          "term": "packages workflow",
+          "count": 69
+        },
+        {
+          "term": "pnpm n8n-workflow",
+          "count": 69
+        },
+        {
+          "term": "workflow json",
+          "count": 69
+        },
+        {
+          "term": "workflow node_modules",
+          "count": 69
+        },
+        {
+          "term": "code build",
+          "count": 68
+        },
+        {
+          "term": "https n8n.workestria.cloud",
+          "count": 68
+        },
+        {
+          "term": "tempo real",
+          "count": 68
+        },
+        {
+          "term": "di1hrsu6b image",
+          "count": 67
+        },
+        {
+          "term": "edit fields",
+          "count": 67
+        },
+        {
+          "term": "gerar final",
+          "count": 67
+        }
+      ]
+    },
+    "worion-doc": {
+      "chunks": 436,
+      "terms": [
+        {
+          "term": "worion",
+          "count": 1236
+        },
+        {
+          "term": "agente",
+          "count": 472
+        },
+        {
+          "term": "notion",
+          "count": 468
+        },
+        {
+          "term": "claude",
+          "count": 416
+        },
+        {
+          "term": "modelo",
+          "count": 416
+        },
+        {
+          "term": "contexto",
+          "count": 392
+        },
+        {
+          "term": "arquitetura",
+          "count": 368
+        },
+        {
+          "term": "prompt",
+          "count": 364
+        },
+        {
+          "term": "supabase",
+          "count": 340
+        },
+        {
+          "term": "memoria",
+          "count": 324
+        },
+        {
+          "term": "deepworion",
+          "count": 252
+        },
+        {
+          "term": "execucao",
+          "count": 240
+        },
+        {
+          "term": "agentes",
+          "count": 224
+        },
+        {
+          "term": "pesquisa",
+          "count": 192
+        },
+        {
+          "term": "tdah",
+          "count": 184
+        },
+        {
+          "term": "usuario",
+          "count": 175
+        },
+        {
+          "term": "resposta",
+          "count": 163
+        },
+        {
+          "term": "agora",
+          "count": 156
+        },
+        {
+          "term": "pergunta",
+          "count": 130
+        },
+        {
+          "term": "codigo",
+          "count": 125
+        },
+        {
+          "term": "openai",
+          "count": 124
+        },
+        {
+          "term": "glaydson",
+          "count": 120
+        },
+        {
+          "term": "identidade",
+          "count": 120
+        },
+        {
+          "term": "precisa",
+          "count": 116
+        },
+        {
+          "term": "grounding",
+          "count": 112
+        },
+        {
+          "term": "conversa",
+          "count": 111
+        },
+        {
+          "term": "final",
+          "count": 104
+        },
+        {
+          "term": "preciso",
+          "count": 100
+        },
+        {
+          "term": "quer",
+          "count": 100
+        },
+        {
+          "term": "sistema",
+          "count": 100
+        },
+        {
+          "term": "arquivo",
+          "count": 94
+        },
+        {
+          "term": "deepseek",
+          "count": 89
+        },
+        {
+          "term": "conectores",
+          "count": 84
+        },
+        {
+          "term": "base",
+          "count": 82
+        },
+        {
+          "term": "function",
+          "count": 78
+        },
+        {
+          "term": "hoje",
+          "count": 75
+        },
+        {
+          "term": "responder",
+          "count": 71
+        },
+        {
+          "term": "comportamento",
+          "count": 70
+        },
+        {
+          "term": "const",
+          "count": 70
+        },
+        {
+          "term": "criar",
+          "count": 70
+        },
+        {
+          "term": "conteudo",
+          "count": 69
+        },
+        {
+          "term": "padrao",
+          "count": 68
+        },
+        {
+          "term": "posso",
+          "count": 65
+        },
+        {
+          "term": "chat",
+          "count": 64
+        },
+        {
+          "term": "arquivos",
+          "count": 62
+        },
+        {
+          "term": "busca",
+          "count": 62
+        },
+        {
+          "term": "forma",
+          "count": 62
+        },
+        {
+          "term": "respostas",
+          "count": 62
+        },
+        {
+          "term": "qualquer",
+          "count": 61
+        },
+        {
+          "term": "lista",
+          "count": 60
+        },
+        {
+          "term": "skills",
+          "count": 60
+        },
+        {
+          "term": "workestria",
+          "count": 60
+        },
+        {
+          "term": "nunca",
+          "count": 59
+        },
+        {
+          "term": "acao",
+          "count": 58
+        },
+        {
+          "term": "chat.js",
+          "count": 58
+        },
+        {
+          "term": "comando",
+          "count": 58
+        },
+        {
+          "term": "fluxo",
+          "count": 58
+        },
+        {
+          "term": "exatamente",
+          "count": 57
+        },
+        {
+          "term": "ponto",
+          "count": 57
+        },
+        {
+          "term": "problema",
+          "count": 57
+        },
+        {
+          "term": "simples",
+          "count": 57
+        },
+        {
+          "term": "tool",
+          "count": 57
+        },
+        {
+          "term": "local",
+          "count": 55
+        },
+        {
+          "term": "real",
+          "count": 55
+        },
+        {
+          "term": "resultado",
+          "count": 55
+        },
+        {
+          "term": "resumo",
+          "count": 55
+        },
+        {
+          "term": "code",
+          "count": 54
+        },
+        {
+          "term": "executar",
+          "count": 54
+        },
+        {
+          "term": "text",
+          "count": 54
+        },
+        {
+          "term": "bashar",
+          "count": 53
+        },
+        {
+          "term": "ferramentas",
+          "count": 53
+        },
+        {
+          "term": "fontes",
+          "count": 53
+        },
+        {
+          "term": "assistente",
+          "count": 52
+        },
+        {
+          "term": "atual",
+          "count": 52
+        },
+        {
+          "term": "conector",
+          "count": 52
+        },
+        {
+          "term": "diretamente",
+          "count": 52
+        },
+        {
+          "term": "github",
+          "count": 52
+        },
+        {
+          "term": "semantica",
+          "count": 52
+        },
+        {
+          "term": "agent",
+          "count": 51
+        },
+        {
+          "term": "estou",
+          "count": 51
+        },
+        {
+          "term": "javascript",
+          "count": 51
+        },
+        {
+          "term": "bloco",
+          "count": 50
+        },
+        {
+          "term": "conversas",
+          "count": 50
+        },
+        {
+          "term": "completo",
+          "count": 49
+        },
+        {
+          "term": "engine",
+          "count": 49
+        },
+        {
+          "term": "perguntas",
+          "count": 49
+        },
+        {
+          "term": "primeiro",
+          "count": 49
+        },
+        {
+          "term": "qual",
+          "count": 49
+        },
+        {
+          "term": "texto",
+          "count": 49
+        },
+        {
+          "term": "adicionar",
+          "count": 48
+        },
+        {
+          "term": "erro",
+          "count": 48
+        },
+        {
+          "term": "profundidade",
+          "count": 48
+        },
+        {
+          "term": "regra",
+          "count": 48
+        },
+        {
+          "term": "seja",
+          "count": 48
+        },
+        {
+          "term": "dados",
+          "count": 47
+        },
+        {
+          "term": "dele",
+          "count": 47
+        },
+        {
+          "term": "funcao",
+          "count": 47
+        },
+        {
+          "term": "sabe",
+          "count": 47
+        },
+        {
+          "term": "silencio",
+          "count": 47
+        },
+        {
+          "term": "tecnico",
+          "count": 47
+        },
+        {
+          "term": "trabalho",
+          "count": 47
+        },
+        {
+          "term": "instrucao",
+          "count": 46
+        },
+        {
+          "term": "integracao",
+          "count": 46
+        },
+        {
+          "term": "model",
+          "count": 46
+        },
+        {
+          "term": "nome",
+          "count": 46
+        },
+        {
+          "term": "return",
+          "count": 46
+        },
+        {
+          "term": "sessao",
+          "count": 46
+        },
+        {
+          "term": "tres",
+          "count": 46
+        },
+        {
+          "term": "leitura",
+          "count": 45
+        },
+        {
+          "term": "tools",
+          "count": 45
+        },
+        {
+          "term": "anterior",
+          "count": 44
+        },
+        {
+          "term": "carga",
+          "count": 44
+        },
+        {
+          "term": "chatgpt",
+          "count": 44
+        },
+        {
+          "term": "completa",
+          "count": 44
+        },
+        {
+          "term": "estrutura",
+          "count": 44
+        },
+        {
+          "term": "https",
+          "count": 44
+        },
+        {
+          "term": "melhor",
+          "count": 44
+        },
+        {
+          "term": "paginas",
+          "count": 44
+        },
+        {
+          "term": "plano",
+          "count": 44
+        },
+        {
+          "term": "arquiteto",
+          "count": 43
+        }
+      ],
+      "phrases": [
+        {
+          "term": "crlf next",
+          "count": 125
+        },
+        {
+          "term": "replaced crlf",
+          "count": 125
+        },
+        {
+          "term": "next time",
+          "count": 124
+        },
+        {
+          "term": "will replaced",
+          "count": 124
+        },
+        {
+          "term": "time touches",
+          "count": 122
+        },
+        {
+          "term": "warning working",
+          "count": 122
+        },
+        {
+          "term": "working copy",
+          "count": 122
+        },
+        {
+          "term": "touches warning",
+          "count": 119
+        },
+        {
+          "term": "copy node_modules",
+          "count": 79
+        },
+        {
+          "term": "claude code",
+          "count": 70
+        },
+        {
+          "term": "node_modules types",
+          "count": 44
+        },
+        {
+          "term": "worion desktop",
+          "count": 44
+        },
+        {
+          "term": "system prompt",
+          "count": 43
+        },
+        {
+          "term": "agent loop",
+          "count": 41
+        },
+        {
+          "term": "types node",
+          "count": 41
+        },
+        {
+          "term": "async function",
+          "count": 39
+        },
+        {
+          "term": "chat.js chat",
+          "count": 37
+        },
+        {
+          "term": "users user",
+          "count": 35
+        },
+        {
+          "term": "execution engine",
+          "count": 34
+        },
+        {
+          "term": "throw error",
+          "count": 34
+        },
+        {
+          "term": "user worion-desktop",
+          "count": 34
+        },
+        {
+          "term": "usuario quer",
+          "count": 31
+        },
+        {
+          "term": "brasilia minas",
+          "count": 30
+        },
+        {
+          "term": "brave tavily",
+          "count": 29
+        },
+        {
+          "term": "goal execution",
+          "count": 29
+        },
+        {
+          "term": "rapido barato",
+          "count": 29
+        },
+        {
+          "term": "worion tool",
+          "count": 29
+        },
+        {
+          "term": "alan turing",
+          "count": 28
+        },
+        {
+          "term": "logger.js worion",
+          "count": 28
+        },
+        {
+          "term": "tool success",
+          "count": 28
+        },
+        {
+          "term": "notion supabase",
+          "count": 27
+        },
+        {
+          "term": "dotenv config",
+          "count": 25
+        },
+        {
+          "term": "sequential thinking",
+          "count": 25
+        },
+        {
+          "term": "success true",
+          "count": 25
+        },
+        {
+          "term": "text content",
+          "count": 24
+        },
+        {
+          "term": "barato brave",
+          "count": 23
+        },
+        {
+          "term": "bashar hermetismo",
+          "count": 22
+        },
+        {
+          "term": "deepseek worion",
+          "count": 22
+        },
+        {
+          "term": "encontradas paginas",
+          "count": 22
+        },
+        {
+          "term": "grounding gate",
+          "count": 22
+        },
+        {
+          "term": "require dotenv",
+          "count": 22
+        },
+        {
+          "term": "arquitetura worion",
+          "count": 21
+        },
+        {
+          "term": "modelo agente",
+          "count": 21
+        },
+        {
+          "term": "skills cognitivas",
+          "count": 21
+        },
+        {
+          "term": "chat.js agent",
+          "count": 20
+        },
+        {
+          "term": "cognitive skills",
+          "count": 20
+        },
+        {
+          "term": "const await",
+          "count": 20
+        },
+        {
+          "term": "deepworion pergunta",
+          "count": 20
+        },
+        {
+          "term": "node check",
+          "count": 20
+        },
+        {
+          "term": "relatorio final",
+          "count": 20
+        },
+        {
+          "term": "resposta worion",
+          "count": 20
+        },
+        {
+          "term": "rich_text text",
+          "count": 20
+        },
+        {
+          "term": "historico conversa",
+          "count": 19
+        },
+        {
+          "term": "pagina notion",
+          "count": 19
+        },
+        {
+          "term": "copy will",
+          "count": 18
+        },
+        {
+          "term": "deepworion help",
+          "count": 18
+        },
+        {
+          "term": "cartografo padroes",
+          "count": 17
+        },
+        {
+          "term": "contexto consolidado",
+          "count": 17
+        },
+        {
+          "term": "documentos anexados",
+          "count": 17
+        },
+        {
+          "term": "nikola tesla",
+          "count": 17
+        },
+        {
+          "term": "worion rapido",
+          "count": 17
+        },
+        {
+          "term": "chamadas ferramentas",
+          "count": 16
+        },
+        {
+          "term": "engenheiro arquitetura",
+          "count": 16
+        },
+        {
+          "term": "function calling",
+          "count": 16
+        },
+        {
+          "term": "hierarquia prompts",
+          "count": 16
+        },
+        {
+          "term": "prompt agente",
+          "count": 16
+        },
+        {
+          "term": "quiser posso",
+          "count": 16
+        },
+        {
+          "term": "tool calls",
+          "count": 16
+        },
+        {
+          "term": "type string",
+          "count": 16
+        },
+        {
+          "term": "await request",
+          "count": 15
+        },
+        {
+          "term": "comando deepworion",
+          "count": 15
+        },
+        {
+          "term": "data config.json",
+          "count": 15
+        },
+        {
+          "term": "grounding gates",
+          "count": 15
+        },
+        {
+          "term": "raciocinio deepseek",
+          "count": 15
+        },
+        {
+          "term": "string description",
+          "count": 15
+        },
+        {
+          "term": "thinking mode",
+          "count": 15
+        },
+        {
+          "term": "catch log.warn",
+          "count": 14
+        },
+        {
+          "term": "contentreference oaicite",
+          "count": 14
+        },
+        {
+          "term": "diario reflexivo",
+          "count": 14
+        },
+        {
+          "term": "inteligencia artificial",
+          "count": 14
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780707494920-j0uo5f",
+  "conversationId": "conversation-1780707494920-j0uo5f",
+  "title": "O que eu disse sobre bashar que você tem memoria?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "O que eu disse sobre bashar que você tem memoria?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:58:14.918Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707500629-smk9vt",
+      "conversation_id": "conversation-1780707494920-j0uo5f",
+      "conversationId": "conversation-1780707494920-j0uo5f",
+      "role": "assistant",
+      "content": "Você disse que **Bashar** (canalizado por Darryl Anka) ensina uma visão bem específica de realidade: que **o que você percebe é uma projeção da consciência**, e que o caminho prático envolve a **“Fórmula do Seguir a Excitação”** (seguir o que te move) e **“Cinco Leis da Criação”** (como a criação/manifestação aconteceria a partir do estado interno).\n\nE você também conectou isso com outras tradições “mentais”/esotéricas (tipo Hermetismo e Gnosticismo) pra sustentar a ideia de **realidade como correspondência entre planos** e **despertar via conhecimento experiencial**.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T00:58:20.629Z",
+      "createdAt": "2026-06-06T00:58:20.629Z",
+      "updated_at": "2026-06-06T00:58:29.057Z",
+      "updatedAt": "2026-06-06T00:58:29.057Z",
+      "completedAt": "2026-06-06T00:58:29.057Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "quando eu disse isso?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:58:36.922Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707519318-21637l",
+      "conversation_id": "conversation-1780707494920-j0uo5f",
+      "conversationId": "conversation-1780707494920-j0uo5f",
+      "role": "assistant",
+      "content": "Não confirmado. Não encontrei evidência externa suficiente para afirmar com segurança **quando** você disse isso.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T00:58:39.318Z",
+      "createdAt": "2026-06-06T00:58:39.318Z",
+      "updated_at": "2026-06-06T00:58:42.507Z",
+      "updatedAt": "2026-06-06T00:58:42.507Z",
+      "completedAt": "2026-06-06T00:58:42.507Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T00:58:14.546Z",
+  "createdAt": "2026-06-06T00:58:14.546Z",
+  "updatedAt": "2026-06-06T00:58:44.516Z"
+}

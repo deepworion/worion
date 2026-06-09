@@ -1,0 +1,365 @@
+{
+  "result": {
+    "bootReady": true,
+    "tracingEnabled": true,
+    "simple": {
+      "agentId": "worion-assistente",
+      "agentName": "Worion Assistente",
+      "messageCount": 0,
+      "assistantReply": null,
+      "assistantReplySize": 0
+    },
+    "agent": {
+      "agentId": "worion-assistente",
+      "agentName": "Worion Assistente",
+      "messageCount": 2,
+      "assistantReply": "ok",
+      "assistantReplySize": 2
+    },
+    "errors": []
+  },
+  "consoleLines": [
+    {
+      "level": 1,
+      "message": "[VerificationEngine] Carregado com sucesso.",
+      "line": 565,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/verification.js"
+    },
+    {
+      "level": 2,
+      "message": "%cElectron Security Warning (Disabled webSecurity) font-weight: bold; This renderer process has \"webSecurity\" disabled. This\n  exposes users of this app to severe security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+      "line": 2,
+      "sourceId": "node:electron/js2c/renderer_init"
+    },
+    {
+      "level": 2,
+      "message": "%cElectron Security Warning (allowRunningInsecureContent) font-weight: bold; This renderer process has \"allowRunningInsecureContent\"\n  enabled. This exposes users of this app to severe security risks.\n\n  \nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+      "line": 2,
+      "sourceId": "node:electron/js2c/renderer_init"
+    },
+    {
+      "level": 2,
+      "message": "%cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security\n  Policy set or a policy with \"unsafe-eval\" enabled. This exposes users of\n  this app to unnecessary security risks.\n\nFor more information and help, consult\nhttps://electronjs.org/docs/tutorial/security.\nThis warning will not show up\nonce the app is packaged.",
+      "line": 2,
+      "sourceId": "node:electron/js2c/renderer_init"
+    },
+    {
+      "level": 1,
+      "message": "[LangSmith] tracing enabled",
+      "line": 151,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/tracing.js"
+    },
+    {
+      "level": 1,
+      "message": "[ANTHROPIC] Claude API key carregada - Haiku disponível para pesquisas",
+      "line": 3048,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[Worion Tool] SUCCESS supabase_select (613ms) -> {\"success\":true,\"table\":\"memory_conversations\",\"rows\":[{\"id\":\"931e252b-d679-4191-ae79-dac27b241152\",\"source_id\":\"claude\"",
+      "line": 18,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/logger.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] originConversationId: conversation-1779318574327-mva2iw",
+      "line": 1767,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] originSessionId: 2026-05-20T23:09:33.625Z",
+      "line": 1768,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] Mensagem com 0 anexos: ",
+      "line": 1795,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 2,
+      "message": "[ContextGuardian] busca indisponivel: Supabase internal memory search 400: {\"code\":\"42703\",\"details\":null,\"hint\":\"Perhaps you meant to reference the column \\\"worion_internal_memory.summary\\\".\",\"message\":\"column worion_internal_memory.o",
+      "line": 149,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/contextGuardian.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318574327-mva2iw",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[Agents] 8 agente(s) carregado(s)",
+      "line": 71,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/agents.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318574327-mva2iw",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[ARTIFACTS] formatMessageForOpenAI: [object Object]",
+      "line": 438,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/artifacts.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] Enviando 2 mensagens ao modelo. Última mensagem formatada: {\"role\":\"user\",\"content\":\"Mensagem de validacao LangSmith: responda apenas ok.\"}",
+      "line": 2124,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[DEBUG] WORION_TOOLS[0]: {\n  \"type\": \"function\",\n  \"function\": {\n    \"name\": \"sequential_thinking\",\n    \"description\": \"Organiza um raciocinio em etapas antes de executar ou responder. Use para tarefas complexas, planejamento, depuracao, arquitetura e decisoes com tradeoffs.\",\n    \"parameters\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"goal\": {\n          \"type\": \"string\",\n          \"description\": \"Objetivo ou problema a resolver\"\n        },\n        \"context\": {\n          \"type\": \"string\",\n          \"description\": \"Contexto relevante fornecido pelo usuario\"\n        },\n        \"steps\": {\n          \"type\": \"string\",\n          \"description\": \"Etapas propostas em texto estruturado\"\n        },\n        \"next_action\": {\n          \"type\": \"string\",\n          \"description\": \"Proxima acao concreta recomendada\"\n        }\n      },\n      \"required\": [\n        \"goal\",\n        \"steps\"\n      ]\n    }\n  }\n}",
+      "line": 2125,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[DEBUG] Total de tools: 21",
+      "line": 2126,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[API SELECTION] Usando Claude Haiku para pesquisa (mais barato)",
+      "line": 1255,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] round: 0",
+      "line": 1259,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[ANTHROPIC] Resposta recebida: claude-haiku-4-5-20251001 [object Object]",
+      "line": 1182,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] tool_calls recebidas: 0",
+      "line": 1277,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] resposta final sem tool_calls",
+      "line": 1280,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] externalEvidenceRecords: 0 registros",
+      "line": 2136,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] agentResult.toolCalls: 0 tool calls do modelo",
+      "line": 2137,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] allToolCalls total: 0 para validação",
+      "line": 2138,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318574327-mva2iw",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318574327-mva2iw",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[Worion Tool] SUCCESS supabase_select (175ms) -> {\"success\":true,\"table\":\"memory_conversations\",\"rows\":[{\"id\":\"931e252b-d679-4191-ae79-dac27b241152\",\"source_id\":\"claude\"",
+      "line": 18,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/logger.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] originConversationId: conversation-1779318579551-q1m655",
+      "line": 1767,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] originSessionId: 2026-05-20T23:09:39.371Z",
+      "line": 1768,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] Mensagem com 0 anexos: ",
+      "line": 1795,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 2,
+      "message": "[ContextGuardian] busca indisponivel: Supabase internal memory search 400: {\"code\":\"42703\",\"details\":null,\"hint\":\"Perhaps you meant to reference the column \\\"worion_internal_memory.summary\\\".\",\"message\":\"column worion_internal_memory.o",
+      "line": 149,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/contextGuardian.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318579551-q1m655",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318579551-q1m655",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[ARTIFACTS] formatMessageForOpenAI: [object Object]",
+      "line": 438,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/artifacts.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] Enviando 2 mensagens ao modelo. Última mensagem formatada: {\"role\":\"user\",\"content\":\"Validacao LangSmith com agente worion-assistente: responda apenas ok.\"}",
+      "line": 2124,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[DEBUG] WORION_TOOLS[0]: {\n  \"type\": \"function\",\n  \"function\": {\n    \"name\": \"sequential_thinking\",\n    \"description\": \"Organiza um raciocinio em etapas antes de executar ou responder. Use para tarefas complexas, planejamento, depuracao, arquitetura e decisoes com tradeoffs.\",\n    \"parameters\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"goal\": {\n          \"type\": \"string\",\n          \"description\": \"Objetivo ou problema a resolver\"\n        },\n        \"context\": {\n          \"type\": \"string\",\n          \"description\": \"Contexto relevante fornecido pelo usuario\"\n        },\n        \"steps\": {\n          \"type\": \"string\",\n          \"description\": \"Etapas propostas em texto estruturado\"\n        },\n        \"next_action\": {\n          \"type\": \"string\",\n          \"description\": \"Proxima acao concreta recomendada\"\n        }\n      },\n      \"required\": [\n        \"goal\",\n        \"steps\"\n      ]\n    }\n  }\n}",
+      "line": 2125,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[DEBUG] Total de tools: 21",
+      "line": 2126,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[API SELECTION] Usando Claude Haiku para pesquisa (mais barato)",
+      "line": 1255,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] round: 0",
+      "line": 1259,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[ANTHROPIC] Resposta recebida: claude-haiku-4-5-20251001 [object Object]",
+      "line": 1182,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] tool_calls recebidas: 0",
+      "line": 1277,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[AGENT LOOP] resposta final sem tool_calls",
+      "line": 1280,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] externalEvidenceRecords: 0 registros",
+      "line": 2136,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] agentResult.toolCalls: 0 tool calls do modelo",
+      "line": 2137,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[VERIFICATION] allToolCalls total: 0 para validação",
+      "line": 2138,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318579551-q1m655",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] activeConversationId no final: conversation-1779318579551-q1m655",
+      "line": 1588,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    },
+    {
+      "level": 1,
+      "message": "[CHAT] render permitido: true",
+      "line": 1589,
+      "sourceId": "file:///C:/Users/User/worion-desktop/js/chat.js"
+    }
+  ]
+}

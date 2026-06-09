@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780764095649-rmjllr",
+  "conversationId": "conversation-1780764095649-rmjllr",
+  "title": "Boa tarde. hoje está frio.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. hoje está frio.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T16:41:35.646Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780764101265-yfzpic",
+      "conversation_id": "conversation-1780764095649-rmjllr",
+      "conversationId": "conversation-1780764095649-rmjllr",
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson. Frio mesmo — e esse tipo de “hoje” costuma deixar tudo mais lento.\n\nQuer que eu:\n- ajude a decidir o que vestir (rápido, sem overthinking), ou\n- puxe um plano de 1 hora pra você render mesmo com o clima pesado?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T16:41:41.265Z",
+      "createdAt": "2026-06-06T16:41:41.265Z",
+      "updated_at": "2026-06-06T16:41:47.718Z",
+      "updatedAt": "2026-06-06T16:41:47.718Z",
+      "completedAt": "2026-06-06T16:41:47.718Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T16:41:34.922Z",
+  "createdAt": "2026-06-06T16:41:34.922Z",
+  "updatedAt": "2026-06-06T16:41:49.728Z"
+}

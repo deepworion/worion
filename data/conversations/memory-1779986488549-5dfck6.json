@@ -1,0 +1,33 @@
+{
+  "id": "memory-1779986488549-5dfck6",
+  "title": "A revisar",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Contexto carregado: **A revisar**.\n\n# Contexto carregado: A revisar\nSlug: a-revisar\nID: 0416de0d-52e7-45c7-ab4e-51e11cf1e0ab\nCategoria/dominio: unknown\nStatus: card_candidate\nCriado em: 2026-05-28T16:41:02.617366+00:00\nAtualizado em: 2026-05-28T16:41:02.617366+00:00\n## Descricao\nFila de triagem para material que ainda nao tem contexto confiavel.\n## Regras de entrada\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n## Regras de exclusao\n- exclui conteudo que casa com regra explicita do usuario\n## Conteudo bruto/contexto\n```md\nFila de triagem para material que ainda nao tem contexto confiavel.\n```\n\nPergunte, peça uma síntese ou selecione trechos para aprofundar.",
+      "createdAt": "2026-05-28T16:41:28.549Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-28T16:41:28.549Z",
+  "projectId": null,
+  "updatedAt": "2026-05-28T16:46:59.395Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "memory-1779986488549-5dfck6",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-28T16:41:28.549Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "# Contexto carregado: A revisar\nSlug: a-revisar\nID: 0416de0d-52e7-45c7-ab4e-51e11cf1e0ab\nCategoria/dominio: unknown\nStatus: card_candidate\nCriado em: 2026-05-28T16:41:02.617366+00:00\nAtualizado em: 2026-05-28T16:41:02.617366+00:00\n## Descricao\nFila de triagem para material que ainda nao tem contexto confiavel.\n## Regras de entrada\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n## Regras de exclusao\n- exclui conteudo que casa com regra explicita do usuario\n## Conteudo bruto/contexto\n```md\nFila de triagem para material que ainda nao tem contexto confiavel.\n```",
+  "lastOpenedAt": "2026-05-28T17:32:41.173Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:32:41.173Z",
+      "previousActivityAt": "2026-05-28T16:46:59.395Z"
+    }
+  ]
+}

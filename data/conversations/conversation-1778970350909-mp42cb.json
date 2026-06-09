@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778970350909-mp42cb",
+  "title": "traga um resumo sobre tudo que foi falado sobre Worion na supabase nos",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T22:25:50.886Z",
+  "updatedAt": "2026-05-16T22:34:20.979Z",
+  "lastOpenedAt": "2026-05-16T22:25:50.909Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "traga um resumo sobre tudo que foi falado sobre Worion na supabase nos arquivos do Claude.",
+      "createdAt": "2026-05-16T22:25:50.892Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "### Resumo sobre o Worion na Supabase\n\nO conteúdo extraído das conversas sobre o Worion na Supabase revela uma série de discussões e decisões estratégicas relacionadas ao desenvolvimento e implementação do sistema de memória unificada. Aqui estão os principais pontos abordados:\n\n#### **Objetivos e Estrutura**\n- **Pulo do Leão**: Um projeto para criar um MCP (Memory Control Protocol) de Memória Unificada entre IAs, que busca integrar e gerenciar informações de diferentes fontes como Claude, ChatGPT, Gemini e Code/Codex.\n- **Estrutura do Banco de Dados**:\n  - **Tabelas**:\n    - `memory_sources`: Define as origens de memória (Claude, ChatGPT, etc.).\n    - `memory_conversations`: Armazena as conversas importadas de cada IA.\n    - `memory_chunks`: Contém os pedaços normalizados das conversas.\n    - `memory_embeddings`: Armazena vetores para busca semântica utilizando pgvector.\n- **Pipeline de Ingestão**: Inclui etapas para receber, normalizar, e armazenar as conversas, além de implementar buscas por palavra-chave e semântica.\n\n#### **Decisões e Implementações**\n- **Implementação do Schema**: A criação das tabelas no Supabase foi realizada com sucesso, incluindo a configuração de políticas de segurança e funções para busca semântica.\n- **Importação de Dados**: A estratégia inicial envolve a importação manual de dados de ChatGPT e Claude, com planos para automatizar o processo no futuro.\n- **Integração com n8n**: Discussões sobre como o Worion pode atuar como um centro de controle cognitivo, monitorando e gerenciando workflows de clientes.\n\n#### **Desafios e Pendências**\n- **Exportação Manual**: A necessidade de baixar as conversas manualmente de ChatGPT e Claude foi identificada como um desafio, com a intenção de implementar um sistema de auto-save para o Worion.\n- **Desenvolvimento do MCP Server**: A construção de um servidor de memória unificada foi destacada como uma prioridade para o próximo dia de trabalho.\n- **Estratégia de Preço**: Discussões sobre o modelo de assinatura do Worion, com sugestões de preços acessíveis para diferentes públicos.\n\n### **Conclusão**\nO projeto Worion está em uma fase avançada de desenvolvimento, com uma estrutura clara e objetivos bem definidos. As discussões refletem um foco em integração, eficiência e escalabilidade, preparando o caminho para um produto robusto que atende a diversas necessidades de usuários.",
+      "createdAt": "2026-05-16T22:26:24.733Z"
+    },
+    {
+      "role": "user",
+      "content": "gere uma imagem de uma estrela",
+      "createdAt": "2026-05-16T22:28:41.329Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Ainda não consigo gerar imagens diretamente. No entanto, posso sugerir uma descrição ou um código que você pode usar em uma ferramenta de design ou programação para criar uma imagem de uma estrela. Você gostaria disso?",
+      "createdAt": "2026-05-16T22:28:46.969Z"
+    }
+  ]
+}

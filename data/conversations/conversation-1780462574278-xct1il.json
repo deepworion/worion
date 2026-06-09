@@ -1,0 +1,38 @@
+{
+  "id": "conversation-1780462574278-xct1il",
+  "conversationId": "conversation-1780462574278-xct1il",
+  "title": "Vamos ver como você está hoje? de 0 a 10, qual seu grau de sati",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Vamos ver como você está hoje? de  0 a 10, qual seu grau de satisfação?",
+      "createdAt": "2026-06-03T04:56:14.276Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Hoje estou aqui para acompanhar você e ajudar no que precisar, então diria que estou em um 10 no quesito disponibilidade. E você, como está se sentindo hoje?",
+      "createdAt": "2026-06-03T04:56:22.589Z"
+    },
+    {
+      "role": "user",
+      "content": "afim de aprender algo fora do meu scopo. O que você sugere?",
+      "createdAt": "2026-06-03T04:57:08.765Z",
+      "attachments": []
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T04:56:14.092Z",
+  "createdAt": "2026-06-03T04:56:14.092Z",
+  "updatedAt": "2026-06-03T04:57:15.448Z"
+}

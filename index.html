@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' data: https://cdn.jsdelivr.net; connect-src *; img-src * data:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worion V2.2.1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<script>
+  (function() {
+    const enabled = localStorage.getItem('worion_piano_preview') !== 'false';
+    document.body.classList.toggle('theme-piano-preview', enabled);
+    window.toggleWorionPianoPreview = function(force) {
+      const next = typeof force === 'boolean' ? force : !document.body.classList.contains('theme-piano-preview');
+      document.body.classList.toggle('theme-piano-preview', next);
+      localStorage.setItem('worion_piano_preview', next ? 'true' : 'false');
+      return next;
+    };
+  })();
+</script>
+
+<div class="top-center-logo-wrap" onclick="showHomeView()" title="Voltar para a página inicial">
+  <img src="assets/images/logo.png" alt="Worion Logo" class="top-center-logo">
+</div>
+
+<div class="shell">
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <div class="sidebar-brand-row">
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" title="Alternar barra lateral">
+          <i class="ti ti-layout-sidebar-left-collapse"></i>
+        </button>
+        <div class="sidebar-logo-wrap" onclick="showHomeView()" title="Voltar para a página inicial">
+          <img src="assets/images/logo.png" alt="Worion Logo" class="sidebar-logo">
+        </div>
+      </div>
+      <div class="sidebar-btn active" data-view="new-chat" onclick="showHomeView()"><i class="ti ti-plus" aria-hidden="true"></i> Novo Chat</div>
+      <div class="sidebar-btn" data-view="search" onclick="openSearchOverlay()"><i class="ti ti-search" aria-hidden="true"></i> Pesquisar</div>
+    </div>
+    <div class="sidebar-scroll">
+      <div class="sidebar-btn" data-view="agents" onclick="showAgentsView()"><i class="ti ti-layout-grid" aria-hidden="true"></i> Agentes</div>
+      <div class="sidebar-btn" data-view="conversations" onclick="showConversationsView()"><i class="ti ti-message" aria-hidden="true"></i> Conversas</div>
+      <div class="sidebar-btn" data-view="projects" onclick="showProjectsView()"><i class="ti ti-folder" aria-hidden="true"></i> Projetos</div>
+      <details class="sidebar-nav-group" id="sidebar-memory-group">
+        <summary class="sidebar-btn sidebar-summary" data-view="connections" onclick="showConnectionsView()"><i class="ti ti-cards" aria-hidden="true"></i> Memory Cards</summary>
+        <div id="sidebar-memory-contexts" class="memory-contexts-strip"></div>
+      </details>
+      <details class="sidebar-nav-group" id="sidebar-skills-group">
+        <summary class="sidebar-btn sidebar-summary"><i class="ti ti-sparkles" aria-hidden="true"></i> Skills</summary>
+        <div id="sidebar-skills" class="skill-strip"></div>
+      </details>
+      <hr class="sidebar-divider">
+      <div class="sidebar-section">Projetos</div>
+      <div id="sidebar-projects"></div>
+      <hr class="sidebar-divider">
+      <div class="sidebar-section">Recentes</div>
+      <div id="sidebar-conversations"></div>
+    </div>
+    <div class="sidebar-footer">
+      <div id="profile-menu" class="profile-menu hidden">
+        <div class="profile-menu-email" id="profile-menu-email"></div>
+        <button class="profile-menu-item" onclick="showSettingsView()"><i class="ti ti-settings"></i> Configuracoes</button>
+        <button class="profile-menu-item" onclick="showHomeView()"><i class="ti ti-plus"></i> Novo Chat</button>
+      </div>
+      <button class="sidebar-profile-btn" onclick="toggleProfileMenu()">
+        <span class="profile-avatar" id="profile-avatar">GB</span>
+        <span class="profile-text">
+          <span class="profile-name" id="profile-name">Glaydson Boaventura</span>
+          <span class="profile-sub">Worion Desktop V2.2.1</span>
+        </span>
+        <i class="ti ti-chevron-up"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="main" id="main">
+    <div class="loading-initial">
+      <div class="loading-spinner"></div>
+      <p>Inicializando Worion...</p>
+    </div>
+  </div>
+
+  <div class="detail-panel" id="detail-panel" style="display:none"></div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/logger.js"></script>
+<script src="js/connectors.js"></script>
+<script src="js/tracing.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/contextGuardian.js"></script>
+<script src="js/memory-cards-runtime.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/cognitive-skills.js"></script>
+<script src="js/v12-turbo.js"></script>
+<script src="js/agents.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ambient-context.js"></script>
+<script src="js/prompt.js"></script>
+<script src="js/artifacts.js"></script>
+<script src="js/chat-routing.js"></script>
+<script src="js/context-authority.js"></script>
+<script src="js/writer.js"></script>
+<script src="js/worion-api-client.js"></script>
+<script src="js/Chatdelivery.js"></script>
+<script src="js/model-router.js"></script>
+<script src="js/chat-models.js"></script>
+<script src="js/chat-sessions.js"></script>
+<script src="js/chat-goals.js"></script>
+<script src="js/chat-normalization.js"></script>
+<script src="js/memory-segments-injector.js"></script>
+<script src="js/chat.js"></script>
+<script type="module" src="js/ui.js"></script>
+
+</body>
+</html>

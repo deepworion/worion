@@ -1,0 +1,48 @@
+{
+  "id": "conversation-1778863054995-lfkvd4",
+  "title": "Aceda a página # Teste de Integração — 15/05/2026 no notion e realize ",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-15T16:37:34.081Z",
+  "updatedAt": "2026-05-15T16:39:49.816Z",
+  "lastOpenedAt": "2026-05-15T16:37:34.996Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Aceda a página # Teste de Integração — 15/05/2026 no notion e realize o Teste .",
+      "createdAt": "2026-05-15T16:37:34.505Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não consegui acessar a página \"Teste de Integração — 15/05/2026\" no Notion. O erro retornado foi um erro 400, que geralmente indica que a solicitação foi malformada ou que a página não existe.\n\nPor favor, verifique se o nome da página está correto ou se há outra informação que possa ajudar a localizar a página.",
+      "createdAt": "2026-05-15T16:37:41.780Z"
+    },
+    {
+      "role": "user",
+      "content": "A pagina está dentro do workestria HQ. Pesquise todas as pastas.",
+      "createdAt": "2026-05-15T16:38:35.454Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não encontrei nenhuma página ou pasta chamada \"Workestria HQ\" no Notion. Pode ser que o nome esteja incorreto ou que a página esteja em um local diferente.\n\nPor favor, confirme o nome exato ou forneça mais detalhes sobre onde posso encontrar a página desejada.",
+      "createdAt": "2026-05-15T16:38:41.567Z"
+    },
+    {
+      "role": "user",
+      "content": "verifique as conversas sobre o Worion que eu produzi com o Claude na supabase.",
+      "createdAt": "2026-05-15T16:39:38.447Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Aqui estão as conversas que você teve com o Claude sobre o Worion:\n\n1. **Conectores para melhorar o ambiente**\n   - **ID:** 931e252b-d679-4191-ae79-dac27b241152\n   - **Mensagens:** 138\n   - **Data de criação:** 14/05/2026\n\n2. **Worion como núcleo da orquestração de sistemas**\n   - **ID:** e5e06465-b8de-4aad-aa89-50e784df4b6e\n   - **Mensagens:** 6\n   - **Data de criação:** 14/05/2026\n\n3. **Comprimindo arquivos no Claude Code**\n   - **ID:** 2cb385d3-78bb-4062-ab03-eed7239d873f\n   - **Mensagens:** 2\n   - **Data de criação:** 14/05/2026\n\n4. **Conversa Claude importada**\n   - **ID:** 948e1b77-8322-4a87-a4d3-1a2424b95803\n   - **Mensagens:** 0\n   - **Data de criação:** 14/05/2026\n\n5. **Encontrar email da Tavilly no Notion**\n   - **ID:** a24be664-7351-4c14-b9db-f8f89e83f39e\n   - **Mensagens:** 4\n   - **Data de criação:** 13/05/2026\n\n6. **Configuring n8n MCP server connection**\n   - **ID:** 27f88860-1015-4a03-81ca-b0780192e155\n   - **Mensagens:** 6\n   - **Data de criação:** 13/05/2026\n\n7. **Code Merge Calibration como base de dados**\n   - **ID:** 0192c721-650a-4810-ba88-d7f83aeb943a\n   - **Mensagens:** 16\n   - **Data de criação:** 13/05/2026\n\n8. **Docker no VS Code**\n   - **ID:** baaaed6a-d531-49e3-8553-adb8c71dea3b\n   - **Mensagens:** 176\n   - **Data de criação:** 13/05/2026\n\n9. **vc tá desatualizado**\n   - **ID:** 7e880952-9a85-41b8-886a-9b409488d5d3\n   - **Mensagens:** 10\n   - **Data de criação:** 13/05/2026\n\n10. **Criando seu próprio Notion**\n    - **ID:** b4a60d15-e503-442e-8159-941c901ec316\n    - **Mensagens:** 28\n    - **Data de criação:** 12/05/2026\n\nSe precisar de mais detalhes sobre alguma dessas conversas ou quiser realizar alguma ação específica, me avise!",
+      "createdAt": "2026-05-15T16:39:49.739Z"
+    }
+  ]
+}

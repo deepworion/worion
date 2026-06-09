@@ -1,0 +1,71 @@
+{
+  "id": "conversation-1780636210797-mfdjih",
+  "conversationId": "conversation-1780636210797-mfdjih",
+  "title": "Worion, eu falei sobre migrar um workflow body_html do n8n local",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": "smart-research",
+  "activeWorkModeIds": [
+    "smart-research",
+    "deep-thinking",
+    "document-generation"
+  ],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Worion, eu falei sobre migrar um workflow body_html do n8n local para a VPS da Workestria. No meio dessa conversa, surgiu uma dúvida estrutural sobre a api_keys_vault_v2. Recupera o contexto e me diga: qual era o risco que eu estava tentando evitar, o que foi decidido sobre a Vault e o que ainda precisava ser configurado no n8n novo?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T05:10:10.793Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780636216907-u54mrm",
+      "conversation_id": "conversation-1780636210797-mfdjih",
+      "conversationId": "conversation-1780636210797-mfdjih",
+      "role": "assistant",
+      "content": "# Contexto recuperado — body_html, VPS e Vault\n\nGlaydson, o ponto estrutural era este: ao migrar o workflow `body_html` do n8n local para a VPS da Workestria, você não queria transformar o n8n novo em um depósito de chaves sensíveis.\n\nA dúvida sobre a `api_keys_vault_v2` apareceu justamente porque a migração podia criar um risco silencioso: copiar credenciais para dentro do workflow, duplicar segredo em vários lugares ou deixar cada módulo depender de credenciais locais do n8n.\n\n## 1. O risco que você estava tentando evitar\n\nO risco central era **descentralizar ou expor as API keys na migração**.\n\nMais especificamente:\n\n- colocar tokens diretamente em nós HTTP do n8n;\n- depender de credenciais locais exportadas/importadas do n8n antigo;\n- duplicar chaves por workflow ou por módulo;\n- perder o controle multi-tenant da Workestria;\n- misturar credenciais de lojas/clientes diferentes;\n- deixar o `body_html` funcionando na VPS, mas acoplado a segredos manuais e frágeis.\n\nA preocupação real não era só “fazer o workflow rodar”.\n\nEra evitar que a VPS nova nascesse com uma arquitetura errada: workflows funcionando, mas com segredo espalhado.\n\n## 2. O que foi decidido sobre a Vault\n\nA decisão foi: **a `api_keys_vault_v2` continua sendo a fonte central de credenciais**.\n\nOu seja:\n\n- a Vault não deveria ser “migrada para dentro” do n8n;\n- o n8n novo deveria apenas **consultar a Vault** quando precisasse de credenciais;\n- as chaves sensíveis continuariam centralizadas no Supabase;\n- o workflow deveria operar por identificador de loja/cliente/módulo, não por token hardcoded;\n- o padrão correto seria o n8n buscar a chave certa dinamicamente na `api_keys_vault_v2`.\n\nEm termos de arquitetura:  \n**n8n executa. Supabase Vault guarda segredo. Workflow não vira cofre.**\n\n## 3. O que ainda precisava ser configurado no n8n novo\n\nNo n8n da VPS ainda precisava configurar a ponte de acesso à Vault.\n\nO essencial era:\n\n- credencial/env var do **Supabase URL**;\n- credencial/env var da **Supabase Service Role Key** ou chave com permissão adequada;\n- nó/credential HTTP para consultar a tabela `api_keys_vault_v2`;\n- filtro correto por `store_id`, `client_id`, `provider`, `service` ou o campo equivalente usado na sua estrutura;\n- garantir que o workflow `body_html` usasse a chave retornada da Vault, não uma chave fixa no node;\n- testar a leitura da Vault no n8n novo antes de ativar a execução real.\n\nA pendência prática era configurar no n8n novo algo como:\n\n```env\nSUPABASE_URL=...\nSUPABASE_SERVICE_ROLE_KEY=...\n```\n\nE depois validar um nó HTTP/Supabase fazendo leitura segura da:\n\n```text\napi_keys_vault_v2\n```\n\n## Síntese curta\n\nVocê estava evitando **vazar, duplicar ou espalhar API keys na migração**.\n\nFoi decidido que a **Vault permanece centralizada no Supabase** e que o n8n novo deve apenas consumir as credenciais dinamicamente.\n\nAinda faltava configurar no n8n da VPS as **credenciais de acesso ao Supabase/Vault** e ajustar o workflow `body_html` para buscar as chaves na `api_keys_vault_v2`, em vez de depender de credenciais locais importadas do n8n antigo.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "created_at": "2026-06-05T05:10:16.907Z",
+      "createdAt": "2026-06-05T05:10:16.907Z",
+      "updated_at": "2026-06-05T05:11:09.495Z",
+      "updatedAt": "2026-06-05T05:11:09.495Z",
+      "completedAt": "2026-06-05T05:11:09.495Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Eu quero exclusivamente sobre essa conversa, sem acrescentar contexto de outras, mesmo que sejam pra contribuir.",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T05:13:25.074Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780636412756-ivs5ij",
+      "conversation_id": "conversation-1780636210797-mfdjih",
+      "conversationId": "conversation-1780636210797-mfdjih",
+      "role": "assistant",
+      "content": "Entendido, Glaydson.\n\nVou restringir **exclusivamente ao que aparece nesta conversa**. Sem memória, sem contexto importado, sem completar lacunas.\n\nCom base apenas daqui, o contexto confirmado é:\n\n- Você falou sobre migrar um workflow `body_html` do **n8n local** para a **VPS da Workestria**.\n- No meio disso surgiu uma dúvida estrutural sobre a `api_keys_vault_v2`.\n- Você queria recuperar:\n  - qual risco estava tentando evitar;\n  - o que foi decidido sobre a Vault;\n  - o que ainda precisava ser configurado no n8n novo.\n\nO que **não está confirmado apenas nesta conversa**:\n\n- qual era exatamente o risco;\n- qual decisão específica foi tomada sobre a Vault;\n- quais campos, credenciais ou variáveis faltavam configurar no n8n novo.\n\nEntão a resposta correta, limitada só a esta conversa, é:\n\n**Não confirmado nesta conversa.**\nAqui só aparece o tema geral da migração e os três pontos que você quer recuperar. Os detalhes da decisão sobre a `api_keys_vault_v2` não estão presentes no trecho atual.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "created_at": "2026-06-05T05:13:32.756Z",
+      "createdAt": "2026-06-05T05:13:32.756Z",
+      "updated_at": "2026-06-05T05:13:58.383Z",
+      "updatedAt": "2026-06-05T05:13:58.383Z",
+      "completedAt": "2026-06-05T05:13:58.383Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T05:10:09.245Z",
+  "createdAt": "2026-06-05T05:10:09.245Z",
+  "updatedAt": "2026-06-05T05:14:00.404Z"
+}

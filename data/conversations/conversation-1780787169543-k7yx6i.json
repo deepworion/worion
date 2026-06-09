@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780787169543-k7yx6i",
+  "conversationId": "conversation-1780787169543-k7yx6i",
+  "title": "pesquisa sobre a Dharma?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa sobre a Dharma?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:06:09.539Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787172647-os95us",
+      "conversation_id": "conversation-1780787169543-k7yx6i",
+      "conversationId": "conversation-1780787169543-k7yx6i",
+      "role": "assistant",
+      "content": "Oi. Quando você diz **“Dharma”**, você quer pesquisa de qual sentido?\n\n1) **Budismo** (o “dharma” como ensinamento/lei do Buda)\n2) **Hinduísmo** (dharma como dever/ordem/ética)\n3) **Jainismo** (dharma como princípio/realidade, dependendo da escola)\n4) **Uso geral** (traduções: “lei”, “ordem”, “dever”, “caminho”)\n5) **História e origem do termo** (sânscrito, evolução do conceito)\n\nMe diz o número (ou combinações). Aí eu puxo uma pesquisa bem direcionada e organizada.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T23:06:12.647Z",
+      "createdAt": "2026-06-06T23:06:12.647Z",
+      "updated_at": "2026-06-06T23:06:22.749Z",
+      "updatedAt": "2026-06-06T23:06:22.749Z",
+      "completedAt": "2026-06-06T23:06:22.749Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:06:09.143Z",
+  "createdAt": "2026-06-06T23:06:09.143Z",
+  "updatedAt": "2026-06-06T23:06:24.775Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "conversation-1779989763669-tojzwp",
+  "conversationId": "conversation-1779989763669-tojzwp",
+  "title": "oi",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "oi",
+      "createdAt": "2026-05-28T17:36:03.669Z",
+      "attachments": []
+    }
+  ],
+  "sessionStartedAt": "2026-05-28T17:36:03.484Z",
+  "createdAt": "2026-05-28T17:36:03.484Z",
+  "updatedAt": "2026-05-28T17:36:05.687Z"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "conversation-1779832003819-dyuh83",
+  "title": "Use apenas o contexto de memoria ativo. Em uma frase, sobre o qu",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Use apenas o contexto de memoria ativo. Em uma frase, sobre o que ele trata?",
+      "createdAt": "2026-05-26T21:46:43.818Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O contexto de memória ativo trata de Bashar, uma consciência canalizada por Darryl Anka, que explora a criação da realidade através de crenças profundas e a importância do estado de permissão para a manifestação.",
+      "createdAt": "2026-05-26T21:46:51.270Z"
+    },
+    {
+      "role": "user",
+      "content": ".",
+      "createdAt": "2026-05-26T21:53:05.565Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Estou aqui se precisar!",
+      "createdAt": "2026-05-26T21:53:05.652Z"
+    },
+    {
+      "role": "user",
+      "content": "O que você acha dos gatos?",
+      "createdAt": "2026-05-26T21:56:30.931Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Gatos são animais fascinantes e têm uma personalidade única. Eles são conhecidos por sua independência, curiosidade e até por serem afetuosos de maneiras inesperadas. Além disso, muitos apreciam a companhia deles por serem animais que trazem conforto e diversão. Você tem algum gato ou está pensando em ter um?",
+      "createdAt": "2026-05-26T21:56:46.517Z"
+    },
+    {
+      "role": "user",
+      "content": "Compare Alan Turing e Nikola Tesla.",
+      "createdAt": "2026-05-26T21:58:43.281Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## Alan Turing e Nikola Tesla: Uma Comparação\n\n### **Quem é / O que é**\n\n**Alan Turing**\n- **Biografia Resumida**: Alan Turing nasceu em 1912 na Inglaterra e é amplamente reconhecido como o pai da ciência da computação teórica e da inteligência artificial. Durante a Segunda Guerra Mundial, ele desempenhou um papel crucial na quebra do código Enigma, utilizado pelos alemães, o que contribuiu significativamente para a vitória dos Aliados.\n- **Contexto**: Turing foi um matemático e criptoanalista cujas ideias formaram a base para o desenvolvimento dos computadores modernos.\n\n**Nikola Tesla**\n- **Biografia Resumida**: Nikola Tesla nasceu em 1856 na atual Croácia e é frequentemente chamado de pai da engenharia elétrica moderna. Ele é conhecido por seu trabalho inovador com a corrente alternada (AC) e por suas visões sobre comunicação sem fio.\n- **Contexto**: Tesla foi um inventor e engenheiro que trabalhou principalmente nos Estados Unidos, onde suas ideias moldaram a eletrificação do mundo moderno.\n\n### **Principais Obras/Doutrinas**\n\n**Alan Turing**\n- **Contribuições**: Turing é famoso pela concepção da Máquina de Turing, um modelo teórico que define os princípios da computação moderna. Sua contribuição para a criptografia durante a guerra também é notável.\n\n**Nikola Tesla**\n- **Contribuições**: Tesla desenvolveu o sistema de corrente alternada, que se tornou o padrão para a distribuição de eletricidade. Ele também teve visões pioneiras sobre a transmissão de energia sem fio e comunicação.\n\n### **Controvérsias ou Críticas**\n\n**Alan Turing**\n- **Controvérsias**: Turing enfrentou discriminação devido à sua homossexualidade, o que levou a um tratamento injusto e à sua eventual condenação criminal, afetando sua carreira e vida pessoal.\n\n**Nikola Tesla**\n- **Controvérsias**: Tesla frequentemente enfrentou dificuldades financeiras e desentendimentos com outros inventores, como Thomas Edison, sobre a viabilidade de suas ideias, especialmente em relação à corrente alternada.\n\n### **Fontes Confiáveis vs. Limitações**\n\n- **Fontes Confiáveis**: As informações sobre Turing e Tesla são bem documentadas em fontes acadêmicas e históricas, como artigos científicos e biografias.\n- **Limitações**: Algumas interpretações modernas sobre Tesla podem ser exageradas em blogs e mídias populares, mas as fontes principais são confiáveis.\n\n### **Análise Comparativa**\n\n**Pontos em Comum**\n- Ambos foram inovadores que desafiaram o status quo e expandiram os limites do conhecimento em suas respectivas áreas.\n- Turing e Tesla tinham uma visão de futuro que transcendia seu tempo, influenciando profundamente a tecnologia moderna.\n\n**Diferenças Principais**\n- **Áreas de Atuação**: Turing focou em computação e criptografia, enquanto Tesla se concentrou em engenharia elétrica e invenções físicas.\n- **Metodologia**: Turing trabalhou principalmente com conceitos teóricos e matemáticos, enquanto Tesla era um inventor prático, focado em aplicações físicas.\n\n### **Conclusão**\n\nAlan Turing e Nikola Tesla foram pioneiros em seus campos, cada um deixando um legado duradouro que continua a influenciar a tecnologia moderna. Enquanto Turing estabeleceu as bases para a computação, Tesla revolucionou a forma como utilizamos a eletricidade. Ambos exemplificam o poder da inovação e da visão de futuro.\n\n<small>Fontes: [PapersOwl](https://hub.papersowl.com/examples/innovators-in-electrical-engineering-and-computing-tesla-and-turing/) · [Prezi](https://prezi.com/p/pnqlcl-ytzbl/alan-turing-and-nikola-tesla/)</small>",
+      "createdAt": "2026-05-26T21:59:15.802Z"
+    },
+    {
+      "role": "user",
+      "content": "Transcreva este vídeo sem timestamps: https://www.youtube.com/watch?v=ofS6Wzokny0",
+      "createdAt": "2026-05-26T22:03:42.460Z",
+      "attachments": []
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-26T21:46:43.608Z",
+  "projectId": null,
+  "updatedAt": "2026-05-26T22:03:50.180Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779832003819-dyuh83",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-26T21:46:43.608Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T17:33:38.631Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:33:38.631Z",
+      "previousActivityAt": "2026-05-26T22:03:50.180Z"
+    }
+  ]
+}

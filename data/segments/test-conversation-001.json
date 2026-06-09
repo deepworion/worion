@@ -1,0 +1,63 @@
+{
+  "conversationId": "test-conversation-001",
+  "updatedAt": 1780757801472,
+  "count": 4,
+  "segments": [
+    {
+      "id": "test-conversation-001::seg-0",
+      "conversationId": "test-conversation-001",
+      "userId": "test-user",
+      "sourceId": "test-markdown",
+      "index": 0,
+      "title": "Teste de Segmentação do Universal Writer Este é um documento de teste para validar o sistema de ingestão e segmentação.",
+      "content": "# Teste de Segmentação do Universal Writer Este é um documento de teste para validar o sistema de ingestão e segmentação.",
+      "summary": null,
+      "keywords": [],
+      "tokenCount": 28,
+      "format": "markdown",
+      "updatedAt": 1780757801470
+    },
+    {
+      "id": "test-conversation-001::seg-1",
+      "conversationId": "test-conversation-001",
+      "userId": "test-user",
+      "sourceId": "test-markdown",
+      "index": 1,
+      "title": "Primeira Seção: Introdução Conteúdo da primeira seção com texto suficiente para atingir o mínimo de tokens necessários para criar um chunk válido. Vamos adicionar mais contexto aqui para garantir que ultrapassa o limite mínimo de segmentação. Este parágrafo simula uma conversa ou documento real com informações relevantes sobre o Worion Desktop. O sistema deve ser capaz de identificar este heading como divisor de seção e criar segmentos coerentes baseados na estrutura markdown. Cada segmento preserva o contexto semântico da seção original.",
+      "content": "## Primeira Seção: Introdução Conteúdo da primeira seção com texto suficiente para atingir o mínimo de tokens necessários para criar um chunk válido. Vamos adicionar mais contexto aqui para garantir que ultrapassa o limite mínimo de segmentação. Este parágrafo simula uma conversa ou documento real com informações relevantes sobre o Worion Desktop. O sistema deve ser capaz de identificar este heading como divisor de seção e criar segmentos coerentes baseados na estrutura markdown. Cada segmento preserva o contexto semântico da seção original.",
+      "summary": null,
+      "keywords": [],
+      "tokenCount": 107,
+      "format": "markdown",
+      "updatedAt": 1780757801471
+    },
+    {
+      "id": "test-conversation-001::seg-2",
+      "conversationId": "test-conversation-001",
+      "userId": "test-user",
+      "sourceId": "test-markdown",
+      "index": 2,
+      "title": "Segunda Seção: Funcionamento Mais conteúdo aqui para a segunda seção. Este texto também precisa ter comprimento suficiente para formar um segmento completo no processo de chunking. Vamos discutir como o Writer Universal processa diferentes formatos de arquivo. O sistema suporta MD, TXT, JSON, PDF, MP3 e MP4. Para áudio e vídeo, há um placeholder para integração futura com Whisper. O processamento é offline-first, salvando localmente e replicando para Supabase quando online.",
+      "content": "## Segunda Seção: Funcionamento Mais conteúdo aqui para a segunda seção. Este texto também precisa ter comprimento suficiente para formar um segmento completo no processo de chunking. Vamos discutir como o Writer Universal processa diferentes formatos de arquivo. O sistema suporta MD, TXT, JSON, PDF, MP3 e MP4. Para áudio e vídeo, há um placeholder para integração futura com Whisper. O processamento é offline-first, salvando localmente e replicando para Supabase quando online.",
+      "summary": null,
+      "keywords": [],
+      "tokenCount": 94,
+      "format": "markdown",
+      "updatedAt": 1780757801471
+    },
+    {
+      "id": "test-conversation-001::seg-3",
+      "conversationId": "test-conversation-001",
+      "userId": "test-user",
+      "sourceId": "test-markdown",
+      "index": 3,
+      "title": "Terceira Seção: Arquitetura A arquitetura é baseada em três camadas principais: extração de texto, chunking semântico e persistência dual (local + cloud). Cada segmento recebe um título derivado do primeiro heading ou das primeiras palavras. Os chunks respeitam fronteiras de seções markdown (## headings) e aplicam janelas de aproximadamente 500 tokens com overlap de 50 tokens. Isso garante que contexto importante não seja perdido nas bordas dos segmentos.",
+      "content": "## Terceira Seção: Arquitetura A arquitetura é baseada em três camadas principais: extração de texto, chunking semântico e persistência dual (local + cloud). Cada segmento recebe um título derivado do primeiro heading ou das primeiras palavras. Os chunks respeitam fronteiras de seções markdown (## headings) e aplicam janelas de aproximadamente 500 tokens com overlap de 50 tokens. Isso garante que contexto importante não seja perdido nas bordas dos segmentos.",
+      "summary": null,
+      "keywords": [],
+      "tokenCount": 90,
+      "format": "markdown",
+      "updatedAt": 1780757801471
+    }
+  ]
+}

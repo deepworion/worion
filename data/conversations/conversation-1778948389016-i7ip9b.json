@@ -1,0 +1,54 @@
+{
+  "id": "conversation-1778948389016-i7ip9b",
+  "title": "resuma",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T16:19:49.001Z",
+  "updatedAt": "2026-05-16T16:20:26.111Z",
+  "lastOpenedAt": "2026-05-16T16:19:49.016Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "resuma",
+      "createdAt": "2026-05-16T16:19:49.006Z",
+      "attachments": [
+        {
+          "id": "attachment-1778948381741-t48mgp",
+          "data": null,
+          "kind": "text",
+          "name": "Curso tcc Cibely.docx",
+          "size": 17351,
+          "text": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "extractedText": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "resuma",
+      "createdAt": "2026-05-16T16:20:21.909Z",
+      "attachments": [
+        {
+          "id": "attachment-1778948411998-zm81h1",
+          "name": "Curso tcc Cibely.docx",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 17351,
+          "kind": "text",
+          "data": null,
+          "text": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]",
+          "extractedText": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que houve um problema ao tentar extrair o conteúdo do arquivo \"Curso tcc Cibely.docx\". Não consegui acessar o texto contido nele. \n\nPor favor, verifique se o arquivo está correto ou tente enviar novamente.",
+      "createdAt": "2026-05-16T16:20:26.105Z"
+    }
+  ]
+}

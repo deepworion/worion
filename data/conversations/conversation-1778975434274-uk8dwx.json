@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778975434274-uk8dwx",
+  "title": "Faz um pdf sobre a história de Bashar, os principios e como eles encai",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T23:50:33.097Z",
+  "updatedAt": "2026-05-16T23:51:19.014Z",
+  "lastOpenedAt": "2026-05-16T23:50:34.274Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Faz um pdf sobre a história de Bashar, os principios e como eles encaixam com o hermetismo.",
+      "createdAt": "2026-05-16T23:50:33.979Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "### História de Bashar\n\nBashar é uma entidade canalizada por Darryl Anka desde a década de 1980. Ele é considerado um ser extraterrestre que oferece ensinamentos sobre a vida, a realidade e a espiritualidade. A história de Bashar é marcada pela sua comunicação com humanos, onde ele compartilha uma perspectiva única sobre a existência e a consciência.\n\n- **Origem**: Bashar é descrito como um ser de uma civilização avançada que vive em um futuro distante. Ele se comunica através de Anka em um estado de transe, respondendo perguntas e compartilhando ensinamentos sobre a natureza da realidade.\n- **Canalização**: Desde os anos 80, Anka começou a canalizar Bashar, trazendo à tona suas mensagens sobre a criação da realidade e a importância da vibração pessoal.\n\n### Princípios de Bashar\n\nOs ensinamentos de Bashar incluem vários princípios fundamentais que regem a existência e a criação da realidade. Alguns dos principais princípios são:\n\n1. **Você Existe**: A afirmação de que a existência é a base de tudo.\n2. **A Lei da Atração**: A ideia de que aquilo que você vibra é o que você atrai para sua vida.\n3. **Realidades Paralelas**: Bashar ensina que existem infinitas realidades onde todas as possibilidades existem simultaneamente. Mudanças nas crenças e vibrações permitem que as pessoas \"sintonizem\" em diferentes versões da realidade.\n4. **Entusiasmo**: A importância de agir de acordo com o que entusiasma, pois isso alinha os indivíduos com seu verdadeiro propósito.\n\n### Bashar e Hermetismo\n\nO hermetismo é uma tradição filosófica e espiritual que explora a relação entre o humano e o divino, e muitos dos princípios de Bashar se alinham com ideias herméticas. \n\n- **Princípios Herméticos**: Assim como o hermetismo, que ensina sobre a correspondência, vibração e causa e efeito, Bashar enfatiza que a realidade é criada através da vibração e das crenças pessoais.\n- **Criação da Realidade**: Ambos os sistemas filosóficos argumentam que os indivíduos têm o poder de moldar suas realidades através de suas intenções e ações.\n\n### Conclusão\n\nOs ensinamentos de Bashar e os princípios herméticos compartilham uma visão comum sobre a natureza da realidade e a capacidade humana de moldar suas experiências. Bashar, através de Darryl Anka, oferece uma perspectiva moderna que ressoa com antigas tradições de sabedoria.\n\n---\n\nAgora vou gerar um PDF com essas informações.",
+      "createdAt": "2026-05-16T23:50:48.840Z"
+    },
+    {
+      "role": "user",
+      "content": "cadê o pdf?",
+      "createdAt": "2026-05-16T23:51:09.136Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O PDF sobre a história de Bashar e seus princípios foi gerado com sucesso. Você pode acessá-lo através do link abaixo:\n\n[Abra o PDF - história_de_bashar.pdf](file://C:/Users/User/worion-desktop/artifacts/pdf/historia_de_bashar.pdf)",
+      "createdAt": "2026-05-16T23:51:18.963Z"
+    }
+  ]
+}

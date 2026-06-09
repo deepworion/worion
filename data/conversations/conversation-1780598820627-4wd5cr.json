@@ -1,0 +1,74 @@
+{
+  "id": "conversation-1780598820627-4wd5cr",
+  "title": "boa tarde",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde",
+      "createdAt": "2026-06-04T18:47:00.625Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780598823698-6vft3h",
+      "role": "assistant",
+      "model": "gpt-4o-mini",
+      "status": "completed",
+      "content": "Boa tarde! Como você está hoje? Tem algo em mente que gostaria de compartilhar?",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T18:47:03.698Z",
+      "updatedAt": "2026-06-04T18:47:12.941Z",
+      "created_at": "2026-06-04T18:47:03.698Z",
+      "updated_at": "2026-06-04T18:47:12.941Z",
+      "completedAt": "2026-06-04T18:47:12.940Z",
+      "conversationId": "conversation-1780598820627-4wd5cr",
+      "conversation_id": "conversation-1780598820627-4wd5cr"
+    },
+    {
+      "role": "user",
+      "content": "precisamos melhorar suas introduções...haha",
+      "createdAt": "2026-06-04T18:47:38.334Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780598864197-7hbs50",
+      "role": "assistant",
+      "model": "gpt-4o-mini",
+      "status": "completed",
+      "content": "Entendi! Vamos trabalhar nisso. O que você gostaria de ver nas introduções? Algum estilo ou abordagem específica em mente?",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T18:47:44.197Z",
+      "updatedAt": "2026-06-04T18:47:48.254Z",
+      "created_at": "2026-06-04T18:47:44.197Z",
+      "updated_at": "2026-06-04T18:47:48.254Z",
+      "completedAt": "2026-06-04T18:47:48.254Z",
+      "conversationId": "conversation-1780598820627-4wd5cr",
+      "conversation_id": "conversation-1780598820627-4wd5cr"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-06-04T18:47:00.437Z",
+  "projectId": null,
+  "updatedAt": "2026-06-04T18:47:50.267Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780598820627-4wd5cr",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-04T18:47:00.437Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-04T19:00:45.495Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-04T19:00:45.495Z",
+      "previousActivityAt": "2026-06-04T18:47:50.267Z"
+    }
+  ]
+}

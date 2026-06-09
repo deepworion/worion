@@ -1,0 +1,51 @@
+{
+  "conversationId": "conversation-1779490466997-j89nd1",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise sobre brasilia de minas",
+      "createdAt": "2026-05-22T22:54:26.996Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "**Brasília de Minas (MG)**  \nCódigo IBGE: 3108602 | Gentílico: brasilminense  \nPrefeito atual: Marcus Vinicius Ferreira Carvalho (2025)\n\n## População\n- Total no último censo (2022): **32.025 pessoas**\n- Estimativa para 2025: **33.262 pessoas**\n- Densidade demográfica: 22,88 hab/km²  \n- Percentual da população de 0 a 6 anos: **8,80%** (2.818 crianças)\n\n## Área\n- 1.399,484 km² (área territorial 2025)\n\n## Educação\n- Escolarização de 6 a 14 anos: **99,35%** (Censo 2010)\n\n## Saúde\n- Mortalidade infantil (2023): **8,53 óbitos por mil nascidos vivos**\n- Cobertura da atenção primária à saúde e cobertura vacinal infantil – dados disponíveis no painel Primeira Infância Primeiro (indicadores municipais)\n\n## Economia\n- PIB per capita (2023): **R$ 15.947,78**\n- Receitas brutas realizadas (2024): **R$ 184,37 milhões**\n- Despesas brutas empenhadas (2024): **R$ 172,39 milhões**\n\n## Desenvolvimento Humano\n- IDHM (2010): **0,656** (faixa de médio desenvolvimento)\n\n## Panorama rápido\nMunicípio de pequeno porte no norte de Minas, com economia modesta (PIB per capita abaixo da média nacional), serviços públicos atendendo quase a totalidade das crianças em idade escolar e mortalidade infantil relativamente baixa para o estado. A população cresceu cerca de 1,2 mil habitantes entre o censo de 2022 e a estimativa de 2025.\n\n*Fontes*:  \n- [IBGE – Cidades e Estados: Brasília de Minas](https://www.ibge.gov.br/cidades-e-estados/mg/brasilia-de-minas.html)  \n- [Primeira Infância Primeiro – Indicadores municipais](https://primeirainfanciaprimeiro.fmcsv.org.br/municipios/brasilia-de-minas-mg/)  \n- [IBGE – Portal Brasileiro de Dados](https://www.ibge.gov.br/brasil/mg/brasilia-de-minas)",
+      "createdAt": "2026-05-22T22:55:01.223Z"
+    },
+    {
+      "role": "user",
+      "content": "quem foram os prefeitos?",
+      "createdAt": "2026-05-22T22:56:06.652Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Pesquisando... preciso buscar fontes com a lista completa de prefeitos de Brasília de Minas.\n\n<brave_search query=\"prefeitos Brasília de Minas lista histórica\" count=5>\n<brave_search query=\"ex-prefeitos Brasília de Minas MG\" count=5>\n<brave_search query=\"Brasília de Minas todos os prefeitos eleitos\" count=5>",
+      "createdAt": "2026-05-22T22:56:16.643Z"
+    },
+    {
+      "role": "user",
+      "content": "e?",
+      "createdAt": "2026-05-22T22:56:44.125Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "<tool_calls>\n<invoke name=\"brave_search\">\n<parameter name=\"query\" string=\"true\">prefeitos de Brasília de Minas MG lista histórica</parameter>\n<parameter name=\"count\" integer=\"true\">5</parameter>\n</invoke>\n<invoke name=\"brave_search\">\n<parameter name=\"query\" string=\"true\">ex-prefeitos Brasília de Minas MG</parameter>\n<parameter name=\"count\" integer=\"true\">5</parameter>\n</invoke>\n<invoke name=\"brave_search\">\n<parameter name=\"query\" string=\"true\">\"prefeito\" \"Brasília de Minas\" história</parameter>\n<parameter name=\"count\" integer=\"true\">5</parameter>\n</invoke>\n</tool_calls>",
+      "createdAt": "2026-05-22T22:56:59.681Z"
+    },
+    {
+      "role": "user",
+      "content": "cade a lista?",
+      "createdAt": "2026-05-22T22:57:11.257Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vamos direto aos dados. Pesquisando especificamente sobre os prefeitos de Brasília de Minas.\n\n<brave_search query=\"Brasília de Minas MG prefeito\" count=5>\n<brave_search query=\"ex-prefeitos Brasília de Minas história do município\" count=5>\n<brave_search query=\"\"prefeito\" \"Brasília de Minas\" história política\" count=5>",
+      "createdAt": "2026-05-22T22:57:52.464Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:54:26.507Z"
+}

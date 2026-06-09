@@ -1,0 +1,59 @@
+{
+  "id": "conversation-1779047013967-6nhyq9",
+  "title": "hoje eu estou cansado...",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T19:43:32.534Z",
+  "updatedAt": "2026-05-17T19:46:40.484Z",
+  "lastOpenedAt": "2026-05-17T19:43:33.968Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "hoje eu estou cansado...",
+      "createdAt": "2026-05-17T19:43:33.743Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Cansado como? O que aconteceu hoje que te deixou assim?",
+      "createdAt": "2026-05-17T19:43:38.844Z"
+    },
+    {
+      "role": "user",
+      "content": "trabalhei muito",
+      "createdAt": "2026-05-17T19:46:06.185Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo. O trabalho pode ser exaustivo. Você conseguiu fazer uma pausa ou relaxar um pouco durante o dia?",
+      "createdAt": "2026-05-17T19:46:12.853Z"
+    },
+    {
+      "role": "user",
+      "content": "nãoo",
+      "createdAt": "2026-05-17T19:46:20.087Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que foi um dia bem intenso. Que tal tirar um tempo agora para fazer algo que você goste ou que ajude a relaxar? Pode ser algo simples, como ouvir música ou dar uma caminhada. O que você acha?",
+      "createdAt": "2026-05-17T19:46:23.645Z"
+    },
+    {
+      "role": "user",
+      "content": "por exemplo?",
+      "createdAt": "2026-05-17T19:46:36.292Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Aqui vão algumas sugestões simples para relaxar:\n\n- **Ouvir música**: Escolha suas músicas favoritas ou uma playlist relaxante.\n- **Ler um livro**: Se você gosta de ler, um bom livro pode ser uma ótima fuga.\n- **Assistir a um filme ou série**: Algo leve e divertido pode ajudar a distrair a mente.\n- **Fazer uma caminhada**: Um pouco de ar fresco pode fazer maravilhas.\n- **Praticar meditação ou respiração**: Algumas respirações profundas podem ajudar a aliviar a tensão.\n\nAlguma dessas opções parece interessante para você?",
+      "createdAt": "2026-05-17T19:46:40.453Z"
+    }
+  ]
+}

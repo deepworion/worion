@@ -1,0 +1,61 @@
+{
+  "id": "conversation-1779575109439-3uoiuz",
+  "title": "Para que o Worion cumpra melhor seu papel em perguntas ambíguas ",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Para que o Worion cumpra melhor seu papel em perguntas ambíguas ou com termos pouco conhecidos, a busca não deve simplesmente varrer a web; ela precisa distinguir entre tópicos bem definidos e nomes ou siglas obscuros, e, quando necessário, retornar ao usuário para pedir contexto. As melhorias que propomos são:\n\nDetecção de termos desconhecidos: Após a divisão da pergunta em tópicos, faça uma busca preliminar para cada nome ou termo. Se o brave_search retornar poucos ou nenhum resultado relacionados ao próprio termo, marque-o como “desconhecido”. Em vez de continuar a pesquisa, responda algo como: “Não encontrei informações confiáveis sobre Jan Val Ellam – você pode fornecer mais contexto ou confirmar a grafia?”. Essa abordagem evita que o modelo responda de maneira imaginativa ou errada quando não há material disponível.\nHeurística para siglas e termos técnicos: Crie uma regra para detectar perguntas do tipo “O que é [sigla ou termo]?” e tratá-las como solicitações de definição. Se a sigla não for imediatamente reconhecida, pergunte: “Você se refere a um curso de Direito (LL.M.) ou a modelos de linguagem (“Large Language Model”)?”. Isso permite esclarecer antes de buscar fontes específicas.\n\nMensagens didáticas: Para nomes e conceitos conhecidos, uma resposta deve combinar explicação e síntese de fontes. Por exemplo, se alguém pergunta “O que é Java LLM?”, uma resposta adequada seria:\n\n“‘LLM’ é a sigla de ‘Large Language Model’, um tipo de modelo de inteligência artificial usado para compreender e gerar texto. Quando se fala em ‘Java LLM’, costuma-se referir à integração desses modelos em aplicações Java ou a bibliotecas que permitem usar modelos como GPT em código Java. Se você tinha outro significado em mente (como LL.M., que é o título de mestre em Direito), por favor me avise.”\n\nEssa explicação inicial elimina a dúvida sem recorrer imediatamente a uma busca extensa e dá ao usuário a chance de confirmar o contexto.\n\nManter a decomposição de tópicos: Quando a pergunta contém vários nomes ou assuntos, continue separando-os para pesquisar individualmente, mas aplique a verificação de cobertura para cada item antes de tentar uma síntese. Se um deles retornar “desconhecido”, sinalize a lacuna em vez de forçar uma comparação.\n\nCom essas melhorias, o Worion não só responderá perguntas com mais precisão, como também reconhecerá quando não há material suficiente ou quando um termo pode significar coisas diferentes, pedindo esclarecimentos antes de prosseguir.",
+      "createdAt": "2026-05-23T22:25:09.439Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendi, Glaydson. As melhorias fazem sentido e reforçam o que a política de grounding já exige, mas com mais precisão na detecção de termos obscuros e ambiguidade. Vou incorporar esses passos no meu fluxo:\n\n- **Sondagem por termo:** quando a pergunta trouxer nomes ou siglas incomuns, farei uma busca preliminar antes de qualquer síntese. Se o retorno for nulo ou irrelevante, sinalizarei o termo como desconhecido e pedirei confirmação de grafia ou contexto, em vez de continuar cegamente.\n- **Heurística de definição:** para perguntas no formato “O que é [sigla]?”, tratarei como pedido de definição e, se houver mais de uma interpretação (ex.: LLM), vou expor as possibilidades e deixar você afunilar antes de buscar fontes.\n- **Resposta didática para conceito reconhecido:** combinarei explicação direta + síntese de fontes, já com a deixa para correção de contexto.\n- **Decomposição com verificação:** ao separar tópicos, cada item continua sendo pesquisado individualmente. Se algum não tiver cobertura, a lacuna será explicitada em vez de misturar com os outros.\n\nAssim a pesquisa fica mais cirúrgica e menos exposta a invencionice. Pronto para testar.",
+      "createdAt": "2026-05-23T22:25:37.245Z"
+    },
+    {
+      "role": "user",
+      "content": "como seria o prompt para eu melhorar isso em você?",
+      "createdAt": "2026-05-23T22:26:13.024Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, sua pergunta é sobre qual prompt você usaria para incorporar essas melhorias no meu comportamento. Como não há material externo coletado (não foi feita pesquisa), respondo com base na conversa que tivemos.\n\nUm prompt direto que você pode usar, seja numa instrução permanente ou num agente, seria:\n\n---\n\n**Prompt sugerido:**\n\n> Ao receber perguntas com termos incomuns, siglas ou nomes pouco conhecidos, faça uma busca preliminar para cada termo antes de qualquer síntese. Se o brave_search retornar poucos ou nenhum resultado relevante, marque o termo como \"desconhecido\" e peça confirmação de grafia ou contexto. Para perguntas do tipo \"O que é [sigla]?\", trate como pedido de definição e, se houver ambiguidade (ex.: LLM), expor as interpretações possíveis e perguntar qual é a correta antes de pesquisar. Ao responder sobre conceitos conhecidos, combine explicação didática com síntese de fontes e inclua uma deixa para correção de contexto. Ao decompor perguntas com múltiplos tópicos, pesquise cada um separadamente e explicite lacunas quando algum termo não tiver cobertura, em vez de forçar comparação.\n\n---\n\nSe quiser algo mais granular, posso transformar cada ponto numa regra numerada para o agente.",
+      "createdAt": "2026-05-23T22:26:37.293Z"
+    },
+    {
+      "role": "user",
+      "content": "eu quero um prompt para modificar seu código.",
+      "createdAt": "2026-05-23T22:27:14.578Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendi melhor agora, Glaydson. Você quer um **prompt para usar comigo** que me faça **modificar o código-fonte do Worion**, aplicando essas melhorias de busca.\n\nSó preciso de uma confirmação: você está falando de modificar arquivos no repositório local (`C:\\Users\\User\\worion-desktop`), certo? Se sim, me diga qual parte do código você quer alterar — por exemplo, o handler de pesquisa, o módulo de `brave_search`, o fluxo de `query_processing`, ou outro componente específico.\n\nCom isso em mãos, preparo um prompt que:\n\n1. Define exatamente os arquivos a alterar.\n2. Especifica o comportamento desejado (detecção de termos desconhecidos, heurística de siglas, decomposição com verificação).\n3. Pede para eu ler o código atual, propor alterações, e salvar os arquivos modificados.\n\nQuer que eu busque os arquivos relevantes primeiro, ou você já sabe quais são?",
+      "createdAt": "2026-05-23T22:27:29.747Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-23T22:25:09.227Z",
+  "projectId": null,
+  "updatedAt": "2026-05-23T22:27:41.724Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779575109439-3uoiuz",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-23T22:25:09.227Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T17:54:22.857Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:54:22.857Z",
+      "previousActivityAt": "2026-05-23T22:27:41.724Z"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1779666352331-thi8go",
+  "conversationId": "conversation-1779666352331-thi8go",
+  "title": "oi",
+  "agentId": "adhd-guardian",
+  "agentName": "ADHD Guardian",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "oi",
+      "createdAt": "2026-05-24T23:45:52.329Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi, Glaydson! Como você está?",
+      "createdAt": "2026-05-24T23:45:54.368Z"
+    },
+    {
+      "role": "user",
+      "content": "reolvendo pepino seu",
+      "createdAt": "2026-05-24T23:46:28.605Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "ou de um contexto específico, é só avisar!",
+      "createdAt": "2026-05-24T23:46:38.379Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T23:45:13.539Z",
+  "createdAt": "2026-05-24T23:45:13.539Z",
+  "updatedAt": "2026-05-24T23:46:41.228Z"
+}

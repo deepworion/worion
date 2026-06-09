@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780701809601-zw8l06",
+  "conversationId": "conversation-1780701809601-zw8l06",
+  "title": "TCC & Escrita Acadêmica",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:23:29.598Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780701809613-sfvxho",
+      "conversation_id": "conversation-1780701809601-zw8l06",
+      "conversationId": "conversation-1780701809601-zw8l06",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T23:23:29.613Z",
+      "createdAt": "2026-06-05T23:23:29.613Z",
+      "updated_at": "2026-06-05T23:23:30.427Z",
+      "updatedAt": "2026-06-05T23:23:30.427Z",
+      "completedAt": "2026-06-05T23:23:30.425Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "O que tem pra hoje?]",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:23:42.616Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780701822647-i3xdlk",
+      "conversation_id": "conversation-1780701809601-zw8l06",
+      "conversationId": "conversation-1780701809601-zw8l06",
+      "role": "assistant",
+      "content": "Hoje, pra você, tem uma coisa só que importa: **voltar o dia pro trilho com o mínimo de atrito** (porque agora já é noite e TDAH costuma cobrar “tudo ou nada”).\n\nMe diz só uma coisa: **qual é a única tarefa que precisa andar hoje** (mesmo que seja pequena)?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:23:42.647Z",
+      "createdAt": "2026-06-05T23:23:42.647Z",
+      "updated_at": "2026-06-05T23:24:11.307Z",
+      "updatedAt": "2026-06-05T23:24:11.307Z",
+      "completedAt": "2026-06-05T23:24:11.306Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T23:23:23.648Z",
+  "createdAt": "2026-06-05T23:23:23.648Z",
+  "updatedAt": "2026-06-05T23:24:14.306Z"
+}

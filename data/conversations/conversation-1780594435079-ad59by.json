@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780594435079-ad59by",
+  "conversationId": "conversation-1780594435079-ad59by",
+  "title": "oi",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "oi",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T17:33:55.078Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780594435569-yue2le",
+      "conversation_id": "conversation-1780594435079-ad59by",
+      "conversationId": "conversation-1780594435079-ad59by",
+      "role": "assistant",
+      "content": "Oi, Glaydson. Chegou com o modo direto. Quer só presença ou já tem uma tarefa travada pra destravar?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T17:33:55.569Z",
+      "createdAt": "2026-06-04T17:33:55.569Z",
+      "updated_at": "2026-06-04T17:34:05.359Z",
+      "updatedAt": "2026-06-04T17:34:05.359Z",
+      "completedAt": "2026-06-04T17:34:05.359Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T17:33:53.319Z",
+  "createdAt": "2026-06-04T17:33:53.319Z",
+  "updatedAt": "2026-06-04T17:35:17.906Z"
+}

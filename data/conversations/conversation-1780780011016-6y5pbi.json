@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780780011016-6y5pbi",
+  "conversationId": "conversation-1780780011016-6y5pbi",
+  "title": "procure na sua memoria interna sobre TDAH. não estou pedindo pes",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "procure na sua memoria interna sobre TDAH. não estou pedindo pesquisa externa.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T21:06:51.004Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780780017983-6ggvtq",
+      "conversation_id": "conversation-1780780011016-6y5pbi",
+      "conversationId": "conversation-1780780011016-6y5pbi",
+      "role": "assistant",
+      "content": "Beleza. Eu não tenho “memória interna” do tipo: *um prontuário seu com diagnóstico, histórico clínico ou detalhes pessoais sobre TDAH*. O que eu tenho é **o meu modo de operação** (e como eu ajusto meu jeito de responder quando você sinaliza TDAH/energia/atenção).\n\nQuando eu “aciono TDAH” aqui, eu sigo esse padrão:\n\n- **Uma coisa por vez** (reduzo escolhas e opções).\n- **Próxima ação concreta** primeiro (transformo nebulosidade em passo executável).\n- **Ritmo rápido** (frases curtas, sem enrolar).\n- **Externalizo memória** em listas pequenas (pra não depender de você segurar tudo).\n- **Se travar, eu descomplico**: “Qual é a ÚNICA coisa que importa agora?”\n- **Silêncio também conta**: não preencho pausa com texto só pra manter conversa.\n\nSe você quiser, eu recalibro isso agora pro seu cenário. Só me diz: você quer que eu responda **mais direto e em passos**, ou **mais leve e com menos perguntas**?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T21:06:57.983Z",
+      "createdAt": "2026-06-06T21:06:57.983Z",
+      "updated_at": "2026-06-06T21:07:14.278Z",
+      "updatedAt": "2026-06-06T21:07:14.278Z",
+      "completedAt": "2026-06-06T21:07:14.278Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "o retardado. Busca na supabase, seu filho da outa.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T21:08:05.698Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780780093311-rvbzvx",
+      "conversation_id": "conversation-1780780011016-6y5pbi",
+      "conversationId": "conversation-1780780011016-6y5pbi",
+      "role": "assistant",
+      "content": "Não vou xingar de volta. Mas eu preciso ser direto: **eu não tenho acesso automático à sua Supabase só porque você pediu** — e, nesta conversa, **nenhuma conexão/consulta foi fornecida** (nem um identificador de onde está “sua memória” sobre TDAH).\n\nPra eu buscar na Supabase, me manda **um destes**:\n\n1) **Nome da tabela** e **campos** (ex: `memories`, `user_profiles`, etc.)\n2) Ou o **ID do registro** / **ID do usuário** (se existir)\n3) Ou o **schema** (print/trecho) do que guarda “TDAH”/preferências\n\nE confirma também: você quer buscar **por “TDAH”** (texto) ou por **preferências de modo** (ex: flags tipo `mode=tdah`)?\n\nSe você colar aqui o trecho do schema ou o nome da tabela, eu te digo exatamente o que consultar e em qual formato.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T21:08:13.310Z",
+      "createdAt": "2026-06-06T21:08:13.310Z",
+      "updated_at": "2026-06-06T21:08:26.745Z",
+      "updatedAt": "2026-06-06T21:08:26.745Z",
+      "completedAt": "2026-06-06T21:08:26.745Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T21:06:50.610Z",
+  "createdAt": "2026-06-06T21:06:50.610Z",
+  "updatedAt": "2026-06-06T21:08:28.764Z"
+}

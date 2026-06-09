@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779480502165-p7ojah",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Em que ano o Império Bizantino deixou de existir e qual evento militar selou esse fim? Forneça também o nome do sultão otomano que liderou a conquista.",
+      "createdAt": "2026-05-22T20:08:22.164Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "sobre o cerco ou o contexto, é só pedir.",
+      "createdAt": "2026-05-22T20:08:28.589Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T20:08:21.803Z"
+}

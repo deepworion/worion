@@ -1,0 +1,31 @@
+{
+  "id": "conversation-1778953275614-vqc0sr",
+  "title": "Boa tarde. tudo bem??",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. tudo bem??",
+      "createdAt": "2026-05-16T17:41:15.596Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde! Estou aqui e pronto para ajudar. Como posso assisti-lo hoje?",
+      "createdAt": "2026-05-16T17:41:19.794Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-16T18:26:33.113Z",
+      "previousActivityAt": "2026-05-16T17:41:15.614Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-16T17:41:14.646Z",
+  "projectId": null,
+  "updatedAt": "2026-05-16T17:41:19.813Z",
+  "lastOpenedAt": "2026-05-16T18:26:33.113Z",
+  "projectTitle": null,
+  "activeSkillId": "pensador"
+}

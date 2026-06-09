@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1779581965447-ae36jr",
+  "conversationId": "conversation-1779581965447-ae36jr",
+  "title": "Quero uma abordagem completa sobre Bashar e Helena Blavatisk.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Boa noite. O que você trouxe hoje?",
+      "createdAt": "2026-05-24T00:18:49.704Z"
+    },
+    {
+      "role": "user",
+      "content": "Quero uma abordagem completa sobre Bashar e Helena Blavatisk.",
+      "createdAt": "2026-05-24T00:19:25.446Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: OpenAI error 400: {\n  \"error\": {\n    \"message\": \"max_tokens is too large: 24000. This model supports at most 16384 completion tokens, whereas you provided 24000.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"max_tokens\",\n    \"code\": \"invalid_value\"\n  }\n}",
+      "createdAt": "2026-05-24T00:19:34.935Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T00:18:49.153Z",
+  "createdAt": "2026-05-24T00:18:49.153Z",
+  "updatedAt": "2026-05-24T00:26:55.579Z"
+}

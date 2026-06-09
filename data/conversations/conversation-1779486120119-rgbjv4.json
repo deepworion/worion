@@ -1,0 +1,29 @@
+{
+  "conversationId": "conversation-1779486120119-rgbjv4",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Me conte a história de Brasilia de Minas.",
+      "createdAt": "2026-05-22T21:42:00.119Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## De arraial de Contendas a Brasilinha\n\nA história de Brasília de Minas começa como a de tantas cidades do sertão mineiro: com um desbravador, uma capela e muita disputa.\n\n### O povoamento inicial\n\nPor volta de **1704**, Januário Cardoso fugiu de Ouro Preto com a família e se estabeleceu na região, dando início ao povoamento do que viria a ser o município. Até ali, a área pertencia à Freguesia de Morrinhos, a mais antiga da margem do rio São Francisco.\n\nO arraial só começou a ganhar corpo quase 130 anos depois. Em **1832**, Maria de Almeida doou à Sant’Ana as terras necessárias para a criação da Paróquia — e o nome que grudou no lugar veio justamente das **desavenças sobre onde erguer a igreja**: Santana de Contendas.\n\n### De Santana de Contendas a Brasília\n\nA trajetória administrativa do município é uma sucessão de elevações, desmembramentos e trocas de nome:\n\n- **1890** – O arraial vira vila: Santana de Contendas.\n- **1901** – Passa a se chamar Vila Brasília.\n- **1923** – O nome encurta para Brasília.\n- **1925** – É elevada à condição de cidade.\n\nO clima ameno e a fertilidade da terra atraíram agricultores e pecuaristas, e o município foi se expandindo, incorporando distritos como Campo Redondo, São João da Ponte, Santo Antônio da Boa Vista, Ubaí e Ibiracatu.\n\n### A doação do nome e o \"de Minas\"\n\nQuando o presidente **Juscelino Kubitschek** decidiu construir a nova capital federal no Planalto Central, a cidade de Brasília — a primeira do país com esse nome — entrou em cena. Num acordo político entre JK e o então prefeito **Dr. Cassiano** (que diversos documentos da época registram), o município cedeu gentilmente seu nome para a futura capital.\n\nA contrapartida, registrada em documento assinado pelo presidente e por **Oscar Niemeyer**, incluía a construção da **Estrada da Integração**, que ligaria Brasília de Minas à nova Brasília. A promessa nunca se cumpriu.\n\nPara não abrir mão totalmente da identidade, em **1962** a Lei 2694 acrescentou o “de Minas” — e assim nasceu oficialmente **Brasília de Minas**, que os locais carinhosamente apelidaram de **Brasilinha**.\n\n### Desmembramentos recentes\n\nNas décadas seguintes, o território original foi sendo recortado para formar novos municípios:\n\n- **1943** – São João da Ponte, Campo Redondo, Ibiracatu e Santo Antônio da Boa Vista se separam para criar o município de São João da Ponte.\n- **1962** – Ubaí vira município independente, enquanto são criados e anexados os distritos de Angico de Minas, Campo Azul e Luislândia.\n- **1995** – Campo Azul e Luislândia são emancipados; Japonvar e Nova Minda também se separam para formar o município de Japonvar.\n\nHoje Brasília de Minas é um município de **1.394,20 km²** e cerca de **3.714 habitantes** (IBGE 2022), distribuídos entre a sede e os distritos de **Angicos de Minas, Fernão Dias, Retiro de Santo Antônio, Vargem Grande do Bom Jesus e Vila de Fátima**.\n\n---\n\n**Fontes consultadas:**\n- [História – Prefeitura de Brasília de Minas](https://brasiliademinas.mg.gov.br/municipio/historia/)\n- [História de Brasília de Minas – Projeto REdescobrindo os Vales](https://redescobrindoosvales.tur.br/norte/microrregiao-de-montes-claros/brasilia-de-minas/historia.php)",
+      "createdAt": "2026-05-22T21:42:48.090Z"
+    },
+    {
+      "role": "user",
+      "content": "Quem foram os prefeitos e o tempo de mandato, curiosidades, etc..",
+      "createdAt": "2026-05-22T21:43:30.182Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "<｜｜DSML｜｜tool_calls>\n<｜｜DSML｜｜invoke name=\"brave_search\">\n<｜｜DSML｜｜parameter name=\"query\" string=\"true\">prefeitos de Brasília de Minas</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"brave_search\">\n<｜｜DSML｜｜parameter name=\"query\" string=\"true\">história prefeitura Brasília de Minas lista de prefeitos</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"brave_search\">\n<｜｜DSML｜｜parameter name=\"query\" string=\"true\">curiosidades Brasília de Minas</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n</｜｜DSML｜｜tool_calls>",
+      "createdAt": "2026-05-22T21:43:48.952Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T21:41:59.752Z"
+}

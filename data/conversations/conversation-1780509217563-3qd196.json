@@ -1,0 +1,45 @@
+{
+  "id": "conversation-1780509217563-3qd196",
+  "title": "Boa tarde, como está indo?",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde, como está indo?",
+      "createdAt": "2026-06-03T17:53:37.561Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson. Estou aqui, pronto para a conversa. O que você gostaria de discutir hoje?",
+      "createdAt": "2026-06-03T17:53:42.999Z"
+    },
+    {
+      "role": "user",
+      "content": "Estou aqui, pronto para a conversa. Que conversa?",
+      "createdAt": "2026-06-03T17:54:25.130Z",
+      "attachments": []
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-06-03T17:53:37.358Z",
+  "projectId": null,
+  "updatedAt": "2026-06-03T17:54:32.303Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780509217563-3qd196",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-03T17:53:37.358Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-03T18:24:56.683Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-03T18:24:56.683Z",
+      "previousActivityAt": "2026-06-03T17:54:32.303Z"
+    }
+  ]
+}

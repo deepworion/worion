@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780707390538-qdw1a3",
+  "conversationId": "conversation-1780707390538-qdw1a3",
+  "title": "o que eu falei sobre gatos pretos e sorte tempos atrás,?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "o que eu falei sobre gatos pretos e sorte tempos atrás,?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:56:30.536Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780707396056-7no97q",
+      "conversation_id": "conversation-1780707390538-qdw1a3",
+      "conversationId": "conversation-1780707390538-qdw1a3",
+      "role": "assistant",
+      "content": "Não confirmado. Não encontrei evidência externa suficiente aqui na sua conversa/memória para dizer o que você falou exatamente sobre **gatos pretos e sorte** tempos atrás.\n\nSe você quiser, cola aqui o trecho (ou me diz mais ou menos quando foi) que eu te respondo com precisão.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T00:56:36.056Z",
+      "createdAt": "2026-06-06T00:56:36.056Z",
+      "updated_at": "2026-06-06T00:56:41.360Z",
+      "updatedAt": "2026-06-06T00:56:41.360Z",
+      "completedAt": "2026-06-06T00:56:41.360Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T00:56:30.226Z",
+  "createdAt": "2026-06-06T00:56:30.226Z",
+  "updatedAt": "2026-06-06T00:56:43.377Z"
+}

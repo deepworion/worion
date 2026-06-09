@@ -1,0 +1,81 @@
+{
+  "id": "memory-1780702355018-ddago3",
+  "conversationId": "memory-1780702355018-ddago3",
+  "title": "Espiritualidade & Filosofia",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite[",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:32:35.679Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780702355695-osdum6",
+      "conversation_id": "memory-1780702355018-ddago3",
+      "conversationId": "memory-1780702355018-ddago3",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T23:32:35.695Z",
+      "createdAt": "2026-06-05T23:32:35.695Z",
+      "updated_at": "2026-06-05T23:32:35.695Z",
+      "updatedAt": "2026-06-05T23:32:35.695Z"
+    },
+    {
+      "id": "message-1780702358669-j339tl",
+      "conversation_id": "memory-1780702355018-ddago3",
+      "conversationId": "memory-1780702355018-ddago3",
+      "role": "assistant",
+      "content": "Boa noite, Glaydson.  \n\nO que você quer destravar agora: algo prático pra resolver ou uma conversa pra colocar a cabeça no lugar?",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T23:32:38.669Z",
+      "createdAt": "2026-06-05T23:32:38.669Z",
+      "updated_at": "2026-06-05T23:32:40.752Z",
+      "updatedAt": "2026-06-05T23:32:40.752Z",
+      "completedAt": "2026-06-05T23:32:40.750Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "quais memoria você tem de mim?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:32:58.797Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780702378817-7k97bz",
+      "conversation_id": "memory-1780702355018-ddago3",
+      "conversationId": "memory-1780702355018-ddago3",
+      "role": "assistant",
+      "content": "Não confirmado. Não encontrei evidência externa suficiente para afirmar com segurança quais “memórias” eu tenho sobre você.\n\nO que eu posso dizer com certeza, sem inventar: nesta conversa eu só tenho o seu **nome (Glaydson)** e que você está usando este espaço com foco em pensamento/execução.\n\nSe você quiser, eu posso listar **apenas** o que aparece explicitamente no histórico que você já mandou aqui (ou em anexos), mas pra “memória” do sistema eu preciso que você me diga onde ela está registrada (ex.: Notion/Supabase) ou autorize que eu consulte essas fontes.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:32:58.817Z",
+      "createdAt": "2026-06-05T23:32:58.817Z",
+      "updated_at": "2026-06-05T23:33:07.698Z",
+      "updatedAt": "2026-06-05T23:33:07.698Z",
+      "completedAt": "2026-06-05T23:33:07.698Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T23:32:35.020Z",
+  "createdAt": "2026-06-05T23:32:35.020Z",
+  "updatedAt": "2026-06-05T23:33:09.711Z"
+}

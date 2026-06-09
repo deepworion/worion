@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779474119603-at67a0",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. Me responda em uma frase: qual é sua função principal dentro do Worion?",
+      "createdAt": "2026-05-22T18:21:59.603Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: callOpenAIProvider is not defined",
+      "createdAt": "2026-05-22T18:22:00.091Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T18:21:58.912Z"
+}

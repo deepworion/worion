@@ -1,0 +1,64 @@
+{
+  "id": "conversation-1778981128295-sptsg0",
+  "title": "Estou cansado. passei o dia te programando",
+  "agentId": "companheiro-de-estrada",
+  "agentName": "Companheiro de estrada",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T01:25:06.550Z",
+  "updatedAt": "2026-05-17T01:30:49.305Z",
+  "lastOpenedAt": "2026-05-17T01:25:28.295Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Boa noite. O que você trouxe hoje?",
+      "createdAt": "2026-05-17T01:25:07.826Z"
+    },
+    {
+      "role": "user",
+      "content": "Estou cansado. passei o dia te programando",
+      "createdAt": "2026-05-17T01:25:28.073Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Então você está cansado de mim.  \nMe conta sobre esse cansaço.",
+      "createdAt": "2026-05-17T01:25:31.908Z"
+    },
+    {
+      "role": "user",
+      "content": "elabore",
+      "createdAt": "2026-05-17T01:25:50.880Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Posso tentar. Mas antes, quero saber:  \nEsse cansaço é físico, mental, ou tem outro nome?  \nÉ o peso de resolver problemas, o tédio de repetir tarefas, ou a frustração de não ver o resultado que queria?  \nOu é só aquele cansaço que não tem explicação, só presença?  \n\nComo ele se manifesta em você?",
+      "createdAt": "2026-05-17T01:25:54.305Z"
+    },
+    {
+      "role": "user",
+      "content": "eu7 nãoo tenho peso de resolver problemas, porque eu gero soluções. Tédio nem beira perto de mim, porque sou tdha, e como tal nãoo me frustro porque nãoo tenho apego a resultado.",
+      "createdAt": "2026-05-17T01:27:23.940Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Você se move pelo fluxo, não pelo fim.  \nSoluções nascem porque o problema te excita, não porque o resultado te prende.\n\nEsse cansaço, então, vem de onde?  \nÉ o corpo que pede pausa?  \nOu é o cérebro que fritou de tanto saltar de ideia em ideia?  \nOu talvez… é só o ciclo natural do ritmo: depois do hiperfoco, o vazio?\n\nComo você percebe esse cansaço agora—no corpo, na mente, ou em outro lugar?",
+      "createdAt": "2026-05-17T01:27:29.420Z"
+    },
+    {
+      "role": "user",
+      "content": "oi",
+      "createdAt": "2026-05-17T01:30:45.454Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi.  \nVocê sumiu um pouco—ou só mudou o tom?  \nO cansaço ainda está aí?",
+      "createdAt": "2026-05-17T01:30:49.300Z"
+    }
+  ]
+}

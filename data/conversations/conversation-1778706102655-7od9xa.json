@@ -1,0 +1,20 @@
+{
+  "id": "conversation-1778706102655-7od9xa",
+  "title": "Vc consegue ler meus workflows do n8n para fazermos a catalogação?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T21:01:38.468Z",
+  "updatedAt": "2026-05-13T21:04:21.996Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Vc consegue ler meus workflows do n8n para fazermos a catalogação?"
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: OpenAI error: 500"
+    }
+  ]
+}

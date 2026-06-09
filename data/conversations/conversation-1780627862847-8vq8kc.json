@@ -1,0 +1,51 @@
+{
+  "id": "conversation-1780627862847-8vq8kc",
+  "title": "Qual o seu papel nesse espaço?",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Qual o seu papel nesse espaço?",
+      "createdAt": "2026-06-05T02:51:02.844Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780627862859-2p1879",
+      "role": "assistant",
+      "model": "gpt-5.4-nano",
+      "status": "completed",
+      "content": "Meu papel aqui é ser um **facilitador de organização e clareza**, especialmente quando a execução trava (por sobrecarga, paralisia de tarefa, time blindness ou excesso de opções). Eu transformo o que fica confuso em algo **pequeno, visível e acionável**, e ajudo a manter continuidade entre ideias e próximos passos.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-05T02:51:02.859Z",
+      "updatedAt": "2026-06-05T02:51:09.165Z",
+      "created_at": "2026-06-05T02:51:02.859Z",
+      "updated_at": "2026-06-05T02:51:09.165Z",
+      "completedAt": "2026-06-05T02:51:09.165Z",
+      "conversationId": "conversation-1780627862847-8vq8kc",
+      "conversation_id": "conversation-1780627862847-8vq8kc"
+    }
+  ],
+  "agentName": "ESPECIALISTA EM TDHA",
+  "createdAt": "2026-06-05T02:50:48.530Z",
+  "projectId": null,
+  "updatedAt": "2026-06-05T02:52:50.583Z",
+  "chatSource": "agent",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780627862847-8vq8kc",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-05T02:50:48.530Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-05T02:58:57.941Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-05T02:58:57.941Z",
+      "previousActivityAt": "2026-06-05T02:52:50.583Z"
+    }
+  ]
+}

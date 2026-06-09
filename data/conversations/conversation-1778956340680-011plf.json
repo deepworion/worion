@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778956340680-011plf",
+  "title": "pesquise sobre tdha tratado.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T18:32:19.962Z",
+  "updatedAt": "2026-05-16T18:32:47.823Z",
+  "lastOpenedAt": "2026-05-16T18:32:20.680Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise sobre tdha tratado.",
+      "createdAt": "2026-05-16T18:32:20.668Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "**Resultado**\nStatus: concluido\nObjetivo: pesquise sobre tdha tratado.\nTools usadas: brave_search\n\nItens encontrados:\n- TDAH em adultos: entenda tudo sobre diagnóstico e tratamento\n- TDAH: sintomas, tipos, diagnóstico e tratamento\n- Tratamento não-medicamentoso do TDAH no adulto – Dr Daniel Amado\n- TDAH - O que É, Sintomas e Tratamento | Vale Saúde\n- Entendendo os Impactos Negativos do TDAH e Benefícios do Tratamento\n\nAcoes realizadas:\n- brave_search executado\n\nPendencias reais:\n- nenhuma\n\nDetalhes:\n### Resultados da Pesquisa sobre TDAH Tratado\n\nAqui estão alguns artigos relevantes sobre o tratamento do Transtorno do Déficit de Atenção com Hiperatividade (TDAH):\n\n1. **[TDAH em adultos: entenda tudo sobre diagnóstico e tratamento](https://viverbem.unimedbh.com.br/saude-no-trabalho/tdah-em-adultos/)**\n   - O tratamento é geralmente realizado com medicamentos e terapia cognitivo-comportamental.\n\n2. **[TDAH: sintomas, tipos, diagnóstico e tratamento](https://www.conexasaude.com.br/blog/tdah/)**\n   - O TDAH pode ser gerenciado de forma eficaz com diagnóstico precoce e acompanhamento adequado.\n\n3. **[Tratamento não-medicamentoso do TDAH no adulto – Dr Daniel Amado](https://drdanielamado.com.br/tratamento-nao-medicamentoso-do-tdah-no-adulto/)**\n   - A terapia combinada é indicada, e o tratamento deve ser multidisciplinar.\n\n4. **[TDAH - O que É, Sintomas e Tratamento | Vale Saúde](https://www.valesaude.com.br/doencas-e-sintomas/tdah/)**\n   - A terapia com psicólogos é importante para desenvolver novos comportamentos e padrões de pensamento.\n\n5. **[Entendendo os Impactos Negativos do TDAH e Benefícios do Tratamento](https://www.drsamirsalim.com.br/artigos/TDAH/consequencias-e-beneficios-TDAH)**\n   - O tratamento medicamentoso pode aumentar a quantidade de trabalho escolar concluído e o tempo de atenção.\n\n6. **[TDAH: Sintomas, O que é, Características no Adulto e Tratamento](https://www.casadosaber.com.br/blog/tdah-sintomas-o-que-e-caracteristicas-no-adulto-e-tratamento)**\n   - O TDAH pode se estender à vida adulta, e o tratamento é essencial.\n\n7. **[Caso a pessoa com TDAH não for tratado o que acontece?](https://www.doctoralia.com.br/perguntas-respostas/caso-a-pessoa-com-tdah-nao-for-tratado-o-que-acontece)**\n   - Não tratar o TDAH pode levar a uma qualidade de vida instável.\n\n8. **[Os problemas do TDAH não tratado... - Núcleo Infantil - Nathália Malagone](https://www.nucleoinfantil.com.br/os-problemas-do-tdah-nao-tratado/)**\n   - Indivíduos com TDAH não tratado têm maior propensão a dificuldades escolares e no mercado de trabalho.\n\n9. **[Unimed Campinas - TDAH: O que é, significado, características e acompanhamento](https://www.unimedcampinas.com.br/blog/saude-emocional/tdah-o-que-e-significado-caracteristicas-e-acompanhamento)**\n   - A OMS reconhece a necessidade de cuidados especiais e tratamentos para o TDAH.\n\n10. **[NOVA PESQUISA INDICA QUE O TDAH NÃO TRATADO REDUZ A EXPECTATIVA DE VIDA NA IDADE ADULTA JOVEM](https://www.ufrgs.br/blogtdah/2019/06/28/nova-pesquisa-indica-que-o-tdah-nao-tratado-reduz-a-expectativa-de-vida-na-idade-adulta-jovem-o-tratamento-pode-ajudar-a-resolver-o-problema/)**\n    - O tratamento pode adicionar anos à expectativa de vida de indivíduos com TDAH.\n\nEsses artigos abordam tanto os métodos de tratamento quanto as consequências de não tratar o TDAH.",
+      "createdAt": "2026-05-16T18:32:47.770Z"
+    }
+  ]
+}

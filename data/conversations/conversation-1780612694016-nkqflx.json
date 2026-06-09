@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780612694016-nkqflx",
+  "conversationId": "conversation-1780612694016-nkqflx",
+  "title": "me fale sobre TDAH e IA",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "me fale sobre TDAH e IA",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:38:14.015Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780612700150-g13w04",
+      "conversation_id": "conversation-1780612694016-nkqflx",
+      "conversationId": "conversation-1780612694016-nkqflx",
+      "role": "assistant",
+      "content": "Modelo deste turno: deepseek-v4-pro.\nProvider: DeepSeek.\nOrigem da chamada: Worion API local.\nMotivo do roteamento: route:focused_research-reasoning.",
+      "status": "completed",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "created_at": "2026-06-04T22:38:20.150Z",
+      "createdAt": "2026-06-04T22:38:20.150Z",
+      "updated_at": "2026-06-04T22:39:06.044Z",
+      "updatedAt": "2026-06-04T22:39:06.044Z",
+      "completedAt": "2026-06-04T22:39:06.044Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T22:38:13.817Z",
+  "createdAt": "2026-06-04T22:38:13.817Z",
+  "updatedAt": "2026-06-04T22:39:08.080Z"
+}

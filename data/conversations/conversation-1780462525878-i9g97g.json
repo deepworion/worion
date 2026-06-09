@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1780462525878-i9g97g",
+  "conversationId": "conversation-1780462525878-i9g97g",
+  "title": "Vamos ver como você está hoje? de 0 a 10, qual seu grau de sati",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Vamos ver como você está hoje? de  0 a 10, qual seu grau de satisfação?",
+      "createdAt": "2026-06-03T04:55:25.876Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: DeepSeek error 400: {\"error\":{\"message\":\"The supported API model names are deepseek-v4-pro or deepseek-v4-flash, but you passed o1-mini.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+      "createdAt": "2026-06-03T04:55:34.757Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T04:55:24.998Z",
+  "createdAt": "2026-06-03T04:55:24.998Z",
+  "updatedAt": "2026-06-03T04:56:03.636Z"
+}

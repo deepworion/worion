@@ -1,0 +1,113 @@
+{
+  "id": "memory-1780704688740-l7qsz5",
+  "conversationId": "memory-1780704688740-l7qsz5",
+  "title": "Espiritualidade & Filosofia",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:14:16.478Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780704856508-ffzrdo",
+      "conversation_id": "memory-1780704688740-l7qsz5",
+      "conversationId": "memory-1780704688740-l7qsz5",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T00:14:16.508Z",
+      "createdAt": "2026-06-06T00:14:16.508Z",
+      "updated_at": "2026-06-06T00:14:17.327Z",
+      "updatedAt": "2026-06-06T00:14:17.327Z",
+      "completedAt": "2026-06-06T00:14:17.324Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Lembra qual a ultima coisa que eu disse?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:14:53.296Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780704893308-0uvrl2",
+      "conversation_id": "memory-1780704688740-l7qsz5",
+      "conversationId": "memory-1780704688740-l7qsz5",
+      "role": "assistant",
+      "content": "Você disse: **“Boa noite”**.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T00:14:53.308Z",
+      "createdAt": "2026-06-06T00:14:53.308Z",
+      "updated_at": "2026-06-06T00:14:56.622Z",
+      "updatedAt": "2026-06-06T00:14:56.622Z",
+      "completedAt": "2026-06-06T00:14:56.622Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "tem algo que você sabe sobre mim?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:15:48.449Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780704948477-s1enho",
+      "conversation_id": "memory-1780704688740-l7qsz5",
+      "conversationId": "memory-1780704688740-l7qsz5",
+      "role": "assistant",
+      "content": "Se eu ficar só no que já apareceu aqui na conversa: sei seu nome é **Glaydson** (está no perfil local) e que você começou dizendo **“Boa noite”**.\n\nAlém disso, não tenho mais nada confirmado sobre você nesta conversa específica.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T00:15:48.477Z",
+      "createdAt": "2026-06-06T00:15:48.477Z",
+      "updated_at": "2026-06-06T00:15:53.753Z",
+      "updatedAt": "2026-06-06T00:15:53.753Z",
+      "completedAt": "2026-06-06T00:15:53.753Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Busque toda memoria que você tem sobre mim.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:17:01.968Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780705021996-07ipsj",
+      "conversation_id": "memory-1780704688740-l7qsz5",
+      "conversationId": "memory-1780704688740-l7qsz5",
+      "role": "assistant",
+      "content": "Modelo deste turno: gpt-5.5-2026-04-23.\nProvider: OpenAI.\nOrigem da chamada: Worion API local.\nMotivo do roteamento: manual-ui.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "created_at": "2026-06-06T00:17:01.996Z",
+      "createdAt": "2026-06-06T00:17:01.996Z",
+      "updated_at": "2026-06-06T00:17:19.417Z",
+      "updatedAt": "2026-06-06T00:17:19.417Z",
+      "completedAt": "2026-06-06T00:17:19.417Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T00:11:28.741Z",
+  "createdAt": "2026-06-06T00:11:28.741Z",
+  "updatedAt": "2026-06-06T00:25:28.351Z"
+}

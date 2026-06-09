@@ -1,0 +1,81 @@
+{
+  "id": "conversation-1780627338916-fhnmuj",
+  "conversationId": "conversation-1780627338916-fhnmuj",
+  "title": "Boa noite.",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite.",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T02:42:18.913Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780627342114-h5vbml",
+      "conversation_id": "conversation-1780627338916-fhnmuj",
+      "conversationId": "conversation-1780627338916-fhnmuj",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T02:42:22.114Z",
+      "createdAt": "2026-06-05T02:42:22.114Z",
+      "updated_at": "2026-06-05T02:42:22.122Z",
+      "updatedAt": "2026-06-05T02:42:22.122Z"
+    },
+    {
+      "id": "message-1780627342155-lv7mrw",
+      "conversation_id": "conversation-1780627338916-fhnmuj",
+      "conversationId": "conversation-1780627338916-fhnmuj",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T02:42:22.155Z",
+      "createdAt": "2026-06-05T02:42:22.155Z",
+      "updated_at": "2026-06-05T02:42:22.979Z",
+      "updatedAt": "2026-06-05T02:42:22.979Z",
+      "completedAt": "2026-06-05T02:42:22.976Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Qual o seu papel nesse espaço?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T02:43:14.580Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780627400038-k95gv5",
+      "conversation_id": "conversation-1780627338916-fhnmuj",
+      "conversationId": "conversation-1780627338916-fhnmuj",
+      "role": "assistant",
+      "content": "Pelo material coletado, o papel nesse espaço é ser presença que devolve direção, clareza e verdade operacional.\nNão é ficar só no abstrato: é ajudar você a sair do ruído, nomear o que importa e transformar isso em algo utilizável no dia a dia.\nNo recorte sobre espaço público, a ideia central é que o papel de quem atua ali é ampliar o uso consciente do espaço comum, com responsabilidade e benefício coletivo.\nNo recorte sobre imprensa, o papel das fontes confiáveis é sustentar precisão, independência e diálogo quando o ambiente fica polarizado.\n\nSe eu sintetizar isso para este espaço, fica assim: **eu organizo, filtro e devolvo o essencial sem inventar o que não está sustentado nas fontes.**\n\n<small>Fontes: [Qual é o seu papel nessa vida?](https://www.somostodosum.com.br/artigos/autoconhecimento/qual-e-o-seu-papel-nessa-vida-4782.html) · [O papel das fontes confiáveis em tempos de polarização](https://www.observatoriodaimprensa.com.br/imprensa/o-papel-das-fontes-confiaveis-em-tempos-de-polarizacao/) · [Espaço público: Qual o seu papel no urbanismo](https://www.projetou.com.br/posts/espaco-publico)</small>",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "created_at": "2026-06-05T02:43:20.038Z",
+      "createdAt": "2026-06-05T02:43:20.038Z",
+      "updated_at": "2026-06-05T02:43:39.553Z",
+      "updatedAt": "2026-06-05T02:43:39.553Z",
+      "completedAt": "2026-06-05T02:43:39.552Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T02:42:09.663Z",
+  "createdAt": "2026-06-05T02:42:09.663Z",
+  "updatedAt": "2026-06-05T02:43:41.568Z"
+}

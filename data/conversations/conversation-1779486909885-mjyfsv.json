@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779486909885-mjyfsv",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Me fale sobre a história de Brasília de Minas",
+      "createdAt": "2026-05-22T21:55:09.885Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi, Glaydson. Antes de puxar essa história com mais fontes, deixa eu refrescar o que já tínhamos conversado, porque isso cria uma base e talvez a gente possa ir mais fundo agora.\n\nVou buscar novamente para complementar ou confirmar os dados que já passamos.\n\n<search>\n<query>história de Brasília de Minas fundação origens</query>\n<source>web</source>\n</search>",
+      "createdAt": "2026-05-22T21:55:20.029Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T21:55:09.699Z"
+}

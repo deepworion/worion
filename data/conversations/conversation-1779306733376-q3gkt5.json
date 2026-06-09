@@ -1,0 +1,33 @@
+{
+  "id": "conversation-1779306733376-q3gkt5",
+  "title": "Me fala a lista de todos os prefeitos que ocuparam o cargo em Brasilia",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "home",
+  "isAgentSession": false,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-20T19:52:13.205Z",
+  "updatedAt": "2026-05-20T19:54:23.856Z",
+  "lastOpenedAt": "2026-05-20T19:52:13.569Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Me fala a lista de todos os prefeitos que ocuparam o cargo em Brasilia de Minas - MG.",
+      "createdAt": "2026-05-20T19:52:13.376Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "As ferramentas de busca não retornaram dados suficientes para responder com precisão factual.\n\nRecomendo consultar diretamente:\n- Site oficial da prefeitura/órgão relevante\n- TRE (Tribunal Regional Eleitoral) para gestores eleitos\n- IBGE para dados demográficos e geográficos\n- Arquivo Público do estado para registros históricos\n- Wikipédia (para referência inicial)\n- Diário Oficial do município/estado\n\n_Motivo técnico: GROUNDING GATE VIOLADO: 31 de 62 nomes verificados nas fontes (50%). Mínimo: 60%._",
+      "createdAt": "2026-05-20T19:52:41.616Z"
+    }
+  ]
+}

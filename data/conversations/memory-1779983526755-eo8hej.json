@@ -1,0 +1,26 @@
+{
+  "id": "memory-1779983526755-eo8hej",
+  "conversationId": "memory-1779983526755-eo8hej",
+  "title": "Workestria / Produto e SaaS",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "# Contexto carregado: Workestria / Produto e SaaS\nSlug: workestria-produto-saas\nID: 83daff37-cdee-458e-a5ea-42b513ee10ff\nCategoria/dominio: product\nStatus: draft\nCriado em: 2026-05-27T23:27:00.236819+00:00\nAtualizado em: 2026-05-27T23:27:00.236819+00:00\n## Descricao\nContexto para Workestria, produto, SaaS, operacao, posicionamento e roadmap.\n## Regras de entrada\n- inclui Workestria\n- inclui produto SaaS\n- inclui roadmap e operacao\n## Regras de exclusao\n- exclui Worion tecnico\n- exclui espiritualidade\n- exclui saude pessoal\n## Conteudo bruto/contexto\n```md\n# Consumo do Contexto\n\n## Este contexto consome\n- inclui Workestria\n- inclui produto SaaS\n- inclui roadmap e operacao\n\n## Este contexto nao consome\n- exclui Worion tecnico\n- exclui espiritualidade\n- exclui saude pessoal\n\n## Prioridade\n- Regras explicitas do usuario vencem a heuristica padrao.\n- Se houver conflito, enviar para revisao em vez de impor classificacao.\n\n## Exemplos que entram\n- Trechos que mencionam Workestria / Produto e SaaS.\n\n## Exemplos que nao entram\n- Trechos sem relacao semantica com este contexto.\n```",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Contexto carregado: **Workestria / Produto e SaaS**.\n\n# Contexto carregado: Workestria / Produto e SaaS\nSlug: workestria-produto-saas\nID: 83daff37-cdee-458e-a5ea-42b513ee10ff\nCategoria/dominio: product\nStatus: draft\nCriado em: 2026-05-27T23:27:00.236819+00:00\nAtualizado em: 2026-05-27T23:27:00.236819+00:00\n## Descricao\nContexto para Workestria, produto, SaaS, operacao, posicionamento e roadmap.\n## Regras de entrada\n- inclui Workestria\n- inclui produto SaaS\n- inclui roadmap e operacao\n## Regras de exclusao\n- exclui Worion tecnico\n- exclui espiritualidade\n- exclui saude pessoal\n## Conteudo bruto/contexto\n```md\n# Consumo do Contexto\n\n## Este contexto consome\n- inclui Workestria\n- inclui produto SaaS\n- inclui roadmap e operacao\n\n## Este contexto nao consome\n- exclui Worion tecnico\n- exclui espiritualidade\n- exclui saude pessoal\n\n## Prioridade\n- Regras explicitas do usuario vencem a heuristica padrao.\n- Se houver conflito, enviar para revisao em vez de impor classificacao.\n\n## Exemplos que entram\n- Trechos que mencionam Workestria / Produto e SaaS.\n\n## Exemplos que nao entram\n- Trechos sem relacao semantica com este contexto.\n```\n\nPergunte, peça uma síntese ou selecione trechos para aprofundar.",
+      "createdAt": "2026-05-28T15:52:06.756Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-28T15:52:06.756Z",
+  "createdAt": "2026-05-28T15:52:06.756Z",
+  "updatedAt": "2026-05-28T15:52:11.034Z"
+}

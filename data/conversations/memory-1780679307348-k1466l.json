@@ -1,0 +1,44 @@
+{
+  "id": "memory-1780679307348-k1466l",
+  "conversationId": "memory-1780679307348-k1466l",
+  "title": "Worion",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde.",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T17:08:48.228Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780679328251-2xssdd",
+      "conversation_id": "memory-1780679307348-k1466l",
+      "conversationId": "memory-1780679307348-k1466l",
+      "role": "assistant",
+      "content": "Boa tarde. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T17:08:48.251Z",
+      "createdAt": "2026-06-05T17:08:48.251Z",
+      "updated_at": "2026-06-05T17:08:49.060Z",
+      "updatedAt": "2026-06-05T17:08:49.060Z",
+      "completedAt": "2026-06-05T17:08:49.059Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T17:08:27.349Z",
+  "createdAt": "2026-06-05T17:08:27.349Z",
+  "updatedAt": "2026-06-05T17:21:30.692Z"
+}

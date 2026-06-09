@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778861976024-a259c7",
+  "title": "pesquise na supabase quantas conversas do Claude estão salvas.",
+  "agentId": "adhd-guardian",
+  "agentName": "ADHD Guardian",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-15T16:16:04.650Z",
+  "updatedAt": "2026-05-15T16:19:41.736Z",
+  "lastOpenedAt": "2026-05-15T16:19:36.026Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise na supabase quantas conversas do Claude estão salvas.",
+      "createdAt": "2026-05-15T16:19:35.948Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não consegui acessar os dados da Supabase. Verifique se a conexão está correta ou se há permissões necessárias para realizar essa consulta.",
+      "createdAt": "2026-05-15T16:19:41.698Z"
+    }
+  ]
+}

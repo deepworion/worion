@@ -1,0 +1,44 @@
+{
+  "id": "memory-1780703244771-vd1tf9",
+  "conversationId": "memory-1780703244771-vd1tf9",
+  "title": "TCC & Escrita Acadêmica",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "O que você sabe sobre mim?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:47:25.463Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780703245475-1dizrj",
+      "conversation_id": "memory-1780703244771-vd1tf9",
+      "conversationId": "memory-1780703244771-vd1tf9",
+      "role": "assistant",
+      "content": "## O que eu sei sobre você (com base no que apareceu aqui)\n\n- **Seu nome é Glaydson**.\n- **Hoje é sexta-feira, 05/06/2026, 20:47** (contexto do ambiente).\n- **Você não deixou objetivo/projeto explícito** neste chat até agora.\n- Eu **não tenho** (ainda) detalhes pessoais seus além disso — e não vou “completar” lacunas com suposições.\n\nSe você quiser, me diz **o que você quer que eu saiba** (ex: seus projetos, preferências de trabalho, temas que você quer priorizar) e eu ajusto meu jeito de pensar com isso. Faz sentido?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:47:25.475Z",
+      "createdAt": "2026-06-05T23:47:25.475Z",
+      "updated_at": "2026-06-05T23:47:36.101Z",
+      "updatedAt": "2026-06-05T23:47:36.101Z",
+      "completedAt": "2026-06-05T23:47:36.101Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T23:47:24.772Z",
+  "createdAt": "2026-06-05T23:47:24.772Z",
+  "updatedAt": "2026-06-05T23:47:38.119Z"
+}

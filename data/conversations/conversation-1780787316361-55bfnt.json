@@ -1,0 +1,90 @@
+{
+  "id": "conversation-1780787316361-55bfnt",
+  "conversationId": "conversation-1780787316361-55bfnt",
+  "title": "pesquisa sobre a Dharma.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa sobre a Dharma.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:08:36.356Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787318951-02325g",
+      "conversation_id": "conversation-1780787316361-55bfnt",
+      "conversationId": "conversation-1780787316361-55bfnt",
+      "role": "assistant",
+      "content": "Beleza. “Dharma” é uma palavra grande — muda de sentido conforme a tradição (hinduísmo, budismo, jainismo) e até conforme o contexto (ética, lei cósmica, ensinamento, dever, religião).\n\nAntes de eu pesquisar e te trazer um resumo com fontes: **qual “Dharma” você quer?**\n1) **Dharma no hinduísmo** (varṇa/āśrama, dever, lei moral)\n2) **Dharma no budismo** (os ensinamentos; também “dhamma” como fenômenos)\n3) **Dharma no jainismo**\n4) **Dharma como “lei cósmica”/ordem universal** (visão mais geral)\n\nSe você não escolher, eu faço uma visão **geral** (1–4) e fecho com um mapa comparativo. Qual opção?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T23:08:38.951Z",
+      "createdAt": "2026-06-06T23:08:38.951Z",
+      "updated_at": "2026-06-06T23:08:50.041Z",
+      "updatedAt": "2026-06-06T23:08:50.041Z",
+      "completedAt": "2026-06-06T23:08:50.041Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "busque na memoria",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:09:10.787Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787351469-yg0g7q",
+      "conversation_id": "conversation-1780787316361-55bfnt",
+      "conversationId": "conversation-1780787316361-55bfnt",
+      "role": "assistant",
+      "content": "Encontrei 4 registros na memória sobre busque na memoria.\n\n1. memória · f3852f4a-8378-4351-b861-1899cf72d861 · chunk -\n2. memória · f3852f4a-8378-4351-b861-1899cf72d861 · chunk -\n3. memória · fcb68dbf-2f3c-4035-b753-15bbc72d46b0 · chunk -\n4. memória · 50cfb9dc-4848-4f2e-b73a-e008acb0e697 · chunk -",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T23:09:11.469Z",
+      "createdAt": "2026-06-06T23:09:11.469Z",
+      "updated_at": "2026-06-06T23:09:15.790Z",
+      "updatedAt": "2026-06-06T23:09:15.790Z",
+      "completedAt": "2026-06-06T23:09:15.787Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Busque sobre a minha gata Dharma na sua memoria.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:09:41.375Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787390461-ezp77f",
+      "conversation_id": "conversation-1780787316361-55bfnt",
+      "conversationId": "conversation-1780787316361-55bfnt",
+      "role": "assistant",
+      "content": "# Dharma\n\nA Dharma chegou pequenininha e já escolheu o posto. Ela tem esse jeito de ocupar o espaço como se já soubesse onde pertence.\n\nTem também essa cena de te chamar até você terminar o café no seu tempo. E depois ficar no lugar que decidiu ser dela. Isso tem coerência felina total.\n\nVocê também já trouxe a imagem dela encostando no seu rosto. Não é só carinho bruto. É presença, marcação, vínculo. A Dharma não passa pela sua vida de leve. Ela se instala.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "created_at": "2026-06-06T23:09:50.461Z",
+      "createdAt": "2026-06-06T23:09:50.461Z",
+      "updated_at": "2026-06-06T23:10:01.304Z",
+      "updatedAt": "2026-06-06T23:10:01.304Z",
+      "completedAt": "2026-06-06T23:10:01.304Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:08:36.011Z",
+  "createdAt": "2026-06-06T23:08:36.011Z",
+  "updatedAt": "2026-06-06T23:10:03.321Z"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778952178615-3jl7bc",
+  "title": "gere u pdf sobre Bashar e sua filosofia.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T17:22:58.222Z",
+  "updatedAt": "2026-05-16T17:23:17.530Z",
+  "lastOpenedAt": "2026-05-16T17:22:58.616Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "gere u pdf sobre Bashar e sua filosofia.",
+      "createdAt": "2026-05-16T17:22:58.591Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "**Resultado**\nStatus: concluido\nObjetivo: gere u pdf sobre Bashar e sua filosofia.\nTools usadas: generate_pdf\n\nItens encontrados:\n- nenhum\n\nAcoes realizadas:\n- generate_pdf executado\n\nPendencias reais:\n- nenhuma\n\nDetalhes:\n**Resultado:** PDF gerado sobre Bashar e sua filosofia.  \n**Status:** Concluído.  \n**Objetivo:** Criar um PDF sobre Bashar e sua filosofia.  \n**Tools usadas:** generate_pdf.  \n**Itens encontrados:** N/A.  \n**Ações realizadas:** PDF gerado e salvo.  \n**Pendências reais:** Nenhuma.  \n\nVocê pode acessar o PDF através do link abaixo:\n\n[**Clique aqui para abrir bashar_e_sua_filosofia.pdf**](file://C:/Users/User/worion-desktop/artifacts/bashar_e_sua_filosofia.pdf)",
+      "createdAt": "2026-05-16T17:23:17.446Z"
+    }
+  ]
+}

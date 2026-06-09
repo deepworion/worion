@@ -1,0 +1,29 @@
+{
+  "conversationId": "conversation-1779485602717-e5m7bg",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Me conte a história de Brasilia de Minas.",
+      "createdAt": "2026-05-22T21:33:22.716Z",
+      "attachments": []
+    },
+    {
+      "role": "user",
+      "content": "Me conte a história de Brasilia de Minas.",
+      "createdAt": "2026-05-22T21:33:22.733Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi. Vou pesquisar direito, sem depender só do que já estava em memória.\n\n<search>\n<brave>história de Brasília de Minas fundação povoamento origem nomes Contendas</brave>\n<brave>Brasília de Minas história município emancipação prefeitura</brave>\n<brave>site:ibge.gov.br \"Brasília de Minas\" histórico</brave>\n</search>\n\n<search>\n<tavily>história de Brasília de Minas fundação origem nomes Contendas</tavily>\n<tavily>Brasília de Minas história município emancipação prefeitura</tavily>\n<tavily>site:ibge.gov.br \"Brasília de Minas\" histórico</tavily>\n</search>\n\n<open>\n<url>https://cidades.ibge.gov.br/brasil/mg/brasilia-de-minas/historico</url>\n<url>https://pt.wikipedia.org/wiki/Bras%C3%ADlia_de_Minas</url>\n<url>https://www.brasiliademinas.mg.gov.br/pagina/historia/</url>\n</open>",
+      "createdAt": "2026-05-22T21:33:48.271Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Vou pesquisar para te entregar uma história bem fundamentada, sem inventar datas ou versões. Só um momento.",
+      "createdAt": "2026-05-22T21:33:38.793Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T21:33:19.305Z"
+}

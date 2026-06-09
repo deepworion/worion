@@ -1,0 +1,29 @@
+{
+  "conversationId": "conversation-1779481186118-hq19z6",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Em que ano o Império Bizantino deixou de existir e qual evento militar selou esse fim? Forneça também o nome do sultão otomano que liderou a conquista.",
+      "createdAt": "2026-05-22T20:19:46.118Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O Império Bizantino deixou de existir em **1453**. O evento militar que selou seu fim foi a **Queda de Constantinopla**, consumada após semanas de bombardeios otomanos contra a cidade. O sultão que liderou a conquista foi **Mehmed II** (Mehmed, o Conquistador).\n\n<small>Fontes:  \n[Wikipédia – Império Bizantino](https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Bizantino) · [Brasil Escola – Queda de Constantinopla](https://brasilescola.uol.com.br/historiag/queda-constantinopla-1453.htm) · [BBC News Brasil – 100 anos da queda do Império Otomano](https://www.bbc.com/portuguese/geral-63456433)</small>",
+      "createdAt": "2026-05-22T20:20:04.117Z"
+    },
+    {
+      "role": "user",
+      "content": "Qual tratado, assinado em 1944 e reafirmado em 1945, é considerado o principal marco jurídico e conceitual para o fim do chamado \"Cangaço\" no Brasil? A resposta deve incluir o nome do tratado, os líderes políticos envolvidos e a data precisa de sua assinatura.",
+      "createdAt": "2026-05-22T20:21:40.386Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vou pesquisar sobre o tratado que marca o fim jurídico do cangaço. A resposta pode envolver um acordo formal, anistia ou pacto político regional. Buscarei em fontes históricas e jurídicas.\n\n<small>[Pesquisando via brave_search: \"tratado fim do cangaço 1944 1945\"]</small>",
+      "createdAt": "2026-05-22T20:21:52.231Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T20:19:45.767Z"
+}

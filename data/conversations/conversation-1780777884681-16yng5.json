@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780777884681-16yng5",
+  "conversationId": "conversation-1780777884681-16yng5",
+  "title": "boa tarde, quais são suas memoria sobre meu TDAH?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde, quais são suas memoria sobre meu TDAH?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T20:31:24.677Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780777892216-vxuu9c",
+      "conversation_id": "conversation-1780777884681-16yng5",
+      "conversationId": "conversation-1780777884681-16yng5",
+      "role": "assistant",
+      "content": "Oi, Glaydson. Tenho algumas memórias ligadas ao seu TDAH, mas preciso ser honesto: **não tenho como “listar tudo” sem consultar o que está registrado**. Então vou te dizer o que eu **tenho como padrão de contexto** e, se você quiser, eu também posso **buscar no meu histórico/memória** pra te devolver uma lista mais fiel.\n\n## O que eu lembro (padrões que aparecem no seu contexto)\n- Você tende a **travar quando a tarefa fica grande demais** ou quando tem muitas opções ao mesmo tempo.\n- Você responde melhor quando a gente transforma o problema em **uma próxima ação bem pequena e concreta**.\n- Quando o ritmo aperta (cansaço/ansiedade/urgência), ajuda muito **reduzir escolhas** e focar no **“próximo passo que move”**.\n- Você se beneficia de estrutura simples: **uma coisa por vez**, com passos curtos e objetivos.\n\n## O que eu não vou inventar\nEu não vou afirmar detalhes específicos (tipo “você tem X diagnóstico”, “você usa Y medicação”, “seu gatilho é Z”) **sem ter isso registrado de forma clara**.\n\n## Pra eu te responder do jeito certo\nVocê quer que eu:\n1) **Resuma em 5-10 bullets** só o que eu tenho registrado sobre seu TDAH (mais objetivo), ou\n2) **Mapeie seus gatilhos + estratégias que funcionam** (mais prático)?\n\nMe diz **1 ou 2**.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T20:31:32.216Z",
+      "createdAt": "2026-06-06T20:31:32.216Z",
+      "updated_at": "2026-06-06T20:31:48.968Z",
+      "updatedAt": "2026-06-06T20:31:48.968Z",
+      "completedAt": "2026-06-06T20:31:48.967Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T20:31:23.475Z",
+  "createdAt": "2026-06-06T20:31:23.475Z",
+  "updatedAt": "2026-06-06T20:31:50.979Z"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "memory-1780688004697-bp7si6",
+  "conversationId": "memory-1780688004697-bp7si6",
+  "title": "Worion",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde.",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T19:33:26.424Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780688006441-nmh1ln",
+      "conversation_id": "memory-1780688004697-bp7si6",
+      "conversationId": "memory-1780688004697-bp7si6",
+      "role": "assistant",
+      "content": "Boa tarde. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-05T19:33:26.441Z",
+      "createdAt": "2026-06-05T19:33:26.441Z",
+      "updated_at": "2026-06-05T19:33:27.256Z",
+      "updatedAt": "2026-06-05T19:33:27.256Z",
+      "completedAt": "2026-06-05T19:33:27.254Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Quais as suas memoria?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T19:33:46.190Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780688033118-rxy7mp",
+      "conversation_id": "memory-1780688004697-bp7si6",
+      "conversationId": "memory-1780688004697-bp7si6",
+      "role": "assistant",
+      "content": "# Memórias ativas\n\nTenho algumas camadas de memória/contexto carregadas agora:\n\n- **Worion Desktop**: arquitetura modular do app, com módulos separados para chat, tools, projects, memory, connectors, UI, prompt, logger, artifacts e utils.\n- **Workestria**: SaaS para lojistas Shopify, com automações via n8n, stack em VPS Hetzner, PostgreSQL, Redis, Supabase e APIs de IA.\n- **Worion como núcleo do ecossistema**: a ideia de que ele virou o centro nervoso que integra projetos, automações e futuros clientes.\n- **Arquitetura stateless com API keys do cliente**: cada workflow roda de forma autônoma, sem armazenar dados de produto.\n- **Melhorias imediatas do Worion**: anti-genérico no prompt, honestidade radical, resumo automático de sessão e tela de privacidade.\n- **Arquitetura multi-agente**: papéis especializados por modelo, com um orquestrador distribuindo subtarefas.\n- **Risco conhecido**: o Worion ainda pode cair em resposta genérica se o prompt/runtime sobrescrever a persona.\n- **Contexto pessoal e de projeto**: Glaydson, com histórico de trabalho intenso, TDAH, foco, carga executiva e interesse em espiritualidade/Tao.\n- **Memórias importadas**: trechos sobre MCP de memória unificada, Notion, schema SQL, Worion como SOC do Workestria e continuidade entre sessões.\n\nSe você quiser, eu posso abrir uma dessas camadas e te mostrar o que ela está carregando agora.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "created_at": "2026-06-05T19:33:53.118Z",
+      "createdAt": "2026-06-05T19:33:53.118Z",
+      "updated_at": "2026-06-05T19:34:14.268Z",
+      "updatedAt": "2026-06-05T19:34:14.268Z",
+      "completedAt": "2026-06-05T19:34:14.268Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T19:33:24.698Z",
+  "createdAt": "2026-06-05T19:33:24.698Z",
+  "updatedAt": "2026-06-05T19:36:33.142Z"
+}

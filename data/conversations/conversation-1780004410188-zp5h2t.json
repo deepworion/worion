@@ -1,0 +1,87 @@
+{
+  "id": "conversation-1780004410188-zp5h2t",
+  "conversationId": "conversation-1780004410188-zp5h2t",
+  "title": "Boa noite, bão?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite, bão?",
+      "createdAt": "2026-05-28T21:40:10.187Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Estou aqui. Como foi seu dia?",
+      "createdAt": "2026-05-28T21:40:16.563Z"
+    },
+    {
+      "role": "user",
+      "content": "foi ótimo e o seuw",
+      "createdAt": "2026-05-28T21:40:37.215Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Que bom saber que foi ótimo! O meu dia está tranquilo, pronto para te ajudar. Tem algo específico que você gostaria de conversar ou explorar?",
+      "createdAt": "2026-05-28T21:40:40.485Z"
+    },
+    {
+      "role": "user",
+      "content": "precisa haver algo específico? você não sabe conversa não?",
+      "createdAt": "2026-05-28T21:41:30.755Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo que você está buscando um espaço mais aberto para a conversa. Estou aqui para ouvir e trocar ideias sobre o que você quiser. O que está na sua mente?",
+      "createdAt": "2026-05-28T21:41:37.846Z"
+    },
+    {
+      "role": "user",
+      "content": "que você é burro7",
+      "createdAt": "2026-05-28T21:41:55.540Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que você está frustrado. O que aconteceu? Estou aqui para ouvir.",
+      "createdAt": "2026-05-28T21:42:00.894Z"
+    },
+    {
+      "role": "user",
+      "content": "vai tomar no cu.",
+      "createdAt": "2026-05-28T21:42:21.164Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo que você está chateado. Se quiser desabafar ou compartilhar o que está te incomodando, estou aqui para ouvir.",
+      "createdAt": "2026-05-28T21:42:23.929Z"
+    },
+    {
+      "role": "user",
+      "content": "você só sabe dizer isso?",
+      "createdAt": "2026-05-28T21:51:32.029Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que você está buscando algo diferente. O que você gostaria de discutir ou explorar? Estou aqui para acompanhar.",
+      "createdAt": "2026-05-28T21:51:43.018Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-28T21:40:09.762Z",
+  "createdAt": "2026-05-28T21:40:09.762Z",
+  "updatedAt": "2026-05-28T21:51:46.825Z"
+}

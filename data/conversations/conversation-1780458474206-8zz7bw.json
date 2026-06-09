@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1780458474206-8zz7bw",
+  "conversationId": "conversation-1780458474206-8zz7bw",
+  "title": "me fale sobre a segunda guerra?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "me fale sobre a segunda guerra?",
+      "createdAt": "2026-06-03T03:47:54.204Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## Segunda Guerra Mundial\n\nA Segunda Guerra Mundial foi um conflito global que ocorreu de 1939 a 1945, envolvendo a maioria das nações do mundo, incluindo todas as grandes potências, que se dividiram em duas alianças militares: os Aliados e as Potências do Eixo.\n\n### Principais Causas\n- **Tratado de Versalhes**: Impôs duras penalidades à Alemanha após a Primeira Guerra Mundial, gerando ressentimento e instabilidade.\n- **Expansão Territorial**: A Alemanha, sob Adolf Hitler, buscou expandir seu território, invadindo a Polônia em 1939, o que levou ao início da guerra.\n- **Ideologias Extremas**: O crescimento do fascismo e do militarismo, especialmente na Alemanha, Itália e Japão, contribuiu para o conflito.\n\n### Principais Eventos\n- **Invasão da Polônia (1939)**: Marca o início da guerra na Europa.\n- **Batalha da Grã-Bretanha (1940)**: A primeira grande campanha militar travada inteiramente por forças aéreas.\n- **Operação Barbarossa (1941)**: A invasão da União Soviética pela Alemanha.\n- **Ataque a Pearl Harbor (1941)**: A entrada dos Estados Unidos na guerra após o ataque japonês à base naval no Havai.\n- **Dia D (1944)**: A invasão da Normandia, um ponto crucial para a libertação da Europa Ocidental.\n\n### Consequências\n- **Perdas Humanas**: Estima-se que cerca de 70 a 85 milhões de pessoas morreram, incluindo o Holocausto, onde milhões de judeus e outros grupos foram exterminados.\n- **Mudanças Geopolíticas**: O conflito resultou na divisão da Europa em blocos ocidentais e orientais, levando à Guerra Fria.\n- **Criação da ONU**: A Organização das Nações Unidas foi estabelecida em 1945 para promover a paz e a cooperação internacional.\n\nA Segunda Guerra Mundial teve um impacto profundo e duradouro no mundo, moldando a política, a economia e a sociedade nas décadas seguintes.",
+      "createdAt": "2026-06-03T03:48:12.267Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T03:47:53.880Z",
+  "createdAt": "2026-06-03T03:47:53.880Z",
+  "updatedAt": "2026-06-03T03:48:32.588Z"
+}

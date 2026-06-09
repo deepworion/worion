@@ -1,0 +1,29 @@
+{
+  "id": "conversation-1779061268223-y95582",
+  "title": "boa noite",
+  "agentId": "diario-reflexivo-facilitador-pessoal",
+  "agentName": "Diário Reflexivo — Facilitador Pessoal",
+  "chatSource": "agent",
+  "isAgentSession": true,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T23:40:56.253Z",
+  "updatedAt": "2026-05-17T23:41:10.772Z",
+  "lastOpenedAt": "2026-05-17T23:41:08.223Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite",
+      "createdAt": "2026-05-17T23:41:08.015Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: OpenAI error 404: {\n  \"error\": {\n    \"message\": \"This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"model\",\n    \"code\": null\n  }\n}",
+      "createdAt": "2026-05-17T23:41:10.744Z"
+    }
+  ]
+}

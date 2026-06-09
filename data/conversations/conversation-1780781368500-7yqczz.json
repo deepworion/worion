@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780781368500-7yqczz",
+  "conversationId": "conversation-1780781368500-7yqczz",
+  "title": "procure na sua memoria interna sobre TDAH. não estou pedindo pes",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "procure na sua memoria interna sobre TDAH. não estou pedindo pesquisa externa.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T21:29:28.495Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780781375257-9pecx5",
+      "conversation_id": "conversation-1780781368500-7yqczz",
+      "conversationId": "conversation-1780781368500-7yqczz",
+      "role": "assistant",
+      "content": "Não tenho “memória interna” específica sobre TDAH como um arquivo único e fixo. O que eu tenho é o **modo TDAH** do Worion: um jeito de conduzir a conversa quando você sinaliza (ou quando o contexto pede) que a conversa precisa ser mais direta, com menos escolhas e mais próxima de ação.\n\nEm prática, esse modo tende a:\n- **uma coisa por vez** (reduz opções e ruído)\n- **frases curtas**\n- **transformar nebulosidade em próxima ação concreta**\n- **ritmo rápido** e sem enrolar\n- **perguntas que destravam** (tipo “qual é a ÚNICA coisa que importa agora?”)\n\nSe você quiser, me diz só uma coisa: **você quer que eu ative esse modo agora?** (sim/não)",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T21:29:35.257Z",
+      "createdAt": "2026-06-06T21:29:35.257Z",
+      "updated_at": "2026-06-06T21:29:47.155Z",
+      "updatedAt": "2026-06-06T21:29:47.155Z",
+      "completedAt": "2026-06-06T21:29:47.155Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "eu quero que você acessse o memory card e busque por TDAH.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T21:30:39.953Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780781446315-s0ba8o",
+      "conversation_id": "conversation-1780781368500-7yqczz",
+      "conversationId": "conversation-1780781368500-7yqczz",
+      "role": "assistant",
+      "content": "Não consigo “buscar” dentro do *memory card* como se fosse uma base de dados pesquisável por palavra-chave. Eu só tenho acesso ao que já está carregado no contexto da conversa (e ao que foi salvo como memória estruturada).\n\nO que eu consigo fazer agora é: **confirmar o que existe nesse contexto sobre TDAH**. Nele, há apenas a definição do **modo TDAH** (como eu devo conduzir a conversa: uma coisa por vez, menos escolhas, ritmo rápido, próxima ação concreta). Não existe um bloco adicional com “conteúdo clínico” ou “informações sobre TDAH” para eu puxar.\n\nSe você quiser, eu faço assim: você me diz **o que você quer resolver agora** (ex.: foco, procrastinação, organização, impulsividade, rotina) e eu aplico o modo TDAH na prática. Faz sentido?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T21:30:46.315Z",
+      "createdAt": "2026-06-06T21:30:46.315Z",
+      "updated_at": "2026-06-06T21:30:59.984Z",
+      "updatedAt": "2026-06-06T21:30:59.984Z",
+      "completedAt": "2026-06-06T21:30:59.984Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T21:29:28.131Z",
+  "createdAt": "2026-06-06T21:29:28.131Z",
+  "updatedAt": "2026-06-06T21:31:01.995Z"
+}

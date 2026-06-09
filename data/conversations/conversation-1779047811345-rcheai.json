@@ -1,0 +1,81 @@
+{
+  "id": "conversation-1779047811345-rcheai",
+  "title": "hoje o dia foi puxado.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T19:56:49.611Z",
+  "updatedAt": "2026-05-17T19:58:39.603Z",
+  "lastOpenedAt": "2026-05-17T19:56:51.345Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "hoje o dia foi puxado.",
+      "createdAt": "2026-05-17T19:56:51.139Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Puxado como? O que aconteceu?",
+      "createdAt": "2026-05-17T19:56:55.416Z"
+    },
+    {
+      "role": "user",
+      "content": "trabalhei demais... Tdha, morando sozinho, DEV... só trabalho, mesmo no domingo.",
+      "createdAt": "2026-05-17T19:57:24.776Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo, deve ser difícil lidar com tudo isso. O trabalho pode ser bastante intenso, especialmente quando você está sozinho. Como você está se sentindo em relação a isso?",
+      "createdAt": "2026-05-17T19:57:27.616Z"
+    },
+    {
+      "role": "user",
+      "content": "cansado",
+      "createdAt": "2026-05-17T19:57:40.257Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Cansado como? Tem algo específico que está pesando mais nesse momento?",
+      "createdAt": "2026-05-17T19:57:43.716Z"
+    },
+    {
+      "role": "user",
+      "content": "precisa de algo além de ter trabalhado num domingo?",
+      "createdAt": "2026-05-17T19:58:08.142Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Trabalhar no domingo realmente pode ser desgastante. Além disso, a sensação de solidão pode intensificar o cansaço. Você tem conseguido fazer pausas ou ter momentos de descanso?",
+      "createdAt": "2026-05-17T19:58:11.588Z"
+    },
+    {
+      "role": "user",
+      "content": "sim.",
+      "createdAt": "2026-05-17T19:58:21.921Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Que bom que você tem conseguido fazer pausas. Isso é importante. Tem algo que você gosta de fazer para relaxar ou se distrair quando não está trabalhando?",
+      "createdAt": "2026-05-17T19:58:24.469Z"
+    },
+    {
+      "role": "user",
+      "content": "ouço música",
+      "createdAt": "2026-05-17T19:58:37.097Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Música é uma ótima forma de relaxar. Tem algum artista ou gênero que você gosta mais?",
+      "createdAt": "2026-05-17T19:58:39.598Z"
+    }
+  ]
+}

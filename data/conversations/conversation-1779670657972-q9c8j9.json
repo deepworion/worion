@@ -1,0 +1,76 @@
+{
+  "id": "conversation-1779670657972-q9c8j9",
+  "conversationId": "conversation-1779670657972-q9c8j9",
+  "title": "boa noite.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite.",
+      "createdAt": "2026-05-25T00:57:37.972Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson. Como foi seu dia?",
+      "createdAt": "2026-05-25T00:57:41.409Z"
+    },
+    {
+      "role": "user",
+      "content": ".",
+      "createdAt": "2026-05-25T00:57:47.326Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Estou aqui se precisar!",
+      "createdAt": "2026-05-25T00:57:47.339Z"
+    },
+    {
+      "role": "user",
+      "content": "quem foi alan turing?",
+      "createdAt": "2026-05-25T00:58:19.874Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "# Alan Turing: O Pai da Computação\n\nAlan Mathison Turing (23 de junho de 1912 – 7 de junho de 1954) foi um matemático, lógico, criptoanalista, filósofo e biólogo teórico inglês. É universalmente reconhecido como o **pai da ciência da computação teórica**, por ter formalizado os conceitos de algoritmo e computação com a criação da **Máquina de Turing**.\n\n## Formação e Carreira\n\n- Graduou-se em Matemática com honras no King's College, Cambridge, e obteve o doutorado em Princeton (orientado por Alonzo Church).\n- Em 1936, publicou seu trabalho seminal sobre a **máquina universal** que poderia simular qualquer computação lógica — base do que chamamos hoje de computador programável.\n\n## A Guerra e a Quebra da Enigma\n\nDurante a Segunda Guerra Mundial, Turing foi peça‑chave no esforço aliado de decodificação:\n\n- Trabalhou no **Bletchley Park**, o centro de inteligência britânico.\n- Liderou o **Hut 8**, seção dedicada à criptoanálise das comunicações navais alemãs.\n- Aprimorou o método polonês da **bomba eletromecânica**, máquina capaz de descobrir as configurações diárias da Enigma.\n- O sucesso na quebra dos códigos nazistas foi decisivo para a vitória na **Batalha do Atlântico** e em outras frentes.\n\n## Pós‑Guerra e Computação\n\nDepois do conflito, Turing contribuiu para a construção dos primeiros computadores de programa armazenado:\n\n- Projetou o **Automatic Computing Engine (ACE)** no National Physical Laboratory.\n- Integrou o Computing Machine Laboratory da Universidade de Manchester, trabalhando com Max Newman.\n\n## O Teste de Turing e Vida Pessoal\n\n- Propôs o famoso **Teste de Turing** como critério para avaliar se uma máquina é capaz de exibir comportamento inteligente indistinguível do humano.\n- Em sua juventude, teve um vínculo afetivo com o colega Christopher Morcom, que faleceu precocemente — relação que marcou sua vida pessoal.\n\n## Morte e Legado\n\n- Faleceu em 7 de junho de 1954, aos 41 anos, por envenenamento com cianeto, em circunstâncias amplamente interpretadas como suicídio.\n- Seu trabalho lançou as bases da computação moderna, da inteligência artificial e da biologia matemática (padrões de Turing).\n\nTuring foi condecorado com a **Ordem do Império Britânico (OBE)** e recebeu o **Smith's Prize** em 1936. Sua influência permanece em todas as áreas que tocou.\n\n<small>Fontes: [Wikipedia – Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) · [Brasil Escola – Alan Turing](https://brasilescola.uol.com.br/biografia/alan-mathison.htm)</small>",
+      "createdAt": "2026-05-25T00:58:50.100Z"
+    },
+    {
+      "role": "user",
+      "content": "como fazer ovos mexidos?",
+      "createdAt": "2026-05-25T00:59:35.710Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Resposta interrompida.",
+      "createdAt": "2026-05-25T00:59:52.486Z"
+    },
+    {
+      "role": "user",
+      "content": "o que tem de bom hoje?",
+      "createdAt": "2026-05-25T01:00:10.515Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Resposta interrompida.",
+      "createdAt": "2026-05-25T01:00:24.635Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-25T00:57:36.855Z",
+  "createdAt": "2026-05-25T00:57:36.855Z",
+  "updatedAt": "2026-05-25T01:00:27.558Z"
+}

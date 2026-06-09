@@ -1,0 +1,58 @@
+{
+  "id": "memory-1780704644509-e6a9wz",
+  "conversationId": "memory-1780704644509-e6a9wz",
+  "title": "Espiritualidade & Filosofia",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite. O que você sabe sobre mim?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T00:10:46.202Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780704646214-ytvy67",
+      "conversation_id": "memory-1780704644509-e6a9wz",
+      "conversationId": "memory-1780704644509-e6a9wz",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T00:10:46.214Z",
+      "createdAt": "2026-06-06T00:10:46.214Z",
+      "updated_at": "2026-06-06T00:10:46.214Z",
+      "updatedAt": "2026-06-06T00:10:46.214Z"
+    },
+    {
+      "id": "message-1780704646242-ytrw76",
+      "conversation_id": "memory-1780704644509-e6a9wz",
+      "conversationId": "memory-1780704644509-e6a9wz",
+      "role": "assistant",
+      "content": "Neste Memory Card ativo (Espiritualidade & Filosofia), eu tenho registrado:\n\n- Titulo: Espiritualidade & Filosofia\n- Contexto: Espiritualidade / Sonhos / Hermetismo\n- Descricao: 5 conversas classificadas automaticamente via Haiku.\n- Regras opcionais:\n- Conhecimento do card:\n- 5 conversas classificadas automaticamente via Haiku.\n- Regras opcionais:\n- Regras opcionais:\n- Regras opcionais:\n- Regras opcionais:\n- Regras opcionais:\n- usar apenas como contexto local deste Memory Card\n\nSe você quiser, eu posso aprofundar qualquer item desse card.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T00:10:46.242Z",
+      "createdAt": "2026-06-06T00:10:46.242Z",
+      "updated_at": "2026-06-06T00:10:54.752Z",
+      "updatedAt": "2026-06-06T00:10:54.752Z",
+      "completedAt": "2026-06-06T00:10:54.751Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T00:10:44.510Z",
+  "createdAt": "2026-06-06T00:10:44.510Z",
+  "updatedAt": "2026-06-06T00:11:17.498Z"
+}

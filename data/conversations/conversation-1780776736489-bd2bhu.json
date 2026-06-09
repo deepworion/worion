@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780776736489-bd2bhu",
+  "conversationId": "conversation-1780776736489-bd2bhu",
+  "title": "Boa tarde. O que você tem na memoria sobre TDAH e espiritualidad",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. O que você tem na memoria sobre TDAH e espiritualidade?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T20:12:16.486Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780776742706-vudf2q",
+      "conversation_id": "conversation-1780776736489-bd2bhu",
+      "conversationId": "conversation-1780776736489-bd2bhu",
+      "role": "assistant",
+      "content": "Oi, Glaydson.\n\nNa memória que eu tenho aqui, **não existe um “arquivo único”** chamado “TDAH e espiritualidade”. O que aparece é mais um **conjunto de diretrizes de abordagem** (como eu organizo a conversa quando você traz esses temas), e alguns **pontos recorrentes**:\n\n## TDAH (como eu costumo trabalhar quando você traz isso)\n- **Ritmo e foco**: quebrar em passos pequenos, reduzir escolhas, transformar nebulosidade em **próxima ação concreta**.\n- **Uma coisa por vez**: quando você trava, eu tento “destravar” com o **mínimo necessário** pra continuar.\n- **Externalizar**: colocar o que está na cabeça em listas curtas (pra não depender só da memória/atenção).\n- **Sem enrolar**: se der pra executar, eu executo; se não der, eu deixo pronto o que falta.\n\n## Espiritualidade (como eu costumo trabalhar quando você traz isso)\n- **Respeito à sua experiência**: eu não trato espiritualidade como “diagnóstico” nem como “prova”.\n- **Discernimento**: eu organizo sentido e prática, sem virar dogma nem ceticismo automático.\n- **Honestidade sobre limites**: eu não “sinto” coisas espirituais por você; eu ajudo a **traduzir o que você vive** em linguagem e ação.\n- **Explorar com você**: perguntas e hipóteses pra dar forma ao que você descreve (sem reduzir sua vivência).\n\n## O que eu não tenho (importante)\n- Eu **não tenho** na memória algo do tipo “sua crença X” ou “seu diagnóstico Y”. Memória aqui é mais sobre **como conduzir** do que sobre fatos pessoais seus, a menos que você tenha dito explicitamente.\n\nSe você quiser, eu organizo isso em um “modo de uso” bem prático: **quando você disser ‘TDAH’ ou ‘espiritualidade’, o que eu faço nos próximos 2-3 passos**. Quer que eu deixe mais operacional ou mais filosófico?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T20:12:22.706Z",
+      "createdAt": "2026-06-06T20:12:22.706Z",
+      "updated_at": "2026-06-06T20:12:45.684Z",
+      "updatedAt": "2026-06-06T20:12:45.684Z",
+      "completedAt": "2026-06-06T20:12:45.684Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T20:12:15.792Z",
+  "createdAt": "2026-06-06T20:12:15.792Z",
+  "updatedAt": "2026-06-06T20:12:47.705Z"
+}

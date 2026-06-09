@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779489622080-0ucfh6",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "brasilia de minas",
+      "createdAt": "2026-05-22T22:40:22.080Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi, Glaydson. Tenho bastante coisa já levantada sobre Brasília de Minas das nossas conversas anteriores. Deixa eu organizar o quadro completo com o que já temos e, para a lista de prefeitos, vou buscar fontes agora.\n\nVou pesquisar especificamente os prefeitos e complementar a história. Segura aí.",
+      "createdAt": "2026-05-22T22:40:31.272Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:40:21.716Z"
+}

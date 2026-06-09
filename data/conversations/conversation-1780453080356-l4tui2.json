@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1780453080356-l4tui2",
+  "conversationId": "conversation-1780453080356-l4tui2",
+  "title": "Boa noite.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite.",
+      "createdAt": "2026-06-03T02:18:00.354Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Como foi seu dia?",
+      "createdAt": "2026-06-03T02:18:06.143Z"
+    },
+    {
+      "role": "user",
+      "content": "O que era a fundação da filosofia socrática?",
+      "createdAt": "2026-06-03T02:20:34.174Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "A fundação da filosofia socrática se baseia em alguns princípios centrais:\n\n### 1. **Busca pelo Conhecimento**\n   - Sócrates acreditava que o conhecimento era a chave para a virtude. Ele enfatizava a importância de conhecer a si mesmo e de questionar as próprias crenças.\n\n### 2. **Maiêutica**\n   - Método de diálogo socrático que visa extrair conhecimento através de perguntas. Sócrates fazia perguntas para ajudar os interlocutores a chegarem a suas próprias conclusões.\n\n### 3. **Ética e Virtude**\n   - A ética era central para a filosofia socrática. Sócrates defendia que a virtude é conhecimento e que, se alguém sabe o que é certo, agirá corretamente.\n\n### 4. **Crítica à Sofística**\n   - Sócrates se opôs aos sofistas, que ensinavam a retórica e a persuasão sem preocupação com a verdade. Para ele, a busca pela verdade era fundamental.\n\n### 5. **Diálogo e Debate**\n   - A filosofia socrática se desenvolvia através de diálogos, onde a troca de ideias e a argumentação eram essenciais para o aprendizado e a descoberta.\n\nEsses princípios formaram a base do pensamento ocidental e influenciaram muitos filósofos subsequentes. Se quiser explorar mais algum aspecto específico, é só avisar!",
+      "createdAt": "2026-06-03T02:20:45.236Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T02:17:59.972Z",
+  "createdAt": "2026-06-03T02:17:59.972Z",
+  "updatedAt": "2026-06-03T03:05:57.862Z"
+}

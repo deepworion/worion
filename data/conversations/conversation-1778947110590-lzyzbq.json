@@ -1,0 +1,90 @@
+{
+  "id": "conversation-1778947110590-lzyzbq",
+  "title": "resuma esse texto por favor.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T15:58:30.590Z",
+  "updatedAt": "2026-05-16T16:14:14.018Z",
+  "lastOpenedAt": "2026-05-16T15:58:30.590Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "resuma esse texto por favor.",
+      "createdAt": "2026-05-16T15:58:30.572Z",
+      "attachments": [
+        {
+          "data": null,
+          "kind": "text",
+          "name": "Curso tcc Cibely.docx",
+          "size": 17351,
+          "text": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que houve um erro ao tentar extrair o conteúdo do arquivo \"Curso tcc Cibely.docx\". O arquivo não foi encontrado nas opções disponíveis.\n\nPor favor, verifique se o arquivo está acessível ou se você pode enviá-lo novamente.",
+      "createdAt": "2026-05-16T15:58:36.533Z"
+    },
+    {
+      "role": "user",
+      "content": "tente novamente",
+      "createdAt": "2026-05-16T16:09:48.573Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não consegui acessar o arquivo \"Curso tcc Cibely.docx\". Ele parece não estar disponível no diretório especificado.\n\nPor favor, verifique se o arquivo está no local correto ou se você pode enviá-lo novamente.",
+      "createdAt": "2026-05-16T16:09:53.991Z"
+    },
+    {
+      "role": "user",
+      "content": "Anexo enviado: TCC_Cibely_Guimaraes.docx",
+      "createdAt": "2026-05-16T16:10:19.349Z",
+      "attachments": [
+        {
+          "id": "attachment-1778947817182-ft5iqd",
+          "data": null,
+          "kind": "text",
+          "name": "TCC_Cibely_Guimaraes.docx",
+          "size": 20157,
+          "text": "[DOCX: TCC_Cibely_Guimaraes.docx — erro ao extrair: Could not find file in options]",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "extractedText": "[DOCX: TCC_Cibely_Guimaraes.docx — erro ao extrair: Could not find file in options]"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que houve um erro ao tentar extrair o conteúdo do arquivo \"TCC_Cibely_Guimaraes.docx\". O arquivo não foi encontrado nas opções disponíveis.\n\nPor favor, verifique se o arquivo está acessível ou se você pode enviá-lo novamente.",
+      "createdAt": "2026-05-16T16:10:24.457Z"
+    },
+    {
+      "role": "user",
+      "content": "resuma",
+      "createdAt": "2026-05-16T16:14:09.872Z",
+      "attachments": [
+        {
+          "id": "attachment-1778948043426-595gjl",
+          "name": "Curso tcc Cibely.docx",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 17351,
+          "kind": "text",
+          "data": null,
+          "text": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]",
+          "extractedText": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que estou enfrentando dificuldades para acessar o conteúdo do arquivo \"Curso tcc Cibely.docx\". O sistema não conseguiu extrair o texto do documento.\n\nPor favor, tente enviar o arquivo novamente ou verifique se ele está no formato correto.",
+      "createdAt": "2026-05-16T16:14:14.013Z"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1779640707874-lnts2l",
+  "conversationId": "conversation-1779640707874-lnts2l",
+  "title": "Qual o melhor modelo para ler pdfs no pc?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Qual o melhor modelo para ler pdfs no pc?",
+      "createdAt": "2026-05-24T16:38:27.874Z",
+      "attachments": []
+    },
+    {
+      "role": "user",
+      "content": "Qual o melhor modelo para ler pdfs no pc?",
+      "createdAt": "2026-05-24T16:38:27.909Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## Leitores de PDF para PC: qualidade, leveza e os mais recomendados\n\nNão existe um \"melhor\" absoluto — a escolha depende do que você valoriza: recursos completos, leveza, integração com a nuvem ou simplicidade. O material coletado aponta um pequeno grupo de softwares que se destacam pela gratuidade, confiabilidade e funções oferecidas no Windows.\n\n### Os que mais aparecem entre os bem avaliados\n\n- **Adobe Acrobat Reader DC**  \n  É o leitor oficial do formato, gratuito e com o maior conjunto de funcionalidades básicas: anotações, preenchimento de formulários, assinatura digital e integração com a Creative Cloud. Ideal para quem quer um software completo sem custo inicial.\n\n- **Foxit PDF Reader**  \n  Alternativa robusta com interface que lembra os aplicativos do Office. Oferece preenchimento de formulários, assinatura digital, integração com nuvem e ferramentas de compactação/compartilhamento. Bem cotado para uso profissional.\n\n- **Sumatra PDF**  \n  Extremamente leve e compatível com vários formatos (PDF, ePub, MOBI, CBZ, etc.). Não tem recursos avançados de edição, mas é imbatível para abrir documentos com agilidade, especialmente em máquinas mais modestas.\n\n- **SlimPDF**  \n  Ocupa apenas 15 MB e é perfeito para quem precisa apenas de leitura e anotações simples. Peca pela ausência de português e por empurrar funções pagas.\n\n- **Nitro (versão gratuita)**  \n  Entrega leitura, conversão básica e assinatura digital, mas mistura recursos da versão Pro no trial de 14 dias, o que pode confundir. Também não está traduzido.\n\n### O que levar em conta na hora de decidir\n\n- **Só quer abrir e ler rapidamente?** Vá de Sumatra ou SlimPDF — são leves e abrem instantaneamente.\n- **Precisa anotar, preencher formulários e assinar documentos?** Adobe Acrobat Reader ou Foxit Reader cobrem tudo isso de forma confiável.\n- **Não quer se estressar com interface em inglês?** Adobe e Foxit têm versão em português; Sumatra e SlimPDF não.\n- **Faz questão de integração com nuvem e Office?** Foxit se integra bem ao ecossistema Microsoft; Adobe à Creative Cloud.\n\nTodos são gratuitos para uso pessoal e estão disponíveis para Windows.\n\n<small>Fontes: [Leitores de PDF na Uptodown](https://br.uptodown.com/windows/leitores-pdf) · [TechTudo: cinco programas para ler PDF no PC](https://www.techtudo.com.br/listas/2022/04/leitor-de-pdf-para-pc-cinco-programas-para-ler-documentos-no-windows.ghtml) · [WPS: Os 5 melhores leitores gratuitos em 2026](https://br.wps.com/artigos-de-pdf/os-5-melhores-leitores-de-pdf-gratuitos/)</small>",
+      "createdAt": "2026-05-24T16:39:11.647Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, depois de cruzar as três listas que consegui aqui, o consenso é que **não existe um único \"melhor\"**. O ideal depende do quanto você precisa de recursos extras. Dito isso, dois nomes aparecem sempre no topo.\n\n## As duas referências principais\n\n- **Adobe Acrobat Reader DC** – Por ser o leitor oficial da Adobe, criadora do formato, ele é o mais completo entre os gratuitos. Dá pra visualizar, preencher formulários, assinar digitalmente, fazer anotações e ainda se integra com a Creative Cloud. É a escolha mais segura se você mexe com documentos sérios.\n- **Foxit PDF Reader** – Tem desempenho rápido e uma interface bem parecida com a do Office (faixa de opções, ícones familiares), o que ajuda na adaptação. Oferece conversão entre formatos, mesclagem de PDFs e até compactação de arquivos. Há também uma versão portátil que roda sem instalar.\n\nEsses dois lideram as recomendações tanto no ranking da Uptodown quanto na análise do TechTudo.\n\n## Caso a prioridade seja peso mínimo\n\n- **Sumatra PDF** – O programa mais leve da lista. Abre PDF (e outros formatos como ePub, CBZ) quase instantaneamente, ideal para computadores mais antigos ou quando você só precisa ler e fazer buscas rápidas. Não tem suporte a edição avançada nem formulários, mas entrega velocidade e simplicidade de verdade.\n\nOs outros nomes que aparecem (Nitro, SlimPDF, ABBYY FineReader) têm méritos, mas ou são versões de teste que empurram assinatura paga ou estão abaixo dos líderes nos comparativos consultados.\n\n<small>Fontes: [TechTudo: Leitor de PDF para PC](https://www.techtudo.com.br/listas/2022/04/leitor-de-pdf-para-pc-cinco-programas-para-ler-documentos-no-windows.ghtml) · [Uptodown: Leitores de PDF para Windows](https://br.uptodown.com/windows/leitores-pdf)</small>",
+      "createdAt": "2026-05-24T16:39:13.597Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T16:38:26.908Z",
+  "createdAt": "2026-05-24T16:38:26.908Z",
+  "updatedAt": "2026-05-24T19:10:30.085Z"
+}

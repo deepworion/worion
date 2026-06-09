@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778988178996-oxahn5",
+  "title": "moro sozinho, sou TDAH, nãoo tenho amigos e são meia noite",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T03:22:57.506Z",
+  "updatedAt": "2026-05-17T03:24:17.359Z",
+  "lastOpenedAt": "2026-05-17T03:22:58.996Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "moro sozinho, sou TDAH, nãoo tenho amigos e são meia noite",
+      "createdAt": "2026-05-17T03:22:58.808Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Sinto muito em saber que você está se sentindo assim. A solidão pode ser difícil, especialmente à noite. Que tal compartilhar um pouco mais sobre como você está se sentindo ou o que está passando pela sua cabeça? Estou aqui para ouvir.",
+      "createdAt": "2026-05-17T03:23:02.343Z"
+    },
+    {
+      "role": "user",
+      "content": "que que tem pra fazer? elabora ai...",
+      "createdAt": "2026-05-17T03:24:09.540Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vamos pensar em algumas opções para passar o tempo e talvez aliviar um pouco a solidão:\n\n### 1. **Atividades Criativas**\n   - **Desenho ou Pintura:** Pegue papel e canetas ou tintas. Não precisa ser perfeito, o importante é se expressar.\n   - **Escrita:** Tente escrever um diário, uma história ou até mesmo poemas. Colocar os pensamentos no papel pode ser libertador.\n\n### 2. **Aprendizado**\n   - **Cursos Online:** Existem muitas plataformas com cursos gratuitos. Você pode aprender algo novo, como programação, fotografia ou até culinária.\n   - **Leitura:** Escolha um livro ou um artigo sobre um tema que você gosta. \n\n### 3. **Entretenimento**\n   - **Filmes ou Séries:** Assista a um filme ou comece uma nova série. Pode ser algo leve ou um documentário interessante.\n   - **Jogos:** Jogue um jogo online ou um jogo de tabuleiro se tiver um em casa.\n\n### 4. **Exercícios**\n   - **Alongamento ou Yoga:** Faça alguns alongamentos ou uma prática de yoga. Isso pode ajudar a relaxar e melhorar o humor.\n   - **Caminhada:** Se puder, dê uma volta ao redor da sua casa. O ar fresco pode fazer bem.\n\n### 5. **Conexão**\n   - **Conversar com Alguém:** Se tiver o número de alguém, talvez uma mensagem ou uma ligação possa ajudar. Mesmo um contato breve pode fazer diferença.\n   - **Redes Sociais:** Explore grupos ou comunidades online que compartilhem seus interesses.\n\n### Próxima Ação\nEscolha uma dessas opções que mais te atrai e comece por aí. O que você acha?",
+      "createdAt": "2026-05-17T03:24:17.347Z"
+    }
+  ]
+}

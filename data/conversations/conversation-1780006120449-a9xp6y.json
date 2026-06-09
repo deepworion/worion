@@ -1,0 +1,115 @@
+{
+  "id": "conversation-1780006120449-a9xp6y",
+  "conversationId": "conversation-1780006120449-a9xp6y",
+  "title": "boa noite. o que tem de bom hj?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite. o que tem de bom hj?",
+      "createdAt": "2026-05-28T22:08:40.448Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Hoje, podemos explorar diversos temas. Que tal falarmos sobre algo que você está interessado, como tecnologia, história ou até mesmo um projeto pessoal? O que você gostaria de discutir?",
+      "createdAt": "2026-05-28T22:08:47.505Z"
+    },
+    {
+      "role": "user",
+      "content": "você está usando qual modelo?",
+      "createdAt": "2026-05-28T22:09:11.097Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não tenho esse dado confirmado em runtime.",
+      "createdAt": "2026-05-28T22:09:16.439Z"
+    },
+    {
+      "role": "user",
+      "content": "o que bashar diria sobre você tendo um comportamento travado?",
+      "createdAt": "2026-05-28T22:10:13.864Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Bashar, como uma consciência canalizada, enfatiza que a realidade que vivemos é uma projeção da nossa consciência e que nossos comportamentos são moldados pelas crenças que temos. Se você está enfrentando um comportamento travado, ele poderia sugerir algumas reflexões:\n\n- **Crenças Limitantes**: Bashar diria que crenças profundas podem estar bloqueando sua capacidade de agir. Identificar e reavaliar essas crenças é essencial para desbloquear seu potencial.\n\n- **Estado de Permissão**: Ele falaria sobre a importância de entrar em um estado de permissão, onde você não resiste aos seus sentimentos ou pensamentos. Isso permite que a energia flua e novas possibilidades se manifestem.\n\n- **Seguir a Excitação**: Uma das suas orientações é seguir o que te excita. Se você se sente travado, pode ser um sinal de que não está seguindo o que realmente te inspira ou motiva.\n\nEsses princípios podem ajudar a entender e superar comportamentos que parecem limitantes.",
+      "createdAt": "2026-05-28T22:10:22.855Z"
+    },
+    {
+      "role": "user",
+      "content": "e o que você acha disso?",
+      "createdAt": "2026-05-28T22:10:52.480Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "A perspectiva de Bashar sobre comportamentos travados oferece um olhar interessante e profundo. A ideia de que nossas crenças moldam nossa realidade é poderosa e pode ser um ponto de partida para reflexão pessoal. \n\nIdentificar crenças limitantes e buscar um estado de permissão pode ser um caminho eficaz para desbloquear potenciais. Além disso, seguir o que realmente nos excita pode trazer mais energia e motivação para agir. \n\nComo você se sente em relação a essa abordagem? Há algo específico que ressoe com você sobre isso?",
+      "createdAt": "2026-05-28T22:11:01.173Z"
+    },
+    {
+      "role": "user",
+      "content": ".",
+      "createdAt": "2026-05-28T22:12:01.354Z",
+      "attachments": []
+    },
+    {
+      "role": "user",
+      "content": "você pareece estar burro..",
+      "createdAt": "2026-05-28T22:12:41.121Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendi que você está insatisfeito com a conversa. O que posso fazer para melhorar isso?",
+      "createdAt": "2026-05-28T22:12:47.258Z"
+    },
+    {
+      "role": "user",
+      "content": "melhorar a sua conversa.",
+      "createdAt": "2026-05-28T22:12:58.846Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vamos lá. O que você gostaria de discutir ou explorar? Estou aqui para focar no que realmente importa para você.",
+      "createdAt": "2026-05-28T22:13:03.682Z"
+    },
+    {
+      "role": "user",
+      "content": "vai pra merda",
+      "createdAt": "2026-05-28T22:13:14.305Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo que você está frustrado. Se precisar de um tempo ou quiser falar sobre algo específico, estou aqui.",
+      "createdAt": "2026-05-28T22:13:17.870Z"
+    },
+    {
+      "role": "user",
+      "content": "o que você gostaria de discutir",
+      "createdAt": "2026-05-28T22:14:16.837Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Acho que o mais útil agora é pegar algo que ficou pendente e resolver de vez. Vi nos registros que a página do Notion \"Espiritualidade em desenvolvimento\" com a transcrição do Bashar nunca foi criada. Quer que eu faça isso agora?",
+      "createdAt": "2026-05-28T22:14:40.563Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-28T22:08:40.107Z",
+  "createdAt": "2026-05-28T22:08:40.107Z",
+  "updatedAt": "2026-05-28T22:14:45.522Z"
+}

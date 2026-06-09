@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778850715375-d83np5",
+  "title": "faça uma pesquisa sobre a filosofia de Bashar.",
+  "agentId": "cartografo-de-padroes",
+  "agentName": "Cartógrafo de Padrões",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-15T13:11:32.708Z",
+  "updatedAt": "2026-05-15T13:12:57.332Z",
+  "lastOpenedAt": "2026-05-15T13:11:55.375Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "faça uma pesquisa sobre a filosofia de Bashar.",
+      "createdAt": "2026-05-15T13:11:55.363Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Bashar é uma entidade que, segundo seus seguidores, se comunica através do canalizador Darryl Anka. A filosofia de Bashar é uma combinação de ensinamentos espirituais, metafísicos e de autodesenvolvimento. Aqui estão alguns dos principais conceitos e ideias associados à filosofia de Bashar:\n\n1. **Realidade como Criação**: Bashar ensina que a realidade é uma criação individual e coletiva. Cada pessoa tem o poder de moldar sua própria experiência através de suas crenças, emoções e intenções.\n\n2. **Vibrações e Frequências**: A filosofia de Bashar enfatiza a importância das vibrações e frequências. Ele sugere que tudo no universo é energia e que as emoções e pensamentos têm suas próprias frequências, que influenciam a realidade.\n\n3. **A Lei da Atração**: Bashar fala sobre a Lei da Atração, que sugere que semelhante atrai semelhante. Assim, ao alinhar-se com emoções e pensamentos positivos, uma pessoa pode atrair experiências semelhantes.\n\n4. **A Importância do Agora**: Bashar enfatiza a importância de viver no presente. Ele argumenta que o momento presente é onde toda a criação acontece e que focar no agora é essencial para manifestar desejos.\n\n5. **Autenticidade e Verdade Pessoal**: Uma das mensagens centrais de Bashar é a importância de ser autêntico e viver de acordo com a própria verdade. Ele encoraja as pessoas a seguirem suas paixões e intuições.\n\n6. **Conexão com a Consciência Universal**: Bashar fala sobre a conexão de todos os seres com uma consciência universal. Ele sugere que todos somos parte de um todo maior e que essa conexão pode ser acessada através da meditação e da introspecção.\n\n7. **Desafios como Oportunidades**: Bashar vê os desafios e dificuldades como oportunidades de crescimento e aprendizado. Ele incentiva a mudança de perspectiva sobre as dificuldades, vendo-as como partes essenciais da jornada de vida.\n\n8. **Interação com Extraterrestres**: Bashar também aborda a existência de vida extraterrestre e a possibilidade de interações com esses seres. Ele afirma que a humanidade está em um processo de ascensão e que a comunicação com outras civilizações será uma parte desse processo.\n\nEsses conceitos são apresentados de forma acessível em palestras e materiais escritos, e muitos seguidores de Bashar relatam experiências transformadoras ao aplicar seus ensinamentos em suas vidas. A filosofia de Bashar é uma mistura de espiritualidade, psicologia e ciência, buscando fornecer ferramentas para o autodesenvolvimento e a compreensão da realidade.",
+      "createdAt": "2026-05-15T13:12:06.844Z"
+    }
+  ]
+}

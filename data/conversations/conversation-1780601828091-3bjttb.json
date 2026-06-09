@@ -1,0 +1,42 @@
+{
+  "id": "conversation-1780601828091-3bjttb",
+  "conversationId": "conversation-1780601828091-3bjttb",
+  "title": "Oi.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Oi.",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T19:37:08.090Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780601828281-ugzyo7",
+      "conversation_id": "conversation-1780601828091-3bjttb",
+      "conversationId": "conversation-1780601828091-3bjttb",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-04T19:37:08.281Z",
+      "createdAt": "2026-06-04T19:37:08.281Z",
+      "updated_at": "2026-06-04T19:37:08.282Z",
+      "updatedAt": "2026-06-04T19:37:08.282Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T19:37:07.736Z",
+  "createdAt": "2026-06-04T19:37:07.736Z",
+  "updatedAt": "2026-06-04T19:37:10.300Z"
+}

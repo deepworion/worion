@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779480412339-7enpr3",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quem foi Mehmed II",
+      "createdAt": "2026-05-22T20:06:52.339Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "**Mehmed II, o Conquistador** (30 de março de 1432 – 3 de maio de 1481), conhecido em turco como Fatih Sultan Mehmed, foi sultão do Império Otomano em dois períodos: 1444–1446 e 1451–1481. Filho de Murade II, subiu ao trono definitivamente aos 19 anos e transformou o império numa potência que se estendia da Anatólia aos Bálcãs.\n\n**O feito que o definiu**: em 29 de maio de 1453, aos 21 anos, conquistou Constantinopla – capital do Império Bizantino havia mais de mil anos – usando artilharia pesada, canhões de cerco e uma frota reforçada. A cidade se tornou a nova capital otomana (Istambul), e ele passou a reivindicar o título de “César de Roma”, reconhecido pelo Patriarcado Ortodoxo, embora rejeitado pelos monarcas europeus.\n\n**Expansão militar**: depois de Constantinopla, conduziu campanhas que anexaram a Sérvia (1454–1459), a Moreia (1458–1460), Trebizonda (1460–1461), a Bósnia (1463), a Albânia (1466–1478) e partes da Crimeia (1475). Lutou contra Veneza por mais de quinze anos, submeteu a Valáquia como vassalo e, em 1480, lançou uma expedição à Itália (tomando Otranto por um breve período).\n\n**Governo e cultura**:\n- Centralizou a administração com base em mérito, abrindo espaço para talentos de diversas origens étnicas e religiosas.\n- Foi patrono das artes e das ciências: encomendou mesquitas (como a Mesquita Fatih), palácios, escolas e incentivou a tradução de obras clássicas.\n- Adotou uma política de tolerância religiosa: permitiu que cristãos e judeus mantivessem suas práticas sob domínio otomano, o que estabilizou as regiões conquistadas e fortaleceu a economia.\n- Alimentou forte interesse pela cultura ocidental, colecionando arte e relíquias cristãs (chegou a ser retratado pelo pintor veneziano Gentile Bellini em 1480).\n\n**Morte e legado**: morreu em 3 de maio de 1481, aos 49 anos. Sua expansão moldou o Império Otomano como uma das grandes potências dos séculos seguintes, com Istambul como centro político, econômico e cultural. Hoje é herói nacional na Turquia – o distrito de Fatih, a Ponte Fatih Sultan Mehmet e a Mesquita Fatih levam seu nome.\n\n<small>Fontes: [Wikipédia: Maomé II, o Conquistador](https://pt.wikipedia.org/wiki/Maom%C3%A9_II,_o_Conquistador) · [HistoricText: Quem é: Mehmed II](https://historictext.com/glossario/quem-e-mehmed-ii-o-conquistador-otomano/)</small>",
+      "createdAt": "2026-05-22T20:07:21.443Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T20:06:51.555Z"
+}

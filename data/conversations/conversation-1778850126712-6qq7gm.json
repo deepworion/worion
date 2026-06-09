@@ -1,0 +1,99 @@
+{
+  "id": "conversation-1778850126712-6qq7gm",
+  "title": "Bom dia. Tudo bem?? Qual a agenda de hoje programada no notion?",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Bom dia. Tudo bem?? Qual a agenda de hoje programada no notion?",
+      "createdAt": "2026-05-15T13:02:06.206Z",
+      "attachments": []
+    },
+    {
+      "role": "exec",
+      "status": "ok",
+      "content": "✅ filesystem_list concluído"
+    },
+    {
+      "role": "assistant",
+      "content": "Bom dia, Glaydson! No Notion, não há uma agenda específica listada, mas você pode verificar as páginas disponíveis. As páginas que você pode acessar incluem:\n\n- 📋 Daily Reports\n- 🔄 Workflows n8n\n- 🎯 Tasks & Projects\n- 💡 Insights & Ideas\n\nSe precisar de informações específicas de uma dessas páginas, me avise!",
+      "createdAt": "2026-05-15T13:02:13.889Z"
+    },
+    {
+      "role": "user",
+      "content": "Verifique a lista da sub sessão Worion HQ.",
+      "createdAt": "2026-05-15T13:03:06.849Z",
+      "attachments": []
+    },
+    {
+      "role": "exec",
+      "status": "error",
+      "content": "❌ filesystem_list: ENOENT: no such file or directory, scandir 'C:\\Users\\User\\worion-desktop\\Notion\\Worion HQ'"
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que não consegui acessar a subpasta \"Worion HQ\" no Notion. Certifique-se de que a pasta existe ou que o caminho está correto. Se precisar de ajuda para criar ou acessar algo específico, me avise!",
+      "createdAt": "2026-05-15T13:03:13.228Z"
+    },
+    {
+      "role": "user",
+      "content": "https://www.notion.so/Worion-Workspace-HQ-3608bcbfb9ad8162a09cf7b091c78de0",
+      "createdAt": "2026-05-15T13:05:04.048Z",
+      "attachments": []
+    },
+    {
+      "role": "exec",
+      "status": "error",
+      "content": "❌ filesystem_list: ENOENT: no such file or directory, scandir 'C:\\Users\\User\\worion-desktop\\Worion Workspace HQ'"
+    },
+    {
+      "role": "assistant",
+      "content": "Parece que não consegui acessar a subpasta \"Worion Workspace HQ\" diretamente. Se você puder me informar quais informações ou dados específicos você está procurando dentro dessa subpasta, posso ajudar de outra forma!",
+      "createdAt": "2026-05-15T13:05:10.123Z"
+    },
+    {
+      "role": "event",
+      "content": "Retomado em 15/05/2026, 10:10. Intervalo desde a ultima atividade: 8 min.",
+      "createdAt": "2026-05-15T13:10:05.986Z"
+    },
+    {
+      "role": "user",
+      "content": "Refaça o que eu pedi.",
+      "createdAt": "2026-05-15T13:10:21.668Z",
+      "attachments": []
+    },
+    {
+      "role": "exec",
+      "status": "ok",
+      "content": "✅ notion_list_children concluído"
+    },
+    {
+      "role": "assistant",
+      "content": "Aqui estão os itens encontrados na subpasta \"Worion Workspace HQ\":\n\n1. **Página criada pelo Worion em 14/05/2026**\n   - Descrição: Página criada pelo Worion com o pedido original para criar essa página.\n\n2. **Prioridades de Implementação no Worion — 15/05/2026**\n   - Tipo: Página filha\n   - Descrição: Detalhes sobre as prioridades de implementação.\n\n3. **Arquitetura SaaS e Memória Contextual do Worion**\n   - Tipo: Página filha\n   - Descrição: Informações sobre a arquitetura SaaS e a memória contextual.\n\n4. **🦁 Pulo do Leão — MCP de Memória Unificada entre IAs**\n   - Tipo: Página filha\n   - Descrição: Detalhes sobre o MCP de memória unificada entre IAs.\n\nSe precisar de mais informações sobre alguma dessas páginas, me avise!",
+      "createdAt": "2026-05-15T13:10:31.876Z"
+    },
+    {
+      "role": "event",
+      "content": "Retomado em 15/05/2026, 10:12. Intervalo desde a ultima atividade: 11 min.",
+      "createdAt": "2026-05-15T13:12:59.639Z"
+    },
+    {
+      "role": "event",
+      "content": "Retomado em 15/05/2026, 10:48. Intervalo desde a ultima atividade: 46 min.",
+      "createdAt": "2026-05-15T13:48:21.715Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-15T13:48:21.715Z",
+      "previousActivityAt": "2026-05-15T13:02:06.713Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-15T13:02:04.783Z",
+  "projectId": null,
+  "updatedAt": "2026-05-15T13:13:30.591Z",
+  "lastOpenedAt": "2026-05-15T13:48:21.715Z",
+  "projectTitle": null,
+  "activeSkillId": "pensador"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "conversation-1779238534439-pqoxas",
+  "title": "quais são as leis hermeticas?",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "quais são as leis hermeticas?",
+      "createdAt": "2026-05-20T00:55:34.439Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, seguem as chamadas “leis herméticas” ou “princípios herméticos”, segundo a tradição do Hermetismo, especialmente como popularizado pelo livro “O Caibalion” (publicado em 1908 por autores anônimos sob o pseudônimo “Os Três Iniciados”):\n\n1. **Princípio do Mentalismo**  \n“O Todo é Mente; o Universo é mental.”  \nTudo o que existe tem origem em uma mente universal.\n\n2. **Princípio da Correspondência**  \n“O que está em cima é como o que está embaixo; o que está embaixo é como o que está em cima.”  \nHá uma correspondência entre os diferentes planos da existência.\n\n3. **Princípio da Vibração**  \n“Nada está parado; tudo se move; tudo vibra.”  \nTudo está em constante movimento e mudança.\n\n4. **Princípio da Polaridade**  \n“Tudo é duplo; tudo tem polos; tudo tem o seu oposto.”  \nTudo possui dois lados, dois aspectos opostos, que na verdade são extremos da mesma coisa.\n\n5. **Princípio do Ritmo**  \n“Tudo tem fluxo e refluxo; tudo sobe e desce.”  \nOs movimentos do universo seguem padrões rítmicos.\n\n6. **Princípio de Causa e Efeito**  \n“Toda causa tem seu efeito; todo efeito tem sua causa.”  \nNada acontece por acaso, tudo segue leis.\n\n7. **Princípio de Gênero**  \n“O gênero está em tudo; tudo tem seus princípios masculino e feminino.”  \nTudo manifesta características de masculino e feminino, em todos os planos.\n\nEsses princípios são apresentados como chaves para compreender a natureza da realidade, segundo a tradição hermética. Se quiser aprofundar algum deles ou entender aplicações práticas, só avisar.",
+      "createdAt": "2026-05-20T00:55:43.902Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-20T18:20:59.722Z",
+      "previousActivityAt": "2026-05-20T00:55:34.956Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-20T00:55:33.914Z",
+  "projectId": null,
+  "updatedAt": "2026-05-20T01:02:29.049Z",
+  "chatSource": "home",
+  "lastOpenedAt": "2026-05-20T18:20:59.722Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": false,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": ""
+}

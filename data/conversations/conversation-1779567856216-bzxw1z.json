@@ -1,0 +1,54 @@
+{
+  "id": "conversation-1779567856216-bzxw1z",
+  "conversationId": "conversation-1779567856216-bzxw1z",
+  "title": "Quem foi Nikola Tesla",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quem foi Nikola Tesla",
+      "createdAt": "2026-05-23T20:24:16.216Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## Quem foi Nikola Tesla\n\nNikola Tesla foi um engenheiro, inventor e futurista sérvio-americano que mudou para sempre a forma como a eletricidade é gerada e distribuída no mundo. Nascido em 10 de julho de 1856 em Smiljan, no então Império Austríaco (hoje Croácia), ele é mais lembrado por ter criado o sistema de corrente alternada (AC) — a base da rede elétrica moderna — e por ter vencido a chamada **guerra das correntes** contra Thomas Edison, que defendia a corrente contínua.\n\n### Primeiros anos e formação\n\nTesla nasceu em uma família sérvia: o pai, Milutin, era padre ortodoxo, e a mãe, Duka Mandic, tinha uma memória fotográfica que o próprio Tesla dizia ter herdado. Após o ensino secundário em Karlovac, onde um professor o despertou para a eletricidade, quase morreu de cólera — episódio que fez o pai desistir de forçá-lo ao sacerdócio e permitir que estudasse engenharia.\n\nIngressou no Instituto Politécnico Austríaco em Graz (1875), mas abandonou o curso três anos depois sem obter o diploma, o que abalou sua relação com a família.\n\n### Carreira e conflito com Edison\n\n- 1881: começa em telefonia em Budapeste.\n- 1882: entra na Continental Edison Company, em Paris.\n- 1884: é transferido para os Estados Unidos para trabalhar na **Edison Machine Works**, em Nova York.\n\nTesla recebeu a promessa de um bônus de 50 mil dólares se aperfeiçoasse 24 máquinas da empresa. Trabalhou 18 horas por dia durante meses, entregou o resultado — e descobriu que a promessa não seria cumprida. Pediu demissão imediatamente.\n\n### Guerra das correntes e vitória do AC\n\nO grande embate técnico da época foi entre a corrente contínua (DC), defendida por Edison, e a corrente alternada (AC), na qual Tesla apostava. Com o apoio do industrial George Westinghouse, Tesla licenciou suas patentes do **motor de indução** e do sistema polifásico em 1888 — e o AC acabou adotado como padrão, porque permitia transmitir eletricidade a longas distâncias com muito menos perda.\n\n### Invenções e experimentos marcantes\n\n- **Bobina de Tesla** — gerador de alta tensão e alta frequência, base para inúmeros experimentos.\n- **Motor de indução eletromagnética** — coração do sistema AC.\n- **Rádio e controle remoto** — construiu um barco controlado sem fio já no final do século XIX.\n- **Iluminação sem fio** e primeiras imagens de raio-X.\n- Projeto ambicioso da **Torre Wardenclyffe**, para transmissão mundial de energia e comunicação sem fio — interrompido por falta de financiamento.\n\n### Personalidade e últimos anos\n\nTesla era visto como um gênio excêntrico. Tinha uma disciplina de trabalho obsessiva, sofria de desmaios constantes e alimentava ideias que iam muito além do que a engenharia de sua época conseguia executar. Depois de gastar quase toda sua fortuna, passou a viver em hotéis de Nova York, acumulando dívidas.\n\nMorreu em 7 de janeiro de 1943, aos 86 anos, no quarto de hotel onde vivia. Suas cinzas repousam no Museu Nikola Tesla, em Belgrado, na Sérvia.\n\n### Reconhecimento — tardio, mas sólido\n\nEmbora tenha morrido praticamente na pobreza, Tesla recebeu várias honrarias ainda em vida (Medalha Edison do IEEE, Ordem da Águia Branca, entre outras) e, hoje, é reconhecido como um dos inventores mais visionários da história moderna. O carro elétrico da Tesla Inc. leva seu nome como tributo a esse legado.\n\n<small>Fontes: [Nikola Tesla – Wikipedia](https://en.wikipedia.org/wiki/Nikola_Tesla) · [Brasil Escola](https://brasilescola.uol.com.br/fisica/nikola-tesla.htm) · [Educa Mais Brasil](https://www.educamaisbrasil.com.br/educacao/noticias/quem-foi-nikola-tesla)</small>",
+      "createdAt": "2026-05-23T20:24:53.447Z"
+    },
+    {
+      "role": "user",
+      "content": "Explique Blavatsky e Bashar",
+      "createdAt": "2026-05-23T20:25:36.734Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vou fazer as buscas para explicar com fundamento factual, sem tirar nada da memória.\n\n**Busca 1: Blavatsky**\n**Busca 2: Bashar (Darryl Anka)**",
+      "createdAt": "2026-05-23T20:26:03.440Z"
+    },
+    {
+      "role": "user",
+      "content": "Analise as semelhanças entre Elon Musk, Jeff Bezos e Bill Gates, citando fontes",
+      "createdAt": "2026-05-23T20:27:51.537Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## Semelhanças entre Elon Musk, Jeff Bezos e Bill Gates\n*(com base apenas no material coletado)*\n\nO material permite traçar alguns traços comuns entre os três bilionários da tecnologia. Há eixos em que todos aparecem reunidos, e outros em que Bezos ou Gates ficam ausentes — lacunas que deixo indicadas sem preencher com inferência externa.\n\n### 1. Leitores vorazes e influência dos livros na visão de negócios\n\nOs três recomendam publicamente obras que consideram fundamentais para liderança, inovação e visão de mundo.  \nA lista da Exame (2025) mostra um padrão: todos apostam em leituras que tratam de disrupção, eficiência e grandes transformações.\n\n- **Bezos**: livros sobre inovação disruptiva (*The Innovator’s Solution*), teoria das restrições (*The Goal*) e gestão eficaz (*The Effective Executive*).\n- **Musk**: leituras voltadas a inteligência artificial, futuro da humanidade e longtermismo (*Superintelligence*, *Life 3.0*, *What We Owe the Future*).\n- **Gates**: obras que explicam o funcionamento real do mundo (*How the World Really Works*), desafiam percepções erradas (*Factfulness*) e analisam riscos globais (*The Sixth Extinction*).\n\nA semelhança aqui é nítida: **a convicção de que o conhecimento sistematizado — e não apenas a experiência direta — forma a base para decisões de impacto**.\n\n### 2. Riqueza extrema e uso de estratégias fiscais (com uma lacuna)\n\nA investigação da ProPublica, repercutida pelo O Globo (2021), mostrou que bilionários americanos pagaram proporcionalmente muito pouco imposto federal de renda entre 2014 e 2018, valendo-se de brechas legais.  \nJeff Bezos e Elon Musk são citados nominalmente com exemplos concretos:\n\n- Bezos não pagou nada em 2007 e chegou a receber crédito fiscal mesmo com fortuna de US$ 18 bilhões.\n- Musk também está entre os 25 mais ricos que pagaram apenas uma fração ínfima do patrimônio em impostos.\n\nBill Gates **não aparece diretamente nessa análise tributária** — o artigo nomeia Warren Buffett, Jeff Bezos, Michael Bloomberg e Elon Musk. A galeria dos “5 mais ricos” inclui Gates apenas como integrante do ranking de fortunas, sem detalhar sua carga fiscal.  \nPor isso, a semelhança de estratégia tributária só pode ser afirmada com segurança para Bezos e Musk. Sobre Gates, a fonte não oferece dados nesse eixo.\n\n### 3. Filantropia e retribuição: visões antagônicas, mas com um pano de fundo comum\n\nA reportagem da Época Negócios (2025) compara diretamente Bill Gates e Elon Musk, mostrando duas filosofias opostas de “devolver à sociedade”:\n\n- **Gates** amplia a filantropia com foco em saúde, educação e agricultura, usando dados e planejamento de longo prazo. A Fundação Gates prevê doar US$ 9 bilhões em 2026 e já salvou dezenas de milhões de vidas.\n- **Musk**, na liderança do DOGE, cortou drasticamente gastos federais com ajuda externa, fechou a USAID e afirmou que a maior parte da filantropia é “besteira”.\n\n**Jeff Bezos não entra nessa comparação** — o texto foca exclusivamente no contraste Gates–Musk. Não há, portanto, base para igualar Bezos a nenhum dos dois polos usando essa fonte. Sabe-se externamente que Bezos criou fundos filantrópicos, mas o material coletado não o posiciona nesse debate.\n\nA semelhança residual, ainda assim, é que **todos os três detêm fortunas tão imensas que a questão de como (e se) redistribuí-las se tornou pública e politicamente relevante**.\n\n### 4. Posição no topo do capitalismo de tecnologia\n\nOs três figuram entre as pessoas mais ricas do planeta (Forbes, conforme galeria do O Globo) e vieram de empresas que redefiniram setores: Amazon (Bezos), Tesla/SpaceX (Musk) e Microsoft (Gates).  \nA partilha desse patamar gera um **campo magnético comum**: biografias, decisões empresariais e posicionamentos políticos são escrutinados com a mesma intensidade.\n\n---\n\n**Em síntese**: o material autoriza a ver um núcleo comum — leitura estratégica, colossal concentração de riqueza e exposição pública da filantropia. Ao mesmo tempo, as fontes deixam claro que as práticas fiscais e as filosofias de doação dividem esses nomes, e que Bezos permanece mais silencioso nesse recorte.\n\n<small>Fontes: [20 livros que Elon Musk, Bill Gates e Jeff Bezos recomendam — Exame](https://exame.com/carreira/20-livros-que-elon-musk-bill-gates-e-jeff-bezos-recomendam-que-voce-leia/) · [O que Warren Buffett, Jeff Bezos e Elon Musk têm em comum — O Globo](https://oglobo.globo.com/economia/o-que-warren-buffett-jeff-bezos-elon-musk-tem-em-comum-alem-dos-bilhoes-pagam-pouco-ou-nada-em-imposto-de-renda-1-25051631) · [Bill Gates x Elon Musk: duas visões antagônicas sobre retribuir — Época Negócios](https://epocanegocios.globo.com/mundo/noticia/2025/05/bill-gates-x-elon-musk-duas-visoes-antagonicas-sobre-retribuir-a-sociedade.ghtml)</small>",
+      "createdAt": "2026-05-23T20:29:03.722Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-23T20:24:15.678Z",
+  "createdAt": "2026-05-23T20:24:15.678Z",
+  "updatedAt": "2026-05-23T20:55:36.932Z"
+}

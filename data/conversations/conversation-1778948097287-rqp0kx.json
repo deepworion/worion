@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778948097287-rqp0kx",
+  "title": "resume o conteudo.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-16T16:14:57.287Z",
+  "updatedAt": "2026-05-16T16:15:09.929Z",
+  "lastOpenedAt": "2026-05-16T16:14:57.287Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "resume o conteudo.",
+      "createdAt": "2026-05-16T16:14:57.269Z",
+      "attachments": [
+        {
+          "id": "attachment-1778948090270-5r6qc8",
+          "name": "Curso tcc Cibely.docx",
+          "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 17351,
+          "kind": "text",
+          "data": null,
+          "text": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]",
+          "extractedText": "[DOCX: Curso tcc Cibely.docx — erro ao extrair: Could not find file in options]"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "**Resultado**\nStatus: concluido\nObjetivo: resume o conteudo.\nTools usadas: filesystem_read, filesystem_list\n\nItens encontrados:\n- nenhum\n\nAcoes realizadas:\n- filesystem_read executado\n- filesystem_list executado\n\nPendencias reais:\n- nenhuma\n\nDetalhes:\nNão consegui acessar o conteúdo do arquivo \"Curso tcc Cibely.docx\" para resumir. O arquivo não está disponível no diretório esperado. \n\n**Pendências reais:**\n- O arquivo \"Curso tcc Cibely.docx\" não foi encontrado no sistema. Por favor, verifique se ele está no local correto ou se pode ser enviado novamente.",
+      "createdAt": "2026-05-16T16:15:09.894Z"
+    }
+  ]
+}

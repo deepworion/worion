@@ -1,0 +1,44 @@
+{
+  "id": "memory-1780689351315-sd5c2e",
+  "conversationId": "memory-1780689351315-sd5c2e",
+  "title": "Pesquisa factual",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde, quais são as suas memoria?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T19:56:12.071Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780689372088-st74vm",
+      "conversation_id": "memory-1780689351315-sd5c2e",
+      "conversationId": "memory-1780689351315-sd5c2e",
+      "role": "assistant",
+      "content": "# Minhas memórias ativas\n\nTenho estas camadas de memória/contexto disponíveis agora:\n\n- **Seu nome local:** Glaydson\n- **Contexto operacional atual:** conversa em **Novo Chat**\n- **Memory Card ativo:** **Pesquisa factual**\n- **Estado desse card:** sem memórias ou arquivos vinculados ainda\n- **Histórico imediato desta conversa:** você perguntou quais são as minhas memórias\n\nTambém estou carregando o contexto permanente do Worion: voz, regras de presença, forma de responder e restrições de fato.\n\nSe você quiser, eu posso te dizer **o que estou usando agora como contexto prático** nesta conversa.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "created_at": "2026-06-05T19:56:12.088Z",
+      "createdAt": "2026-06-05T19:56:12.088Z",
+      "updated_at": "2026-06-05T19:56:23.968Z",
+      "updatedAt": "2026-06-05T19:56:23.968Z",
+      "completedAt": "2026-06-05T19:56:23.968Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T19:55:51.316Z",
+  "createdAt": "2026-06-05T19:55:51.316Z",
+  "updatedAt": "2026-06-05T19:56:25.981Z"
+}

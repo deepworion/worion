@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779490119263-slw83w",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise os prefeitos de brasilia de minas",
+      "createdAt": "2026-05-22T22:48:39.262Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Pesquisando os prefeitos de Brasília de Minas.\n\nsearch_result: {\"status\":\"success\",\"success\":true,\"result\":{\"type\":\"search_tool_result\",\"search_type\":\"brave_search\",\"query\":\"prefeitos de Brasília de Minas lista completa\",\"data\":[{\"source\":\"web\",\"title\":\"Nasce o 1º inventário histórico da Câmara de Brasília de Minas - Assembleia Legislativa de Minas Gerais\",\"description\":\"A Casa realizou uma pesquisa junto ao Tribunal Regional Eleitoral, além de consultas em jornais da região e na hemeroteca digital. O resultado do levantamento mostra Dilermando Gonçalves Rocha ...\",\"url\":\"https://www.almg.gov.br/comunicacao/noticias/arquivos/Nasce-o-1-inventario-historico-da-Camara-de-Brasilia-de-Minas/\",\"date\":\"2025-10-24\"},\"source\":\"web\",\"title\":\"Nasce o 1º inventário histórico da Câmara de Brasília de Minas ...\",\"description\":\"A Câmara Municipal de Brasília de Minas (Norte de Minas) acaba de finalizar o primeiro inventário de sua história. O documento, que já está disponível ...\",\"url\":\"https://www.almg.gov.br/comunicacao/noticias/arquivos/Nasce-o-1-inventario-historico-da-Camara-de-Brasilia-de-Minas/index.html\",\"date\":\"2025-10-24\"}],\"searchInput\":\"Pesquisar por \\\"prefeitos de Brasília de Minas lista completa\\\"\"}}",
+      "createdAt": "2026-05-22T22:49:04.072Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:48:38.928Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "conversation-1779311230101-2ugg73",
+  "title": "Pesquise a história de Brasilia de Minas, prefeitos eleitos desde a em",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "home",
+  "isAgentSession": false,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-20T21:07:09.833Z",
+  "updatedAt": "2026-05-20T21:07:48.090Z",
+  "lastOpenedAt": "2026-05-20T21:07:10.293Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Pesquise a história de Brasilia de Minas, prefeitos eleitos desde a emancipação, fatos sobre a mudança de nomes, enfim, traga A HISTÓRIA COMPLETA.",
+      "createdAt": "2026-05-20T21:07:10.101Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "As ferramentas de busca não retornaram dados suficientes para responder com precisão factual.\n\nRecomendo consultar diretamente:\n- Site oficial da prefeitura/órgão relevante\n- TRE (Tribunal Regional Eleitoral) para gestores eleitos\n- IBGE para dados demográficos e geográficos\n- Arquivo Público do estado para registros históricos\n- Wikipédia (para referência inicial)\n- Diário Oficial do município/estado\n\n_Motivo técnico: GROUNDING GATE VIOLADO: 5 de 73 nomes verificados nas fontes (7%). Mínimo: 45%._",
+      "createdAt": "2026-05-20T21:07:48.029Z"
+    }
+  ]
+}

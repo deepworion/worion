@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1779570948919-ly5ui6",
+  "conversationId": "conversation-1779570948919-ly5ui6",
+  "title": "Quem foi Alan Turing?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quem foi Alan Turing?",
+      "createdAt": "2026-05-23T21:15:48.918Z",
+      "attachments": []
+    },
+    {
+      "role": "user",
+      "content": "Quem foi Alan Turing?",
+      "createdAt": "2026-05-23T21:15:48.947Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Encontrei 3 resultado(s), mas nao consegui sintetizar uma resposta conclusiva.",
+      "createdAt": "2026-05-23T21:16:19.146Z"
+    },
+    {
+      "role": "assistant",
+      "content": "que fogem ao material consultado).\n\nSua genialidade e seu trágico fim fizeram de Turing uma figura icônica, cujo legado permeia tudo o que hoje chamamos de computação, inteligência artificial e criptografia.\n\n<small>Fontes: [Alan Turing – Wikipedia](https://en.wikipedia.org/wiki/Alan_Turing) · [Alan Turing – Brasil Escola](https://brasilescola.uol.com.br/biografia/alan-mathison.htm)</small>",
+      "createdAt": "2026-05-23T21:16:26.462Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-23T21:15:47.862Z",
+  "createdAt": "2026-05-23T21:15:47.862Z",
+  "updatedAt": "2026-05-23T21:18:51.687Z"
+}

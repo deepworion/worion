@@ -1,0 +1,26 @@
+{
+  "id": "memory-1779989544484-e5dhhz",
+  "conversationId": "memory-1779989544484-e5dhhz",
+  "title": "Espiritualidade / Sonhos / Hermetismo",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "# Contexto carregado: Espiritualidade / Sonhos / Hermetismo\nSlug: espiritualidade-sonhos-hermetismo\nID: 3794ba78-11f5-4cd2-9405-0d952400a35d\nCategoria/dominio: spiritual_reflective\nStatus: draft\nCriado em: 2026-05-27T23:26:59.87764+00:00\nAtualizado em: 2026-05-27T23:26:59.87764+00:00\n## Descricao\nContexto para espiritualidade, sonhos, hermetismo, Bashar, reflexoes e temas simbolicos.\n## Regras de entrada\n- inclui espiritualidade\n- inclui sonhos\n- inclui hermetismo\n- inclui Bashar\n- inclui reflexoes simbolicas\n## Regras de exclusao\n- exclui Worion API\n- exclui Memory Cards tecnicos\n- exclui e-commerce\n## Conteudo bruto/contexto\n```md\n# Consumo do Contexto\n\n## Este contexto consome\n- inclui espiritualidade\n- inclui sonhos\n- inclui hermetismo\n- inclui Bashar\n- inclui reflexoes simbolicas\n\n## Este contexto nao consome\n- exclui Worion API\n- exclui Memory Cards tecnicos\n- exclui e-commerce\n\n## Prioridade\n- Regras explicitas do usuario vencem a heuristica padrao.\n- Se houver conflito, enviar para revisao em vez de impor classificacao.\n\n## Exemplos que entram\n- Trechos que mencionam Espiritualidade / Sonhos / Hermetismo.\n\n## Exemplos que nao entram\n- Trechos sem relacao semantica com este contexto.\n```",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "📌 **Contexto ativo:** Espiritualidade / Sonhos / Hermetismo\n\nContexto para espiritualidade, sonhos, hermetismo, Bashar, reflexoes e temas simbolicos.\n\nPergunte, peça uma síntese ou selecione um trecho para aprofundar.",
+      "createdAt": "2026-05-28T17:32:24.484Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-28T17:32:24.485Z",
+  "createdAt": "2026-05-28T17:32:24.485Z",
+  "updatedAt": "2026-05-28T17:32:27.812Z"
+}

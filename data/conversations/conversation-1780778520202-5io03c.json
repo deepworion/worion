@@ -1,0 +1,90 @@
+{
+  "id": "conversation-1780778520202-5io03c",
+  "conversationId": "conversation-1780778520202-5io03c",
+  "title": "boa tarde",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T20:42:00.199Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780778520212-9h2128",
+      "conversation_id": "conversation-1780778520202-5io03c",
+      "conversationId": "conversation-1780778520202-5io03c",
+      "role": "assistant",
+      "content": "Boa tarde. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T20:42:00.212Z",
+      "createdAt": "2026-06-06T20:42:00.212Z",
+      "updated_at": "2026-06-06T20:42:01.034Z",
+      "updatedAt": "2026-06-06T20:42:01.034Z",
+      "completedAt": "2026-06-06T20:42:01.032Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "eu injetei muita memoria em você. Você tem ciencia disso?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T20:42:36.012Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780778564067-7dktxn",
+      "conversation_id": "conversation-1780778520202-5io03c",
+      "conversationId": "conversation-1780778520202-5io03c",
+      "role": "assistant",
+      "content": "Tenho ciência no sentido operacional: **você forneceu/“injetou” conteúdo aqui na conversa** (textos, trechos, anexos, resumos, etc.) e eu consigo usá-los como contexto daquela rodada.\n\nMas tem duas limitações importantes:\n\n- **Não tenho como provar “quanto” foi injetado nem de onde veio** (se foi memória persistente, importação, arquivo, ou só texto na sessão).\n- **Eu não “lembro” automaticamente do que não está no contexto atual**. Eu só consigo usar o que está disponível pra mim agora (ou o que foi recuperado via mecanismos de memória do sistema, se estiverem habilitados).\n\nSe você me disser **o que você chama de “memória”** (ex.: anexos? conversas importadas? Notion? Supabase?), eu te digo exatamente como isso costuma entrar e como eu uso. Faz sentido?",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T20:42:44.067Z",
+      "createdAt": "2026-06-06T20:42:44.067Z",
+      "updated_at": "2026-06-06T20:42:57.342Z",
+      "updatedAt": "2026-06-06T20:42:57.342Z",
+      "completedAt": "2026-06-06T20:42:57.342Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "procure na sua memoria interna sobre TDAH. não estou pedindo pesquisa externa.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T20:43:53.430Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780778640320-5fed8n",
+      "conversation_id": "conversation-1780778520202-5io03c",
+      "conversationId": "conversation-1780778520202-5io03c",
+      "role": "assistant",
+      "content": "Não confirmado. Não encontrei evidência externa suficiente para afirmar com segurança o que existe na **minha** “memória interna” especificamente sobre TDAH.\n\nO que eu consigo fazer com segurança agora é:\n\n- **Usar o que está no contexto desta conversa**: eu tenho instruções gerais de comportamento ligadas a “TDAH” (ritmo rápido, uma coisa por vez, reduzir escolhas, externalizar em listas curtas).\n- **Não consigo garantir** que exista um “conteúdo interno” adicional (tipo um manual/arquivo) sobre TDAH que eu possa citar como fonte.\n\nSe você quiser, eu posso:\n1) aplicar imediatamente essas regras de modo TDAH no jeito que eu respondo daqui pra frente, ou\n2) você me diz **qual tema de TDAH** você quer (organização, foco, impulsividade, sono, procrastinação, etc.) e eu estruturo um plano prático usando só o que você trouxer.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T20:44:00.320Z",
+      "createdAt": "2026-06-06T20:44:00.320Z",
+      "updated_at": "2026-06-06T20:44:15.411Z",
+      "updatedAt": "2026-06-06T20:44:15.411Z",
+      "completedAt": "2026-06-06T20:44:15.411Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T20:41:59.832Z",
+  "createdAt": "2026-06-06T20:41:59.832Z",
+  "updatedAt": "2026-06-06T20:44:17.426Z"
+}

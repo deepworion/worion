@@ -1,0 +1,31 @@
+{
+  "id": "conversation-1779133766978-o0gwce",
+  "title": "Quero que você acesse o notion na página Workestria HQ, lá tem todas a",
+  "agentId": "diario-reflexivo-facilitador-pessoal",
+  "agentName": "Diário Reflexivo — Facilitador Pessoal",
+  "chatSource": "agent",
+  "isAgentSession": true,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "autoSaveNotion": false,
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-18T19:49:22.333Z",
+  "updatedAt": "2026-05-18T19:49:51.483Z",
+  "lastOpenedAt": "2026-05-18T19:49:26.978Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quero que você acesse o notion na página Workestria HQ, lá tem todas as  Sessões de Desenvolvimento. leia as ultimas pra você entender melhor quem sou eu.",
+      "createdAt": "2026-05-18T19:49:26.065Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "1) **Lista das páginas lidas:**\n   - 🧠 Sessão DeepSeek — 12/05/2026: [Link](https://www.notion.so/35e8bcbfb9ad81dbaa2af585fbf6fcc6)\n   - 🧠 Sessão Claude — 11/05/2026: [Link](https://www.notion.so/35d8bcbfb9ad8170b100d160e4ebc1a6)\n   - 🧠 Sessão Claude — 10/05/2026: [Link](https://www.notion.so/35c8bcbfb9ad8187aeaef481b1e225df)\n\n2) **Contexto consolidado:**\n   As sessões lidas abordam a relação entre autoconhecimento, saúde mental e o manejo do TDAH, com um foco na prática do silêncio e na importância da presença. O paciente reflete sobre suas experiências, suas características TDAH e como isso influencia sua percepção e interação com o mundo ao seu redor. A comunicação é caracterizada por uma busca profunda por significado e clareza, com um tom de sinceridade e autocrítica. Além disso, há uma exploração do conceito de Eu-Tu proposta por Buber e do papel do ego, destacando a diferença entre o ego e o self. O paciente busca integração entre sua vivência e a literatura, procurando construir uma narrativa que una suas experiências pessoais com entendimentos mais amplos.\n\n3) **Ponto exato para retomar:**\n   Retomar na **Sessão Claude — 11/05/2026**, logo após o movimento 1, onde o paciente relata sua travessia e experiências relacionadas ao white label e ao seu desenvolvimento como orquestrador de sistemas.",
+      "createdAt": "2026-05-18T19:49:42.082Z"
+    }
+  ]
+}

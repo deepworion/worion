@@ -1,0 +1,33 @@
+{
+  "id": "memory-1779986464904-5h6dpy",
+  "title": "A revisar",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Contexto carregado: **A revisar**.\n\n# Contexto carregado: A revisar\nSlug: a-revisar\nID: ff3b138c-c3b8-4eb8-9ae9-d1ce20bbb808\nCategoria/dominio: unknown\nStatus: draft\nCriado em: 2026-05-27T23:27:01.837437+00:00\nAtualizado em: 2026-05-27T23:27:01.837437+00:00\n## Descricao\nFila de triagem para material que ainda nao tem contexto confiavel.\n## Regras de entrada\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n## Regras de exclusao\n- exclui conteudo que casa com regra explicita do usuario\n## Conteudo bruto/contexto\n```md\n# Consumo do Contexto\n\n## Este contexto consome\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n\n## Este contexto nao consome\n- exclui conteudo que casa com regra explicita do usuario\n\n## Prioridade\n- Regras explicitas do usuario vencem a heuristica padrao.\n- Se houver conflito, enviar para revisao em vez de impor classificacao.\n\n## Exemplos que entram\n- Trechos que mencionam A revisar.\n\n## Exemplos que nao entram\n- Trechos sem relacao semantica com este contexto.\n```\n\nPergunte, peça uma síntese ou selecione trechos para aprofundar.",
+      "createdAt": "2026-05-28T16:41:04.904Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-28T16:41:04.905Z",
+  "projectId": null,
+  "updatedAt": "2026-05-28T16:41:08.206Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "memory-1779986464904-5h6dpy",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-28T16:41:04.905Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "# Contexto carregado: A revisar\nSlug: a-revisar\nID: ff3b138c-c3b8-4eb8-9ae9-d1ce20bbb808\nCategoria/dominio: unknown\nStatus: draft\nCriado em: 2026-05-27T23:27:01.837437+00:00\nAtualizado em: 2026-05-27T23:27:01.837437+00:00\n## Descricao\nFila de triagem para material que ainda nao tem contexto confiavel.\n## Regras de entrada\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n## Regras de exclusao\n- exclui conteudo que casa com regra explicita do usuario\n## Conteudo bruto/contexto\n```md\n# Consumo do Contexto\n\n## Este contexto consome\n- inclui conteudo ambiguo\n- inclui importacoes sem classificacao clara\n\n## Este contexto nao consome\n- exclui conteudo que casa com regra explicita do usuario\n\n## Prioridade\n- Regras explicitas do usuario vencem a heuristica padrao.\n- Se houver conflito, enviar para revisao em vez de impor classificacao.\n\n## Exemplos que entram\n- Trechos que mencionam A revisar.\n\n## Exemplos que nao entram\n- Trechos sem relacao semantica com este contexto.\n```",
+  "lastOpenedAt": "2026-05-28T17:32:54.298Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:32:54.298Z",
+      "previousActivityAt": "2026-05-28T16:41:08.206Z"
+    }
+  ]
+}

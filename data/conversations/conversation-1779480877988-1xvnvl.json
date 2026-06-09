@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779480877988-1xvnvl",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Em que ano o Império Bizantino deixou de existir e qual evento militar selou esse fim? Forneça também o nome do sultão otomano que liderou a conquista.",
+      "createdAt": "2026-05-22T20:14:37.987Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O Império Bizantino deixou de existir em **1453**. O evento militar que selou esse fim foi a **Queda de Constantinopla**, culminando com a invasão da cidade pelas forças otomanas em 29 de maio daquele ano. O sultão que liderou a conquista foi **Mehmed II** (Maomé II, o Conquistador).",
+      "createdAt": "2026-05-22T20:14:42.504Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T20:14:37.650Z"
+}

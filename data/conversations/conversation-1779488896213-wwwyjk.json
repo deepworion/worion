@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779488896213-wwwyjk",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise sobre montes claros mg",
+      "createdAt": "2026-05-22T22:28:16.213Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Montes Claros é um município do norte de Minas Gerais, situado a aproximadamente 422 km de Belo Horizonte. Com uma área de cerca de 3.590 km², tornou-se o **quinto município mais populoso do estado** — 414.240 habitantes no Censo 2022 (estimativa de 437.601 para 2025). É o principal polo de desenvolvimento da região, exercendo forte influência sobre o norte de Minas e o sul da Bahia.\n\n**Panorama econômico**\n- A economia, originalmente agropecuária, transformou-se com os incentivos da SUDENE, atraindo grandes indústrias como Coteminas, Nestlé, Lafarge, Novo Nordisk e Vallée.\n- Recentemente a farmacêutica Eurofarma anunciou investimento de R$ 200 a 600 milhões e geração de cerca de 500 empregos diretos.\n- O PIB municipal em 2021 atingiu R$ 10,8 bilhões, com PIB per capita de R$ 25.870; o setor de comércio e serviços lidera a criação de postos de trabalho formais.\n- O saldo de empregos formais no primeiro trimestre de 2018 foi positivo, com destaque para micro e pequenas empresas. A remuneração média em 2015 era de 2,2 salários mínimos.\n\n**Localização e logística**\n- Considerado o segundo maior entroncamento rodoviário do país, é cortado pelas BRs 135, 365, 251 e 122.\n- O aeroporto Mário Ribeiro opera voos diários das companhias Gol e Azul, com capacidade para aeronaves de grande porte.\n\n**Educação e saúde**\n- Sedia a Universidade Estadual de Montes Claros (UNIMONTES), um campus da UFMG e do Instituto Federal do Norte de Minas (IFNMG), além de inúmeras instituições privadas.\n- Na saúde, é referência regional com ampla rede de hospitais, clínicas e laboratórios. O IDH municipal é de 0,770 (2010).\n\n**Geografia e história rápida**\n- O relevo predominante inclui serras e grutas, com vegetação de cerrado e manchas de caatinga. O solo possui ocorrências de calcário, minério de ferro, cristal de rocha e ouro de aluvião.\n- A hidrografia pertence à bacia do Rio São Francisco, com destaque para os rios Verde Grande, Pacuí e São Lamberto, além de várias lagoas.\n- Fundada a partir da Fazenda de Montes Claros (1707), a vila foi criada em 1831 como Vila das Formigas e elevada a cidade em 1857. A colonização remonta às expedições bandeirantes de Fernão Dias Pais e Antônio Gonçalves Figueira.\n\n**Curiosidades**\n- A cidade possui dez distritos: Aparecida do Mundo Novo, Ermidinha, Miralta, Nova Esperança, Panorâmica, Santa Rosa de Lima, São João da Vereda, São Pedro de Garça, Vila Nova de Minas e a sede.\n- Entre os atrativos estão os parques Milton Prates, Guimarães Rosa e Sapucaia, a Catedral Nossa Senhora Aparecida e a Igrejinha dos Morrinhos, além de vários sítios arqueológicos.\n\nFontes principais:\n[Portal Oficial – Aspectos Gerais](https://portal.montesclaros.mg.gov.br/cidade/aspectos-gerais)  \n[Portal Oficial – Geografia](https://portal.montesclaros.mg.gov.br/cidade/geografia)  \n[Montes Claros – Wikipedia](https://en.wikipedia.org/wiki/Montes_Claros)",
+      "createdAt": "2026-05-22T22:28:47.181Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:28:15.616Z"
+}

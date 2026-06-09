@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1779029300451-16euj0",
+  "title": "como eu abro um pendrive no pc?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T14:48:17.769Z",
+  "updatedAt": "2026-05-17T14:48:31.622Z",
+  "lastOpenedAt": "2026-05-17T14:48:20.451Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "como eu abro um pendrive no pc?",
+      "createdAt": "2026-05-17T14:48:19.836Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Para abrir um pendrive no PC, siga estes passos:\n\n1. **Conecte o pendrive**: Insira o pendrive em uma porta USB disponível no seu computador.\n\n2. **Aguarde o reconhecimento**: O sistema operacional deve reconhecer automaticamente o dispositivo. Você pode ouvir um som ou ver uma notificação.\n\n3. **Abra o Explorador de Arquivos**:\n   - No Windows: Clique no ícone do **Explorador de Arquivos** na barra de tarefas ou pressione `Windows + E`.\n   - No macOS: Clique no ícone do **Finder**.\n\n4. **Localize o pendrive**:\n   - No Windows: No painel esquerdo, procure por \"Este PC\" ou \"Computador\". O pendrive deve aparecer como um dispositivo removível.\n   - No macOS: O pendrive aparecerá na barra lateral do Finder.\n\n5. **Clique no pendrive**: Clique duas vezes no ícone do pendrive para abrir e visualizar os arquivos armazenados nele.\n\nSe você não conseguir ver o pendrive, pode ser necessário verificar se ele está funcionando corretamente ou se a porta USB está funcionando.",
+      "createdAt": "2026-05-17T14:48:31.564Z"
+    }
+  ]
+}

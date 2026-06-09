@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1779658274857-fxe5x4",
+  "conversationId": "conversation-1779658274857-fxe5x4",
+  "title": "/deepworion qual o conteúdo do documento de C:\\Users\\User\\worion",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "/deepworion qual o conteúdo do documento de C:\\Users\\User\\worion-desktop\\docs\\sessions da data de hoje?",
+      "createdAt": "2026-05-24T21:31:14.856Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## DeepWorion CLI\n\n----------------------------------------------------\n> Modelo: gpt-mini | Agente: padrao\n----------------------------------------------------\n> Enviando para o Worion...\n----------------------------------------------------\n\nDesculpe, mas não tenho a capacidade de acessar ou recuperar arquivos ou documentos do seu computador ou de qualquer outro dispositivo. No entanto, posso ajudar com informações sobre como acessar ou gerenciar seus arquivos. Se precisar de ajuda com algo específico, sinta-se à vontade para perguntar!\n\n----------------------------------------------------\n----------------------------------------------------",
+      "createdAt": "2026-05-24T21:31:18.641Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T21:31:12.309Z",
+  "createdAt": "2026-05-24T21:31:12.309Z",
+  "updatedAt": "2026-05-24T21:31:53.465Z"
+}

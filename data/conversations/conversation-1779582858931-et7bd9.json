@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1779582858931-et7bd9",
+  "conversationId": "conversation-1779582858931-et7bd9",
+  "title": "o que eu posso fazer pra melhorar a qualidade das respostas do W",
+  "agentId": "cartografo-espiritual",
+  "agentName": "Cartógrafo Espiritual",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "o que eu posso fazer pra melhorar a qualidade das respostas do Worion?",
+      "createdAt": "2026-05-24T00:34:18.930Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: Anthropic error 404: {\"type\":\"error\",\"error\":{\"type\":\"not_found_error\",\"message\":\"model: claude-3-5-haiku\"},\"request_id\":\"req_011CbLTLvcyFjFYHaeekSHPL\"}",
+      "createdAt": "2026-05-24T00:34:19.897Z"
+    },
+    {
+      "role": "user",
+      "content": "o que eu posso fazer pra melhorar a qualidade das respostas do Worion?",
+      "createdAt": "2026-05-24T00:36:37.536Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "A qualidade das respostas do Worion melhora quando você alimenta o sistema com contexto específico e direcionamento claro. Três alavancas principais:\n\n**Contexto rico**\n- Anexe documentos relevantes ao que você quer discutir\n- Use a memória: mencione projetos, decisões ou conversas anteriores\n- Conecte o Notion para que o Worion acesse seu conhecimento organizado\n\n**Agentes especializados**\n- Ative agentes específicos para domínios técnicos (como o Cartógrafo Espiritual que está ativo agora)\n- Carregue documentos de referência nos agentes para aprofundar a especialização\n- Use skills pessoais quando precisar de abordagens específicas (TDAH, Presença Emocional, Modo Espiritual)\n\n**Pedidos precisos**\n- Em vez de \"me ajuda com X\", diga \"preciso de Y para resolver Z\"\n- Quando quiser pesquisa, seja específico: \"busque dados atuais sobre...\" em vez de \"o que você sabe sobre...\"\n- Para execução, declare o resultado esperado: \"gere um PDF com...\" ou \"crie uma página no Notion que...\"\n\nO Worion funciona melhor como parceiro de trabalho do que como oráculo. Quanto mais você trata como colaborador que precisa de briefing, melhor ele entrega.\n\nO que você quer melhorar especificamente nas respostas?",
+      "createdAt": "2026-05-24T00:36:48.066Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-24T00:34:15.144Z",
+  "createdAt": "2026-05-24T00:34:15.144Z",
+  "updatedAt": "2026-05-24T00:40:31.304Z"
+}

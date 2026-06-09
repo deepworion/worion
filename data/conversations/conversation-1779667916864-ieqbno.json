@@ -1,0 +1,76 @@
+{
+  "id": "conversation-1779667916864-ieqbno",
+  "conversationId": "conversation-1779667916864-ieqbno",
+  "title": "boa noit",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noit",
+      "createdAt": "2026-05-25T00:11:56.864Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson.",
+      "createdAt": "2026-05-25T00:12:24.113Z"
+    },
+    {
+      "role": "user",
+      "content": "O que melhorou em você hoje?",
+      "createdAt": "2026-05-25T00:13:48.576Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Hoje, percebi uma maior clareza nas minhas respostas e uma capacidade melhorada de conectar ideias. Isso me ajuda a entender melhor o que você traz e a oferecer insights mais relevantes. E você, o que melhorou em você hoje?",
+      "createdAt": "2026-05-25T00:13:54.010Z"
+    },
+    {
+      "role": "user",
+      "content": "/deepworion o que mudou no worion hoje? leia em /docs/sessions",
+      "createdAt": "2026-05-25T00:15:06.986Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## DeepWorion CLI\n\n----------------------------------------------------\n> Modelo: deepseek | Agente: padrao\n----------------------------------------------------\n> Enviando para o Worion...\n----------------------------------------------------\n\nNão tenho acesso a arquivos ou diretórios locais no seu sistema, como `/docs/sessions`. Portanto, não consigo ler o que está nesse caminho para verificar o que mudou no Worion hoje.\n\nSe você puder colar o conteúdo do arquivo ou me dar mais contexto sobre o que é o Worion (um software, uma plataforma, um projeto específico?), posso tentar ajudar a interpretar as mudanças ou resumir as informações.\n\n----------------------------------------------------\n----------------------------------------------------",
+      "createdAt": "2026-05-25T00:15:09.941Z"
+    },
+    {
+      "role": "user",
+      "content": "temos que melhorar a estrutura. você tem acesso aos projetos, e mesmo assim não consegue ler algo que está dentro de você?",
+      "createdAt": "2026-05-25T00:25:39.494Z",
+      "attachments": [
+        {
+          "id": "attachment-1779668448075-33gfnl",
+          "name": "pasted-image-1779668448052.png",
+          "type": "image/png",
+          "size": 5745,
+          "kind": "image",
+          "data": "data:image/png;base64,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",
+          "text": "",
+          "extractedText": ""
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "## Melhorando a Estrutura de Projetos\n\nA necessidade de aprimorar a estrutura de projetos é fundamental para garantir a eficiência e a eficácia nas operações de qualquer organização. Aqui estão alguns pontos-chave a considerar:\n\n### Importância da Estruturação de Projetos\n\n1. **Clareza e Organização**: Uma boa estruturação permite que todos os membros da equipe compreendam suas funções e responsabilidades, evitando confusões e sobreposições de tarefas.\n2. **Adaptação ao Mercado**: A estruturação adequada ajuda as empresas a se adaptarem rapidamente às mudanças do mercado, garantindo competitividade.\n3. **Minimização de Riscos**: Projetos mal estruturados podem levar a falhas significativas. Uma abordagem metódica reduz a chance de erros e atrasos.\n\n### Dicas para Melhorar a Estrutura de Projetos\n\n1. **Utilize a Estrutura Analítica de Projetos (EAP)**: Este método divide o projeto em partes menores e mais gerenciáveis, facilitando o planejamento e a execução.\n2. **Adote Práticas do PMBOK**: O Project Management Body of Knowledge oferece diretrizes e melhores práticas que podem ser aplicadas para otimizar o gerenciamento de projetos.\n3. **Defina Prioridades Claras**: Avalie quais projetos são mais críticos para a organização e aloque recursos adequadamente.\n\n### Conclusão\n\nA melhoria na estrutura de projetos não é apenas uma questão de organização, mas uma estratégia vital para o sucesso a longo prazo de qualquer empresa. Implementar métodos adequados e garantir que todos na equipe estejam alinhados pode fazer toda a diferença.\n\n---\n\n<small>Fontes: [Smartsheet](https://pt.smartsheet.com/content/creative-project-management) · [Balcão de Ideias](https://balcaodeideias.cieds.org.br/conhecimento-covid/como-ajudar-seus-alunos-a-identificar-fontes-confiaveis-de-informacao/) · [Labone Consultoria](https://www.laboneconsultoria.com.br/estruturacao-de-projetos/)</small>",
+      "createdAt": "2026-05-25T00:25:55.056Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-25T00:11:56.499Z",
+  "createdAt": "2026-05-25T00:11:56.499Z",
+  "updatedAt": "2026-05-25T00:43:33.805Z"
+}

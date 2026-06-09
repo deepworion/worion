@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780787230728-4moewu",
+  "conversationId": "conversation-1780787230728-4moewu",
+  "title": "pesquisa sobre a Dharma.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa sobre a Dharma.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:07:10.724Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787233318-ru67y4",
+      "conversation_id": "conversation-1780787230728-4moewu",
+      "conversationId": "conversation-1780787230728-4moewu",
+      "role": "assistant",
+      "content": "Dá pra pesquisar “Dharma” em pelo menos 4 sentidos bem diferentes. Antes de eu sair coletando coisa solta: você quer **qual Dharma**?\n\n1) **Budismo** (ensinamentos + “lei”/ordem do real)\n2) **Hinduísmo** (dharma como dever/ordem moral e social)\n3) **Jainismo** (dharma como princípio/realidade e também uso ético)\n4) **“Dharma” fora das religiões** (ex.: cultura pop, “Dharma Initiative”, etc.)\n\nEnquanto você confirma, já deixo um mapa rápido (pra orientar a pesquisa):\n\n## O que normalmente significa “Dharma”\n- **Sentido geral:** “aquilo que sustenta” / “ordem” / “lei” / “dever correto”.\n- **No uso religioso:** costuma ser tanto **princípio** (como o mundo funciona) quanto **prática ética** (como viver).\n\n## Como eu vou estruturar a pesquisa (quando você escolher o tipo)\n- **Definição** (como a tradição descreve)\n- **Textos/linhas clássicas** (ex.: sutras/obras-chave, sem virar lista infinita)\n- **Como se aplica na prática** (ética, disciplina, dever, caminho)\n- **Variações internas** (diferenças entre escolas/épocas)\n- **Termos relacionados** (karma, samsara, caminho, virtudes, etc.)\n- **Fontes** (3–5 mais relevantes)\n\nMe diz só: **qual dos 4 sentidos acima** você quer? (pode responder “budismo” ou “hinduísmo”, por exemplo).",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T23:07:13.318Z",
+      "createdAt": "2026-06-06T23:07:13.318Z",
+      "updated_at": "2026-06-06T23:07:31.188Z",
+      "updatedAt": "2026-06-06T23:07:31.188Z",
+      "completedAt": "2026-06-06T23:07:31.188Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:07:10.385Z",
+  "createdAt": "2026-06-06T23:07:10.385Z",
+  "updatedAt": "2026-06-06T23:07:33.208Z"
+}

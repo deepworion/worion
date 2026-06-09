@@ -1,0 +1,28 @@
+{
+  "id": "conversation-1778706396349-tr4xea",
+  "title": "vc tem acesso aos meus workflows do n8n, faça uma lista com o nome de ",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T21:06:35.047Z",
+  "updatedAt": "2026-05-13T21:08:40.695Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "vc tem acesso aos meus workflows do n8n, faça uma lista com o nome de todos."
+    },
+    {
+      "role": "assistant",
+      "content": "Sim, eu recebi a lista dos seus workflows do n8n. Aqui estão os nomes de todos eles:\n\n1. Novo trocador de logo (inativo)\n2. workflow que venceu - CORRIGIDO MASSA (inativo)\n3. Workestria | 01 | Buscador Fatorando (inativo)\n4. Insere Logo Puppila — Shopify (inativo)\n5. Puppila - Overlay Logo casas de pet (FIX) (inativo)\n6. PNG removedor de fundos (inativo)\n7. My workflow (inativo)\n8. Workestria | 01 | Organizador de Informações com preocupações (inativo)\n9. My Sub-Workflow 1 (inativo)\n10. Puppila - Overlay Logo casas de pet (GEOMETRIC) (inativo)\n11. MODULO | BODY_HTML (inativo)\n12. My workflow 3 copy (inativo)\n13. Templates cama — v3 final (inativo)\n14. Templates cama (inativo)\n\nSe precisar de mais informações ou ajuda com algum deles, é só avisar!"
+    },
+    {
+      "role": "user",
+      "content": "vc me entregou somente os inativos. Liste os ativos."
+    },
+    {
+      "role": "assistant",
+      "content": "Atualmente, não há workflows ativos no seu n8n. Todos os workflows que recebi estão marcados como inativos. Se precisar de ajuda para ativar algum deles ou criar um novo, é só me avisar!"
+    }
+  ]
+}

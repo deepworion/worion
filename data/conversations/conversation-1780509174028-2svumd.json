@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1780509174028-2svumd",
+  "conversationId": "conversation-1780509174028-2svumd",
+  "title": "boa tarde. como está indo?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde. como está indo?",
+      "createdAt": "2026-06-03T17:52:54.027Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson. Estou aqui, pronto para continuar a conversa. O que você gostaria de discutir hoje?",
+      "createdAt": "2026-06-03T17:53:02.030Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T17:52:52.893Z",
+  "createdAt": "2026-06-03T17:52:52.893Z",
+  "updatedAt": "2026-06-03T17:53:17.679Z"
+}

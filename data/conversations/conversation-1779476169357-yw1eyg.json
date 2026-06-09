@@ -1,0 +1,18 @@
+{
+  "conversationId": "conversation-1779476169357-yw1eyg",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Pesquise a versão atual estável do Electron e me diga: versão, data aproximada de lançamento se encontrar, e quais fontes você consultou. Não invente data se não encontrar.",
+      "createdAt": "2026-05-22T18:56:09.357Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Vou buscar a versão estável atual do Electron e a data de lançamento.\n\n<search>\nbrave_search: \"Electron stable release latest version 2025\"\n</search>\n<search>\nbrave_search: \"Electron latest stable version release date 2025 site:electronjs.org\"\n</search>",
+      "createdAt": "2026-05-22T18:56:18.540Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T18:56:09.163Z"
+}

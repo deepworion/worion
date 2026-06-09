@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778981673569-vjoxnx",
+  "title": "O que tem de bom hoje ?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T01:34:32.462Z",
+  "updatedAt": "2026-05-17T01:34:37.040Z",
+  "lastOpenedAt": "2026-05-17T01:34:33.570Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "O que tem de bom hoje ?",
+      "createdAt": "2026-05-17T01:34:33.361Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi, Glaydson! O que você trouxe hoje? Se precisar de algo específico ou quiser discutir um tema, estou aqui para ajudar.",
+      "createdAt": "2026-05-17T01:34:37.014Z"
+    }
+  ]
+}

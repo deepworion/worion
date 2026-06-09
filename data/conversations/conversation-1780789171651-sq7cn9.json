@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780789171651-sq7cn9",
+  "conversationId": "conversation-1780789171651-sq7cn9",
+  "title": "boa noite",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:39:31.644Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780789171668-58p5se",
+      "conversation_id": "conversation-1780789171651-sq7cn9",
+      "conversationId": "conversation-1780789171651-sq7cn9",
+      "role": "assistant",
+      "content": "Boa noite. Estou por aqui.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-06T23:39:31.668Z",
+      "createdAt": "2026-06-06T23:39:31.668Z",
+      "updated_at": "2026-06-06T23:39:32.487Z",
+      "updatedAt": "2026-06-06T23:39:32.487Z",
+      "completedAt": "2026-06-06T23:39:32.484Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "o que você tem pra hoje?",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:39:39.472Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780789186120-ewbopy",
+      "conversation_id": "conversation-1780789171651-sq7cn9",
+      "conversationId": "conversation-1780789171651-sq7cn9",
+      "role": "assistant",
+      "content": "Hoje, pra você, tem uma coisa só que vale destravar primeiro: **escolher a próxima ação mínima (de 10 minutos) pra tirar o dia do modo “parado”**.\n\nMe diz só uma coisa: **qual tarefa você mais está evitando agora (uma frase)?**",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T23:39:46.120Z",
+      "createdAt": "2026-06-06T23:39:46.120Z",
+      "updated_at": "2026-06-06T23:39:50.934Z",
+      "updatedAt": "2026-06-06T23:39:50.934Z",
+      "completedAt": "2026-06-06T23:39:50.934Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:39:26.067Z",
+  "createdAt": "2026-06-06T23:39:26.067Z",
+  "updatedAt": "2026-06-06T23:39:52.940Z"
+}

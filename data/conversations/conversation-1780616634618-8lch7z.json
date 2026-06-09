@@ -1,0 +1,120 @@
+{
+  "id": "conversation-1780616634618-8lch7z",
+  "title": "pesquisa sobre a relação entre TDAH e empreendedorismo",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa sobre a relação entre TDAH e empreendedorismo",
+      "createdAt": "2026-06-04T23:43:54.617Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780616643328-6137sx",
+      "role": "assistant",
+      "model": "gpt-5.4-mini",
+      "status": "completed",
+      "content": "Relação entre TDAH e empreendedorismo: principais achados e hipóteses (síntese de pesquisa)\n\n1) Tendências observadas\n- Maior propensão a empreender: estudos populacionais e com amostras clínicas sugerem que traços associados ao TDAH (impulsividade, busca de novidade, energia/hiperfoco) podem aumentar a probabilidade de iniciar negócios.\n- Empreendedorismo por oportunidade vs. por necessidade: a evidência é mista. Alguns trabalhos apontam maior orientação a oportunidades, inovação e exploração de mercados; outros sugerem que dificuldades funcionais e ambientes pouco flexíveis podem empurrar indivíduos a empreender como forma de contornar restrições.\n\n2) Vantagens potenciais (mecanismos)\n- Hiperfoco e intensidade: podem favorecer execução rápida em tarefas críticas, desenvolvimento acelerado de protótipos e aprendizado em ciclos curtos.\n- Criatividade e pensamento divergente: maior geração de ideias e iteração frequente, útil para testar variações de produto e estratégia.\n- Busca de novidade e networking: maior exposição a oportunidades, parcerias e nichos emergentes.\n- Decisão sob incerteza: impulsividade pode acelerar “testar e aprender” cedo (abordagens tipo lean startup), especialmente quando existe algum nível de estrutura, feedback e monitoramento.\n\n3) Riscos e custos (mecanismos)\n- Planejamento e consistência: dificuldades em funções executivas podem prejudicar gestão de caixa, cronogramas, metas e rotinas operacionais.\n- Impulsividade na tomada de decisão: pode aumentar risco de escolhas precipitadas, subestimar custos e comprometer planejamento financeiro e estratégico.\n- Sustentação do esforço: oscilações atencionais podem dificultar manutenção de tarefas de baixa novidade (contabilidade, conformidade, vendas recorrentes), afetando continuidade e escalabilidade.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T23:44:03.328Z",
+      "updatedAt": "2026-06-04T23:44:44.325Z",
+      "created_at": "2026-06-04T23:44:03.328Z",
+      "updated_at": "2026-06-04T23:44:44.325Z",
+      "completedAt": "2026-06-04T23:44:44.325Z",
+      "conversationId": "conversation-1780616634618-8lch7z",
+      "conversation_id": "conversation-1780616634618-8lch7z"
+    },
+    {
+      "role": "user",
+      "content": "como o hiperfoco que eu tenho se compara com o que a ciência descreve?",
+      "createdAt": "2026-06-04T23:44:56.031Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780616701812-f7t9jm",
+      "role": "assistant",
+      "model": "gpt-5.4-mini",
+      "status": "completed",
+      "content": "Pelo que você descreve (hiperfoco em séries e leitura por dias), isso tende a se alinhar com o que a ciência chama de “hiperfoco” em TDAH: uma capacidade de entrar em um estado de atenção muito intensa quando o estímulo é altamente interessante/novidade e oferece feedback rápido, com dificuldade de “desengatar” mesmo quando a tarefa deixa de ser a mais prioritária.\nComparando com descrições científicas comuns:\n- Similaridades\n  - Intensidade e duração: foco prolongado em atividades que “prendem”.\n  - Controle por interesse/estímulo: o foco aparece mais quando o tema é relevante/estimulante do que por planejamento.\n  - Custo funcional: pode atrapalhar rotinas, prazos e alternância de tarefas.\n- Diferenças que podem existir (vale checar)\n  - Hiperfoco não é igual a euforia: na literatura, hiperfoco é mais sobre atenção sustentada do que sobre sensação de euforia. Se houve automedicação (por exemplo, cocaína) antes, isso pode ter aumentado a intensidade/compulsão do foco por mecanismos de dopamina diferentes do padrão típico do TDAH.\n  - Flexibilidade: alguns estudos sugerem que hiperfoco pode ser mais útil quando há estrutura externa (metas, timers, ambiente). Se você consegue redirecionar quando precisa, isso é um sinal importante a considerar.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T23:45:01.812Z",
+      "updatedAt": "2026-06-04T23:45:33.969Z",
+      "created_at": "2026-06-04T23:45:01.812Z",
+      "updated_at": "2026-06-04T23:45:33.969Z",
+      "completedAt": "2026-06-04T23:45:33.969Z",
+      "conversationId": "conversation-1780616634618-8lch7z",
+      "conversation_id": "conversation-1780616634618-8lch7z"
+    },
+    {
+      "role": "user",
+      "content": "você consegue me dar algo concreto e acionável pra hoje, sabendo do meu estado atual?",
+      "createdAt": "2026-06-04T23:45:43.828Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780616749172-dr6wp3",
+      "role": "assistant",
+      "model": "gpt-5.4-mini",
+      "status": "completed",
+      "content": "Sim. Hoje, faça um “reset de foco” de 25 minutos (sem telas aleatórias) e feche um ciclo pequeno.\n\n1) 2 min — escolha 1 tarefa só (a menor que dá pra terminar): ex. “responder 1 mensagem importante” OU “adiantar 1 parte do projeto” OU “organizar 1 arquivo/aba”.\n2) 23 min — timer 25: trabalhe nela sem alternar. Se vier vontade de streaming/Instagram, anote “depois” num papel e volte.\n3) 3 min — Ho’oponopono rápido (1 rodada): “Sinto muito / me perdoe / eu te agradeço / eu amo você” (repete enquanto respira).\n4) 2 min — registre o próximo passo da mesma tarefa (uma frase) e defina um horário pra continuar.\n\nSe você disser qual é a tarefa mais urgente (1 opção), eu adapto o “próximo passo” pra ficar mais específico.",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T23:45:49.172Z",
+      "updatedAt": "2026-06-04T23:46:15.669Z",
+      "created_at": "2026-06-04T23:45:49.172Z",
+      "updated_at": "2026-06-04T23:46:15.669Z",
+      "completedAt": "2026-06-04T23:46:15.669Z",
+      "conversationId": "conversation-1780616634618-8lch7z",
+      "conversation_id": "conversation-1780616634618-8lch7z"
+    },
+    {
+      "role": "user",
+      "content": "o que você não sabe sobre mim que seria útil saber?",
+      "createdAt": "2026-06-04T23:48:12.951Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780616900143-v7268h",
+      "role": "assistant",
+      "model": "gpt-5.4-mini",
+      "status": "completed",
+      "content": "- Seu objetivo prioritário “agora” (próximas 2 semanas) e como você mede sucesso (1 métrica simples).\n- Seu nível de energia/limite real hoje (ex.: “posso só 30–60 min” vs “tenho 3–4h”) pra eu calibrar o plano.\n- Quais tarefas você já tentou e travou (e por quê: falta de clareza, tempo, medo, dependência, etc.).\n- Seu stack/ambiente atual de trabalho (Windows/Mac/Linux, ferramentas que você usa de verdade) pra eu não sugerir caminhos incompatíveis.\n- Preferências de execução: você quer passos curtos e rígidos ou um plano flexível? (e se prefere checklist ou só instruções.)\n- Restrições pessoais: horários, compromissos fixos e o que é “proibido” pra você hoje (ex.: reuniões, redes sociais, PowerShell, etc.).",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-04T23:48:20.143Z",
+      "updatedAt": "2026-06-04T23:48:53.144Z",
+      "created_at": "2026-06-04T23:48:20.143Z",
+      "updated_at": "2026-06-04T23:48:53.144Z",
+      "completedAt": "2026-06-04T23:48:53.144Z",
+      "conversationId": "conversation-1780616634618-8lch7z",
+      "conversation_id": "conversation-1780616634618-8lch7z"
+    }
+  ],
+  "agentName": "ESPECIALISTA EM TDHA",
+  "createdAt": "2026-06-04T23:42:03.342Z",
+  "projectId": null,
+  "updatedAt": "2026-06-04T23:48:55.170Z",
+  "chatSource": "agent",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780616634618-8lch7z",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-04T23:42:03.342Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-05T01:18:40.896Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-05T01:18:40.896Z",
+      "previousActivityAt": "2026-06-04T23:48:55.170Z"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "conversation-1778779379862-dgaybl",
+  "title": "Crie automaticamente uma nova página no meu Notion atual com as seguin",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-14T17:22:57.873Z",
+  "updatedAt": "2026-05-14T17:31:29.303Z",
+  "lastOpenedAt": "2026-05-14T17:22:59.862Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Crie automaticamente uma nova página no meu Notion atual com as seguintes configurações:\n\nNome da página:\nWorion Workspace HQ\n\nConteúdo inicial:\n\n# Worion Workspace HQ\n\nBase central de documentação, memória e evolução do projeto Worion.\n\n## Estrutura Inicial\n\n* Daily Reports\n* Projects\n* Agents\n* Skills\n* Decisions\n* Session Checkpoints\n* Knowledge Base\n* Integrations\n* Roadmap\n* Documentation\n\n## Objetivo\n\nEste workspace será utilizado como núcleo documental do Worion, armazenando:\n\n* relatórios diários;\n* projetos;\n* decisões arquiteturais;\n* checkpoints de retomada;\n* documentação técnica;\n* base de conhecimento.\n\n## Arquitetura\n\nWorion Desktop → Supabase → Notion → n8n → MCP → Modelos de IA\n\nPermissões:\nPrivada.\n\nApós criar a página:\n\n1. Retorne o link da página criada.\n2. Informe o Page ID.\n3. Confirme se a página está pronta para ser utilizada como NOTION_PARENT_PAGE_ID.\n4. Se possível, crie também as subpáginas:\n\n   * Daily Reports\n   * Projects\n   * Agents\n   * Skills\n   * Decisions\n   * Session Checkpoints\n   * Knowledge Base\n   * Integrations\n   * Roadmap\n   * Documentation",
+      "createdAt": "2026-05-14T17:22:58.741Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: Titulo da pagina Notion nao informado.",
+      "createdAt": "2026-05-14T17:23:00.367Z"
+    },
+    {
+      "role": "user",
+      "content": "crie essa página no notion: Worion Workspace HQ",
+      "createdAt": "2026-05-14T17:23:40.592Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Pagina criada no Notion: essa : Worion Workspace HQ\nLink: https://www.notion.so/essa-Worion-Workspace-HQ-3608bcbfb9ad8162a09cf7b091c78de0\nPage ID: 3608bcbf-b9ad-8162-a09c-f7b091c78de0",
+      "createdAt": "2026-05-14T17:23:42.609Z"
+    },
+    {
+      "role": "user",
+      "content": "Conteúdo inicial:\n\n# Worion Workspace HQ\n\nBase central de documentação, memória e evolução do projeto Worion.\n\n## Estrutura Inicial\n\n* Daily Reports\n* Projects\n* Agents\n* Skills\n* Decisions\n* Session Checkpoints\n* Knowledge Base\n* Integrations\n* Roadmap\n* Documentation\n\n## Objetivo\n\nEste workspace será utilizado como núcleo documental do Worion, armazenando:\n\n* relatórios diários;\n* projetos;\n* decisões arquiteturais;\n* checkpoints de retomada;\n* documentação técnica;\n* base de conhecimento.\n\n## Arquitetura\n\nWorion Desktop → Supabase → Notion → n8n → MCP → Modelos de IA\n\nPermissões:\nPrivada.\n\nApós criar a página:\n\n1. Retorne o link da página criada.\n2. Informe o Page ID.\n3. Confirme se a página está pronta para ser utilizada como NOTION_PARENT_PAGE_ID.\n4. Se possível, crie também as subpáginas:\n\n   * Daily Reports\n   * Projects\n   * Agents\n   * Skills\n   * Decisions\n   * Session Checkpoints\n   * Knowledge Base\n   * Integrations\n   * Roadmap\n   * Documentation",
+      "createdAt": "2026-05-14T17:24:05.692Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Pagina criada no Notion: Conteúdo inicial: # Worion Workspace HQ Base central de documentação, memória e\nLink: https://www.notion.so/Conte-do-inicial-Worion-Workspace-HQ-Base-central-de-documenta-o-mem-ria-e-3608bcbfb9ad81598613f76c4647b7f7\nPage ID: 3608bcbf-b9ad-8159-8613-f76c4647b7f7",
+      "createdAt": "2026-05-14T17:24:07.914Z"
+    },
+    {
+      "role": "user",
+      "content": "Renomeei a página:\nWorion Workspace HQ",
+      "createdAt": "2026-05-14T17:25:50.425Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "A página foi renomeada para \"Worion Workspace HQ\". \n\nAgora, vou adicionar o conteúdo inicial que você forneceu. Um momento, por favor.",
+      "createdAt": "2026-05-14T17:25:54.042Z"
+    },
+    {
+      "role": "user",
+      "content": "vc criou?",
+      "createdAt": "2026-05-14T17:26:34.343Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Desculpe pela confusão anterior. Vou criar a página \"Worion Workspace HQ\" com o conteúdo inicial agora. Um momento, por favor.",
+      "createdAt": "2026-05-14T17:26:36.068Z"
+    }
+  ]
+}

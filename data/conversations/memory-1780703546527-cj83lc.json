@@ -1,0 +1,44 @@
+{
+  "id": "memory-1780703546527-cj83lc",
+  "conversationId": "memory-1780703546527-cj83lc",
+  "title": "Espiritualidade & Filosofia",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Busque na supabase tudo relacionado a esse campo.",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T23:52:27.122Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780703547134-te0rx5",
+      "conversation_id": "memory-1780703546527-cj83lc",
+      "conversationId": "memory-1780703546527-cj83lc",
+      "role": "assistant",
+      "content": "Beleza, Glaydson. Pra eu buscar “tudo relacionado a esse campo”, eu preciso que você me diga qual é exatamente o **campo** (nome do campo/coluna e, se tiver, o **valor** que você quer filtrar).\n\nMe manda uma destas opções:\n- **Nome do campo** (ex: `project`, `status`, `spiritual_field`, etc.)\n- **Nome do campo + valor** (ex: `spiritual_field = \"hermetismo\"`)\n- Se você estiver falando de um campo dentro de um **formulário/Notion**, me diga o nome que aparece lá.\n\nAssim que você mandar isso, eu rodo a busca na Supabase e te devolvo o que existir.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-05T23:52:27.134Z",
+      "createdAt": "2026-06-05T23:52:27.134Z",
+      "updated_at": "2026-06-05T23:52:38.356Z",
+      "updatedAt": "2026-06-05T23:52:38.356Z",
+      "completedAt": "2026-06-05T23:52:38.355Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T23:52:26.528Z",
+  "createdAt": "2026-06-05T23:52:26.528Z",
+  "updatedAt": "2026-06-05T23:52:40.368Z"
+}

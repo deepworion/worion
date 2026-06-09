@@ -1,0 +1,43 @@
+{
+  "id": "conversation-1779243282677-4umslu",
+  "title": "quem foram os prefeitos de ubaí - mg?",
+  "agentId": "cartografo-de-padroes",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Boa noite. O que você trouxe hoje?",
+      "createdAt": "2026-05-20T02:14:23.073Z"
+    },
+    {
+      "role": "user",
+      "content": "quem foram os prefeitos de ubaí - mg?",
+      "createdAt": "2026-05-20T02:14:42.677Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Erro: OpenAI error 404: {\n  \"error\": {\n    \"message\": \"This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"model\",\n    \"code\": null\n  }\n}",
+      "createdAt": "2026-05-20T02:14:52.987Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-20T18:20:55.816Z",
+      "previousActivityAt": "2026-05-20T02:14:42.917Z"
+    }
+  ],
+  "agentName": "Cartógrafo de Padrões",
+  "createdAt": "2026-05-20T02:13:57.937Z",
+  "projectId": null,
+  "updatedAt": "2026-05-20T02:15:02.471Z",
+  "chatSource": "agent",
+  "lastOpenedAt": "2026-05-20T18:20:55.816Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": true,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "Conhecimento de dominio pesquisado e incorporado ao agente ativo.\nAgente: Cartógrafo de Padrões\nConsultas: quem foram os prefeitos de ubaí - mg Psicologia, terapia e desenvolvimento humano Direito Espiritualidade, esoterismo e tradicoes simbolicas Software, automacao e arquitetura tecnica hermetismo Jung Bashar sombra modelos psicologicos metodo | Psicologia, terapia e desenvolvimento humano Direito Espiritualidade, esoterismo e tradicoes simbolicas Software, automacao e arquitetura tecnica hermetismo Jung Bashar sombra fundamentos fontes confiaveis | quem foram os prefeitos de ubaí - mg legislacao jurisprudencia doutrina Brasil\n\n## Pesquisa interna de aprofundamento do dominio do agente\nEspecializacao derivada dos documentos: Psicologia, terapia e desenvolvimento humano, Direito, Espiritualidade, esoterismo e tradicoes simbolicas, Software, automacao e arquitetura tecnica, Engenharia e normas tecnicas, Jung, Bashar, hermetismo, sombra.\nUse os sinais abaixo apenas para fundamentar o raciocinio especializado. Nao apresente como relatorio bruto, nao liste fontes salvo pedido explicito, e nao substitua a persona do agente por tom de pesquisador.\n- Relação Geral do Acervo UFOB.csv — Universidade Federal do Oeste da Bahia\n  URL: https://ufob.edu.br/acesso-a-informacao/dados-abertos/api/2021/relacao-geral-do-acervo-ufob.csv/view\n  Sinal relevante: ;;&quot;SILVA, Wilmar Dias da; SILVA, Wilmar Dias da et al.&quot;;9;0; 1. Simpsio Florestal na Bahia: ; saparata.;SIMPSIO FLORETAL NA BAHIA, 1., Bahia.;1;0; 10 anos sem Milton Santos. ;;SILVA, Maria Auxiliadora da. UNIVERSIDADE FEDERAL DA BAHIA Instituto de Geocincias.;2;0; 101 Regras bsicas para uma arquitetura de baixo consumo energtico..\n- Ministério da Educação Universidade Federal do ...\n  URL: https://ufrb.edu.br/ccs/images/DIACOL/Cursos/PPC_Psicologia.pdf\n  Sinal relevante: Sales (s/d) menciona que essa cidade é administrada pelo prefeito <strong>Euvaldo de Almeida Rosa</strong> e que sua gestão\n- UNIVERSIDADE FEDERAL DE UBERLÂNDIA FACULDADE DE EDUCAÇÃO\n  URL: https://repositorio.ufu.br/bitstream/123456789/39084/1/FaculdadeIsoladaUniversidade.pdf\n  Sinal relevante: Trabalhista Brasileiro (PTB) – mesmo partido do presidente Vargas e do então prefeito\n- Educação, contemporaneidade & processos psicossociais\n  URL: https://pos.uel.br/psicologia/wp-content/uploads/2025/04/Educacao-contemporaneidade-processos-psicossociais.pdf\n  Sinal relevante: Fauston Negreiros · Rafael Bianchi Silva · Thais Serafim · (Organizadores) · Educação, contemporaneidade · &amp; processos psicossociais · debates e reflexões · Programa de Pós-Graduação em Psicologia · Departamento de Psicologia Social e Institucional (PSI) · Departamento de Psicologia ...\n- Busca de escolas, municípios e estados\n  URL: https://qedu.org.br/municipio/3170206-uberlandia/busca\n  Sinal relevante: Encontre de forma rápida e fácil, dados educacionais do Censo Escolar, da Prova Brasil e do Ideb para cada escola, município e estado brasileiro\n- https://sisurb.pjf.mg.gov.br/portal/home/socialnet...\n  URL: https://sisurb.pjf.mg.gov.br/portal/home/socialnetwork.html?t=dbsig_SIGPLAN_BR_040&n=tw&u=https://sisurb.pjf.mg.gov.br/portal/home/item.html?id=953c2bfab97d42c2a7c3731242f88abf\n  Sinal relevante: Missing: foram prefeitos ubaí - Psicologia, terapia desenvolvimento humano Direito Espiritualidade, esoterismo tradições simbólicas Software, automação arquitetura técnica hermetismo Jung Bashar sombra modelos psicológicos método 2026\n- Marco Antônio Andrade - Prefeitura Municipal de Ubaí\n  URL: https://ubai.mg.gov.br/10604-2/\n  Sinal relevante: Marco Antônio Andrade, natural de Ubaí, 49 anos, filho de Benigno Pereira Andrade e Maria do Socorro Braga, casado com Joselane Aparecida\n- Decreto Nº 10, de 11 de Fevereiro de 2026\n  URL: https://ubai.mg.gov.br/decreto-no-10-de-11-de-fevereiro-de-2026/\n  Sinal relevante: “DISPÕE SOBRE NOMEAÇÃO E CONVOCAÇÃO PARA POSSE DE CANDIDATOS APROVADOS NO CONCURSO PÚBLICO DA PREFEITURA MUNICIPAL DE UBAÍ/MG – EDITAL N°\n- Prefeitura Municipal de Ubaí\n  URL: https://ubai.mg.gov.br/\n  Sinal relevante: Onde estamos. SOBRE NÓS. Rua: Francisco Macambira, 37 - Centro - Ubaí - MG - CEP: 39320-000 - Telefone: (38) 3633-1113. Email: prefeitura@ubai.\n- Ubaí – Wikipédia, a enciclopédia livre\n  URL: https://pt.wikipedia.org/wiki/Uba%C3%AD\n  Sinal relevante: Ubaí é um município brasileiro localizado no norte do estado de Minas Gerais. Pertence à Microrregião de Montes Claros. Ocupa uma área de 820,524 km² e tem"
+}

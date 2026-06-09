@@ -1,0 +1,28 @@
+{
+  "id": "conversation-1778705116821-faeum3",
+  "title": "Vc consegue ler os meu workflows?",
+  "agentId": "n8n-copiloto",
+  "agentName": "n8n Copiloto",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T20:45:16.692Z",
+  "updatedAt": "2026-05-13T20:48:17.690Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Vc consegue ler os meu workflows?"
+    },
+    {
+      "role": "assistant",
+      "content": "Não consigo acessar diretamente seus workflows. No entanto, você pode compartilhar detalhes específicos, como a estrutura dos nodes, configurações ou qualquer erro que esteja enfrentando. Com essas informações, posso ajudar a revisar ou depurar seu fluxo."
+    },
+    {
+      "role": "user",
+      "content": "vc tem acesso ao meu notion?"
+    },
+    {
+      "role": "assistant",
+      "content": "Não tenho acesso ao seu Notion ou a qualquer outra ferramenta ou conta. Se precisar de ajuda com algo específico no Notion, você pode descrever o que precisa, e eu farei o possível para ajudar!"
+    }
+  ]
+}

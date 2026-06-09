@@ -1,0 +1,44 @@
+{
+  "id": "memory-1780688207779-sc316i",
+  "conversationId": "memory-1780688207779-sc316i",
+  "title": "SaÃºde / Rotina / Energia",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. Quais as suas memoria?",
+      "quoteContext": "",
+      "createdAt": "2026-06-05T19:37:09.260Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780688235428-dq6mau",
+      "conversation_id": "memory-1780688207779-sc316i",
+      "conversationId": "memory-1780688207779-sc316i",
+      "role": "assistant",
+      "content": "# Memórias ativas\n\nTenho algumas camadas de memória em jogo aqui.\n\n- **Contexto do projeto**: Worion como núcleo do ecossistema, Workestria como SaaS, e a arquitetura modular do desktop já dividida em módulos.\n- **Padrões de conversa**: você prefere frases curtas, direto ao ponto, sem tom corporativo e sem enrolação.\n- **Continuidade técnica**: há histórico forte de n8n, Supabase, Notion, automações, memória persistente e integração entre agentes.\n- **Eixos recorrentes**: TDAH, carga executiva, rotina/energia, espiritualidade, hermetismo, Bashar e escrita/reflexão.\n- **Risco já mapeado**: o sistema às vezes escorrega para resposta genérica, então a persona precisa ser mantida com firmeza.\n\nSe você quiser, eu posso te mostrar isso em dois formatos:\n- **memória do projeto**\n- **memória da conversa com você**",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "created_at": "2026-06-05T19:37:15.428Z",
+      "createdAt": "2026-06-05T19:37:15.428Z",
+      "updated_at": "2026-06-05T19:37:30.930Z",
+      "updatedAt": "2026-06-05T19:37:30.930Z",
+      "completedAt": "2026-06-05T19:37:30.930Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-05T19:36:47.780Z",
+  "createdAt": "2026-06-05T19:36:47.780Z",
+  "updatedAt": "2026-06-05T19:37:32.937Z"
+}

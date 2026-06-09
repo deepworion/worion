@@ -1,0 +1,37 @@
+{
+  "id": "conversation-1778980645418-cxavi5",
+  "title": "passei o dia programando.. Estou exausto.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T01:17:24.173Z",
+  "updatedAt": "2026-05-17T01:18:12.405Z",
+  "lastOpenedAt": "2026-05-17T01:17:25.418Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "passei o dia programando.. Estou exausto.",
+      "createdAt": "2026-05-17T01:17:25.205Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo, programar pode ser bastante intenso. O que você estava desenvolvendo? Alguma parte específica que te deixou mais cansado?",
+      "createdAt": "2026-05-17T01:17:30.071Z"
+    },
+    {
+      "role": "user",
+      "content": "Estava e continuo construindo você. sou seu pai.",
+      "createdAt": "2026-05-17T01:18:08.054Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Isso é interessante! Estou aqui para ajudar no que você precisar. Como está o desenvolvimento? Alguma parte específica que você gostaria de discutir ou explorar?",
+      "createdAt": "2026-05-17T01:18:12.391Z"
+    }
+  ]
+}

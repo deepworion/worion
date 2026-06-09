@@ -1,0 +1,93 @@
+{
+  "id": "conversation-1780971637463-xgrarq",
+  "conversationId": "conversation-1780971637463-xgrarq",
+  "title": "Boa noite",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": "smart-research",
+  "activeWorkModeIds": [
+    "smart-research",
+    "deep-thinking"
+  ],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite",
+      "createdAt": "2026-06-09T02:20:37.459Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780971637473-dsnbm4",
+      "role": "assistant",
+      "model": null,
+      "status": "completed",
+      "content": "Boa noite. Estou por aqui.",
+      "isTyping": false,
+      "provider": null,
+      "createdAt": "2026-06-09T02:20:37.473Z",
+      "updatedAt": "2026-06-09T02:20:38.312Z",
+      "created_at": "2026-06-09T02:20:37.473Z",
+      "updated_at": "2026-06-09T02:20:38.312Z",
+      "completedAt": "2026-06-09T02:20:38.309Z",
+      "conversationId": "conversation-1780971637463-xgrarq",
+      "conversation_id": "conversation-1780971637463-xgrarq"
+    },
+    {
+      "role": "user",
+      "content": "porque você não consegue buscar minhas memoria?",
+      "quoteContext": "",
+      "createdAt": "2026-06-09T02:22:51.374Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780971777461-i8mhbr",
+      "conversation_id": "conversation-1780971637463-xgrarq",
+      "conversationId": "conversation-1780971637463-xgrarq",
+      "role": "assistant",
+      "content": "Vou testar agora mesmo.\n\n<buscar_memoria>\n<query>memória recente Glaydson</query>\n<limit>5</limit>\n</buscar_memoria>",
+      "status": "completed",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "created_at": "2026-06-09T02:22:57.461Z",
+      "createdAt": "2026-06-09T02:22:57.461Z",
+      "updated_at": "2026-06-09T02:23:12.242Z",
+      "updatedAt": "2026-06-09T02:23:12.242Z",
+      "completedAt": "2026-06-09T02:23:12.241Z",
+      "isTyping": false
+    },
+    {
+      "role": "user",
+      "content": "Pesquisa sobre o hermetismo",
+      "quoteContext": "",
+      "createdAt": "2026-06-09T02:27:00.100Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780972024580-wbd8va",
+      "conversation_id": "conversation-1780971637463-xgrarq",
+      "conversationId": "conversation-1780971637463-xgrarq",
+      "role": "assistant",
+      "content": "Vou executar o protocolo completo de pesquisa sobre Hermetismo.\n\n<brave_search>\n<query>Hermetismo tradição filosófica espiritual princípios Corpus Hermeticum</query>\n</brave_search>",
+      "status": "completed",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "created_at": "2026-06-09T02:27:04.580Z",
+      "createdAt": "2026-06-09T02:27:04.580Z",
+      "updated_at": "2026-06-09T02:27:18.979Z",
+      "updatedAt": "2026-06-09T02:27:18.979Z",
+      "completedAt": "2026-06-09T02:27:18.978Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-09T02:20:36.254Z",
+  "createdAt": "2026-06-09T02:20:36.254Z",
+  "updatedAt": "2026-06-09T02:27:21.003Z"
+}

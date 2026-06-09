@@ -1,0 +1,38 @@
+{
+  "id": "conversation-1779201351426-1tbe2g",
+  "title": "Validacao LangSmith com agente worion-assistente: responda apenas ok.",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Validacao LangSmith com agente worion-assistente: responda apenas ok.",
+      "createdAt": "2026-05-19T14:35:51.791Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "ok",
+      "createdAt": "2026-05-19T14:35:55.022Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-19T23:23:33.041Z",
+      "previousActivityAt": "2026-05-19T14:35:51.964Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-19T14:35:51.612Z",
+  "projectId": null,
+  "updatedAt": "2026-05-19T14:35:55.138Z",
+  "chatSource": "agent",
+  "lastOpenedAt": "2026-05-19T23:23:33.041Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": true,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": ""
+}

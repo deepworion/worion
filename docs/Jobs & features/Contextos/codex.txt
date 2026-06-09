@@ -1,0 +1,2018 @@
+
+    … +12 lines (ctrl + t to view transcript)
+    js\ui\views\agent-helpers.js:74:  const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.csv', '.html', '.xml', '.yaml', '.yml'];
+    js\ui\views\agent-helpers.js:75:  const ext = AGENT_PERSONA_EXTENSIONS.includes(path.extname(fileName || '').toLowerCase())
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Também encontrei uma falha real de runtime: closePanel() é chamado nos botões, mas não existe função definida em js/ui.js. Vou adicionar
+  fechamento específico do editor e preservar o fechamento do painel de detalhe para os cards.
+
+◦ Running rg -n -C 20 "window\.openAgentEditor|window\.saveAgentFromEditor|window\.filterCards|window\.selectAgent|window\.startAgentChat" js\ui.js
+
+◦ Running Get-Content js\ui\views\agent-helpers.js
+
+• Ran rg -n -C 20 "window\.openAgentEditor|window\.saveAgentFromEditor|window\.filterCards|window\.selectAgent|window\.startAgentChat" js\ui.js
+  └ (no output)
+
+• Ran rg -n -C 20 "function getModelOptions" js\ui.js
+  └ (no output)
+
+• Ran Get-Content js\ui\views\agent-helpers.js
+  └ /**
+     * MÃ“DULO: agent-helpers.js
+    … +166 lines (ctrl + t to view transcript)
+      return text.trim();
+    }
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Outro ponto crítico: os cards usam onclick="openAgentEditor(...)". Como js/ui.js é módulo ES, funções no escopo do módulo só funcionam nesse
+  padrão se forem exportadas para window. Vou conferir e corrigir as exposições globais necessárias junto com o modal.
+
+• Running rg -n -C 20 "type=\"module\"|js/ui.js" index.html
+
+• Running rg -n "window\.filterCards|window\.openSkillEditor|window\.saveSkillFromEditor|window\.selectAgent|window\.startAgentChat|
+  │ window\.removeAgentDocument|window\.triggerAgentPersonaUpload|window\.handleAgentPersonaSelect|window\.saveAgentFromEditor" js\ui.js
+
+• Ran rg -n -C 20 "type=\"module\"|js/ui.js" index.html
+  └ rg: regex parse error:
+        (?:type=\)
+        ^
+    error: unclosed group
+
+• Ran rg -n -C 80 "EXPORTAÇÕES GLOBAIS" js\ui.js
+  └ 6572-
+    6573-function renderDetailPanel() {
+    … +132 lines (ctrl + t to view transcript)
+    6706-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6707-window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+• Ran rg -n "window\.filterCards|window\.openSkillEditor|window\.saveSkillFromEditor|window\.selectAgent|window\.startAgentChat|
+  │ window\.removeAgentDocument|window\.triggerAgentPersonaUpload|window\.handleAgentPersonaSelect|window\.saveAgentFromEditor" js\ui.js
+  └ (no output)
+
+• Ran rg -n -C 80 "EXPORTAÇÕES GLOBAIS" js\ui.js
+  └ 6572-
+    6573-function renderDetailPanel() {
+    … +132 lines (ctrl + t to view transcript)
+    6706-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6707-window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+• Running rg -n "script.*ui\.js|type=.module" index.html
+
+• Ran rg -n -C 120 "window.memoryRuntimeOpenAttach" js\ui.js
+  └ 6587-            </div>
+    6588-          `).join('')}
+    … +117 lines (ctrl + t to view transcript)
+    6706-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6707:window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+• Ran rg -n "script.*ui\.js|type=.module" index.html
+  └ 114:<script type="module" src="js/ui.js"></script>
+
+• Ran rg -n -C 120 "window.memoryRuntimeOpenAttach" js\ui.js
+  └ 6587-            </div>
+    6588-          `).join('')}
+    … +117 lines (ctrl + t to view transcript)
+    6706-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6707:window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou fazer uma correção pequena, mas completa: remover o bloco de importação da listagem, expor as funções usadas por onclick, adicionar
+  closePanel, ajustar o formulário com status ativo/inativo e limitar anexos do editor a .md, .txt, .json, .pdf. O salvamento continuará no padrão
+  local existente (agents/*.md e agents/_docs).
+
+• Running rg -n -C 25 "function readAttachedFile|async function readAttachedFile|readAttachedFile =" js
+
+• Ran rg -n -C 15 "function slugifyFileName|slugifyFileName" js\utils.js js\ui.js
+  └ js\utils.js-1-/**
+    js\utils.js-2- * MÓDULO: utils.js
+    … +113 lines (ctrl + t to view transcript)
+    js\ui.js-4547-
+    js\ui.js-4548-async function searchMemoryCardSubjectFromModal() {
+
+• Ran rg -n -C 25 "function readAttachedFile|async function readAttachedFile|readAttachedFile =" js
+  └ js\artifacts.js-167-if (document.readyState === 'loading') {
+    js\artifacts.js-168-  document.addEventListener('DOMContentLoaded', () => {
+    … +203 lines (ctrl + t to view transcript)
+    js\ui.js-1527-function getAgentDocumentRef(agentSlug, fileName) {
+    js\ui.js-1528-  return AgentHelpers.getAgentDocumentRef(agentSlug, fileName);
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou alterar js/ui.js, js/agents.js e o helper de agentes. A mudança em agents.js é só para a listagem carregar o status salvo em comentário
+  Markdown; não altera prompt, Supabase nem roteamento.
+
+• Edited js\ui\views\agent-helpers.js (+6 -5)
+    29   */
+    30 -export function isAgentPersonaFile(file) {
+    31 -  return Boolean(file?.name);
+    32 -}
+    30 +export function isAgentPersonaFile(file) {
+    31 +  const allowedExtensions = ['.md', '.txt', '.json', '.pdf'];
+    32 +  return Boolean(file?.name && allowedExtensions.includes(path.extname(file.name).toLowerCase()));
+    33 +}
+    34
+       ⋮
+    73   */
+    73 -export function sanitizeAgentDocumentName(fileName) {
+    74 -  const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.csv', '.html', '.xml', '.yaml', '.yml'];
+    74 +export function sanitizeAgentDocumentName(fileName) {
+    75 +  const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf'];
+    76    const ext = AGENT_PERSONA_EXTENSIONS.includes(path.extname(fileName || '').toLowerCase())
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• O filtro de anexos agora só aceita os formatos previstos para o formulário. Em seguida vou remover a dropzone da listagem e corrigir a abertura/
+  fechamento do editor.
+
+• Edited js\ui.js (+2 -2)
+    1422
+    1423 -const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.csv', '.html', '.xml', '.yaml', '.yml'];
+    1424 -var pendingAgentDocuments = [];
+    1423 +const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf'];
+    1424 +var pendingAgentDocuments = [];
+    1425
+
+• Edited js\ui.js (+4 -3)
+    1441
+    1442 -function triggerAgentPersonaUpload(target = 'library') {
+    1443 -  let input = document.getElementById(`agent-persona-upload-${target}`);
+    1442 +function triggerAgentPersonaUpload(target = 'library') {
+    1443 +  if (target !== 'editor') return;
+    1444 +  let input = document.getElementById(`agent-persona-upload-${target}`);
+    1445    if (!input) {
+         ⋮
+    1453    }
+    1453 -  input.removeAttribute('accept');
+    1454 +  input.accept = AGENT_PERSONA_EXTENSIONS.join(',');
+    1455    input.value = '';
+
+• Edited js\ui.js (+5 -13)
+    1462
+    1463 -  if (target === 'editor') {
+    1464 -    await appendPersonaFilesToEditor(files);
+    1465 -  } else {
+    1466 -    await importPersonaFilesAsAgents(files);
+    1467 -  }
+    1468 -}
+    1463 +  if (target === 'editor') await appendPersonaFilesToEditor(files);
+    1464 +}
+    1465
+         ⋮
+    1490      if (!files.length) return;
+    1495 -    if (target === 'editor') {
+    1496 -      await appendPersonaFilesToEditor(files);
+    1497 -    } else {
+    1498 -      await importPersonaFilesAsAgents(files);
+    1499 -    }
+    1500 -  });
+    1501 -}
+    1491 +    if (target === 'editor') await appendPersonaFilesToEditor(files);
+    1492 +  });
+    1493 +}
+    1494
+
+• Edited js\ui.js (+3 -14)
+    1697      </div>
+    1698 -    <div class="agent-import-wrap">
+    1699 -      <div class="agent-import-zone" id="agent-import-zone" onclick="triggerAgentPersonaUpload('library')">
+    1700 -        <i class="ti ti-file-upload" aria-hidden="true"></i>
+    1701 -        <div>
+    1702 -          <strong>Arraste arquivos de texto para criar agentes personalizados</strong>
+    1703 -          <span>Ou clique para anexar um ou mais documentos ao agente.</span>
+    1704 -        </div>
+    1705 -      </div>
+    1706 -      <div class="agent-import-status" id="agent-import-status"></div>
+    1707 -    </div>
+    1708 -    <div class="cards-area" id="cards-area"></div>`;
+    1709 -  renderCards(agents);
+    1710 -  setupAgentPersonaDropZone('#agent-import-zone', 'library');
+    1711 -}
+    1698 +    <div class="cards-area" id="cards-area"></div>`;
+    1699 +  renderCards(agents);
+    1700 +}
+    1701
+
+• Edited js\ui.js (+1 -1)
+    412    if (list.length === 0) {
+    413 -    area.innerHTML = '<div class="empty-panel"><i class="ti ti-robot"></i><p>Nenhum agente encontrado.<br>Arraste arquivos .md ou .txt acim
+         a para criar agentes.</p></div>';
+    413 +    area.innerHTML = '<div class="empty-panel"><i class="ti ti-robot"></i><p>Nenhum agente encontrado.<br>Use Novo agente para criar um age
+         nte personalizado.</p></div>';
+    414      return;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• A listagem agora só renderiza cabeçalho, busca e cards. Vou ajustar o formulário em si: status, rótulo correto da etapa opcional e fechamento sem
+  erro.
+
+• Edited js\ui.js (+47 -21)
+    6081
+    6082 -function openAgentEditor(id = null) {
+    6083 -  const agent = id ? agents.find(a => a.id === id) : null;
+    6084 -  const panel = document.getElementById('detail-panel');
+    6085 -  selected = agent ? agent.id : null;
+    6086 -  currentAgent = agent || null;
+    6082 +function openAgentEditor(id = null) {
+    6083 +  const agent = id ? agents.find(a => a.id === id) : null;
+    6084 +  const panel = document.getElementById('detail-panel');
+    6085 +  if (!panel) {
+    6086 +    alert('Persistencia de agentes ainda nao implementada');
+    6087 +    return;
+    6088 +  }
+    6089 +  selected = agent ? agent.id : null;
+    6090 +  currentAgent = agent || null;
+    6091    pendingAgentDocuments = Array.isArray(agent?.documents)
+         ⋮
+    6109        </div>
+    6106 -      <div class="form-field">
+    6107 -        <div class="field-label">DESCRICAO</div>
+    6108 -        <input id="agent-desc" value="${escapeHtml(agent?.desc || '')}" placeholder="Descricao curta">
+    6109 -      </div>
+    6110 -      <div class="form-field">
+    6111 -        <div class="field-label">MODELO</div>
+    6110 +      <div class="form-field">
+    6111 +        <div class="field-label">DESCRICAO</div>
+    6112 +        <input id="agent-desc" value="${escapeHtml(agent?.desc || '')}" placeholder="Descricao curta">
+    6113 +      </div>
+    6114 +      <div class="form-field">
+    6115 +        <div class="field-label">STATUS</div>
+    6116 +        <select id="agent-status" style="background:#101010;border:0.5px solid rgba(255,255,255,0.10);border-radius:14px;padding:8px 10px;
+          color:var(--color-text-primary);font-size:12px">
+    6117 +          <option value="active" ${getAgentStatusForEdit(agent) === 'active' ? 'selected' : ''}>Ativo</option>
+    6118 +          <option value="inactive" ${getAgentStatusForEdit(agent) === 'inactive' ? 'selected' : ''}>Inativo</option>
+    6119 +        </select>
+    6120 +      </div>
+    6121 +      <div class="form-field">
+    6122 +        <div class="field-label">MODELO</div>
+    6123          <select id="agent-model" style="background:#101010;border:0.5px solid rgba(255,255,255,0.10);border-radius:14px;padding:8px 10px;c
+          olor:var(--color-text-primary);font-size:12px">
+         ⋮
+    6130          <input id="agent-webhook" value="${escapeHtml(agent?.webhookUrl || '')}" placeholder="https://...">
+    6120 -      </div>
+    6121 -      <div class="form-field">
+    6122 -        <div class="field-label">DOCUMENTOS DO AGENTE</div>
+    6123 -        <div class="agent-persona-drop" id="agent-persona-drop" onclick="triggerAgentPersonaUpload('editor')">
+    6124 -          <i class="ti ti-paperclip" aria-hidden="true"></i>
+    6125 -          <span>Arraste ou anexe arquivos de texto como documento de contexto. O system prompt nao sera preenchido automaticamente.</span>
+    6126 -        </div>
+    6131 +      </div>
+    6132 +      <div class="form-field">
+    6133 +        <div class="field-label">ANEXAR DOCUMENTOS AO AGENTE</div>
+    6134 +        <div class="agent-persona-drop" id="agent-persona-drop" onclick="triggerAgentPersonaUpload('editor')">
+    6135 +          <i class="ti ti-paperclip" aria-hidden="true"></i>
+    6136 +          <span>Arraste ou anexe arquivos .md, .txt, .json ou .pdf. O agente so sera criado ou atualizado ao salvar.</span>
+    6137 +        </div>
+    6138          <div class="agent-document-list" id="agent-document-list"></div>
+         ⋮
+    6149      </div>`;
+    6139 -  setupAgentPersonaDropZone('#agent-persona-drop', 'editor');
+    6140 -  renderAgentDocumentList();
+    6141 -}
+    6150 +  setupAgentPersonaDropZone('#agent-persona-drop', 'editor');
+    6151 +  renderAgentDocumentList();
+    6152 +}
+    6153 +
+    6154 +function closePanel() {
+    6155 +  const panel = document.getElementById('detail-panel');
+    6156 +  if (!panel) return;
+    6157 +  panel.style.display = 'none';
+    6158 +  panel.innerHTML = '';
+    6159 +  pendingAgentDocuments = [];
+    6160 +}
+    6161 +
+    6162 +function getAgentStatusForEdit(agent) {
+    6163 +  if (!agent) return 'active';
+    6164 +  const statusMatch = String(agent.content || '').match(/<!--\s*status:\s*(active|inactive)\s*-->/i);
+    6165 +  if (statusMatch) return statusMatch[1].toLowerCase();
+    6166 +  return agent.badge === 'Inativo' ? 'inactive' : 'active';
+    6167 +}
+    6168
+
+• Edited js\ui.js (+20 -15)
+    6468    const customModel = document.getElementById('agent-model-custom')?.value.trim();
+    6469 -  const model = customModel || document.getElementById('agent-model').value.trim() || 'deepseek-v4-pro';
+    6470 -  const webhookUrl = document.getElementById('agent-webhook').value.trim();
+    6471 -  const prompt = document.getElementById('agent-prompt').value.trim();
+    6469 +  const model = customModel || document.getElementById('agent-model').value.trim() || 'deepseek-v4-pro';
+    6470 +  const webhookUrl = document.getElementById('agent-webhook').value.trim();
+    6471 +  const status = document.getElementById('agent-status')?.value === 'inactive' ? 'inactive' : 'active';
+    6472 +  const prompt = document.getElementById('agent-prompt').value.trim();
+    6473
+         ⋮
+    6493        .join('\n');
+    6493 -    const content = buildAgentMarkdownContent({
+    6494 -      name,
+    6495 -      desc: desc || 'Agente personalizado',
+    6496 -      model,
+    6497 -      webhookUrl,
+    6498 -      prompt,
+    6499 -      documentRefs
+    6500 -    });
+    6494 +    const content = buildAgentMarkdownContent({
+    6495 +      name,
+    6496 +      desc: desc || 'Agente personalizado',
+    6497 +      model,
+    6498 +      webhookUrl,
+    6499 +      prompt,
+    6500 +      documentRefs
+    6501 +    }).replace(
+    6502 +      /(<!--\s*webhook:[\s\S]*?-->\n)/i,
+    6503 +      `$1<!-- status: ${status} -->\n`
+    6504 +    );
+    6505
+    6506      await fs.writeFile(fullPath, content, 'utf-8');
+    6503 -    await loadAgents();
+    6504 -    const saved = agents.find(a => a.file === file);
+    6505 -    if (saved) selectAgent(saved.id);
+    6506 -  } catch (error) {
+    6507 +    await loadAgents();
+    6508 +    const saved = agents.find(a => a.file === file);
+    6509 +    if (saved) selectAgent(saved.id);
+    6510 +    closePanel();
+    6511 +  } catch (error) {
+    6512      console.error('Erro ao salvar agente:', error);
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• O salvamento agora grava um comentário status no Markdown do agente e continua usando o arquivo real do agente. Vou expor as funções chamadas pelo
+  HTML inline, que era a parte que fazia os cliques falharem no runtime modular.
+
+• Edited js\ui.js (+13 -4)
+    6669  window.showConnectionsView = showConnectionsView;
+    6670 -window.showConversationsView = showConversationsView;
+    6671 -window.showSettingsView = showSettingsView;
+    6672 -window.toggleProfileMenu = toggleProfileMenu;
+    6673 -window.openSearchOverlay = openSearchOverlay;
+    6670 +window.showConversationsView = showConversationsView;
+    6671 +window.showSettingsView = showSettingsView;
+    6672 +window.toggleProfileMenu = toggleProfileMenu;
+    6673 +window.openSearchOverlay = openSearchOverlay;
+    6674 +window.triggerAgentPersonaUpload = triggerAgentPersonaUpload;
+    6675 +window.handleAgentPersonaSelect = handleAgentPersonaSelect;
+    6676 +window.removeAgentDocument = removeAgentDocument;
+    6677 +window.openAgentEditor = openAgentEditor;
+    6678 +window.saveAgentFromEditor = saveAgentFromEditor;
+    6679 +window.closePanel = closePanel;
+    6680 +window.selectAgent = selectAgent;
+    6681 +window.showAgentDetails = showAgentDetails;
+    6682 +window.filterCards = filterCards;
+    6683
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou ajustar o carregamento dos agentes para que o status salvo no arquivo seja refletido no card, sem mudar o formato principal dos agentes.
+
+• Edited js\agents.js (+4 -2)
+    42        const webhookMatch = content.match(/<!--\s*webhook:\s*([\s\S]*?)\s*-->/i);
+    43 +      const statusMatch = content.match(/<!--\s*status:\s*(active|inactive)\s*-->/i);
+    44 +      const isActive = !statusMatch || statusMatch[1].toLowerCase() !== 'inactive';
+    45        const agentSlug = file.replace(/\.md$/i, '');
+       ⋮
+    60          webhookUrl: webhookMatch ? webhookMatch[1].trim() : '',
+    59 -        badge: 'Ativo',
+    60 -        badgeClass: 'badge-green',
+    61 +        badge: isActive ? 'Ativo' : 'Inativo',
+    62 +        badgeClass: isActive ? 'badge-green' : 'badge-gray',
+    63          time: formatTime(stats.mtime),
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Agora vou rodar checagens de sintaxe nos JS alterados e procurar referências restantes à dropzone antiga na listagem.
+
+• Running rg "Arraste arquivos de texto|agent-import-zone|setupAgentPersonaDropZone\('#agent-import-zone'" js\ui.js
+
+• Running rg -n "badge-gray|badge-green" css\style.css js
+
+• Running node --check js\ui.js
+
+• Running node --check js\ui\views\agent-helpers.js
+
+• Ran rg "Arraste arquivos de texto|agent-import-zone|setupAgentPersonaDropZone\('#agent-import-zone'" js\ui.js
+  └ (no output)
+
+• Ran rg -n "badge-gray|badge-green" css\style.css js
+  └ css\style.css:275:.badge-green{background:#161616;color:#FFFFFF;border:0.5px solid #3A3A3A}
+    css\style.css:277:.badge-gray{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+    … +5 lines (ctrl + t to view transcript)
+    js\ui.js.pre-module-integration:684:          <span class="card-badge badge-green">Ativo</span>
+    js\ui.js.original-full:684:          <span class="card-badge badge-green">Ativo</span>
+
+• Ran node --check js\ui\views\agent-helpers.js
+  └ (no output)
+
+• Ran node --check js\agents.js
+  └ (no output)
+
+• Ran node --check js\ui.js
+  └ (no output)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• As três checagens node --check passaram, e a string/dropzone antiga não aparece mais em js/ui.js. Vou rodar npm run validate como pedido e depois
+  revisar o diff final para garantir que não toquei em áreas proibidas.
+
+• Running npm run validate
+
+• Running git diff -- js\ui.js js\agents.js js\ui\views\agent-helpers.js
+
+• Ran git diff --name-only
+  └ warning: in the working copy of 'css/style.css', LF will be replaced by CRLF the next time Git touches it
+    warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+    … +74 lines (ctrl + t to view transcript)
+    js/ui/text-selection/selection-popover.js
+    js/ui/views/agent-helpers.js
+
+• Ran git diff -- js\ui.js js\agents.js js\ui\views\agent-helpers.js
+  └ diff --git a/js/agents.js b/js/agents.js
+    index 81f9577..1b3e206 100644
+    … +1813 lines (ctrl + t to view transcript)
+    warning: in the working copy of 'js/ui.js', LF will be replaced by CRLF the next time Git touches it
+    warning: in the working copy of 'js/ui/views/agent-helpers.js', LF will be replaced by CRLF the next time Git touches it
+
+• Ran git diff --name-only
+  └ css/style.css
+    docs/ANALIZES/README.md
+    … +74 lines (ctrl + t to view transcript)
+    warning: in the working copy of 'js/ui/text-selection/selection-popover.js', LF will be replaced by CRLF the next time Git touches it
+    warning: in the working copy of 'js/ui/views/agent-helpers.js', LF will be replaced by CRLF the next time Git touches it
+
+• Ran npm run validate
+  └
+    > worion-desktop@1.0.0 validate
+    … +3 lines (ctrl + t to view transcript)
+    WARNING: Arquivos sem documentacao em architecture.json: [ 'memory-cards-runtime.js' ]
+    WARNING: Arquivos fora do load_order: [ 'memory-cards-runtime.js' ]
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• npm run validate falhou por um arquivo já existente fora da arquitetura (memory-cards-runtime.js), não por esta alteração. Vou fazer um último
+  ajuste de mensagem de erro para não sugerir ausência de persistência quando o problema for só ausência do painel na DOM.
+
+• Edited js\ui.js (+1 -1)
+    6085    if (!panel) {
+    6086 -    alert('Persistencia de agentes ainda nao implementada');
+    6086 +    alert('Editor de agentes indisponivel nesta tela.');
+    6087      return;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou repetir a checagem de sintaxe do arquivo alterado por último e coletar um resumo objetivo das alterações.
+
+• Running node --check js\ui.js
+
+• Running rg -n "Use Novo agente|ANEXAR DOCUMENTOS AO AGENTE|agent-status|status:|window\.openAgentEditor|function closePanel|function
+  │ getAgentStatusForEdit|triggerAgentPersonaUpload\(target" js\ui.js js\agents.js js\ui\views\agent-helpers.js
+
+• Ran rg -n "Use Novo agente|ANEXAR DOCUMENTOS AO AGENTE|agent-status|status:|window\.openAgentEditor|function closePanel|function
+  │ getAgentStatusForEdit|triggerAgentPersonaUpload\(target" js\ui.js js\agents.js js\ui\views\agent-helpers.js
+  └ js\agents.js:43:      const statusMatch = content.match(/<!--\s*status:\s*(active|inactive)\s*-->/i);
+    js\ui.js:413:    area.innerHTML = '<div class="empty-panel"><i class="ti ti-robot"></i><p>Nenhum agente encontrado.<br>Use Novo agente para
+    … +21 lines (ctrl + t to view transcript)
+    js\ui.js:6503:      `$1<!-- status: ${status} -->\n`
+    js\ui.js:6677:window.openAgentEditor = openAgentEditor;
+
+• Ran node --check js\ui.js
+  └ (no output)
+
+• Ran git diff -- js\prompt.js docs js\chat-routing.js js\chat.js js\app.js js\tools.js
+  └ diff --git a/docs/ANALIZES/README.md b/docs/ANALIZES/README.md
+    deleted file mode 100644
+    … +20435 lines (ctrl + t to view transcript)
+    warning: in the working copy of 'js/chat.js', LF will be replaced by CRLF the next time Git touches it
+    warning: in the working copy of 'js/tools.js', LF will be replaced by CRLF the next time Git touches it
+
+• Running rg "Arraste arquivos de texto" js\ui.js js\agents.js js\ui\views\agent-helpers.js
+
+• Running node --check js\ui\views\agent-helpers.js
+
+• Running node --check js\agents.js
+
+• Ran rg "Arraste arquivos de texto" js\ui.js js\agents.js js\ui\views\agent-helpers.js
+  └ (no output)
+
+• Ran rg "agent-import-zone|setupAgentPersonaDropZone\('#agent-import-zone'" js\ui.js
+  └ (no output)
+
+• Ran node --check js\agents.js
+  └ (no output)
+
+• Ran node --check js\ui\views\agent-helpers.js
+  └ (no output)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• As buscas confirmam que a dropzone antiga não está mais na listagem de js/ui.js; as checagens de sintaxe adicionais também passaram. Vou fechar
+  com o relatório final e a pendência real do validate.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Corrigido.
+
+  Arquivos alterados por mim:
+
+  - js/ui.js
+  - js/agents.js
+  - js/ui/views/agent-helpers.js
+
+  Causa raiz:
+
+  - A tela de Agentes estava renderizando handlers inline (openAgentEditor, filterCards, etc.) a partir de js/ui.js, que é carregado como ES module.
+    Essas funções não estavam expostas em window, então os cliques não tinham ação visível no runtime.
+
+  - A dropzone de importação estava na listagem e chamava o fluxo library, que podia criar agentes automaticamente ao arrastar arquivos.
+
+  Como foi corrigido:
+
+  - Removi a dropzone da listagem principal; agora ficam só título, botão, busca e cards.
+  - Mantive a dropzone apenas dentro do formulário de criação/edição, com o rótulo “Anexar documentos ao agente”.
+  - O botão “Novo agente” e “Editar” agora abrem o painel/formulário visível.
+  - Adicionei closePanel() e exportei para window as funções usadas por onclick.
+  - Adicionei campo de status ativo/inativo no formulário e persistência local via comentário <!-- status: active|inactive --> no Markdown.
+  - js/agents.js agora lê esse status para mostrar badge Ativo/Inativo.
+  - Upload no editor não cria agente automaticamente; só anexa documentos pendentes até clicar em Salvar.
+  - Anexos aceitos no fluxo de agente: .md, .txt, .json, .pdf.
+
+  Validações:
+
+  - node --check js\ui.js passou.
+  - node --check js\agents.js passou.
+  - node --check js\ui\views\agent-helpers.js passou.
+  - rg confirmou que Arraste arquivos de texto e agent-import-zone não aparecem mais em js/ui.js.
+  - npm run validate falhou por pendência pré-existente: memory-cards-runtime.js está sem documentação em architecture.json e fora do load_order.
+
+  Não alterei js/prompt.js, Supabase/schema, Memory Cards ou roteamento público/privado. O projeto já tem persistência local real para agentes em
+  agents/*.md e documentos em agents/_docs/, então o botão Salvar continua usando esse padrão.
+
+─ Worked for 4m 51s ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+› [Image #1] [Image #2] Essas imagens são a confusão que meu espaço de agentes se tornou quando eu clico em um agente. Sem clicar ela está
+  perfeita. Ao clicar ela deve abrir uma outra página, só para o agente como mostra essa imagem:[Image #3]. Nela eu posso editar, salvar, inserir
+  mds, fotos, txt, pdf, o que eu quiser, e fica com mais espaço pra trabalhar. Agora o que os bugs relataram: TAREFA CIRÚRGICA — Refatorar UX e
+  Runtime da Tela de Agentes do Worion
+
+  CONTEXTO
+
+  A tela atual de Agentes está funcional apenas parcialmente.
+
+  Problemas observados:
+
+  1. Ao clicar em "Editar", a interface vira uma mistura de lista + drawer + scroll interno confuso.
+  2. O botão "+ Novo agente" fica sobreposto/bugado visualmente.
+  3. A área de anexar documentos aparece em contexto errado ou vira ruído na listagem.
+  4. Ao usar um agente específico, o runtime parece não respeitar corretamente o agente selecionado.
+  5. Em teste real, o usuário selecionou um agente de TDAH, mas a conversa foi roteada como `conversation_or_general -> focused_research`.
+  6. O Worion chamou Brave/Tavily para uma tarefa privada com link do Notion/Glaydson HQ.
+  7. Isso gerou busca pública inútil, consumo excessivo de contexto e erro de TPM no OpenAI:
+     - Requested 38471 tokens
+     - Limit 30000 TPM
+  8. O modelo manual selecionado e o agente ativo parecem estar sendo tratados como coisas separadas sem amarração clara.
+  9. A UX desejada é igual ao padrão mental da Claude.ai:
+     - uma tela lista os agentes/projetos;
+     - clicou no agente, abre uma tela própria só para aquele agente;
+     - edição, arquivos, instruções e conversas ficam dentro dessa tela;
+     - não usar drawer comprimido por cima da listagem.
+
+  NÃO MEXER
+
+  - Não alterar js/prompt.js.
+  - Não alterar Supabase schema.
+  - Não alterar Memory Cards.
+  - Não alterar Notion API.
+  - Não alterar Verification Engine.
+  - Não alterar pesquisa pública geral fora do escopo de agentes.
+  - Não criar refatoração ampla.
+  - Não mudar design global do app.
+
+  OBJETIVO
+
+  Refatorar a tela de Agentes para uma navegação em tela dedicada, estilo Claude Projects/Agents:
+
+  1. Tela `/agents` ou view equivalente:
+     - mostra título "Agentes";
+     - botão "+ Novo agente";
+     - busca;
+     - cards/lista de agentes;
+     - sem drawer lateral de edição;
+     - sem dropzone solta na listagem.
+
+  2. Tela de detalhe do agente:
+     - abre quando clicar no card ou em "Editar";
+     - ocupa a área principal;
+     - mostra botão de voltar: "← Todos os agentes";
+     - mostra nome do agente;
+     - mostra descrição;
+     - mostra status;
+     - mostra modelo padrão;
+     - mostra system prompt/instruções;
+     - mostra documentos anexados;
+     - mostra webhook opcional;
+     - mostra ações: Salvar, Cancelar/Voltar, Excluir se já existir;
+     - permite edição limpa.
+
+  3. Tela de novo agente:
+     - mesma tela de detalhe, mas em modo criação;
+     - campos vazios;
+     - dropzone de documentos aparece apenas aqui ou na tela de detalhe;
+     - botão "Criar agente".
+
+  4. Runtime:
+     - quando o usuário iniciar conversa usando um agente, o agente ativo deve ser gravado no estado da conversa;
+     - o prompt/instruções do agente devem ser aplicados ao model call;
+     - os documentos anexados ao agente devem ser lidos como private context;
+     - o modelo padrão do agente deve ser respeitado, salvo se o usuário trocar manualmente;
+     - o roteamento público não pode ignorar o agente ativo.
+
+  BUSCAS INICIAIS NO CÓDIGO
+
+  Use ripgrep:
+
+  rg "Agentes"
+  rg "Novo agente"
+  rg "Editar agente"
+  rg "Buscar agentes"
+  rg "Arraste arquivos"
+  rg "Salvar agente"
+  rg "activeAgent"
+  rg "selectedAgent"
+  rg "agent"
+  rg "agents"
+  rg "focused_research"
+  rg "question scope"
+  rg "MODEL SELECTOR"
+  rg "MODEL ROUTE"
+
+  ARQUITETURA DE UX ESPERADA
+
+  Implementar estados claros:
+
+  ```js
+  const AGENTS_VIEW = {
+    LIST: 'list',
+    DETAIL: 'detail',
+    CREATE: 'create'
+  };
+
+
+• Vou tratar isso como duas correções acopladas: primeiro eliminar o drawer e transformar agentes em tela dedicada; depois conferir o caminho
+  runtime de startAgentChat/roteamento para o agente ativo não cair em pesquisa pública indevida. Vou começar pelos greps pedidos e pelos trechos de
+  navegação/modelo.
+
+◦ Running rg "Editar agente"
+
+◦ Running rg "Agentes"
+
+◦ Running rg "Novo agente"
+
+◦ Running rg "Salvar agente"
+
+◦ Running rg "Buscar agentes"
+
+• Ran rg "Arraste arquivos"
+  └ js\ui.js.pre-module-integration:    area.innerHTML = '<div class="empty-panel"><i class="ti ti-robot"></i><p>Nenhum agente
+    encontrado.<br>Arraste arquivos .md ou .txt acima para criar agentes.</p></div>';
+    … +2 lines (ctrl + t to view transcript)
+    arquivos .md ou .txt acima para criar agentes.</p></div>';
+    js\ui.js.original-full:          <strong>Arraste arquivos de texto para criar agentes personalizados</strong>
+
+• Ran rg "Novo agente"
+  └ js\ui.js.original-full:        <button class="btn-new" onclick="openAgentEditor()"><i class="ti ti-plus" aria-hidden="true"></i> Novo agente</
+    button>
+    … +6 lines (ctrl + t to view transcript)
+    agente</button>
+    js\ui.js.pre-module-integration:      <span class="panel-title">${agent ? 'Editar agente' : 'Novo agente'}</span>
+
+• Ran rg "Buscar agentes"
+  └ js\ui.js.original-full:        <input type="text" placeholder="Buscar agentes..." oninput="filterCards(this.value)">
+    js\ui.js:        <input type="text" placeholder="Buscar agentes..." oninput="filterCards(this.value)">
+    js\ui.js.pre-module-integration:        <input type="text" placeholder="Buscar agentes..." oninput="filterCards(this.value)">
+
+• Ran rg "Salvar agente"
+  └ js\ui.js:      <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti ti-device-floppy"></i> Salvar agente</
+    button>
+    … +2 lines (ctrl + t to view transcript)
+    js\ui.js.pre-module-integration:      <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti
+    ti-device-floppy"></i> Salvar agente</button>
+
+• Ran rg "Agentes"
+  └ CHANGELOG.md:- Áreas: Runtime, DeepWorion, Skills, Agentes, Memória, UI/UX, Conectores, MCPs, APIs, Supabase, VPS, Logs, Refatorações, Bugs,
+    Testes, Arquitetura futura
+    … +47 lines (ctrl + t to view transcript)
+    js\ui.js.original-full:      <h1 class="main-title page-title">Agentes</h1>
+    js\ui.js.pre-module-integration:      <h1 class="main-title page-title">Agentes</h1>
+
+• Ran rg "Editar agente"
+  └ js\ui.js.original-full:        <button class="btn-small" onclick="event.stopPropagation();openAgentEditor('${a.id}')" title="Editar agente">
+    js\ui.js.original-full:      <span class="panel-title">${agent ? 'Editar agente' : 'Novo agente'}</span>
+    … +4 lines (ctrl + t to view transcript)
+    js\ui\views\agent-card-renderer.js:        <button class="btn-small" onclick="event.stopPropagation();openAgentEditor('${agent.id}')"
+    title="Editar agente">
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• O resultado confirma que a parte visual problemática ainda é o editor renderizado no detail-panel. Vou abrir os pontos de runtime (startAgentChat,
+  roteamento e modelo manual) antes de editar, para não misturar uma correção de UX com uma regressão de chat.
+
+◦ Running rg "MODEL SELECTOR|MODEL ROUTE|manualModel|selectedRuntimeModel|agentModel" js
+
+◦ Running rg "selectedAgent"
+
+◦ Running rg "activeAgent"
+
+◦ Running rg "question scope" js
+
+◦ Running rg -n -C 30 "async function startAgentChat|function startAgentChat" js\agents.js js\ui.js js\chat.js
+
+• Ran rg "focused_research" js
+  └ js\chat-models.js:function getDeterministicResearchQueries(content = '', route = 'focused_research', messages = []) {
+    js\chat-models.js:  const route = options.executionRoute || options.route || 'focused_research';
+    … +8 lines (ctrl + t to view transcript)
+    js\chat.js:    const researchRoutes = ['focused_research', 'deep_research', 'source_check', 'comparative_research'];
+    js\model-router.js:      case 'focused_research':
+
+• Ran rg "MODEL SELECTOR|MODEL ROUTE|manualModel|selectedRuntimeModel|agentModel" js
+  └ js\chat-models.js:  console.log('[MODEL ROUTE]', {
+    js\chat-models.js:  throw new Error(`[MODEL ROUTE] Provider desconhecido para modelo: ${resolvedModel}`);
+    … +24 lines (ctrl + t to view transcript)
+    js\ui.js.original-full:  console.log('[MODEL SELECTOR] Modelo manual selecionado:', window.manualSelectedModel);
+    js\ui.js:  console.log('[MODEL SELECTOR] Modelo manual selecionado:', window.manualSelectedModel);
+
+• Ran rg "selectedAgent"
+  └ (no output)
+
+• Ran rg "question scope" js
+  └ js\chat.js:    console.log('[EXECUTION ROUTER] question scope:', questionScope, 'route:', executionRoute);
+
+• Ran rg "focused_research" js
+  └ js\chat-models.js:function getDeterministicResearchQueries(content = '', route = 'focused_research', messages = []) {
+    js\chat-models.js:  const route = options.executionRoute || options.route || 'focused_research';
+    … +8 lines (ctrl + t to view transcript)
+    js\chat.js:    const researchRoutes = ['focused_research', 'deep_research', 'source_check', 'comparative_research'];
+    js\model-router.js:      case 'focused_research':
+
+• Ran rg -n -C 30 "async function startAgentChat|function startAgentChat" js\agents.js js\ui.js js\chat.js
+  └ js\agents.js-58-        specializationProfile,
+    js\agents.js-59-        model: modelMatch ? modelMatch[1].trim() : 'deepseek-v4-pro',
+    … +40 lines (ctrl + t to view transcript)
+    js\agents.js-100-  await startChat({ keepMessages: true, loadHistory: false });
+    js\agents.js-101-}
+
+• Ran rg "activeAgent"
+  └ js\backup prompt.txt:  const activeAgentPromptSource = currentAgent && Object.prototype.hasOwnProperty.call(currentAgent, 'promptContent')
+    js\backup prompt.txt:  const agentIsActive = String(activeAgentPromptSource || '').trim().length > 0;
+    … +40 lines (ctrl + t to view transcript)
+    docs\Jobs & features\Atulizações\ANALIZES\artifacts-audits\CHAT_GATES_VERIFICATION_SEARCHES_2026_05_22.md: 3157:               activeAgent:
+    currentAgent,
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• O runtime já escolhe manualModel || agentModel, mas a rota de pesquisa pode promover o turno antes de considerar o agente como contexto privado.
+  Vou implementar a tela dedicada primeiro e depois travar a rota de agente para resposta privada, sem mexer no prompt.js nem na pesquisa geral.
+
+◦ Running rg -n -C 50 "function getModelOptions|manualSelectedModel|model-selector|agent-model" js\ui.js js\ui\chat\composer.js js\chat-models.js
+
+◦ Running rg -n -C 90 "questionScope|executionRoute|activeResearchMode|runPrivateContextSynthesisRoute|researchRoutes|agentDomainResearchContext"
+  │ js\chat.js
+
+◦ Running rg -n -C 80 "function classifyQuestionScope|function getExecutionRoute|private_context_synthesis|public_research" js\chat-routing.js
+
+• Ran rg -n -C 90 "questionScope|executionRoute|activeResearchMode|runPrivateContextSynthesisRoute|researchRoutes|agentDomainResearchContext"
+  │ js\chat.js
+  └ 1353-        ).join('\n')
+    1354-        : 'Não havia ações pendentes para executar.';
+    … +423 lines (ctrl + t to view transcript)
+    1778-          runtimeMetadata
+    1779-        });
+
+• Ran rg -n -C 120 "function openAgentEditor|function saveAgentFromEditor|function selectAgent|function renderPanel|function renderDetailPanel|
+  │ function filterCards|window.openAgentEditor" js\ui.js
+  └ 5962-  rerenderMemoryRuntime();
+    5963-}
+    … +623 lines (ctrl + t to view transcript)
+    6728-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6729-window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+• Ran rg -n -C 50 "function getModelOptions|manualSelectedModel|model-selector|agent-model" js\ui.js js\ui\chat\composer.js js\chat-models.js
+  └ js\ui\chat\composer.js-1-/**
+    js\ui\chat\composer.js-2- * @module ui/chat/composer
+    … +636 lines (ctrl + t to view transcript)
+    js\ui.js-6518-  if (!currentAgent?.file || !Array.isArray(documents) || !documents.length) return null;
+    js\ui.js-6519-
+
+• Ran rg -n -C 80 "function classifyQuestionScope|function getExecutionRoute|private_context_synthesis|public_research" js\chat-routing.js
+  └ 1-/**
+    2- * MODULO: chat-routing.js
+    … +445 lines (ctrl + t to view transcript)
+    448-  return EXECUTION_PROFILES[route]?.maxTokens || 8000;
+    449-}
+
+• Ran rg -n -C 120 "function openAgentEditor|function saveAgentFromEditor|function selectAgent|function renderPanel|function renderDetailPanel|
+  │ function filterCards|window.openAgentEditor" js\ui.js
+  └ 5962-  rerenderMemoryRuntime();
+    5963-}
+    … +623 lines (ctrl + t to view transcript)
+    6728-window.memoryRuntimeUseInChat = memoryRuntimeUseInChat;
+    6729-window.memoryRuntimeOpenAttach = memoryRuntimeOpenAttach;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou mudar o comportamento do card: clique no card e clique em “Editar” passam a navegar para uma view de detalhe no main, não para chat nem
+  drawer. O chat com agente ficará como ação explícita dentro dessa tela, o que também evita seleção ambígua.
+
+• Edited js\ui\views\agent-card-renderer.js (+2 -2)
+    34    return `
+    35 -    <div class="agent-card${isSelected ? ' selected' : ''}" onclick="startAgentChat('${agent.id}')">
+    35 +    <div class="agent-card${isSelected ? ' selected' : ''}" onclick="openAgentEditor('${agent.id}')">
+    36        <div class="card-header">
+       ⋮
+    45        <div class="agent-card-actions">
+    46 -        <button class="btn-small" onclick="event.stopPropagation();openAgentEditor('${agent.id}')" title="Editar agente">
+    46 +        <button class="btn-small" onclick="event.stopPropagation();openAgentEditor('${agent.id}')" title="Editar agente">
+    47            <i class="ti ti-pencil"></i> Editar
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Agora vou substituir a implementação de openAgentEditor para renderizar a tela dedicada na área principal, mantendo os mesmos IDs de campos para
+  reaproveitar o salvamento existente.
+
+• Edited js\ui.js (+71 -63)
+    6083    const agent = id ? agents.find(a => a.id === id) : null;
+    6084 -  const panel = document.getElementById('detail-panel');
+    6085 -  if (!panel) {
+    6086 -    alert('Editor de agentes indisponivel nesta tela.');
+    6087 -    return;
+    6088 -  }
+    6084    selected = agent ? agent.id : null;
+    6085    currentAgent = agent || null;
+    6091 -  pendingAgentDocuments = Array.isArray(agent?.documents)
+    6086 +  pendingAgentDocuments = Array.isArray(agent?.documents)
+    6087      ? agent.documents.map(doc => ({ ...doc, pending: false }))
+    6093 -    : [];
+    6094 -  chatMode = false;
+    6095 -  document.querySelector('.shell').classList.remove('chat-fullscreen');
+    6096 -
+    6097 -  panel.style.display = 'flex';
+    6098 -  panel.style.flexDirection = 'column';
+    6099 -  panel.classList.add('panel-piano');
+    6100 -  panel.innerHTML = `
+    6101 -    <div class="panel-header">
+    6102 -      <span class="panel-title">${agent ? 'Editar agente' : 'Novo agente'}</span>
+    6103 -      <button class="panel-close" onclick="closePanel()"><i class="ti ti-x"></i></button>
+    6104 -    </div>
+    6105 -    <div class="panel-body">
+    6106 -      <div class="form-field">
+    6107 -        <div class="field-label">NOME</div>
+    6108 -        <input id="agent-name" value="${escapeHtml(agent?.name || '')}" placeholder="Nome do agente">
+    6109 -      </div>
+    6110 -      <div class="form-field">
+    6111 -        <div class="field-label">DESCRICAO</div>
+    6112 -        <input id="agent-desc" value="${escapeHtml(agent?.desc || '')}" placeholder="Descricao curta">
+    6088 +    : [];
+    6089 +  chatMode = false;
+    6090 +  document.querySelector('.shell').classList.remove('chat-fullscreen');
+    6091 +  const detailPanel = document.getElementById('detail-panel');
+    6092 +  if (detailPanel) detailPanel.style.display = 'none';
+    6093 +  const main = document.getElementById('main');
+    6094 +  if (!main) return;
+    6095 +  main.innerHTML = renderAgentEditorPage(agent);
+    6096 +  setupAgentPersonaDropZone('#agent-persona-drop', 'editor');
+    6097 +  renderAgentDocumentList();
+    6098 +}
+    6099 +
+    6100 +function renderAgentEditorPage(agent = null) {
+    6101 +  const modeLabel = agent ? 'Editar agente' : 'Novo agente';
+    6102 +  const actionLabel = agent ? 'Salvar agente' : 'Criar agente';
+    6103 +  const documentsCount = Array.isArray(agent?.documents) ? agent.documents.length : 0;
+    6104 +  return `
+    6105 +    <div class="agent-detail-page" style="height:100%;overflow:auto;padding:32px 38px 40px;display:flex;flex-direction:column;gap:24px">
+    6106 +      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+    6107 +        <button class="btn-edit" onclick="showAgentsView()"><i class="ti ti-arrow-left"></i> Todos os agentes</button>
+    6108 +        <div style="display:flex;gap:10px;align-items:center">
+    6109 +          ${agent ? `<button class="btn-chat" onclick="startAgentChat('${agent.id}')"><i class="ti ti-message"></i> Iniciar conversa</butt
+          on>` : ''}
+    6110 +          <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti ti-device-floppy"></i> ${actionLabel}<
+          /button>
+    6111 +        </div>
+    6112        </div>
+    6114 -      <div class="form-field">
+    6115 -        <div class="field-label">STATUS</div>
+    6116 -        <select id="agent-status" style="background:#101010;border:0.5px solid rgba(255,255,255,0.10);border-radius:14px;padding:8px 10px;
+          color:var(--color-text-primary);font-size:12px">
+    6117 -          <option value="active" ${getAgentStatusForEdit(agent) === 'active' ? 'selected' : ''}>Ativo</option>
+    6118 -          <option value="inactive" ${getAgentStatusForEdit(agent) === 'inactive' ? 'selected' : ''}>Inativo</option>
+    6119 -        </select>
+    6120 -      </div>
+    6121 -      <div class="form-field">
+    6122 -        <div class="field-label">MODELO</div>
+    6123 -        <select id="agent-model" style="background:#101010;border:0.5px solid rgba(255,255,255,0.10);border-radius:14px;padding:8px 10px;c
+          olor:var(--color-text-primary);font-size:12px">
+    6124 -          ${getModelOptions(agent?.model || 'deepseek-v4-pro')}
+    6125 -        </select>
+    6126 -        <input id="agent-model-custom" value="" placeholder="Modelo customizado opcional, ex: gpt-5.2" style="margin-top:6px;background:#1
+          01010;border:0.5px solid rgba(255,255,255,0.10);border-radius:14px;color:var(--color-text-primary);padding:8px 10px">
+    6127 -      </div>
+    6128 -      <div class="form-field">
+    6129 -        <div class="field-label">WEBHOOK URL OPCIONAL</div>
+    6130 -        <input id="agent-webhook" value="${escapeHtml(agent?.webhookUrl || '')}" placeholder="https://...">
+    6113 +      <div style="display:grid;grid-template-columns:minmax(0,1.6fr) minmax(320px,.8fr);gap:28px;align-items:start">
+    6114 +        <section style="display:flex;flex-direction:column;gap:18px;min-width:0">
+    6115 +          <div>
+    6116 +            <div class="field-label">${modeLabel}</div>
+    6117 +            <input id="agent-name" value="${escapeHtml(agent?.name || '')}" placeholder="Nome do agente" style="width:100%;font-size:28px;
+          font-weight:650;background:transparent;border:0;color:var(--color-text-primary);padding:4px 0 8px">
+    6118 +            <textarea id="agent-desc" rows="3" placeholder="Descricao curta" style="width:100%;background:transparent;border:0;color:var(-
+          -color-text-secondary);font-size:15px;line-height:1.5;resize:vertical">${escapeHtml(agent?.desc || '')}</textarea>
+    6119 +          </div>
+    6120 +          <div class="form-field">
+    6121 +            <div class="field-label">INSTRUCOES DO AGENTE</div>
+    6122 +            <textarea id="agent-prompt" rows="20" placeholder="Instrucoes do agente" style="width:100%;min-height:360px;background:var(--c
+          olor-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;color:var(--color-text-primary);padding:16px
+          ;line-height:1.55;resize:vertical">${escapeHtml(getAgentPromptForEdit(agent))}</textarea>
+    6123 +          </div>
+    6124 +        </section>
+    6125 +        <aside style="display:flex;flex-direction:column;gap:16px;min-width:0">
+    6126 +          <div class="form-field">
+    6127 +            <div class="field-label">STATUS</div>
+    6128 +            <select id="agent-status" style="width:100%;background:var(--color-background-secondary);border:0.5px solid var(--color-border
+          -tertiary);border-radius:12px;padding:10px 12px;color:var(--color-text-primary)">
+    6129 +              <option value="active" ${getAgentStatusForEdit(agent) === 'active' ? 'selected' : ''}>Ativo</option>
+    6130 +              <option value="inactive" ${getAgentStatusForEdit(agent) === 'inactive' ? 'selected' : ''}>Inativo</option>
+    6131 +            </select>
+    6132 +          </div>
+    6133 +          <div class="form-field">
+    6134 +            <div class="field-label">MODELO PADRAO</div>
+    6135 +            <select id="agent-model" style="width:100%;background:var(--color-background-secondary);border:0.5px solid var(--color-border-
+          tertiary);border-radius:12px;padding:10px 12px;color:var(--color-text-primary)">
+    6136 +              ${getModelOptions(agent?.model || 'deepseek-v4-pro')}
+    6137 +            </select>
+    6138 +            <input id="agent-model-custom" value="" placeholder="Modelo customizado opcional" style="margin-top:8px;width:100%;background:
+          var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;color:var(--color-text-primary);paddi
+          ng:10px 12px">
+    6139 +          </div>
+    6140 +          <div class="form-field">
+    6141 +            <div class="field-label">WEBHOOK OPCIONAL</div>
+    6142 +            <input id="agent-webhook" value="${escapeHtml(agent?.webhookUrl || '')}" placeholder="https://..." style="width:100%;backgroun
+          d:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;color:var(--color-text-primary);pad
+          ding:10px 12px">
+    6143 +          </div>
+    6144 +          <div class="form-field">
+    6145 +            <div class="field-label">ARQUIVOS</div>
+    6146 +            <div class="agent-persona-drop" id="agent-persona-drop" onclick="triggerAgentPersonaUpload('editor')">
+    6147 +              <i class="ti ti-paperclip" aria-hidden="true"></i>
+    6148 +              <span>Anexar documentos ao agente. Os arquivos entram somente ao salvar.</span>
+    6149 +            </div>
+    6150 +            <div class="agent-import-status" id="agent-persona-status">${documentsCount ? `${documentsCount} arquivo(s) anexado(s).` : ''}
+          </div>
+    6151 +            <div class="agent-document-list" id="agent-document-list"></div>
+    6152 +          </div>
+    6153 +          <div style="display:flex;gap:10px;justify-content:flex-end;padding-top:8px">
+    6154 +            <button class="btn-edit" onclick="showAgentsView()">Cancelar</button>
+    6155 +            <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti ti-device-floppy"></i> ${actionLabel
+          }</button>
+    6156 +          </div>
+    6157 +        </aside>
+    6158        </div>
+    6132 -      <div class="form-field">
+    6133 -        <div class="field-label">ANEXAR DOCUMENTOS AO AGENTE</div>
+    6134 -        <div class="agent-persona-drop" id="agent-persona-drop" onclick="triggerAgentPersonaUpload('editor')">
+    6135 -          <i class="ti ti-paperclip" aria-hidden="true"></i>
+    6136 -          <span>Arraste ou anexe arquivos .md, .txt, .json ou .pdf. O agente so sera criado ou atualizado ao salvar.</span>
+    6137 -        </div>
+    6138 -        <div class="agent-document-list" id="agent-document-list"></div>
+    6139 -        <div class="agent-import-status" id="agent-persona-status"></div>
+    6140 -      </div>
+    6141 -      <div class="form-field">
+    6142 -        <div class="field-label">SYSTEM PROMPT</div>
+    6143 -        <textarea id="agent-prompt" rows="14" placeholder="Instrucoes do agente">${escapeHtml(getAgentPromptForEdit(agent))}</textarea>
+    6144 -      </div>
+    6145 -    </div>
+    6146 -    <div class="panel-actions">
+    6147 -      <button class="btn-edit" onclick="closePanel()">Cancelar</button>
+    6148 -      <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti ti-device-floppy"></i> Salvar agente</butt
+          on>
+    6149 -    </div>`;
+    6150 -  setupAgentPersonaDropZone('#agent-persona-drop', 'editor');
+    6151 -  renderAgentDocumentList();
+    6159 +    </div>`;
+    6160  }
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• A tela dedicada já está substituindo o drawer. Vou ajustar o pós-salvamento para permanecer nessa página do agente salvo, em vez de chamar o
+  painel antigo.
+
+• Edited js\ui.js (+2 -3)
+    6513
+    6514 -    await fs.writeFile(fullPath, content, 'utf-8');
+    6514 +    await fs.writeFile(fullPath, content, 'utf-8');
+    6515      await loadAgents();
+    6516      const saved = agents.find(a => a.file === file);
+    6517 -    if (saved) selectAgent(saved.id);
+    6518 -    closePanel();
+    6517 +    if (saved) openAgentEditor(saved.id);
+    6518    } catch (error) {
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou ampliar o fluxo de arquivos do agente para anexos reais, não só texto: Markdown, TXT, JSON, PDF e imagens comuns. Quando for binário, o
+  arquivo será copiado/escrito como anexo, sem tentar enfiar conteúdo no prompt.
+
+• Edited js\ui\views\agent-helpers.js (+2 -2)
+    30  export function isAgentPersonaFile(file) {
+    31 -  const allowedExtensions = ['.md', '.txt', '.json', '.pdf'];
+    31 +  const allowedExtensions = ['.md', '.txt', '.json', '.pdf', '.png', '.jpg', '.jpeg', '.webp', '.gif'];
+    32    return Boolean(file?.name && allowedExtensions.includes(path.extname(file.name).toLowerCase()));
+       ⋮
+    74  export function sanitizeAgentDocumentName(fileName) {
+    75 -  const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf'];
+    75 +  const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf', '.png', '.jpg', '.jpeg', '.webp', '.gif'];
+    76    const ext = AGENT_PERSONA_EXTENSIONS.includes(path.extname(fileName || '').toLowerCase())
+
+• Edited js\ui.js (+25 -12)
+    1422
+    1423 -const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf'];
+    1423 +const AGENT_PERSONA_EXTENSIONS = ['.md', '.txt', '.json', '.pdf', '.png', '.jpg', '.jpeg', '.webp', '.gif'];
+    1424 +const AGENT_TEXT_DOCUMENT_EXTENSIONS = ['.md', '.txt', '.json'];
+    1425  var pendingAgentDocuments = [];
+         ⋮
+    1495
+    1495 -async function readAgentPersonaFile(file) {
+    1496 -  if (typeof readAttachedFile === 'function') {
+    1497 -    const result = await readAttachedFile(file);
+    1498 -    return String(result?.content || '');
+    1496 +async function readAgentPersonaFile(file) {
+    1497 +  const ext = path.extname(file?.name || '').toLowerCase();
+    1498 +  if (!AGENT_TEXT_DOCUMENT_EXTENSIONS.includes(ext)) {
+    1499 +    if (file?.path) return { binary: true, filePath: file.path, content: '' };
+    1500 +    if (typeof file?.arrayBuffer === 'function') {
+    1501 +      const buffer = await file.arrayBuffer();
+    1502 +      return { binary: true, binaryContent: Buffer.from(buffer), content: '' };
+    1503 +    }
+    1504 +    throw new Error(`Nao foi possivel ler ${file.name}`);
+    1505 +  }
+    1506 +  if (typeof readAttachedFile === 'function') {
+    1507 +    const result = await readAttachedFile(file);
+    1508 +    return String(result?.content || '');
+    1509    }
+         ⋮
+    1655      for (const file of files) {
+    1646 -      const raw = await readAgentPersonaFile(file);
+    1647 -      if (!nameField.value.trim()) nameField.value = getAgentTitleFromPersona(file.name, raw);
+    1648 -      pendingAgentDocuments.push({
+    1649 -        name: file.name,
+    1650 -        content: raw,
+    1651 -        pending: true
+    1652 -      });
+    1656 +      const raw = await readAgentPersonaFile(file);
+    1657 +      const textContent = typeof raw === 'string' ? raw : '';
+    1658 +      if (!nameField.value.trim()) nameField.value = getAgentTitleFromPersona(file.name, textContent);
+    1659 +      pendingAgentDocuments.push({
+    1660 +        name: file.name,
+    1661 +        content: textContent,
+    1662 +        filePath: raw?.filePath || '',
+    1663 +        binaryContent: raw?.binaryContent || null,
+    1664 +        pending: true
+    1665 +      });
+    1666        attachedNames.push(file.name);
+
+• Edited js\ui.js (+15 -8)
+    6467        continue;
+    6468 -    }
+    6469 -
+    6470 -    const docFileName = await getAvailableAgentDocumentFileName(docDir, doc.name || 'documento.md', reserved);
+    6471 -    reserved.add(docFileName.toLowerCase());
+    6472 -    await fs.writeFile(path.join(docDir, docFileName), String(doc.content || ''), 'utf-8');
+    6473 -    keepFileNames.add(docFileName.toLowerCase());
+    6474 -    refs.push({ name: doc.name || docFileName, path: getAgentDocumentRef(agentSlug, docFileName) });
+    6469 +
+    6470 +    const docFileName = await getAvailableAgentDocumentFileName(docDir, doc.name || 'documento.md', reserved);
+    6474 +      await fs.copyFile(doc.filePath, targetPath);
+    6475 +    } else if (doc.binaryContent) {
+    6476 +      await fs.writeFile(targetPath, doc.binaryContent);
+    6477 +    } else {
+    6478 +      await fs.writeFile(targetPath, String(doc.content || ''), 'utf-8');
+    6479 +    }
+    6480 +    keepFileNames.add(docFileName.toLowerCase());
+    6481 +    refs.push({ name: doc.name || docFileName, path: getAgentDocumentRef(agentSlug, docFileName) });
+    6482 +  }
+    6483
+
+• Edited js\ui.js (+1 -1)
+    6161 +              <span>Anexar .md, .txt, .json, .pdf ou imagens. Os arquivos entram somente ao salvar.</span>
+    6162              </div>
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Agora vou travar a rota de conversa de agente como contexto privado. Isso não mexe na pesquisa pública geral; só impede que uma sessão com
+  currentChatSource === 'agent' promova a mensagem para Brave/Tavily por heurística genérica.
+
+• Running rg -n "currentChatSource === 'agent'|currentChatSource = 'agent'|currentAgent" js\chat.js js\agents.js js\ui.js js\prompt.js
+• Ran rg -n "function runPrivateContextSynthesisRoute|runPrivateContextSynthesisRoute" js
+  └ js\chat-models.js:1388:async function runPrivateContextSynthesisRoute(userMessage, routeOptions = {}) {
+    js\chat.js:1598:    if (executionRoute === 'private_context_synthesis' && typeof runPrivateContextSynthesisRoute === 'function') {
+    js\chat.js:1600:      agentResult = await runPrivateContextSynthesisRoute(content, {
+
+• Ran rg -n "currentChatSource === 'agent'|currentChatSource = 'agent'|currentAgent" js\chat.js js\agents.js js\ui.js js\prompt.js
+  └ js\agents.js:5: * EXPORTA: WORION_AGENTS, agents, selected, currentAgent, AGENTS_DIR, AGENT_DOCS_DIR
+    js\agents.js:21:var currentAgent = null;
+    … +68 lines (ctrl + t to view transcript)
+    js\prompt.js:623:    ? buildAgentSpecializationLayer(currentAgent)
+    js\prompt.js:1027:O agente ativo e: ${currentAgent?.name || 'agente sem nome'}.
+
+• Ran rg -n "function runPrivateContextSynthesisRoute|runPrivateContextSynthesisRoute" js
+  └ js\chat-models.js:1388:async function runPrivateContextSynthesisRoute(userMessage, routeOptions = {}) {
+    js\chat.js:1598:    if (executionRoute === 'private_context_synthesis' && typeof runPrivateContextSynthesisRoute === 'function') {
+    js\chat.js:1600:      agentResult = await runPrivateContextSynthesisRoute(content, {
+
+• Running rg -n -C 80 "function buildAgentDomainResearchContext|shouldAutoResearchAgentDomain|executeAgentDomainResearch" js\chat.js
+
+• Ran rg -n -C 80 "function buildAgentDomainResearchContext|shouldAutoResearchAgentDomain|executeAgentDomainResearch" js\chat.js
+  └ 871-      return { handled: true, stopPipeline: true, type: 'memory_search', reply };
+    872-    }
+    … +162 lines (ctrl + t to view transcript)
+    1035-    console.error('[CHAT] input chat-in indisponivel no runtime');
+    1036-    return;
+
+• Ran rg -n "brave|tavily|fetch" js\chat.js | Select-Object -First 80
+  └ 994:      if (/brave search|tavily|subscription|api|vault/i.test(error.message)) break;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Achei uma segunda causa direta do Brave/Tavily em agentes: antes mesmo da decisão de rota, buildAgentDomainResearchContext() faz busca externa
+  automática para agentes especializados. Vou desligar essa busca automática no fluxo de agente; os documentos do agente continuam entrando pelo
+  contexto privado do próprio agente.
+
+• Edited js\chat.js (+8 -5)
+    1442        : '';
+    1443 +    const agentDomainResearchContext = '';
+    1444      const activeMemoryCardProjectContext = window.currentMemoryCardProjectId && window.WorionMemoryCardsRuntime?.buildMemoryCardChatContex
+    1476 +    let questionScope = typeof classifyQuestionScope === 'function'
+    1477        ? classifyQuestionScope(content, {
+         ⋮
+    1484            internalMemoryContext,
+    1486 -          memoryCardsContext
+    1485 +          memoryCardsContext,
+    1486 +          activeAgent: isAgentSession ? currentAgent : null
+    1487          })
+    1488        : 'conversation_or_general';
+    1489 +    if (isAgentSession && questionScope !== 'uploaded_file_context') {
+    1490 +      questionScope = 'private_agent_context';
+    1491 +    }
+    1492      const isPrivateContextScope = typeof isPrivateQuestionScope === 'function'
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• A seleção do agente já é mantida em currentAgent, mas vou verificar a persistência do snapshot da conversa. A meta precisa guardar agentId/
+  agentName para a conversa reabrir no agente certo.
+
+• Running rg -n -C 60 "function startChat|async function startChat" js\chat.js
+    … +1225 lines (ctrl + t to view transcript)
+    js\chat.js-2029-  window.handleBeforeUnload = handleBeforeUnload;
+    js\chat.js-2030-}
+
+• Ran rg -n -C 60 "function startChat|async function startChat" js\chat.js
+  └ 1846-      explicitNotionWriteAuthorized: false,
+    1847-      deferNotionWrite: false,
+    … +117 lines (ctrl + t to view transcript)
+    1965-    messages.push({ role: 'assistant', content: welcome, createdAt: new Date().toISOString() });
+    1966-  }
+
+• Ran rg -n -C 80 "function buildConversationSnapshot|agentId|agentName|currentChatSource|saveConversationSnapshot" js\chat-sessions.js js\app.js
+  │ js\chat.js
+  └ js\chat-sessions.js-1-/**
+    js\chat-sessions.js-2- * MÓDULO: chat-sessions.js
+    … +1225 lines (ctrl + t to view transcript)
+    js\chat.js-2029-  window.handleBeforeUnload = handleBeforeUnload;
+    js\chat.js-2030-}
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• A persistência da conversa já salva agentId, agentName e chatSource: 'agent'. Vou completar a tela dedicada com ação de excluir para agentes
+  existentes e depois rodar as validações de sintaxe.
+
+• Edited js\ui.js (+21 -0)
+    6167              <button class="btn-edit" onclick="showAgentsView()">Cancelar</button>
+    6168 +            ${agent ? `<button class="btn-edit" onclick="deleteAgentFromEditor('${agent.id}')"><i class="ti ti-trash"></i> Excluir</button
+          >` : ''}
+    6169              <button class="btn-chat" onclick="saveAgentFromEditor('${agent?.id || ''}')"><i class="ti ti-device-floppy"></i> ${actionLabel
+          }</button>
+         ⋮
+    6175
+    6176 +async function deleteAgentFromEditor(id = '') {
+    6177 +  const agent = agents.find(a => a.id === id);
+    6178 +  if (!agent?.file) return;
+    6179 +  const ok = confirm(`Excluir o agente "${agent.name}"? Esta acao remove o arquivo local do agente.`);
+    6180 +  if (!ok) return;
+    6181 +  try {
+    6182 +    const fullPath = path.join(AGENTS_DIR, agent.file);
+    6183 +    const agentSlug = agent.file.replace(/\.md$/i, '');
+    6184 +    await fs.unlink(fullPath);
+    6185 +    await fs.rm(path.join(AGENT_DOCS_DIR, agentSlug), { recursive: true, force: true }).catch(() => {});
+    6186 +    selected = null;
+    6187 +    currentAgent = null;
+    6188 +    await loadAgents();
+    6189 +    await showAgentsView();
+    6190 +  } catch (error) {
+    6191 +    console.error('Erro ao excluir agente:', error);
+    6192 +    alert(`Erro ao excluir agente: ${error.message}`);
+    6193 +  }
+    6194 +}
+    6195 +
+    6196  function closePanel() {
+
+
+› Estado mínimo recomendado:
+
+  window.agentsState = {
+    view: 'list',
+    selectedAgentId: null,
+    editingAgentDraft: null,
+    activeConversationAgentId: null
+  };
+
+  REGRAS DE NAVEGAÇÃO
+
+  Clicar em "Agentes" na sidebar:
+  renderiza lista de agentes;
+  limpa selectedAgentId;
+  não abre editor automaticamente.
+  Clicar em card do agente:
+  abre tela dedicada do agente em modo visualização/edição;
+  não usar drawer;
+  não manter lista comprimida do lado esquerdo.
+  Clicar em "Editar":
+  abre a mesma tela dedicada do agente;
+  carrega dados corretos do agente clicado;
+  nunca usar fallback para primeiro agente.
+  Clicar em "+ Novo agente":
+  abre tela dedicada de criação;
+  não sobrepor botão;
+  não mostrar dropzone antes do formulário.
+  Clicar em "← Todos os agentes":
+  volta para lista;
+  preserva busca, se possível;
+  limpa draft se não salvo.
+  Clicar em "Cancelar":
+  se estava criando, descarta draft e volta para lista;
+  se estava editando, descarta alterações e volta para detalhe ou lista.
+
+  DROPZONE
+
+  A dropzone "Anexar documentos ao agente" deve aparecer somente:
+
+  dentro da tela de criação;
+  dentro da tela de detalhe/edição do agente.
+
+  Não deve aparecer:
+
+  na listagem principal;
+  flutuando acima dos cards;
+  dentro de drawer comprimido;
+  como gatilho automático de criação sem confirmação.
+
+  DOCUMENTOS DO AGENTE
+
+  Os arquivos anexados ao agente devem ser tratados como conhecimento privado do agente.
+
+  Regras:
+
+  Não usar Brave/Tavily para interpretar documento anexado.
+  Não usar pesquisa pública para links privados do Notion.
+  Ao receber link Notion dentro de conversa com agente:
+  classificar como private_connector_context;
+  usar Notion fetch;
+  nunca focused_research.
+  Ao receber arquivo anexado:
+  classificar como uploaded_file_context;
+  ler arquivo;
+  não pesquisar na web.
+  O agente só pode afirmar "li os arquivos" se eles foram realmente carregados/lidos.
+
+  ROTEAMENTO DO AGENTE
+
+  Hoje o log mostra:
+
+  [EXECUTION ROUTER] question scope: conversation_or_general route: focused_research
+
+  Isso está errado para pedidos como:
+
+  Leia todas as sessões desse link:
+  https://app.notion.com/p/Glaydson-HQ-...
+
+  Quando houver agente ativo + link Notion:
+
+  scope esperado: private_connector_context
+  route esperada: private_context_synthesis ou equivalente privado
+  tools permitidas: notion_fetch / private connector
+  tools proibidas: brave_search, tavily_search, tavily_extract, web_search público
+
+  Corrigir roteador para considerar:
+
+  const hasActiveAgent = Boolean(activeConversationAgentId || selectedAgentId);
+  const hasNotionLink = /notion\\.so|app\\.notion\\.com/.test(userMessage);
+  const hasUploadedAgentDocs = activeAgent?.documents?.length > 0;
+
+  Regra:
+
+  if (hasActiveAgent && hasNotionLink) {
+    return {
+      scope: 'private_connector_context',
+      route: 'private_context_synthesis',
+      reason: 'active_agent_with_private_notion_link'
+    };
+  }
+
+  E:
+
+  if (hasActiveAgent && hasUploadedAgentDocs) {
+    injectAgentDocumentsAsPrivateContext(activeAgent);
+  }
+
+  AGENTE SELECIONADO
+
+  Criar/validar uma função única para resolver o agente ativo:
+
+  function getActiveAgentForConversation() {
+    // 1. agente explicitamente vinculado à conversa atual
+    // 2. agente selecionado na tela atual
+    // 3. agente salvo na sessão/conversa
+    // 4. null
+  }
+
+  Não usar apenas modelo selecionado como agente.
+
+  Modelo e agente são coisas diferentes:
+
+  Modelo = provedor/modelo de LLM.
+  Agente = identidade operacional + system prompt + arquivos + regras + modelo preferido.
+
+  MODEL CALL
+
+  Antes de chamar o modelo, montar contexto nesta ordem:
+
+  1. System base seguro do Worion.
+  2. System/instruções do agente ativo.
+  3. Documentos privados do agente, se relevantes.
+  4. Contexto privado recuperado: Notion/anexos/memória.
+  5. Histórico recente compactado.
+  6. Mensagem atual do usuário.
+
+  Adicionar log claro:
+
+  console.log('[AGENT RUNTIME]', {
+    activeAgentId,
+    activeAgentName,
+    modelFromAgent,
+    manualModelOverride,
+    documentsCount,
+    route,
+    scope
+  });
+
+  Se não houver agente ativo:
+
+  console.log('[AGENT RUNTIME] no active agent for conversation');
+
+  SALVAMENTO
+
+  Ao salvar agente:
+
+  Validar nome obrigatório.
+  Validar system prompt/instruções.
+  Persistir no mesmo storage atual de agentes.
+  Atualizar lista sem reload completo, se possível.
+  Fechar ou permanecer no detalhe com confirmação visual discreta.
+
+  Se persistência ainda não existir:
+
+  não fingir salvamento;
+  exibir erro claro;
+  logar no console;
+  documentar pendência.
+
+  UX DETALHE DO AGENTE — ESTRUTURA
+
+  A tela dedicada deve seguir este layout:
+
+  ← Todos os agentes
+
+  [NOME DO AGENTE]                       [Ativo/Inativo]
+
+  Descrição curta
+  [textarea/input]
+
+  Modelo padrão
+  [select]
+
+  Webhook opcional
+  [input]
+
+  Instruções / System Prompt
+  [textarea grande]
+
+  Documentos do agente
+  [lista de arquivos anexados]
+  [dropzone / botão anexar]
+
+  Ações
+  [Cancelar] [Salvar agente]
+
+  Para modo criação:
+
+  ← Todos os agentes
+
+  Novo agente
+
+  Nome
+  Descrição
+  Status
+  Modelo
+  Webhook opcional
+  Instruções
+  Documentos
+
+  [Cancelar] [Criar agente]
+
+  CSS / UI
+
+  Corrigir:
+
+  Botão "+ Novo agente" não pode sobrepor logo/título.
+  Drawer lateral não deve existir nessa tela.
+  Evitar scroll duplo dentro de scroll duplo.
+  Textarea de prompt deve ter altura confortável.
+  Página de detalhe deve ocupar o painel principal.
+  Em telas menores, usar layout coluna única.
+  Botões fixos no final da tela ou sticky footer dentro do detalhe, mas sem cobrir conteúdo.
+
+  CRITÉRIOS DE ACEITE
+
+  Teste 1 — Lista limpa
+
+  Input:
+  Abrir tela Agentes.
+
+  Esperado:
+
+  mostra lista;
+  mostra busca;
+  mostra "+ Novo agente";
+  não mostra dropzone;
+  não mostra editor;
+  console sem erro.
+
+  Teste 2 — Novo agente
+
+  Input:
+  Clicar "+ Novo agente".
+
+  Esperado:
+
+  abre tela dedicada;
+  formulário vazio;
+  dropzone aparece dentro do formulário;
+  botão "Criar agente";
+  sem sobreposição visual.
+
+  Teste 3 — Editar agente
+
+  Input:
+  Clicar "Editar" em ESPECIALISTA EM TDHA.
+
+  Esperado:
+
+  abre tela dedicada só do agente;
+  lista desaparece ou fica fora da tela;
+  campos carregam dados corretos;
+  documentos aparecem no bloco de documentos;
+  system prompt aparece inteiro e editável.
+
+  Teste 4 — Voltar
+
+  Input:
+  Clicar "← Todos os agentes".
+
+  Esperado:
+
+  volta para lista;
+  sem perder agentes;
+  sem drawer residual;
+  sem estado visual quebrado.
+
+  Teste 5 — Agente ativo na conversa
+
+  Input:
+  Selecionar ESPECIALISTA EM TDHA e enviar:
+  "Leia todas as sessões desse link: https://app.notion.com/p/Glaydson-HQ-..."
+
+  Esperado:
+
+  log mostra activeAgentName = ESPECIALISTA EM TDHA;
+  scope = private_connector_context;
+  route = private_context_synthesis;
+  não chama brave_search;
+  não chama tavily_extract;
+  usa Notion fetch;
+  resposta só confirma leitura real se páginas foram realmente carregadas.
+
+  Teste 6 — Documento do agente
+
+  Input:
+  Agente com dois arquivos MD anexados.
+  Usuário pergunta algo que depende deles.
+
+  Esperado:
+
+  arquivos entram como contexto privado;
+  agente não usa web;
+  resposta se baseia nos arquivos.
+
+  Teste 7 — Modelo
+
+  Input:
+  Agente configurado com GPT-4.1.
+  Modelo manual não sobrescrito pelo usuário.
+
+  Esperado:
+
+  model call usa GPT-4.1 ou modelo configurado no agente.
+  log diferencia modelFromAgent e manualModelOverride.
+
+  Teste 8 — TPM
+
+  Input:
+  Pedir leitura de link Notion grande.
+
+  Esperado:
+
+  não jogar tudo cru no prompt;
+  paginar/compactar/sumarizar;
+  evitar erro TPM;
+  se leitura parcial, dizer "Li X de Y fontes".
+
+  VALIDAÇÃO TÉCNICA
+
+  Rodar:
+
+  node --check js/agents.js
+  node --check js/chat.js
+  node --check js/chat-routing.js
+  node --check js/chat-models.js
+  node --check js/tools.js
+  node --check js/ui.js
+
+  Se arquivos tiverem nomes diferentes, rodar node --check nos arquivos efetivamente alterados.
+
+  Depois:
+
+  npm run validate
+
+  Se npm run validate falhar por pendência preexistente, registrar como preexistente e mostrar erro.
+
+  RELATÓRIO FINAL OBRIGATÓRIO
+
+  Responder com:
+
+  Arquivos alterados:
+  - ...
+
+  Causa raiz:
+  - ...
+
+  Correção aplicada:
+  - ...
+
+  O que foi preservado:
+  - prompt.js não alterado
+  - Supabase schema não alterado
+  - ...
+
+  Pendências:
+  - ...
+
+  IMPORTANTE
+
+  Não resolver com gambiarra de z-index.
+  Não empilhar drawer sobre lista.
+  Não chamar web pública para Notion privado.
+  Não confundir modelo com agente.
+  Não dizer que o agente leu documentos se não leu.
+
+
+  Complemento: os dois MDs que você usou estão coerentes como base de conhecimento, mas o runtime precisa respeitar a diferença entre **arquivo do
+  agente**, **prompt do agente** e **contexto privado**. O arquivo do Diário Reflexivo define um agente que pergunta e espelha, sem agir como
+  engenheiro/debugger. :contentReference[oaicite:1]{index=1} Já a base de TDAH define um agente de apoio executivo, com foco em reduzir fricção,
+  priorizar e transformar intenção em passo executável. :contentReference[oaicite:2]{index=2}
+
+  O bug central é: **a UI mostra um agente, mas o runtime ainda age como Worion genérico com pesquisa pública**.
+
+• Running rg -n "shouldForceNotionToolAttempt|executeDirectNotionReadRequest|buildDirectNotionReadReply|notion" js\chat.js js\tools.js
+  │ js\connectors.js
+
+• Running rg -n "window\.agentsState|deleteAgentFromEditor|renderAgentEditorPage|getActiveAgentForConversation|AGENT RUNTIME|private_agent_context"
+  │ js\ui.js js\agents.js js\chat.js js\chat-routing.js
+
+• Ran rg -n "shouldForceNotionToolAttempt|executeDirectNotionReadRequest|buildDirectNotionReadReply|notion" js\chat.js js\tools.js js\connectors.js
+  └ js\connectors.js:5: * EXPORTA: supabaseHeaders, memorySupabaseHeaders, notionHeaders, getOpenAIKey, getAnthropicKey, loadConnections,
+    editConnection, saveConnection, deleteConnection, getVaultRows, getVaultValueById, findVaultValue, findN8nBaseUrl, getBraveSearchKey,
+    … +114 lines (ctrl + t to view transcript)
+    js\chat.js:1422:        ? normalizeAssistantReply(notionReply || notionReadResult.reply || '', content)
+    js\chat.js:1423:        : (notionReply || notionReadResult.reply || '');
+
+• Ran rg -n "window\.agentsState|deleteAgentFromEditor|renderAgentEditorPage|getActiveAgentForConversation|AGENT RUNTIME|private_agent_context"
+  │ js\ui.js js\agents.js js\chat.js js\chat-routing.js
+  └ js\chat.js:1490:      questionScope = 'private_agent_context';
+    js\ui.js:6108:  main.innerHTML = renderAgentEditorPage(agent);
+    … +2 lines (ctrl + t to view transcript)
+    Excluir</button>` : ''}
+    js\ui.js:6176:async function deleteAgentFromEditor(id = '') {
+
+• Ran git diff -- js\ui.js js\agents.js js\chat.js js\ui\views\agent-card-renderer.js js\ui\views\agent-helpers.js
+  └ diff --git a/js/agents.js b/js/agents.js
+    index 81f9577..1b3e206 100644
+    … +2291 lines (ctrl + t to view transcript)
+    warning: in the working copy of 'js/ui/views/agent-card-renderer.js', LF will be replaced by CRLF the next time Git touches it
+    warning: in the working copy of 'js/ui/views/agent-helpers.js', LF will be replaced by CRLF the next time Git touches it
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou aplicar o estado mínimo agora e ligar o runtime a ele. Também vou ajustar o caso específico agente + link Notion para registrar
+  private_connector_context antes do fluxo direto de Notion.
+
+• Edited js\ui.js (+19 -6)
+     200  var worionSelectionPointerDown = false;
+     201 +window.agentsState = window.agentsState || {
+     202 +  view: 'list',
+     203 +  selectedAgentId: null,
+     204 +  editingAgentDraft: null,
+     205 +  activeConversationAgentId: null,
+     206 +  searchQuery: ''
+     207 +};
+     208
+         ⋮
+    1688
+    1682 -async function showAgentsView() {
+    1689 +async function showAgentsView() {
+    1690    if (typeof hideExecutionStatus === 'function') hideExecutionStatus();
+    1691    if (!(await leaveChatIfNeeded())) return;
+    1685 -  setActiveView('agents');
+    1686 -  selected = null;
+    1687 -  currentAgent = null;
+    1692 +  setActiveView('agents');
+    1693 +  selected = null;
+    1694 +  currentAgent = null;
+    1695 +  window.agentsState = {
+    1696 +    ...window.agentsState,
+    1697 +    view: 'list',
+    1698 +    selectedAgentId: null,
+    1699 +    editingAgentDraft: null
+    1700 +  };
+    1701    activeSkillId = null;
+         ⋮
+    1720          <i class="ti ti-search" aria-hidden="true"></i>
+    1708 -        <input type="text" placeholder="Buscar agentes..." oninput="filterCards(this.value)">
+    1721 +        <input type="text" placeholder="Buscar agentes..." value="${escapeHtml(window.agentsState.searchQuery || '')}" oninput="filterCard
+          s(this.value)">
+    1722        </div>
+         ⋮
+    1724      <div class="cards-area" id="cards-area"></div>`;
+    1712 -  renderCards(agents);
+    1725 +  renderCards(window.agentsState.searchQuery ? filterAgentsByQuery(window.agentsState.searchQuery) : agents);
+    1726  }
+
+• Edited js\ui.js (+28 -7)
+    6111    currentAgent = agent || null;
+    6112 +  window.agentsState = {
+    6113 +    ...window.agentsState,
+    6114 +    view: agent ? 'detail' : 'create',
+    6115 +    selectedAgentId: agent?.id || null,
+    6116 +    editingAgentDraft: agent ? { id: agent.id } : {}
+    6117 +  };
+    6118    pendingAgentDocuments = Array.isArray(agent?.documents)
+         ⋮
+    6206      currentAgent = null;
+    6207 +    window.agentsState = {
+    6208 +      ...window.agentsState,
+    6209 +      view: 'list',
+    6210 +      selectedAgentId: null,
+    6211 +      editingAgentDraft: null,
+    6212 +      activeConversationAgentId: window.agentsState.activeConversationAgentId === id ? null : window.agentsState.activeConversationAgentId
+    6213 +    };
+    6214      await loadAgents();
+         ⋮
+    6707
+    6695 -function filterCards(v) {
+    6696 -  const f = agents.filter(a =>
+    6697 -    a.name.toLowerCase().includes(v.toLowerCase()) ||
+    6698 -    a.desc.toLowerCase().includes(v.toLowerCase())
+    6699 -  );
+    6700 -  renderCards(f);
+    6701 -}
+    6708 +function filterCards(v) {
+    6709 +  window.agentsState = {
+    6710 +    ...window.agentsState,
+    6711 +    searchQuery: String(v || '')
+    6712 +  };
+    6713 +  renderCards(filterAgentsByQuery(v));
+    6714 +}
+    6715 +
+    6716 +function filterAgentsByQuery(v = '') {
+    6717 +  const query = String(v || '').toLowerCase();
+    6718 +  return agents.filter(a =>
+    6719 +    String(a.name || '').toLowerCase().includes(query) ||
+    6720 +    String(a.desc || '').toLowerCase().includes(query)
+    6721 +  );
+    6722 +}
+    6723
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• O estado de UI agora diferencia lista, detalhe e criação. Vou expor a ação de excluir e fazer o chat marcar o agente ativo no mesmo estado.
+
+• Edited js\ui.js (+1 -0)
+    6760  window.saveAgentFromEditor = saveAgentFromEditor;
+    6761 +window.deleteAgentFromEditor = deleteAgentFromEditor;
+    6762  window.closePanel = closePanel;
+
+• Edited js\agents.js (+5 -0)
+     96    currentAgent = agent;
+     97 +  window.agentsState = {
+     98 +    ...(window.agentsState || {}),
+     99 +    activeConversationAgentId: agent.id,
+    100 +    selectedAgentId: agent.id
+    101 +  };
+    102    currentConversationId = null;
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Vou adicionar getActiveAgentForConversation() no runtime e usar isso para modelo, escopo, log e vínculo de conversa.
+
+• Edited js\chat.js (+34 -1)
+     923
+     924 -function getAgentDomainResearchCache(agent = currentAgent) {
+     924 +function getAgentDomainResearchCache(agent = currentAgent) {
+     925    if (!agent) return null;
+         ⋮
+    1858
+    1859 +function getActiveAgentForConversation() {
+    1860 +  const state = window.agentsState || {};
+    1861 +  const list = Array.isArray(agents) && agents.length
+    1862 +    ? agents
+    1863 +    : (Array.isArray(window.WORION_AGENTS) ? window.WORION_AGENTS : []);
+    1864 +  const explicitId = state.activeConversationAgentId || state.selectedAgentId || currentAgent?.id || selected || '';
+    1865 +  if (explicitId) {
+    1866 +    const found = list.find(agent => agent.id === explicitId);
+    1867 +    if (found) return found;
+    1868 +  }
+    1869 +  return null;
+    1870 +}
+    1871 +
+    1872 +function hasNotionLink(text = '') {
+    1873 +  return /https?:\/\/(?:www\.)?(?:notion\.so|app\.notion\.com|[\w-]+\.notion\.site)\/\S+/i.test(String(text || ''));
+    1874 +}
+    1875 +
+    1876 +function logAgentRuntime({ activeAgent, modelFromAgent, manualModelOverride, documentsCount, route, scope }) {
+    1877 +  if (!activeAgent) {
+    1878 +    console.log('[AGENT RUNTIME] no active agent for conversation');
+    1879 +    return;
+    1880 +  }
+    1881 +  console.log('[AGENT RUNTIME]', {
+    1882 +    activeAgentId: activeAgent.id || null,
+    1883 +    activeAgentName: activeAgent.name || activeAgent.title || '',
+    1884 +    modelFromAgent: modelFromAgent || null,
+    1885 +    manualModelOverride: manualModelOverride || null,
+    1886 +    documentsCount,
+    1887 +    route,
+    1888 +    scope
+    1889 +  });
+    1890 +}
+    1891 +
+    1892  if (typeof window !== 'undefined') {
+
+• Edited js\chat.js (+56 -16)
+    1412
+    1413 -    if (
+    1414 -      typeof shouldForceNotionToolAttempt === 'function' &&
+    1415 -      typeof executeDirectNotionReadRequest === 'function' &&
+    1416 -      shouldForceNotionToolAttempt(content)
+    1417 -    ) {
+    1418 -      if (typeof showWorionStatus === 'function') showWorionStatus('openingSources');
+    1419 -      const notionReadResult = await executeDirectNotionReadRequest(content);
+    1413 +    if (
+    1414 +      typeof shouldForceNotionToolAttempt === 'function' &&
+    1415 +      typeof executeDirectNotionReadRequest === 'function' &&
+    1416 +      shouldForceNotionToolAttempt(content)
+    1417 +    ) {
+    1418 +      const activeAgent = typeof getActiveAgentForConversation === 'function' ? getActiveAgentForConversation() : null;
+    1419 +      if (window.currentChatSource === 'agent' && activeAgent && hasNotionLink(content)) {
+    1420 +        currentAgent = activeAgent;
+    1421 +        window.agentsState = {
+    1422 +          ...(window.agentsState || {}),
+    1423 +          activeConversationAgentId: activeAgent.id,
+    1424 +          selectedAgentId: activeAgent.id
+    1425 +        };
+    1426 +        if (typeof setWorionRouteGuard === 'function') setWorionRouteGuard('private_connector_context', content);
+    1427 +        logAgentRuntime({
+    1428 +          activeAgent,
+    1429 +          modelFromAgent: activeAgent.model || null,
+    1430 +          manualModelOverride: window.manualSelectedModel || null,
+    1431 +          documentsCount: Array.isArray(activeAgent.documents) ? activeAgent.documents.length : 0,
+    1432 +          route: 'private_context_synthesis',
+    1433 +          scope: 'private_connector_context'
+    1434 +        });
+    1435 +      }
+    1436 +      if (typeof showWorionStatus === 'function') showWorionStatus('openingSources');
+    1437 +      const notionReadResult = await executeDirectNotionReadRequest(content);
+    1438        const notionReply = buildDirectNotionReadReply(notionReadResult, content);
+         ⋮
+    1486
+    1469 -    if (typeof showWorionStatus === 'function') showWorionStatus('composing');
+    1470 -    // Bug fix: Prioridade de seleção de modelo: Manual > Agente > Router
+    1471 -    const manualModel = window.manualSelectedModel || null;
+    1472 -    const agentModel = window.currentChatSource === 'agent' ? currentAgent?.model : null;
+    1473 -    const selectedRuntimeModel = manualModel || agentModel;
+    1474 -
+    1475 -    const isAgentSession = window.currentChatSource === 'agent' && Boolean(currentAgent);
+    1487 +    if (typeof showWorionStatus === 'function') showWorionStatus('composing');
+    1488 +    // Bug fix: Prioridade de seleção de modelo: Manual > Agente > Router
+    1489 +    const activeAgent = window.currentChatSource === 'agent'
+    1490 +      ? getActiveAgentForConversation()
+    1491 +      : null;
+    1492 +    if (activeAgent) {
+    1493 +      currentAgent = activeAgent;
+    1494 +      selected = activeAgent.id;
+    1495 +      window.agentsState = {
+    1496 +        ...(window.agentsState || {}),
+    1497 +        activeConversationAgentId: activeAgent.id,
+    1498 +        selectedAgentId: activeAgent.id
+    1499 +      };
+    1500 +    }
+    1501 +    const manualModel = window.manualSelectedModel || null;
+    1502 +    const agentModel = activeAgent ? activeAgent.model : null;
+    1503 +    const selectedRuntimeModel = manualModel || agentModel;
+    1504 +
+    1505 +    const isAgentSession = window.currentChatSource === 'agent' && Boolean(activeAgent);
+    1506      let questionScope = typeof classifyQuestionScope === 'function'
+         ⋮
+    1515            memoryCardsContext,
+    1486 -          activeAgent: isAgentSession ? currentAgent : null
+    1516 +          activeAgent: isAgentSession ? activeAgent : null
+    1517          })
+    1518        : 'conversation_or_general';
+    1489 -    if (isAgentSession && questionScope !== 'uploaded_file_context') {
+    1519 +    if (isAgentSession && hasNotionLink(content)) {
+    1520 +      questionScope = 'private_connector_context';
+    1521 +    } else if (isAgentSession && questionScope !== 'uploaded_file_context') {
+    1522        questionScope = 'private_agent_context';
+         ⋮
+    1570      console.log('[EXECUTION ROUTER] question scope:', questionScope, 'route:', executionRoute);
+    1571 +    logAgentRuntime({
+    1572 +      activeAgent,
+    1573 +      modelFromAgent: agentModel,
+    1574 +      manualModelOverride: manualModel,
+    1577 +      scope: questionScope
+    1578 +    });
+    1579      if (shouldForceDirectConversation) {
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Também vou fazer o roteador base reconhecer activeAgent + Notion link, mesmo que o override principal já esteja no chat.js. Isso deixa o contrato
+  explícito em chat-routing.js.
+
+• Edited js\chat-routing.js (+6 -0)
+    34    const hasUploadedFiles = files.length > 0;
+    35 +  const activeAgent = context.activeAgent || null;
+    36 +  const hasActiveAgent = Boolean(activeAgent);
+    37 +  const hasNotionLink = /https?:\/\/(?:www\.)?(?:notion\.so|app\.notion\.com|[\w-]+\.notion\.site)\/\S+/i.test(String(text || ''));
+    38 +  const hasUploadedAgentDocs = Array.isArray(activeAgent?.documents) && activeAgent.documents.length > 0;
+    39    const mentionsUploadedFile =
+       ⋮
+    84
+    85 +  if (hasActiveAgent && hasNotionLink) return 'private_connector_context';
+    86 +  if (hasActiveAgent && hasUploadedAgentDocs) return 'private_agent_context';
+    87    if (hasUploadedFiles || mentionsUploadedFile) return 'uploaded_file_context';
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• A regra active agent + Notion link agora retorna private_connector_context; agente com documentos retorna contexto privado do agente. Vou rodar as
+  checagens pedidas e, se passarem, executar o validate.
+
+• Running node --check js\chat-routing.js
+
+• Running node --check js\tools.js
+  └ (no output)
+
+• Ran node --check js\agents.js
+  └ (no output)
+  └ (no output)
+
+• Ran node --check js\chat.js
+  └ (no output)
+
+• Ran node --check js\tools.js
+  └ (no output)
+
+• Ran node --check js\ui.js
+  └ (no output)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Todas as checagens node --check passaram. Vou rodar npm run validate e capturar o resultado final.
+
+• Ran npm run validate
+  └
+    > worion-desktop@1.0.0 validate
+    … +3 lines (ctrl + t to view transcript)
+    WARNING: Arquivos sem documentacao em architecture.json: [ 'memory-cards-runtime.js' ]
+    WARNING: Arquivos fora do load_order: [ 'memory-cards-runtime.js' ]
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• npm run validate ainda falha pela mesma pendência preexistente de memory-cards-runtime.js fora da arquitetura/load order. Vou checar os dois
+  módulos auxiliares alterados e confirmar a ausência da dropzone na listagem.
+
+• Running rg "Arraste arquivos de texto|agent-import-zone|setupAgentPersonaDropZone\('#agent-import-zone'" js\ui.js
+  │ js\ui\views\agent-card-renderer.js
+
+• Running node --check js\ui\views\agent-card-renderer.js
+
+• Running rg -n "window\.agentsState|getActiveAgentForConversation|\[AGENT RUNTIME\]|private_connector_context|activeConversationAgentId|
+  │ deleteAgentFromEditor" js\ui.js js\agents.js js\chat.js js\chat-routing.js
+
+• Ran rg "Arraste arquivos de texto|agent-import-zone|setupAgentPersonaDropZone\('#agent-import-zone'" js\ui.js js\ui\views\agent-card-renderer.js
+  └ (no output)
+
+• Ran rg -n "window\.agentsState|getActiveAgentForConversation|\[AGENT RUNTIME\]|private_connector_context|activeConversationAgentId|
+  │ deleteAgentFromEditor" js\ui.js js\agents.js js\chat.js js\chat-routing.js
+  └ js\chat-routing.js:85:  if (hasActiveAgent && hasNotionLink) return 'private_connector_context';
+    js\chat-routing.js:88:  if (hasPrivateConnectorRef) return 'private_connector_context';
+    … +34 lines (ctrl + t to view transcript)
+    js\ui.js:6710:    ...window.agentsState,
+    js\ui.js:6761:window.deleteAgentFromEditor = deleteAgentFromEditor;
+
+• Ran node --check js\ui\views\agent-helpers.js
+  └ (no output)
+
+• Ran node --check js\ui\views\agent-card-renderer.js
+  └ (no output)
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Arquivos alterados:
+
+  - js/ui.js
+  - js/agents.js
+  - js/chat.js
+  - js/chat-routing.js
+  - js/ui/views/agent-card-renderer.js
+  - js/ui/views/agent-helpers.js
+
+  Causa raiz:
+
+  - A UI de agentes misturava lista e detail-panel, criando drawer comprimido, scroll duplo e sobreposição visual.
+  - O card do agente iniciava/alternava fluxos sem uma tela dedicada clara.
+  - O runtime tratava agente, modelo e roteamento como estados separados; com agente ativo, ainda podia promover a conversa para focused_research e
+    acionar busca pública.
+
+  Correção aplicada:
+
+  - Adicionei window.agentsState com view, selectedAgentId, editingAgentDraft, activeConversationAgentId e searchQuery.
+  - Cards e “Editar” agora abrem uma tela dedicada no painel principal, sem drawer.
+  - “+ Novo agente” abre a mesma tela em modo criação.
+  - “← Todos os agentes” volta para a lista e preserva busca.
+  - Dropzone aparece apenas na tela de criação/detalhe.
+  - Anexos aceitos: .md, .txt, .json, .pdf e imagens comuns; binários são copiados como arquivo, não fingidos como texto lido.
+  - startAgentChat() grava activeConversationAgentId.
+  - Criei getActiveAgentForConversation() no runtime.
+  - Agente ativo + link Notion agora vira private_connector_context e private_context_synthesis, com log [AGENT RUNTIME].
+  - A busca automática Brave/Tavily de domínio do agente foi desligada no fluxo de agente.
+  - Modelo do agente continua separado do agente: manualModelOverride tem prioridade, senão usa modelFromAgent.
+
+  O que foi preservado:
+
+  - js/prompt.js não foi alterado por mim.
+  - Supabase schema não alterado.
+  - Notion API não alterada.
+  - Verification Engine não alterada.
+  - Memory Cards não alterado nesta tarefa.
+
+  Validações executadas:
+
+  - node --check js\agents.js
+  - node --check js\chat.js
+  - node --check js\chat-routing.js
+  - node --check js\chat-models.js
+  - node --check js\tools.js
+  - node --check js\ui.js
+  - node --check js\ui\views\agent-card-renderer.js
+  - node --check js\ui\views\agent-helpers.js
+  - rg confirmou que a dropzone antiga da listagem não aparece mais em js/ui.js.
+
+  Pendências:
+
+  - npm run validate falha por pendência preexistente: memory-cards-runtime.js não está documentado em architecture.json e está fora do load_order.
+  - PDF/imagens ficam anexados como arquivos privados do agente; leitura semântica real depende de parser/runtime específico disponível.

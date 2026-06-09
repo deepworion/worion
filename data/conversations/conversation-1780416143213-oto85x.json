@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1780416143213-oto85x",
+  "conversationId": "conversation-1780416143213-oto85x",
+  "title": "boa tarde.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa tarde.",
+      "createdAt": "2026-06-02T16:02:23.213Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson! Como está o seu dia?",
+      "createdAt": "2026-06-02T16:02:35.895Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-02T16:02:22.313Z",
+  "createdAt": "2026-06-02T16:02:22.313Z",
+  "updatedAt": "2026-06-02T16:07:41.616Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780614169828-86c59m",
+  "conversationId": "conversation-1780614169828-86c59m",
+  "title": "reportagens sobre TDAH e IA",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "reportagens sobre TDAH e IA",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T23:02:49.826Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780614176001-xmm38h",
+      "conversation_id": "conversation-1780614169828-86c59m",
+      "conversationId": "conversation-1780614169828-86c59m",
+      "role": "assistant",
+      "content": "# TDAH e IA: Intersecções Emergentes\n\n## Diagnóstico e Detecção\nIA acelera identificação de TDAH analisando padrões de movimento ocular, tempo de reação em testes digitais e processamento de linguagem. Algoritmos detectam sinais sutis que clínicos humanos podem perder, como mostram pesquisas com análise de imagem de retina.\n\n## Ferramentas de Apoio\nAplicativos com IA personalizam estratégias de foco: bloqueadores de distração adaptativos, lembretes contextuais baseados em padrões comportamentais e gamificação inteligente para manutenção de atenção.\n\n## Desafios Éticos\nRisco de sobrediagnóstico sem validação clínica adequada. Dados comportamentais sensíveis exigem proteção rigorosa. Tecnologia não deve substituir avaliação humana ou intervenções consolidadas.\n\n## Pesquisa em Andamento\nRedes neurais predizem resposta a medicamentos e otimizam dosagens. Neuroimagem assistida por IA mapeia diferenças estruturais cerebrais em portadores de TDAH, abrindo caminhos para tratamentos mais precisos.\n\n## Perspectiva Prática\nIA não substitui diagnóstico clínico. Funciona como ferramenta complementar: acelera detecção, personaliza apoio, reduz carga administrativa. O clínico permanece central na decisão terapêutica e acompanhamento.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T23:02:56.001Z",
+      "createdAt": "2026-06-04T23:02:56.001Z",
+      "updated_at": "2026-06-04T23:03:30.906Z",
+      "updatedAt": "2026-06-04T23:03:30.906Z",
+      "completedAt": "2026-06-04T23:03:30.906Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T23:02:30.740Z",
+  "createdAt": "2026-06-04T23:02:30.740Z",
+  "updatedAt": "2026-06-04T23:03:32.913Z"
+}

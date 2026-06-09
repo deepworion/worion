@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780613930060-9ocdm6",
+  "conversationId": "conversation-1780613930060-9ocdm6",
+  "title": "pesquisa reportagens recentes sobre TDAH e IA",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa reportagens recentes sobre TDAH e IA",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:58:50.059Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780613936928-tsyin5",
+      "conversation_id": "conversation-1780613930060-9ocdm6",
+      "conversationId": "conversation-1780613930060-9ocdm6",
+      "role": "assistant",
+      "content": "# Pesquisa: TDAH e IA - Tendências Atuais\n\n## Limitação\nSem acesso a reportagens específicas de 2026, este documento mapeia temas em provável cobertura baseado em trajetória tecnológica.\n\n## Temas em Pauta\n\n**Diagnóstico assistido por IA**\nFerramentas analisando padrões comportamentais em testes contínuos, algoritmos detectando sinais de desatenção em tempo real e redução de viés diagnóstico através de análise de dados.\n\n**Aplicativos e Ferramentas**\nApps com IA para organização de tarefas, sistemas de foco adaptativo que aprendem padrões individuais e assistentes virtuais personalizados para TDAH.\n\n**Pesquisa Clínica**\nEstudos sobre eficácia de intervenções baseadas em IA, análise de dados genéticos combinada com machine learning para prognóstico e monitoramento remoto com wearables integrados.\n\n**Preocupações Éticas**\nPrivacidade de dados comportamentais, viés algorítmico em populações sub-representadas, dependência de tecnologia no diagnóstico clínico e acesso desigual a ferramentas de IA.\n\n## Próximos Passos\nEspecifique quais reportagens ou fontes você já consultou para refinar a busca.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "created_at": "2026-06-04T22:58:56.928Z",
+      "createdAt": "2026-06-04T22:58:56.928Z",
+      "updated_at": "2026-06-04T22:59:20.485Z",
+      "updatedAt": "2026-06-04T22:59:20.485Z",
+      "completedAt": "2026-06-04T22:59:20.485Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T22:58:49.101Z",
+  "createdAt": "2026-06-04T22:58:49.101Z",
+  "updatedAt": "2026-06-04T22:59:22.505Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780613709044-6s5qts",
+  "conversationId": "conversation-1780613709044-6s5qts",
+  "title": "pesquisa reportagens recentes sobre TDAH e IA",
+  "agentId": "adhd-guardian",
+  "agentName": "ESPECIALISTA EM TDHA",
+  "chatSource": "agent",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa reportagens recentes sobre TDAH e IA",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T22:55:09.043Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780613715189-339cf0",
+      "conversation_id": "conversation-1780613709044-6s5qts",
+      "conversationId": "conversation-1780613709044-6s5qts",
+      "role": "assistant",
+      "content": "# Pesquisa: TDAH e IA - Reportagens Recentes\n\n**Limitação clara:**\nNão acesso fontes em tempo real nem recupero reportagens específicas de 2026. As referências [1] e [2] que você mencionou estão vazias.\n\n**O que sei até meu treinamento:**\n- IA como ferramenta diagnóstica de TDAH (análise de padrões comportamentais)\n- Aplicativos com IA para gerenciamento de sintomas\n- Algoritmos detectando TDAH em dados de uso digital\n- Preocupações sobre viés diagnóstico em sistemas de IA\n\n**Para encontrar reportagens atuais:**\n- Google News (filtrar últimos 30 dias)\n- PubMed/Google Scholar (artigos científicos)\n- Portais: Folha, G1, Estadão, MIT Technology Review\n- Busca: \"TDAH inteligência artificial 2026\"\n\n**Ângulos prováveis em 2026:**\n- Diagnóstico assistido por IA em crianças e adultos\n- Ferramentas de monitoramento contínuo via wearables\n- Regulação de algoritmos diagnósticos\n- Estudos sobre acurácia versus viés em diferentes populações\n\nSe encontrar reportagens específicas, posso ajudar a analisá-las ou contextualizá-las.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "created_at": "2026-06-04T22:55:15.189Z",
+      "createdAt": "2026-06-04T22:55:15.189Z",
+      "updated_at": "2026-06-04T22:55:48.975Z",
+      "updatedAt": "2026-06-04T22:55:48.975Z",
+      "completedAt": "2026-06-04T22:55:48.975Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T22:55:06.396Z",
+  "createdAt": "2026-06-04T22:55:06.396Z",
+  "updatedAt": "2026-06-04T22:55:50.993Z"
+}

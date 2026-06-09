@@ -1,0 +1,13 @@
+{
+  "id": "proj_mpkaw8l9nayu",
+  "name": "Worion Core Evolution",
+  "title": "Worion Core Evolution",
+  "description": "Descrição:\n\nEspaço central de evolução viva do próprio Worion.\n\nEste projeto funciona como núcleo operacional, arquitetural e cognitivo do sistema, reunindo decisões, testes, hipóteses, refatorações, bugs, melhorias, runtime, memória, agentes, skills e experimentos relacionados à evolução do Worion.\n\nO objetivo não é apenas documentar o sistema, mas permitir que o próprio Worion acompanhe sua transformação ao longo do tempo, recupere contexto histórico, identifique padrões recorrentes e participe ativamente da própria evolução.\n\nO projeto serve como:\n- memória técnica persistente;\n- centro de engenharia;\n- laboratório de runtime;\n- arquivo arquitetural;\n- espaço de continuidade entre sessões;\n- núcleo de pesquisa e experimentação.\n\nEstrutura sugerida:\n- Runtime\n- DeepWorion\n- Skills\n- Agentes\n- Memória\n- UI/UX\n- Conectores\n- MCPs\n- APIs\n- Supabase\n- VPS\n- Logs\n- Refatorações\n- Bugs\n- Testes\n- Roadmap\n- Hipóteses\n- Sessões importantes\n- Benchmarks\n- Arquitetura futura\n\nFunção prática:\nToda evolução do Worion passa por este projeto.\nEle se torna o “cérebro persistente” da plataforma.",
+  "context": "",
+  "conversations": [],
+  "files": [],
+  "tags": [],
+  "metadata": {},
+  "createdAt": "2026-05-24T21:39:52.317Z",
+  "updatedAt": "2026-05-24T21:39:52.317Z"
+}

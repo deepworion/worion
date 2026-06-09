@@ -1,0 +1,44 @@
+{
+  "id": "conversation-1780787269110-jfp8rc",
+  "conversationId": "conversation-1780787269110-jfp8rc",
+  "title": "pesquisa sobre a Dharma.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquisa sobre a Dharma.",
+      "quoteContext": "",
+      "createdAt": "2026-06-06T23:07:49.106Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780787271622-mkqnsa",
+      "conversation_id": "conversation-1780787269110-jfp8rc",
+      "conversationId": "conversation-1780787269110-jfp8rc",
+      "role": "assistant",
+      "content": "Dharma é uma palavra que muda bastante de sentido conforme a tradição (hinduísmo, budismo, jainismo) e também conforme o contexto (lei cósmica, dever, ensinamento, prática). Pra eu pesquisar do jeito certo, preciso de 1 recorte:\n\n1) Você quer **Dharma no hinduísmo** (dever/ordem/lei),\n2) **Dharma no budismo** (ensinamento do Buda / “as coisas como são”),\n3) **Dharma no jainismo**, ou\n4) uma **visão comparada** (diferenças e convergências)?\n\nEnquanto você escolhe, aqui vai um mapa rápido do que normalmente significa:\n\n- **Hinduísmo:** “ordem”, “lei” e também **dever (svadharma)** ligado ao papel/etapa de vida; manter a ordem moral e cósmica.\n- **Budismo:** **ensinamento** (o que o Buda ensinou) e também **a verdade/estrutura da realidade** (como os fenômenos funcionam).\n- **Jainismo:** princípios éticos e caminho de libertação; “dharma” aparece mais como **prática/conduta** alinhada à libertação espiritual.\n\nMe diz qual dos 4 recortes você quer (1/2/3/4) e, se tiver, **qual profundidade**: resumo de 10 linhas ou pesquisa mais completa com exemplos e termos-chave.",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
+      "created_at": "2026-06-06T23:07:51.622Z",
+      "createdAt": "2026-06-06T23:07:51.622Z",
+      "updated_at": "2026-06-06T23:08:07.828Z",
+      "updatedAt": "2026-06-06T23:08:07.828Z",
+      "completedAt": "2026-06-06T23:08:07.828Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-06T23:07:48.767Z",
+  "createdAt": "2026-06-06T23:07:48.767Z",
+  "updatedAt": "2026-06-06T23:08:09.851Z"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "conversation-1780427452796-2ynsux",
+  "conversationId": "conversation-1780427452796-2ynsux",
+  "title": "Como joaquim Nagô morreu?",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": "smart-research",
+  "activeWorkModeIds": [
+    "smart-research"
+  ],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Como joaquim Nagô morreu?",
+      "createdAt": "2026-06-02T19:10:52.794Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "ou informações específicas sobre o contexto histórico, é só avisar!",
+      "createdAt": "2026-06-02T19:11:08.045Z"
+    },
+    {
+      "role": "user",
+      "content": "Pesquisa sobre a morte de Joaquim Nagô.",
+      "createdAt": "2026-06-02T19:11:59.144Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## A Morte de Joaquim Nagô\n\nJoaquim Nagô, escravo africano em Minas Gerais, foi condenado à morte e executado por enforcamento em Montes Claros no dia **30 de maio de 1836**. O local da execução foi próximo ao atual Café Galo, na região central da cidade.\n\nO crime pelo qual foi condenado: o assassinato de Joaquim Antunes, ocorrido em 22 de abril de 1835, em São José de Gorutuba (distrito de Porteirinha, a 173 km de Montes Claros). Levado a júri popular, Nagô foi considerado culpado e executado.\n\n**Inocência posteriormente reconhecida**\n\nA documentação histórica indica duas versões sobre sua condenação:\n\n- **Fonte oficial (Prefeitura de Montes Claros):** Nagô negou a autoria do crime até o fim. Não havia provas consistentes contra ele. Tempos depois, um tropeiro em Diamantina, já agonizante, teria confessado ser o verdadeiro assassino. Nagô foi, portanto, executado injustamente.\n\n- **Tradição folclórica (Cascudo e cultura popular):** Nagô teria confessado falsamente o crime para salvar uma escrava que amava, que seria a verdadeira acusada. Nessa versão, ele deu a vida por ela, e esse gesto de amor o transformou em figura santificada e milagreira no imaginário popular.\n\nA convergência das fontes está no fato central: Joaquim Nagô foi enforcado por um crime que não cometeu. A divergência está na motivação de sua condenação — se foi vítima passiva de um sistema judicial racista ou se entregou a própria vida deliberadamente por amor.\n\nApós sua morte, Nagô entrou para o folclore como santo popular, invocado para encontrar objetos perdidos. A cantiga \"Dança aí, Nego Nagô\" preserva sua memória misturando o ritual de busca com a denúncia da escravidão.\n\n<small>Fontes: [Prefeitura de Montes Claros — 13 de Maio e a memória de Joaquim Nagô](https://portal.montesclaros.mg.gov.br/noticia/desenvolvimento-social/13-de-maio-dia-da-abolicao-da-escravatura-em-montes-claros-foi-marcado-pela-memoria-de-joaquim-nago) · [Recanto das Letras — Joaquim Nagô](https://www.recantodasletras.com.br/ensaios/1091805)</small>",
+      "createdAt": "2026-06-02T19:12:32.120Z"
+    },
+    {
+      "role": "user",
+      "content": "Como se deu a execucao? fontes apontam para diferentes formas.",
+      "createdAt": "2026-06-02T19:16:46.061Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não encontrei nos materiais coletados nenhuma informação sobre a forma de execução de Joaquim Nagô. As duas fontes recuperadas são completamente alheias ao tema — uma trata de fontes do Direito Penal e a outra de investigações da Polícia Federal sobre a tentativa de golpe de 2022. Nenhuma delas menciona enforcamento, fuzilamento, garrote ou qualquer outro método de execução do século XIX, e muito menos o caso específico de Nagô.\n\nPortanto, a pergunta “Como se deu a execução? fontes apontam para diferentes formas” não pode ser respondida com o material disponível. Não posso indicar divergências entre fontes nem descrever o procedimento porque simplesmente não há dado.\n\nSe quiser, posso fazer uma nova rodada de busca, desta vez focada em fontes históricas, documentos de época, registros judiciais ou trabalhos acadêmicos que tratem especificamente da execução de Joaquim Nagô — e, a partir daí, cruzar as versões com a cautela que o caso exige.",
+      "createdAt": "2026-06-02T19:17:31.366Z"
+    },
+    {
+      "role": "user",
+      "content": "por favor.",
+      "createdAt": "2026-06-02T19:18:06.793Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "A nova busca não trouxe dados sobre Joaquim Nagô. O material coletado se perdeu na ambiguidade da palavra \"execução\" — os resultados falam de execução financeira de uma trama golpista e de execução pública no direito autoral. Nada sobre o enforcamento em Montes Claros em 1836.\n\nPortanto, a lacuna permanece: não há, neste momento, fontes confiáveis que descrevam o método, o procedimento ou divergências sobre a execução de Joaquim Nagô.",
+      "createdAt": "2026-06-02T19:18:34.990Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-02T19:10:51.944Z",
+  "createdAt": "2026-06-02T19:10:51.944Z",
+  "updatedAt": "2026-06-02T19:37:40.973Z"
+}

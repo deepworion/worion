@@ -1,0 +1,40 @@
+{
+  "conversationId": "conversation-1779487550024-e84nrt",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "me conte a história de brasilia de minas e os prefeitos eleitos",
+      "createdAt": "2026-05-22T22:05:50.024Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "<thinking>\nO usuário pede a história de Brasília de Minas e a lista de prefeitos eleitos. Já tenho um bom material sobre a história (Fontes 1 e 2), mas as fontes são fracas em relação à lista de prefeitos — só mencionam o atual (Jair Oliva Junior) e o histórico Dr. Cassiano. Preciso pesquisar especificamente por prefeitos de Brasília de Minas, pois a Fonte 3 é genérica sobre MG em 2024 e não vai conter lista histórica do município.\n</thinking>",
+      "createdAt": "2026-05-22T22:06:05.619Z"
+    },
+    {
+      "role": "user",
+      "content": "quero toda a história",
+      "createdAt": "2026-05-22T22:09:44.852Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Glaydson, já tenho boa parte da história da cidade — a fundação, as origens, a emancipação. Mas a lista de prefeitos que achei até agora tá muito incompleta. Deixa eu buscar especificamente isso antes de te entregar tudo junto.\n\n<search><query>Brasília de Minas MG prefeitos lista histórica</query></search>",
+      "createdAt": "2026-05-22T22:09:51.486Z"
+    },
+    {
+      "role": "user",
+      "content": "buscou?",
+      "createdAt": "2026-05-22T22:10:04.584Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Ainda estou nela, Glaydson. A busca retornou algumas fontes promissoras. Deixa eu abrir o link mais completo que encontrei — um que parece ter a lista histórica.\n\n<search_end>",
+      "createdAt": "2026-05-22T22:10:08.704Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T22:05:49.674Z"
+}

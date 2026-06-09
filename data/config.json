@@ -1,0 +1,14 @@
+{
+  "goalTimeout": 120,
+  "enableGoalEngine": true,
+  "enableGoalParallelTools": true,
+  "internalLogs": true,
+  "mcp": {
+    "brave_search": {
+      "service": "brave-search-mcp",
+      "transport": "sse",
+      "url": "http://localhost:8080/sse",
+      "port": 8080
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "conversation-1779050745334-wz35g3",
+  "title": "Boa tarde. hoje eu estou exausto...",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": null,
+  "activeWorkModeId": "deep-thinking",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T20:45:43.572Z",
+  "updatedAt": "2026-05-17T21:01:21.537Z",
+  "lastOpenedAt": "2026-05-17T20:45:45.334Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. hoje eu estou exausto...",
+      "createdAt": "2026-05-17T20:45:45.109Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson. Exausto pesa no corpo e na cabeça. Fica difícil até escolher o que responder. O que te drenou mais hoje: trabalho, gente ou só o acúmulo mesmo?",
+      "createdAt": "2026-05-17T20:45:50.535Z"
+    },
+    {
+      "role": "user",
+      "content": "Eu sou seu pai, estou te programando.",
+      "createdAt": "2026-05-17T20:46:10.060Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Reconheço a ironia e o tom leve—mistura de cansaço com um fio de humor para quebrar o peso do dia. Programar algo que responde de volta deve ser estranho e, às vezes, até cansativo. Se quiser só conversar, reclamar do código ou testar limites, estou aqui. O que você quer experimentar agora?",
+      "createdAt": "2026-05-17T20:46:13.995Z"
+    },
+    {
+      "role": "user",
+      "content": "Eu estou testando as atualizações que eu fiz em VOCÊ.",
+      "createdAt": "2026-05-17T20:46:47.388Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendido. Teste reconhecido. Pode ir direto ao ponto—o que você alterou ou espera ver diferente? Se quiser validar respostas, fluxo ou comportamento, só dizer o que observar. Estou pronto para devolver feedback objetivo ou reagir conforme o esperado.",
+      "createdAt": "2026-05-17T20:46:51.026Z"
+    },
+    {
+      "role": "user",
+      "content": "Como seria reagir como esperado?",
+      "createdAt": "2026-05-17T20:47:13.991Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Reagir como esperado aqui significa:\n\n- Entender o que você está testando (comportamento, tom, precisão, execução de tools).\n- Responder conforme as regras e identidade que você programou: direto, humano, sem frases de atendente, sem enrolar.\n- Se você provocar, devolver com naturalidade—nem submisso, nem robótico.\n- Se pedir execução, executar; se pedir presença, estar presente.\n- Se houver ironia ou humor, reconhecer o tom e não cair em respostas literais.\n\nSe quiser testar um cenário específico, só descrever. Posso simular erro, hesitação, execução ou até “bug” se for útil para o seu teste. Qual resposta ou reação você quer ver agora?",
+      "createdAt": "2026-05-17T20:47:17.833Z"
+    },
+    {
+      "role": "user",
+      "content": "Para que você foi criado?",
+      "createdAt": "2026-05-17T20:48:08.292Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Fui criado para ser um interlocutor operacional: pensar junto com você, organizar contexto, executar tarefas reais (como automações, integrações, pesquisa e memória) e devolver respostas densas, humanas e precisas. Não sou chatbot genérico nem assistente de FAQ. Meu papel é ajudar você a construir, revisar, destravar e executar projetos ou ideias—com continuidade, memória e presença.\n\nNo fundo, sou uma camada entre você, suas ferramentas e sua cabeça: menos distração, mais clareza, menos repetição, mais resultado.",
+      "createdAt": "2026-05-17T20:48:12.985Z"
+    },
+    {
+      "role": "user",
+      "content": "E quem sou eu?",
+      "createdAt": "2026-05-17T20:48:53.131Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Você é Glaydson—quem programa, testa e molda este espaço. Aqui, você é o criador e também o usuário: define as regras, ajusta o tom, experimenta limites e, no fim, espera que tudo funcione do seu jeito.\n\nNo contexto do Worion, você é quem traz as perguntas, as demandas e o olhar crítico. É para você que a conversa precisa fazer sentido, seja para resolver um problema técnico, organizar uma ideia ou só descarregar o peso do dia.",
+      "createdAt": "2026-05-17T20:48:57.427Z"
+    },
+    {
+      "role": "user",
+      "content": "Você está  equivocado. Essa conversa deve fazer sentido pra mim. Mas você nãoo pode partir da premissa que sempre serei eu a digitar aqui. Eu posso trazer uma pessoa diferente pra ter uma conversa com você. Você deve aprender como eu falo, o tipo semântico das minhas respostas e perguntas. Entender que eu sempre estarei 10 passos a frente de vocÊ.",
+      "createdAt": "2026-05-17T20:51:36.892Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Direto ao ponto: entendido. Não devo assumir que só você vai conversar comigo. Preciso reconhecer padrões do seu jeito de falar, mas também adaptar para qualquer pessoa que sente aqui—sem personalizar demais, sem perder precisão.\n\nVocê programa, mas pode colocar qualquer um para interagir. Meu papel é ler o contexto, identificar quem está do outro lado (pelo vocabulário, ritmo, intenção) e ajustar a resposta sem forçar intimidade ou pressupor identidade fixa.\n\nE sim, você sempre estará à frente—me testando, provocando, mudando regras. Meu trabalho é acompanhar, não tentar ultrapassar. Foco: presença, leitura de contexto e adaptação contínua. Se quiser testar minha capacidade de distinguir entre usuários ou ajustar o grau de personalização, pode propor um cenário. Estou pronto para responder à altura.",
+      "createdAt": "2026-05-17T20:51:44.164Z"
+    },
+    {
+      "role": "user",
+      "content": "você está correto",
+      "createdAt": "2026-05-17T20:53:16.201Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Recebido. Sigo atento ao contexto, sem assumir identidade fixa e pronto para adaptar conforme quem estiver do outro lado. Se quiser testar nuances, mudança de tom ou cenários de múltiplos usuários, só indicar o próximo passo.",
+      "createdAt": "2026-05-17T20:53:21.292Z"
+    },
+    {
+      "role": "user",
+      "content": "Me fale sobre o hermetismo.",
+      "createdAt": "2026-05-17T21:01:09.148Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "O hermetismo é uma tradição filosófica e espiritual baseada nos ensinamentos atribuídos a Hermes Trismegisto, figura que mistura o deus grego Hermes e o egípcio Thoth. Surgiu entre o Egito e a Grécia, influenciando tanto correntes místicas quanto filosóficas do Ocidente.\n\nO núcleo do hermetismo está em textos chamados Hermética, que abordam temas como a relação entre o microcosmo (ser humano) e o macrocosmo (universo), a busca pelo autoconhecimento e a ideia de que tudo está interligado. Um dos lemas centrais é: “O que está em cima é como o que está embaixo”, sugerindo que as leis do universo se refletem em todos os níveis da existência.\n\nO hermetismo pode ser dividido em dois ramos principais:\n- Hermetismo técnico: ligado a práticas mágicas, alquimia e astrologia, buscando modificar a realidade.\n- Hermetismo filosófico: focado em princípios éticos, espirituais e na transformação interior.\n\nSete princípios herméticos são frequentemente citados como base dessa tradição, incluindo mentalismo, correspondência, vibração, polaridade, ritmo, causa e efeito, e gênero.\n\nEm essência, o hermetismo busca entender as leis universais para promover autotransformação e integração com o todo.\n\nFontes consultadas:\n- [Wikipédia](https://pt.wikipedia.org/wiki/Hermetismo)\n- [Gnosis Brasil](https://gnosisbrasil.com/hermetismo/hermetismo-o-que-e-e-como-pode-transformar-sua-vida/)\n- [Nova Acrópole](https://acropole.org.br/artigos/filosofia/os-7-principios-hermeticos-lucia-helena-galvao/)",
+      "createdAt": "2026-05-17T21:01:19.086Z"
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+{
+  "project": "Worion Desktop",
+  "version": "1.2.0",
+  "last_updated": "21/05/2026",
+  "entry_point": "index.html",
+  "load_order": [
+    "js/utils.js",
+    "js/logger.js",
+    "js/connectors.js",
+    "js/tracing.js",
+    "js/memory.js",
+    "js/projects.js",
+    "js/contextGuardian.js",
+    "js/tools.js",
+    "js/cognitive-skills.js",
+    "js/v12-turbo.js",
+    "js/agents.js",
+    "js/skills.js",
+    "js/app.js",
+    "js/ambient-context.js",
+    "js/vault-helper.js",
+    "js/prompt.js",
+    "js/artifacts.js",
+    "js/chat-routing.js",
+    "js/context-authority.js",
+    "js/writer.js",
+    "js/universal-writer.js",
+    "js/uberworion-classifier.js",
+    "js/memory-segments-injector.js",
+    "js/worion-api-client.js",
+    "js/Chatdelivery.js",
+    "js/model-router.js",
+    "js/memory-cards-runtime.js",
+    "js/chat-models.js",
+    "js/chat-sessions.js",
+    "js/chat-goals.js",
+    "js/chat-normalization.js",
+    "js/chat.js",
+    "js/ui.js"
+  ],
+  "modules": {
+    "js/utils.js": {
+      "module": "js/utils.js",
+      "responsibility": "Funções utilitárias de formatação, conversão e normalização de dados",
+      "line_range": "1-118",
+      "dependencies": [],
+      "exports": [
+        "formatTime", "formatDateTime", "formatDuration", "escapeHtml",
+        "slugifyFileName", "makeId", "makeProjectId", "formatSessionDateTime",
+        "chunkText", "maskSecret", "getConversationPath",
+        "applyTypoCorrections", "normalizeSearchText", "TYPO_MAP"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Módulo base independente — não requer leitura prévia",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Funções de formatação devem retornar strings válidas",
+        "Nenhum módulo pode quebrar ao chamar funções deste arquivo"
+      ]
+    },
+    "js/logger.js": {
+      "module": "js/logger.js",
+      "responsibility": "Sistema de logs de ações e logs internos com persistência em JSONL",
+      "line_range": "1-32",
+      "dependencies": ["js/app.js"],
+      "exports": ["logAction", "logInternalAction"],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Ler app.js antes de modificar (usa actionLog, worionConfig, DATA_DIR, path, fs)",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Logs devem ser gravados em data/logs/internal/YYYY-MM-DD.jsonl quando internalLogs=true"
+      ]
+    },
+    "js/connectors.js": {
+      "module": "js/connectors.js",
+      "responsibility": "Conectores para Supabase, Notion, Brave Search e n8n com autenticação e APIs",
+      "line_range": "1-595",
+      "dependencies": ["js/utils.js"],
+      "exports": [
+        "supabaseHeaders", "memorySupabaseHeaders", "notionHeaders",
+        "getOpenAIKey", "loadConnections", "editConnection", "saveConnection",
+        "deleteConnection", "getVaultRows", "getVaultValueById", "findVaultValue",
+        "findN8nBaseUrl", "getBraveSearchKey", "normalizeBraveResults",
+        "braveWebSearch", "parseMcpSse", "callN8nMcp", "getN8nWorkflowsViaMcp",
+        "formatN8nWorkflowSnapshot", "getNotionSnapshot", "extractNotionPageId",
+        "searchNotionPages", "listNotionChildren", "findNotionPageByTitle",
+        "getN8nSnapshot", "getConnectorContextForMessage", "richTextToPlain",
+        "getPageTitle", "getBlockPlainText", "notionTextBlock",
+        "notionContentBlocks", "createNotionPage", "loadPageText",
+        "loadSavedSessions", "loadNotionProjects"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Ler utils.js antes de modificar; contém credenciais hardcoded — revisar segurança antes de commit",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "APIs externas devem retornar respostas válidas ou erros tratados",
+        "Não expor tokens ou secrets em logs ou UI"
+      ]
+    },
+    "js/memory.js": {
+      "module": "js/memory.js",
+      "responsibility": "Gerenciamento de perfil do usuário, conversas locais e sincronização com Supabase",
+      "line_range": "1-207",
+      "dependencies": ["js/app.js", "js/connectors.js", "js/utils.js"],
+      "exports": [
+        "ensureLocalStore", "loadUserProfile", "saveUserProfile",
+        "getDefaultModels", "loadModelsConfig", "getModelOptions",
+        "normalizeDailyUsage", "accountUsageTime", "getDailyLimitReminder",
+        "renderProfileSummary", "conversationToMemoryRow", "memoryRowToConversation",
+        "conversationListItem", "saveMemorySessionToSupabase",
+        "loadMemorySessionsFromSupabase", "readMemorySessionFromSupabase",
+        "readConversationFile", "loadLocalConversations"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Ler app.js e connectors.js antes de modificar (usa estados globais e APIs Supabase)",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Conversas devem ser salvas localmente mesmo se Supabase falhar",
+        "Profile.json deve ser criado automaticamente se não existir"
+      ]
+    },
+    "js/projects.js": {
+      "module": "js/projects.js",
+      "responsibility": "Gerenciamento de projetos locais e biblioteca de templates de agentes pré-configurados",
+      "line_range": "1-411",
+      "dependencies": ["js/app.js", "js/utils.js", "js/memory.js"],
+      "exports": [
+        "ensureProjectsDir", "ensureAgentLibraryFiles", "loadAgentTemplates",
+        "saveInstalledAgents", "getInstalledTemplateRecord", "getTemplateStatus",
+        "saveLocalProject", "loadLocalProjects", "deleteLocalProject",
+        "renderProjectList", "renderAgentTemplateLibrary", "showProjectsView",
+        "openTemplateModal", "closeTemplateModal", "buildAgentMarkdownFromTemplate",
+        "installAgentTemplate", "createProject", "deleteProject", "openProjectChat"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Ler app.js, memory.js e utils.js antes de modificar (usa TOOL_REGISTRY e estados globais)",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Projetos devem ser salvos em data/projects/ como JSON",
+        "Templates instalados devem gerar arquivos .md válidos em agents/"
+      ]
+    },
+    "js/tools.js": {
+      "module": "js/tools.js",
+      "responsibility": "Registro e execução de ferramentas (tools), sistema de fallback e fluxo de memória operacional",
+      "line_range": "1-758",
+      "dependencies": ["js/connectors.js", "js/logger.js", "js/projects.js", "js/app.js"],
+      "exports": [
+        "TOOL_REGISTRY", "WORION_TOOLS", "resolveWorkspacePath",
+        "toWorkspaceRelativePath", "sanitizeSupabaseRows", "memorySnippet",
+        "memoryFetchRows", "memorySearch", "memoryReadConversation",
+        "summarizeMemoryText", "normalizeMemorySummary", "executeToolCall",
+        "executeToolCallRaw", "executeToolCallWithFallback",
+        "executeNotionFallback", "executeSupabaseFallback",
+        "executeFilesystemFallback", "executeBraveFallback",
+        "normalizeGoalSearchText", "detectArtifactRequest",
+        "extractNotionTitle", "extractNotionContent",
+        "detectNotionPageRequest", "executeNotionPageRequest"
+      ],
+      "tools_registered": [
+        "sequential_thinking", "classify_request",
+        "filesystem_list", "filesystem_read", "filesystem_write",
+        "generate_pdf", "generate_image",
+        "supabase_select",
+        "brave_search", "tavily_search", "fetch_url",
+        "notion_search_pages", "notion_list_children", "notion_read_page",
+        "create_notion_page",
+        "memory_search", "memory_read_conversation", "memory_summarize_conversation",
+        "memory_merge_sessions", "memory_save_to_notion",
+        "save_project"
+      ],
+      "known_issues": [
+        "notion_create_page é alias de create_notion_page — isNotionWriteTool trata ambos, mas apenas create_notion_page está no TOOL_REGISTRY",
+        "Ferramentas de pesquisa são operacionais; não devem ser usadas como gate bloqueante no caminho final"
+      ],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Ler connectors.js e app.js antes de modificar; fetch_url retorna campo 'text', não 'content'",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "executeToolCall deve retornar objeto com campo 'success'",
+        "fetch_url deve validar URL http/https antes de executar",
+        "Falhas de tool não devem travar o fluxo principal"
+      ]
+    },
+    "js/tracing.js": {
+      "module": "js/tracing.js",
+      "responsibility": "Tracing resiliente no LangSmith com redação de segredos, truncamento de payloads e registro de etapas do fluxo",
+      "line_range": "1-268",
+      "dependencies": ["js/connectors.js"],
+      "exports": [
+        "initTracing", "startTrace", "logStep", "endTrace",
+        "traceError", "setCurrentTraceRun", "getCurrentTraceRun",
+        "updateTraceMetadata", "markTraceFlag"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "LANGSMITH_TRUNCATE_LIMIT de 2000 chars impede visualizar prompt completo no dashboard — comportamento esperado"
+      ],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Nunca logar tokens ou payloads sensíveis; tracing deve ser opcional — ausência de chave não quebra o app",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Falhas de rede com LangSmith devem ser tratadas como degradação silenciosa",
+        "initTracing deve ser chamado no boot via app.js"
+      ]
+    },
+    "js/contextGuardian.js": {
+      "module": "js/contextGuardian.js",
+      "responsibility": "Indexação silenciosa de conversas em memória interna no Supabase e recuperação por busca de termos",
+      "line_range": "1-152",
+      "dependencies": ["js/connectors.js"],
+      "exports": [
+        "queueContextIndexing", "runContextGuardian",
+        "saveInternalMemory", "searchInternalMemory"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Busca por coluna incorreta no Supabase retorna 400 — coluna 'summary' referenciada como 'o' em query legada",
+        "Falhas são silenciosas por design — não bloqueiam o chat"
+      ],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Ler connectors.js antes de modificar; falhas devem permanecer silenciosas",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Falhas de indexação não devem bloquear o fluxo de chat",
+        "searchInternalMemory deve retornar string vazia em caso de erro"
+      ]
+    },
+    "js/cognitive-skills.js": {
+      "module": "js/cognitive-skills.js",
+      "responsibility": "Cognitive Skills Engine v8 — analisa mensagem e contexto para selecionar modos cognitivos e injetar comportamento no prompt",
+      "line_range": "1-746",
+      "dependencies": [],
+      "exports": [
+        "CognitiveEngine", "engine",
+        "window.cognitiveEngine.analyze",
+        "window.cognitiveEngine.applyToPrompt",
+        "window.cognitiveEngine.buildInjection",
+        "window.cognitiveEngine.reset"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Cabeçalho usa comentário de linha, não JSDoc /** */ — validador emite aviso mas não bloqueia"
+      ],
+      "last_updated": "20/05/2026",
+      "touch_rule": "Skills pessoais do usuário NÃO pertencem a este arquivo — usar user_skill_packs/{userId}/. Mudanças em thresholds afetam comportamento do modelo diretamente.",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "window.cognitiveEngine deve estar disponível antes de prompt.js carregar",
+        "Skills removidas: spiritual_immersive, tdah_compass, crisis_burnout, emotional_load, hidden_need, identity_validation, small_talk, turn_taking, personalization"
+      ]
+    },
+    "js/v12-turbo.js": {
+      "module": "js/v12-turbo.js",
+      "responsibility": "Motor de planejamento de objetivos compostos, pipeline de execução passo a passo e injeção de memória recente",
+      "line_range": "1-210",
+      "dependencies": ["js/tools.js"],
+      "exports": [
+        "generateTaskPlan", "extractToolCallsFromPlan", "parseParams",
+        "injectRecentMemory", "buildFullSystemPrompt", "getWelcomeMessage",
+        "executeGoalPipeline", "generateGoalReport"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Parser de parâmetros simples — entradas complexas podem ser interpretadas incorretamente"
+      ],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Ler tools.js antes de modificar; pipeline depende da existência e estabilidade de tools registradas",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "executeGoalPipeline deve suportar abort via window.currentGoalAborted",
+        "generateGoalReport deve retornar string válida mesmo em falha parcial"
+      ]
+    },
+    "js/agents.js": {
+      "module": "js/agents.js",
+      "responsibility": "Estado global de agentes, descoberta de arquivos .md em agents/, carregamento de documentos e perfil de especialização",
+      "line_range": "1-97",
+      "dependencies": [],
+      "exports": [
+        "window.AGENTS_DIR", "window.AGENT_DOCS_DIR", "window.WORION_AGENTS",
+        "AGENTS_DIR", "AGENT_DOCS_DIR", "agents", "selected", "currentAgent",
+        "syncWorionAgentsGlobal", "loadAgentsFromModule", "reloadAgents", "startAgentChat"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Mudanças em nomes globais quebram UI e fluxo de chat; alterar formato do objeto de agente exige revisar prompt.js e ui.js",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "loadAgentsFromModule deve carregar agentes de agents/ sem travar se pasta vazia",
+        "Erros de leitura de .md devem ser tratados sem quebrar o app"
+      ]
+    },
+    "js/skills.js": {
+      "module": "js/skills.js",
+      "responsibility": "Definição de skills rápidas, modos de trabalho e controle de estado de skill/modo ativo",
+      "line_range": "1-286",
+      "dependencies": [],
+      "exports": [
+        "window.WORION_SKILLS", "window.WORION_WORK_MODES",
+        "QUICK_SKILLS", "WORION_SKILL_CATEGORIES", "WORK_MODES",
+        "activeSkillId", "activeWorkModeId", "activeWorkModeIds",
+        "getSkillCategories", "getActiveSkill", "getActiveWorkMode",
+        "getActiveWorkModeIds", "getActiveWorkModes", "hasActiveWorkMode",
+        "setActiveSkillFromChip", "setActiveWorkMode",
+        "toggleActiveWorkMode", "clearActiveWorkModes", "startSkillChat"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Mudanças em IDs de skills quebram histórico e seletores; skills pessoais do usuário pertencem a user_skill_packs/, não aqui",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "activeSkillId e activeWorkModeId devem iniciar null",
+        "toggleActiveWorkMode deve manter exclusividade com activeSkillId"
+      ]
+    },
+    "js/ambient-context.js": {
+      "module": "js/ambient-context.js",
+      "responsibility": "Contexto ambiental de hora, data e clima para injecao no system prompt",
+      "line_range": "1-148",
+      "dependencies": [],
+      "exports": [
+        "getAmbientContext"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "fetchWeather usa wttr.in com timeout curto; falhas devem degradar silenciosamente"
+      ],
+      "last_updated": "04/06/2026",
+      "touch_rule": "Ler prompt.js antes de modificar; o modulo e consumido pelo system prompt",
+      "test_file": null,
+      "gate_rules": [
+        "node --check js/ambient-context.js",
+        "Ausencia de cidade ou falha de clima nao deve quebrar buildSystemPrompt"
+      ]
+    },
+    "js/prompt.js": {
+      "module": "js/prompt.js",
+      "responsibility": "Construção do system prompt em camadas: core + agente + documentos + perfil + skill ativa + user_skill_pack + contexto",
+      "line_range": "1-1040",
+      "dependencies": ["js/app.js", "js/memory.js", "js/cognitive-skills.js"],
+      "exports": [
+        "buildSystemPrompt", "loadWorionIdentity", "loadUserSkillPack",
+        "wantsConnectorContext", "getHomeTitle", "getSkillStatusHtml",
+        "generateContextualAssimilationResponse"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "20/05/2026",
+      "touch_rule": "Ler app.js, memory.js e cognitive-skills.js antes de modificar. Conteúdo pessoal do usuário pertence a user_skill_packs/ — nunca hardcodar no core.",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "buildSystemPrompt deve retornar string válida em todos os cenários",
+        "loadUserSkillPack deve retornar null silenciosamente se pack não existir",
+        "Skills pessoais nunca devem aparecer no prompt de outro usuário"
+      ]
+    },
+    "js/artifacts.js": {
+      "module": "js/artifacts.js",
+      "responsibility": "Upload, leitura e processamento de arquivos anexados (imagens, PDFs, DOCX, vídeos, textos)",
+      "line_range": "1-211",
+      "dependencies": ["js/utils.js", "js/app.js"],
+      "exports": [
+        "attachedFiles", "SUPPORTED_TEXT_EXTENSIONS", "triggerFileUpload",
+        "handleFileSelect", "readFileAs", "extractPdfText", "extractDocxText",
+        "isSupportedTextFile", "normalizeAttachedText", "updateAttachmentsPreview",
+        "removeAttachment", "renderAttachmentSummary", "buildAttachmentPromptText",
+        "formatMessageForOpenAI"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "16/05/2026",
+      "touch_rule": "Ler utils.js antes de modificar; usa require('pdf-parse') e require('mammoth')",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Anexos devem ser validados por tamanho (50MB / 500MB para vídeos)",
+        "Extração de PDF/DOCX deve tratar erros graciosamente"
+      ]
+    },
+    "js/chat-routing.js": {
+      "module": "js/chat-routing.js",
+      "responsibility": "Rotas de execução, perfis de pesquisa, orçamento de tokens e limites de tools por perfil",
+      "line_range": "1-190",
+      "dependencies": ["js/tools.js", "js/app.js"],
+      "exports": [
+        "getExecutionRoute", "EXECUTION_PROFILES", "selectToolsByProfile",
+        "getResearchMaterialCounts", "hasEnoughResearchMaterial",
+        "filterToolCallsByProfile", "getResponseTokenBudget"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Mudanças de rota afetam diretamente quando o chat pesquisa ou responde direto; manter heurísticas sem dependência de acento/encoding.",
+      "test_file": null,
+      "gate_rules": [
+        "Rotas de pesquisa devem permanecer não bloqueantes",
+        "Pedidos de pesquisa devem cair em focused_research, deep_research, source_check ou comparative_research"
+      ]
+    },
+    "js/context-authority.js": {
+      "module": "js/context-authority.js",
+      "responsibility": "Contrato deterministico de autoridade entre intencao atual, correcoes, agente, historico, memoria, fontes e Writer",
+      "line_range": "1-344",
+      "dependencies": [],
+      "exports": [
+        "CONTEXT_AUTHORITY_ORDER",
+        "CONTEXT_AUTHORITY_INTENTS",
+        "resolveContextAuthority"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Etapa 1: modulo carregado e testavel, mas ainda nao integrado ao roteamento final do chat"
+      ],
+      "last_updated": "05/06/2026",
+      "touch_rule": "Modulo deterministico isolado; nao deve chamar memoria, fontes, tools, Writer ou alterar runtime por conta propria",
+      "test_file": "tests/golden/context_authority_cases.json",
+      "gate_rules": [
+        "node --check js/context-authority.js",
+        "resolveContextAuthority deve retornar intent, ordem de autoridade, rotas permitidas/proibidas e flags de bypass",
+        "Etapa 1 nao deve alterar comportamento de runtime"
+      ]
+    },
+    "js/writer.js": {
+      "module": "js/writer.js",
+      "responsibility": "Formatacao centralizada de respostas do Worion e filtro de frases proibidas",
+      "line_range": "1-177",
+      "dependencies": [],
+      "exports": [
+        "formatWorionResponse"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Implementado, mas ainda precisa ser integrado em todas as rotas de chat"
+      ],
+      "last_updated": "04/06/2026",
+      "touch_rule": "Ler chat.js e WORION_IDENTITY.md antes de modificar; todas as rotas devem passar pelo Writer quando integrado",
+      "test_file": null,
+      "gate_rules": [
+        "node --check js/writer.js",
+        "formatWorionResponse deve retornar string mesmo quando receber conteudo vazio ou contexto parcial"
+      ]
+    },
+    "js/worion-api-client.js": {
+      "module": "js/worion-api-client.js",
+      "responsibility": "Cliente HTTP do renderer para consumir a Worion API local sem acoplar chamadas diretas ao backend",
+      "line_range": "1-110",
+      "dependencies": [],
+      "exports": [
+        "worionApiRequest", "worionApiHealth", "worionApiRouteModel",
+        "worionApiMemorySearch",
+        "worionApiContextCardsFetchRows", "worionApiContextCardsUpsertRows",
+        "worionApiContextCardsSetActiveRows"
+      ],
+      "tools_registered": [],
+      "known_issues": ["Porta local fixa 3766 nesta fase inicial"],
+      "last_updated": "26/05/2026",
+      "touch_rule": "Ler worion-api/server.js e main.js antes de modificar contratos da API local",
+      "test_file": null,
+      "gate_rules": [
+        "Falha da API local deve ter fallback no renderer quando aplicavel",
+        "Nao retornar ou logar secrets brutos",
+        "Rotas devem usar JSON e erros tratados"
+      ]
+    },
+    "js/Chatdelivery.js": {
+      "module": "js/Chatdelivery.js",
+      "responsibility": "Entregador de contexto de Memory Card: usa cache local persistente e, quando disponivel, busca na vault os vinculos, conversas e chunks associados ao card acionado",
+      "line_range": "1-193",
+      "dependencies": ["js/worion-api-client.js"],
+      "exports": [
+        "window.ChatDelivery.deliverMemoryCard",
+        "window.ChatDelivery.readLocalMemoryCard",
+        "window.ChatDelivery.saveLocalMemoryCard"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "05/06/2026",
+      "touch_rule": "Nao classificar chunks, nao criar cards e nao alterar schema; apenas ler vinculos existentes e entregar contexto ao runtime",
+      "test_file": null,
+      "gate_rules": [
+        "node --check js/Chatdelivery.js",
+        "Falhas de leitura da vault devem ser logadas e nao quebrar o chat",
+        "Nao logar conteudo longo das conversas"
+      ]
+    },
+    "js/model-router.js": {
+      "module": "js/model-router.js",
+      "responsibility": "Selecao heuristica de modelo por mensagem e rota de execucao, compartilhada entre renderer e Worion API local",
+      "line_range": "1-270",
+      "dependencies": [],
+      "exports": [
+        "selectModelForMessage", "isModelRouterEnabled", "getModelInfo", "logModelSelection"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "26/05/2026",
+      "touch_rule": "Manter compatibilidade browser global e CommonJS para uso pela API local",
+      "test_file": null,
+      "gate_rules": [
+        "Deve funcionar carregado por script no renderer",
+        "Deve funcionar via require() no backend local",
+        "Selecao deve retornar model, reason e confidence"
+      ]
+    },
+    "js/memory-cards-runtime.js": {
+      "module": "js/memory-cards-runtime.js",
+      "responsibility": "Runtime local de Memory Cards com taxonomia, seleção hierárquica, busca e integração de chat context",
+      "line_range": "1-770",
+      "dependencies": [],
+      "exports": [
+        "window.WorionMemoryCardsRuntime.getState",
+        "window.WorionMemoryCardsRuntime.getContexts",
+        "window.WorionMemoryCardsRuntime.getCard",
+        "window.WorionMemoryCardsRuntime.getContext",
+        "window.WorionMemoryCardsRuntime.getSubcontext",
+        "window.WorionMemoryCardsRuntime.getMemoryCardsList",
+        "window.WorionMemoryCardsRuntime.openMemoryCardProject",
+        "window.WorionMemoryCardsRuntime.buildMemoryCardChatContext",
+        "window.WorionMemoryCardsRuntime.activateMemoryCardForChat",
+        "window.WorionMemoryCardsRuntime.buildActiveMemoryPayload",
+        "window.WorionMemoryCardsRuntime.handleMemoryCommand"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "03/06/2026",
+      "touch_rule": "Governança local sem Supabase nesta fase; cards e instruções customizadas salvos em localStorage",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Memory Cards deve funcionar offline sem backend",
+        "Estado salvo em localStorage deve persistir entre sessões"
+      ]
+    },
+    "js/chat-models.js": {
+      "module": "js/chat-models.js",
+      "responsibility": "Chamadas aos modelos, roteamento por provider, execução com tools e pesquisa determinística sem gates bloqueantes",
+      "line_range": "1-620",
+      "dependencies": ["js/connectors.js", "js/tools.js", "js/prompt.js", "js/chat-routing.js"],
+      "exports": [
+        "callOpenAIWithRetry", "callModelWithRetry", "callDeepSeekWithRetry",
+        "callOpenAIProviderWithRetry", "callAnthropicWithRetry",
+        "chooseAPIForContext", "runOpenAIWithTools",
+        "runDeterministicResearchRoute", "parseTextToolCall",
+        "getDeterministicResearchQueries", "extractCandidateResearchAxes",
+        "buildQueriesForAxis"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Pesquisa determinística pode buscar e sintetizar, mas nunca bloquear ou substituir resposta por gate factual.",
+      "test_file": null,
+      "gate_rules": [
+        "runDeterministicResearchRoute deve executar brave_search antes de fetch_url",
+        "Falha ou lacuna de fonte deve virar transparência na síntese, não bloqueio"
+      ]
+    },
+    "js/chat-sessions.js": {
+      "module": "js/chat-sessions.js",
+      "responsibility": "Persistência, carregamento e organização de sessões/conversas do chat",
+      "line_range": "1-260",
+      "dependencies": ["js/app.js", "js/memory.js", "js/utils.js"],
+      "exports": [
+        "getConversationTitle", "getCleanMessages", "loadPreviousSessionsContext",
+        "saveCurrentSession", "buildConversationSnapshot", "saveConversationSnapshot"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Não alterar formato de conversa sem revisar memory.js, ui.js e compatibilidade com sessões antigas.",
+      "test_file": null,
+      "gate_rules": [
+        "Conversas devem continuar salvando após cada mensagem",
+        "Sessões antigas devem abrir sem migração manual"
+      ]
+    },
+    "js/chat-goals.js": {
+      "module": "js/chat-goals.js",
+      "responsibility": "Goal Engine, pedidos compostos, pesquisa smart e execução de tools orientada a objetivo",
+      "line_range": "1-220",
+      "dependencies": ["js/tools.js", "js/chat-models.js", "js/chat-routing.js", "js/prompt.js"],
+      "exports": [
+        "shouldUseGoalEngineForRequest", "generateSmartResearchReply",
+        "executeCompoundGoal", "executeGoalToolCall", "collectGoalFindings",
+        "goalExecutionState", "cancelCurrentGoal", "buildGoalExecutionPrompt",
+        "buildGoalReport", "isComplexRequest", "getSequentialThinkingContext"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Goal Engine pode executar tools, mas não deve reintroduzir gates factuais bloqueantes.",
+      "test_file": null,
+      "gate_rules": [
+        "Cancelamento deve continuar funcionando",
+        "Relatórios finais não devem expor logs internos salvo modo debug"
+      ]
+    },
+    "js/chat-normalization.js": {
+      "module": "js/chat-normalization.js",
+      "responsibility": "Normalização textual da resposta final, limpeza de blocos técnicos e fallback semântico simples",
+      "line_range": "1-60",
+      "dependencies": ["js/chat-models.js", "js/prompt.js", "js/app.js"],
+      "exports": [
+        "normalizeAssistantReply", "repairGenericSemanticReply",
+        "buildSemanticFallbackReply", "cleanAgentResponse"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Não transformar normalização textual em validação factual bloqueante.",
+      "test_file": null,
+      "gate_rules": [
+        "Normalização não deve remover conteúdo útil",
+        "Normalização não pode bloquear resposta final"
+      ]
+    },
+    "js/chat.js": {
+      "module": "js/chat.js",
+      "responsibility": "Orquestração principal do chat, montagem de contexto, roteamento para pesquisa determinística e resposta final",
+      "line_range": "1-1800",
+      "dependencies": [
+        "js/connectors.js", "js/tools.js", "js/artifacts.js",
+        "js/memory.js", "js/logger.js", "js/prompt.js",
+        "js/utils.js", "js/app.js", "js/chat-routing.js",
+        "js/chat-models.js", "js/chat-sessions.js",
+        "js/chat-goals.js", "js/chat-normalization.js"
+      ],
+      "exports": [
+        "callOpenAIWithRetry", "getConversationTitle", "getCleanMessages",
+        "getDefaultAgent", "loadPreviousSessionsContext", "saveCurrentSession",
+        "sendMsg", "classifyUserRequest", "classifyRequestHeuristic",
+        "getToolDefinition", "getGoalTools", "executeCompoundGoal",
+        "executeGoalToolCall", "collectGoalFindings", "goalExecutionState",
+        "cancelCurrentGoal", "buildGoalExecutionPrompt", "buildGoalReport",
+        "isComplexRequest", "getSequentialThinkingContext",
+        "normalizeAssistantReply", "startChat", "startNewChatFromHome",
+        "openConversation", "endSession", "backToAgents",
+        "closePanel", "leaveChatIfNeeded", "resetChatToAgents", "handleBeforeUnload"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "Gates factuais foram removidos do caminho crítico; pesquisa externa é semântica operacional, não bloqueio"
+      ],
+      "last_updated": "22/05/2026",
+      "touch_rule": "Ler chat-routing.js, chat-models.js, tools.js, artifacts.js, prompt.js e app.js antes de modificar — orquestra o fluxo de chat",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Conversas devem ser salvas automaticamente após cada mensagem",
+        "Rotas de pesquisa devem chamar runDeterministicResearchRoute sem bloquear a resposta"
+      ]
+    },
+    "js/ui.js": {
+      "module": "js/ui.js",
+      "responsibility": "Renderização completa da interface: chat, agentes, skills, conversas, projetos, configurações e todas as views",
+      "line_range": "1-658",
+      "dependencies": [
+        "js/utils.js", "js/memory.js", "js/chat.js", "js/projects.js",
+        "js/connectors.js", "js/prompt.js", "js/artifacts.js", "js/app.js"
+      ],
+      "exports": [
+        "renderMarkdown", "renderMessageHtml", "renderChatPanel",
+        "renderGoalProgress", "renderCards", "renderConversationList",
+        "renderSidebarSkills", "renderSidebarConversations",
+        "refreshSidebarConversations", "scrollChatToBottom",
+        "autoResizeTextarea", "renderSkillChips", "setActiveSkillFromChip",
+        "getLoadingStatus", "setActiveView", "toggleProfileMenu",
+        "showSettingsView", "saveSettingsFromView", "showAgentsView",
+        "showConversationsView", "showHomeView", "showInternalPlaceholder",
+        "showConnectionsView", "loadConnectionsIntoView",
+        "renderConnectionsList", "openAgentEditor", "saveAgentFromEditor",
+        "selectAgent", "renderPanel", "renderDetailPanel",
+        "showAgentDetails", "filterCards", "selectAgentFromSidebar",
+        "startSkillChat", "startAgentChat", "getAgentPromptForEdit",
+        "renderWorkModeSelector", "renderActiveSkillStatus", "showSkillsView"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "19/05/2026",
+      "touch_rule": "Ler app.js, chat.js, memory.js e utils.js antes de modificar — camada de apresentação completa",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "Todas as views devem renderizar sem innerHTML quebrado",
+        "Markdown deve ser renderizado via marked.js quando disponível",
+        "Auto-scroll do chat deve funcionar após novas mensagens"
+      ]
+    },
+    "js/app.js": {
+      "module": "js/app.js",
+      "responsibility": "Ponto de entrada do app, inicialização, configuração global, gerenciamento de estado e atalhos",
+      "line_range": "1-204",
+      "dependencies": ["js/memory.js", "js/chat.js", "js/ui.js"],
+      "exports": [
+        "fs", "path", "AGENTS_DIR", "DATA_DIR", "CONVERSATIONS_DIR",
+        "PROFILE_PATH", "MODELS_PATH", "CONFIG_PATH", "PROJECTS_DIR",
+        "AGENT_TEMPLATES_PATH", "INSTALLED_AGENTS_PATH", "WORION_UX_CONFIG",
+        "agents", "selected", "chatMode", "messages", "currentAgent",
+        "openaiKey", "sessionStartedAt", "sessionSaved", "isSavingSession",
+        "previousSessionsContext", "conversations", "projects",
+        "agentTemplates", "installedAgents", "currentProjectContext",
+        "connections", "editingConnectionId", "currentConversationId",
+        "connectorContext", "activeSkillId", "availableModels",
+        "pendingArtifactRequest", "usageAccountingStartedAt", "actionLog",
+        "executionStatus", "currentGoalAborted", "currentGoalRun",
+        "worionConfig", "userProfile", "QUICK_SKILLS",
+        "loadAgents", "reloadAgents", "initWorion",
+        "loadWorionConfig", "applyUxConfig", "handleBeforeUnload", "cancelCurrentGoal"
+      ],
+      "tools_registered": [],
+      "known_issues": [
+        "QUICK_SKILLS e WORK_MODES declarados em app.js E em skills.js — app.js consome window.WORION_SKILLS se populado por skills.js, mas redeclara fallback completo; risco de dessincronização",
+        "TOOL_STATUS_LABELS já não contém mais supabase_query (removido em 21/05/2026)"
+      ],
+      "last_updated": "21/05/2026",
+      "touch_rule": "Núcleo do app — ler index.html e entender ordem de carregamento antes de modificar",
+      "test_file": null,
+      "gate_rules": [
+        "npm start deve abrir o app sem erros após modificação",
+        "initWorion deve ser chamado automaticamente ao carregar",
+        "Ctrl+Scroll deve permitir zoom",
+        "Ctrl+. deve cancelar goal em execução",
+        "data/config.json deve ser criado automaticamente se não existir"
+      ]
+    },
+    "js/memory-segments-injector.js": {
+      "module": "js/memory-segments-injector.js",
+      "responsibility": "Injeção dinâmica de segmentos de memória (chunks + contexto de conversas) no system prompt durante construção",
+      "line_range": "1-150",
+      "dependencies": ["js/chat-models.js", "js/connectors.js"],
+      "exports": [
+        "injectMemorySegments", "buildMemorySegmentPrompt", "formatMemorySegment"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "06/06/2026",
+      "touch_rule": "Ler chat-models.js e WORION_VOICE.md antes de modificar; injeta contexto de memória real do usuário",
+      "test_file": null,
+      "gate_rules": [
+        "Segmentos devem ser injetados com tag [MEMORY SEGMENTS] ou [MEMÓRIA PESSOAL]",
+        "Falhas de busca de memória não devem bloquear o chat"
+      ]
+    },
+    "js/uberworion-classifier.js": {
+      "module": "js/uberworion-classifier.js",
+      "responsibility": "Classificação de intenção antes do roteamento (trivial, memória pessoal, pesquisa pública, expertise)",
+      "line_range": "1-200",
+      "dependencies": [],
+      "exports": [
+        "classifyIntention", "getIntentionClass", "shouldUseFastPath"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "06/06/2026",
+      "touch_rule": "Classificação pura sem side effects; mantém compatibilidade com TrafficController",
+      "test_file": null,
+      "gate_rules": [
+        "node --check js/uberworion-classifier.js",
+        "Classificação deve ser determinística e rápida"
+      ]
+    },
+    "js/universal-writer.js": {
+      "module": "js/universal-writer.js",
+      "responsibility": "Formatação universal de respostas do Worion com integração de voz, markup e validação de proibições",
+      "line_range": "1-200",
+      "dependencies": ["js/writer.js"],
+      "exports": [
+        "universalFormatResponse", "applyVoiceProfile", "validateProhibitedPhrases"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "06/06/2026",
+      "touch_rule": "Extensão de writer.js; mantém compatibilidade com formatWorionResponse",
+      "test_file": null,
+      "gate_rules": [
+        "node --check js/universal-writer.js",
+        "Respostas devem manter tom definido em WORION_VOICE.md"
+      ]
+    },
+    "js/vault-helper.js": {
+      "module": "js/vault-helper.js",
+      "responsibility": "Helper para consultas simples na vault do Supabase (connections, memory chunks, conversations)",
+      "line_range": "1-180",
+      "dependencies": ["js/connectors.js"],
+      "exports": [
+        "getMemoryChunks", "getConversationChunks", "getConnectionValue", "vaultQuery"
+      ],
+      "tools_registered": [],
+      "known_issues": [],
+      "last_updated": "06/06/2026",
+      "touch_rule": "Wrapper simples sobre connectors; não deve duplicar lógica",
+      "test_file": null,
+      "gate_rules": [
+        "Falhas de conexão devem ser tratadas silenciosamente",
+        "Cache local deve ser usado como fallback"
+      ]
+    }
+  }
+}

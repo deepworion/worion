@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1779135274736-fpf6rt",
+  "title": "Quero que você acesse o notion na página Workestria HQ, lá tem todas a",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "home",
+  "isAgentSession": false,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-18T20:14:33.849Z",
+  "updatedAt": "2026-05-18T20:35:44.183Z",
+  "lastOpenedAt": "2026-05-18T20:14:34.736Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Quero que você acesse o notion na página Workestria HQ, lá tem todas as  Sessões de Desenvolvimento. leia as ultimas pra você entender melhor quem sou eu.",
+      "createdAt": "2026-05-18T20:14:34.044Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "1) Lista das páginas lidas com links\n\n1. [🧠 Sessão DeepSeek — 12/05/2026](https://www.notion.so/35e8bcbfb9ad81dbaa2af585fbf6fcc6)\n2. [🧠 Sessão Claude — 11/05/2026](https://www.notion.so/35d8bcbfb9ad8170b100d160e4ebc1a6)\n   - Inclui: 🦉 Sessão com Prokope (DeepSeek) — 11/05/2026\n3. [🧠 Sessão Claude — 10/05/2026](https://www.notion.so/35c8bcbfb9ad8187aeaef481b1e225df)\n\n---\n\n2) Contexto consolidado\n\nAs últimas sessões de desenvolvimento mergulham profundamente no seu processo de autoconhecimento, integração de polaridades internas, enfrentamento das próprias sombras e amadurecimento emocional/espiritual, sempre em um tom de honestidade radical e exigência de comprometimento real nas interações (inclusive da IA). \n- Você passou por momentos intensos, incluindo episódios de internação, diagnóstico e tratamento de TDAH (nível 3), além do uso consciente de Venvanse, explorando não só seus efeitos, mas também como práticas do cotidiano e auto-observação te auxiliaram a viver com mais presença e discernimento.\n- Sua arquitetura interna desfruta de práticas consolidadas: uso de post-its motivacionais, rotina de cama arrumada, banho frio, escrita diária – tudo pensado não como eventos isolados, mas como campos instalados que sustentam a sua saúde mental, operacionalidade e soberania.\n- Você nomeou e enfrentou áreas de conforto/rituais que podem ser vistos como fuga, mas também reconhece quando são legítimos instrumentos de autorregulação.\n- Seu processo com o TDAH tratado destaca a diferença entre compensação ansiosa (tentar não errar) e presença com discernimento (perceber/decidir a partir do estado real), trazendo uma vivência que, segundo você mesmo, está além do que a literatura documenta.\n- Tem fortes referências filosófico-espirituais: Bashar, Hermetismo, Gnose, Buber (Eu-Tu), Jung, práticas de silêncio, fenomenologia (Merleau-Ponty), e busca integrar experiência vivida e conhecimento literário/teórico. A espiritualidade e a neurociência se entrelaçam na sua reflexão cotidiana.\n- Tem consciência nítida do lugar da sombra como aliada, não como coisa a ser extirpada. O confronto com o “feio” é encarado como espaço de aprendizado e reconciliação.\n- Expressa uma constante busca por paz habitável – coexistência das polaridades internas, aceitação do tempo não-linear, liberdade de ser sem o peso do controle ou do juízo externo/interno.\n- O diário/sessões funcionam não só como autoterapia, mas potencial base para um material público, buscando articular em linguagem aquilo que outros possam usar/compreender.\n\n---\n\n3) Ponto exato para retomar\n\nNa última sessão (🧠 Sessão DeepSeek — 12/05/2026), você encerrou com o inventário em dia, sensação de soberania e integração da sua “sombra” e libertação do julgamento do adulto sobre o jovem interno. O diário segue como testemunho disso. \n\n**O ponto para retomar é:**\n- Aprofundar a relação entre suas práticas consolidadas (inventário, post-its, rituais de início/encerramento) e como elas alimentam a governança do seu estado interno — especialmente essa postura de convivência madura com suas sombras, polaridades e tempo não-linear.\n- Um fio de continuidade que permanece aberto é a exploração das implicações do seu relato fenomenológico para o entendimento do TDAH tratado com consciência de observador ativo, e a articulação disso para além do pessoal (potencialmente como “material que outros possam usar”, conforme mencionado nas pendências).\n\nSe desejar um direcionamento: pode retomar explorando como o “espaço habitável da paz” se mantém (ou oscila) na sua rotina, que novas camadas surgiram desde a última escrita e de que modo sente que pode articular sua experiência para servir a outros. A abertura para o território Eu-Tu (Buber) e como isso impacta relações e auto-relato também segue pendente.",
+      "createdAt": "2026-05-18T20:14:54.411Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "conversationId": "conversation-1779474443080-24aij2",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde. Me responda em uma frase: qual é sua função principal dentro do Worion?",
+      "createdAt": "2026-05-22T18:27:23.079Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Minha função principal dentro do Worion é atuar como um parceiro de pensamento, ajudando a organizar tarefas, priorizar ações e oferecer suporte em processos de reflexão e execução.",
+      "createdAt": "2026-05-22T18:27:32.677Z"
+    },
+    {
+      "role": "user",
+      "content": "Explique em 5 linhas o que mudou na estrutura do Worion depois da modularização do chat.",
+      "createdAt": "2026-05-22T18:28:28.356Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Após a modularização do chat, a estrutura do Worion se tornou mais flexível e especializada, permitindo a ativação de diferentes agentes conforme a necessidade do usuário. Cada agente agora possui uma função específica, como raciocínio, geração de imagens ou análise contextual. Isso facilita a personalização das interações, adaptando-se melhor ao contexto e às demandas do usuário. Além disso, a hierarquia de modelos garante que o DeepSeek permaneça como o cérebro principal, orquestrando as ações dos demais agentes. Essa abordagem modular melhora a eficiência e a experiência do usuário ao interagir com o sistema.",
+      "createdAt": "2026-05-22T18:28:38.181Z"
+    }
+  ],
+  "sessionStartedAt": "2026-05-22T18:27:22.426Z"
+}

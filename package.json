@@ -1,0 +1,27 @@
+{
+  "name": "worion-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "bin": {
+    "deepworion": "./deepworion.js"
+  },
+  "scripts": {
+    "start": "electron .",
+    "validate": "node scripts/validate-architecture.js"
+  },
+  "devDependencies": {
+    "electron": "^42.0.1"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "@supabase/supabase-js": "^2.105.4",
+    "dotenv": "^17.4.2",
+    "instagram-private-api": "^1.46.1",
+    "langsmith": "^0.7.1",
+    "mammoth": "^1.12.0",
+    "openai": "^6.39.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.18.0",
+    "youtube-transcript": "^1.2.1"
+  }
+}

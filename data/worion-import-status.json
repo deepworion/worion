@@ -1,0 +1,21 @@
+{
+  "provider": "claude",
+  "sourceFile": "C:\\Users\\User\\worion-desktop\\claude\\conversations.json",
+  "startedAt": "2026-05-15T16:02:22.320Z",
+  "finishedAt": "2026-05-15T16:02:51.176Z",
+  "cleanup": {
+    "memory_chunks_deleted": "ok",
+    "memory_conversations_deleted": "ok"
+  },
+  "totalConversations": 105,
+  "totalChunks": 5786,
+  "importedConversations": 105,
+  "importedChunks": 5786,
+  "failedBatches": 0,
+  "errors": [],
+  "finalCounts": {
+    "memory_conversations_claude": 105,
+    "memory_chunks_claude": 5786,
+    "worion_memory_conversations_claude": 0
+  }
+}

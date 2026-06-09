@@ -1,0 +1,88 @@
+{
+  "id": "conversation-1780621733711-xe073p",
+  "title": "boa noite",
+  "agentId": "adhd-guardian",
+  "messages": [
+    {
+      "role": "user",
+      "content": "boa noite",
+      "createdAt": "2026-06-05T01:08:53.706Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780621736169-h9w5q4",
+      "role": "assistant",
+      "model": null,
+      "status": "streaming",
+      "content": "",
+      "provider": null,
+      "createdAt": "2026-06-05T01:08:56.169Z",
+      "updatedAt": "2026-06-05T01:08:56.169Z",
+      "created_at": "2026-06-05T01:08:56.169Z",
+      "updated_at": "2026-06-05T01:08:56.169Z",
+      "conversationId": "conversation-1780621733711-xe073p",
+      "conversation_id": "conversation-1780621733711-xe073p"
+    },
+    {
+      "id": "message-1780621736191-eopxqa",
+      "role": "assistant",
+      "model": null,
+      "status": "completed",
+      "content": "Fala.",
+      "isTyping": false,
+      "provider": null,
+      "createdAt": "2026-06-05T01:08:56.191Z",
+      "updatedAt": "2026-06-05T01:08:56.547Z",
+      "created_at": "2026-06-05T01:08:56.191Z",
+      "updated_at": "2026-06-05T01:08:56.547Z",
+      "completedAt": "2026-06-05T01:08:56.545Z",
+      "conversationId": "conversation-1780621733711-xe073p",
+      "conversation_id": "conversation-1780621733711-xe073p"
+    },
+    {
+      "role": "user",
+      "content": "E é assim que se responder?",
+      "createdAt": "2026-06-05T01:09:08.208Z",
+      "attachments": [],
+      "quoteContext": ""
+    },
+    {
+      "id": "message-1780621753692-01vbii",
+      "role": "assistant",
+      "model": "gpt-5.4-mini",
+      "status": "completed",
+      "content": "“E é assim que se responde?” — sim. Responda de forma objetiva: confirme o que foi feito e o que falta, sem enrolar.\n\nModelo rápido:\n- Status: (ok / em progresso / bloqueado)\n- Objetivo: (o que você quer alcançar)\n- Ações realizadas: (1–3 itens)\n- Pendências: (o que falta e por quê)\n- Próximo passo: (uma ação concreta)\n\nSe quiser, diga: qual é o objetivo agora e o que já foi tentado?",
+      "isTyping": false,
+      "provider": "openai",
+      "createdAt": "2026-06-05T01:09:13.692Z",
+      "updatedAt": "2026-06-05T01:09:34.145Z",
+      "created_at": "2026-06-05T01:09:13.692Z",
+      "updated_at": "2026-06-05T01:09:34.145Z",
+      "completedAt": "2026-06-05T01:09:34.144Z",
+      "conversationId": "conversation-1780621733711-xe073p",
+      "conversation_id": "conversation-1780621733711-xe073p"
+    }
+  ],
+  "agentName": "ESPECIALISTA EM TDHA",
+  "createdAt": "2026-06-05T01:08:46.928Z",
+  "projectId": null,
+  "updatedAt": "2026-06-05T01:09:36.150Z",
+  "chatSource": "agent",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1780621733711-xe073p",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-06-05T01:08:46.928Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-06-05T01:41:05.585Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-06-05T01:41:05.585Z",
+      "previousActivityAt": "2026-06-05T01:09:36.150Z"
+    }
+  ]
+}

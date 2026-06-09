@@ -1,0 +1,62 @@
+{
+  "id": "conversation-1779989826027-phgx2t",
+  "title": "Boa tarde.",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa tarde.",
+      "createdAt": "2026-05-28T17:37:06.026Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa tarde, Glaydson. Como está o seu dia?",
+      "createdAt": "2026-05-28T17:37:09.976Z"
+    },
+    {
+      "role": "user",
+      "content": "está indo. Trabalhando muito.",
+      "createdAt": "2026-05-28T17:37:32.205Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo. Trabalhar muito pode ser desgastante. O que você está focando no momento?",
+      "createdAt": "2026-05-28T17:37:37.712Z"
+    },
+    {
+      "role": "user",
+      "content": "as suas resposta sumiram.",
+      "createdAt": "2026-05-28T17:41:00.833Z",
+      "attachments": []
+    },
+    {
+      "role": "user",
+      "content": "oi",
+      "createdAt": "2026-05-28T17:41:33.481Z",
+      "attachments": []
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-28T17:37:05.473Z",
+  "projectId": null,
+  "updatedAt": "2026-05-28T17:41:35.504Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779989826027-phgx2t",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-28T17:37:05.473Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T18:22:52.965Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T18:22:52.965Z",
+      "previousActivityAt": "2026-05-28T17:41:35.504Z"
+    }
+  ]
+}

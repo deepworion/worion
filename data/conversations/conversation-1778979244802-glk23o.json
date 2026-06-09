@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778979244802-glk23o",
+  "title": "hoje eu estou cansado.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "adhd-guardian",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-17T00:54:03.706Z",
+  "updatedAt": "2026-05-17T00:54:09.520Z",
+  "lastOpenedAt": "2026-05-17T00:54:04.803Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "hoje eu estou cansado.",
+      "createdAt": "2026-05-17T00:54:04.567Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendo, Glaydson. Às vezes, um dia cansativo pode ser desafiador. Se precisar de ajuda com algo específico ou quiser fazer uma pausa e relaxar, me avise! Posso ajudar com tarefas simples ou informações que possam facilitar seu dia.",
+      "createdAt": "2026-05-17T00:54:09.503Z"
+    }
+  ]
+}

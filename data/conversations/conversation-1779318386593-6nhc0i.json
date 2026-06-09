@@ -1,0 +1,33 @@
+{
+  "id": "conversation-1779318386593-6nhc0i",
+  "title": "Mensagem de validacao LangSmith: responda apenas ok.",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "home",
+  "isAgentSession": false,
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-20T23:06:25.658Z",
+  "updatedAt": "2026-05-20T23:06:31.863Z",
+  "lastOpenedAt": "2026-05-20T23:06:26.844Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Mensagem de validacao LangSmith: responda apenas ok.",
+      "createdAt": "2026-05-20T23:06:26.593Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "ok",
+      "createdAt": "2026-05-20T23:06:31.847Z"
+    }
+  ]
+}

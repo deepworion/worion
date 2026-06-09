@@ -1,0 +1,58 @@
+{
+  "id": "conversation-1780601969694-zniuy8",
+  "conversationId": "conversation-1780601969694-zniuy8",
+  "title": "Oi.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Oi.",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T19:39:29.693Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780601969876-1dk0oa",
+      "conversation_id": "conversation-1780601969694-zniuy8",
+      "conversationId": "conversation-1780601969694-zniuy8",
+      "role": "assistant",
+      "content": "",
+      "status": "streaming",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-04T19:39:29.876Z",
+      "createdAt": "2026-06-04T19:39:29.876Z",
+      "updated_at": "2026-06-04T19:39:29.876Z",
+      "updatedAt": "2026-06-04T19:39:29.876Z"
+    },
+    {
+      "id": "message-1780601983033-j5l4ow",
+      "conversation_id": "conversation-1780601969694-zniuy8",
+      "conversationId": "conversation-1780601969694-zniuy8",
+      "role": "assistant",
+      "content": "Oi, Glaydson.\n\nAqui estamos.",
+      "status": "completed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-04T19:39:43.033Z",
+      "createdAt": "2026-06-04T19:39:43.033Z",
+      "updated_at": "2026-06-04T19:39:44.055Z",
+      "updatedAt": "2026-06-04T19:39:44.055Z",
+      "completedAt": "2026-06-04T19:39:44.050Z",
+      "isTyping": false
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T19:39:29.316Z",
+  "createdAt": "2026-06-04T19:39:29.316Z",
+  "updatedAt": "2026-06-04T19:54:00.521Z"
+}

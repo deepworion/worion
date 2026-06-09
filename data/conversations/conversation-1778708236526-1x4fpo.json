@@ -1,0 +1,28 @@
+{
+  "id": "conversation-1778708236526-1x4fpo",
+  "title": "Boa noite, vc agora consegue ler todos os meus workflows ativos?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T21:37:14.402Z",
+  "updatedAt": "2026-05-13T21:41:51.728Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite, vc agora consegue ler todos os meus workflows ativos?"
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite! Sim, eu consigo acessar a lista dos seus workflows ativos. Aqui estão eles:\n\n1. **ORQUESTRADOR | WORKESTRIA | V2.0** (ID: SIWYKef9dMunmFLz)\n2. **APROVADO | Workestria | Organizador de Informações** (ID: maU8eOzT60DDqFNh)\n3. **APROVADO | CALCULADORA DE PREÇOS** (ID: cXmRhJK8pbf5Yj6A)\n4. **APROVADO | MODULO | SEO + METADADOS** (ID: X9kTMATFcacEdUJu)\n5. **APROVADO | Sistema | Gerador de BODY_HTML** (ID: mfQkNK0jW2ysnARf)\n6. **Workestria | 01 | Buscador Fatorando Serp - FIXED** (ID: sHywRX20e5illbwF)\n\nSe precisar de ajuda com algum deles, é só avisar!"
+    },
+    {
+      "role": "user",
+      "content": "verifique se apareceu mais um workflow"
+    },
+    {
+      "role": "assistant",
+      "content": "Atualmente, a lista de workflows ativos continua a mesma. Os workflows ativos são:\n\n1. **ORQUESTRADOR | WORKESTRIA | V2.0** (ID: SIWYKef9dMunmFLz)\n2. **APROVADO | Workestria | Organizador de Informações** (ID: maU8eOzT60DDqFNh)\n3. **APROVADO | CALCULADORA DE PREÇOS** (ID: cXmRhJK8pbf5Yj6A)\n4. **APROVADO | MODULO | SEO + METADADOS** (ID: X9kTMATFcacEdUJu)\n5. **APROVADO | Sistema | Gerador de BODY_HTML** (ID: mfQkNK0jW2ysnARf)\n6. **Workestria | 01 | Buscador Fatorando Serp - FIXED** (ID: sHywRX20e5illbwF)\n\nSe houver algo mais que você gostaria de verificar ou fazer, me avise!"
+    }
+  ]
+}

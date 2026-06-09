@@ -1,0 +1,39 @@
+{
+  "id": "conversation-1779821611217-tnuguj",
+  "title": "tenho um erro em javascript, como depurar?",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "tenho um erro em javascript, como depurar?",
+      "createdAt": "2026-05-26T18:53:31.216Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Para depurar JavaScript, siga esta ordem prática. Sem rodeios.\n\n## 1. **Console do navegador (DevTools)**\nAperte **F12** ou **Ctrl+Shift+I** (Windows) / **Cmd+Opt+I** (Mac) e vá para a aba **Console**.\n\n- O erro aparece em vermelho. Clique no link do arquivo à direita para abrir na linha exata.\n- Se o erro for de runtime, a mensagem e o stack trace já apontam a causa.\n\n## 2. **Inject `console.log` cirúrgico**\nSe o erro não for óbvio, ponha logs antes e depois do ponto suspeito:\n\n```\nconsole.log('chegou aqui', minhaVariavel);\n```\n\n- Para objetos, prefira `console.table(objeto)` ou `console.dir(objeto, { depth: null })`.\n- Não espalhe logs aleatórios; cada log deve responder uma pergunta específica.\n\n## 3. **Breakpoints no Sources**\nNa aba **Sources**, encontre o arquivo, clique no número da linha para adicionar um breakpoint (bola azul). O código vai parar ali.\n\n- Inspecione variáveis, pilha de chamadas e escopo no painel lateral.\n- Use **Step over (F10)**, **Step into (F11)** para avançar passo a passo.\n\n## 4. **`debugger` direto no código**\nInsira `debugger;` na linha desejada. Se as DevTools estiverem abertas, a execução vai pausar nesse ponto.\n\n## 5. **Network tab para requisições**\nSe o erro envolve uma API (fetch, axios), vá para a aba **Network**:\n\n- Recarregue a página.\n- Veja a requisição problemática, o payload enviado, a resposta recebida e o status HTTP.\n\n## 6. **Tratamento de erros assíncronos**\nSe o código usa async/await, capture rejeições com try/catch:\n\n```\ntry {\n  await fetchSomething();\n} catch (error) {\n  console.error('Capturado:', error.message, error.stack);\n}\n```\n\n## 7. **Ferramentas extras**\n- **React/Vue/Angular**: Instale a extensão do navegador para inspecionar estado, componentes e props.\n- **Node.js**: Use `node --inspect-brk` e acesse `chrome://inspect` para debugar backends.\n\n**Se o erro for intermitente**, troque `console.log` por `console.trace` para ver a stack completa em cada ocorrência.\n\nManda o código e a mensagem do erro que eu apontei o ponto exato.",
+      "createdAt": "2026-05-26T18:53:56.941Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-26T18:53:29.936Z",
+  "projectId": null,
+  "updatedAt": "2026-05-26T18:56:08.832Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779821611217-tnuguj",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-26T18:53:29.936Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T17:53:08.470Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:53:08.470Z",
+      "previousActivityAt": "2026-05-26T18:56:08.832Z"
+    }
+  ]
+}

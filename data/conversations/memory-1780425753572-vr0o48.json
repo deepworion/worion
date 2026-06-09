@@ -1,0 +1,26 @@
+{
+  "id": "memory-1780425753572-vr0o48",
+  "conversationId": "memory-1780425753572-vr0o48",
+  "title": "Conceito 0 - Espiritualidade / Sonhos / Hermetismo",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "[MEMORY CARD ATIVO]\nContexto: Espiritualidade\nSubcontexto: Observador / Ego / Frequência\nCard: Conceito 0 - Espiritualidade / Sonhos / Hermetismo\nResumo: Glaydson trabalha espiritualidade como experiência operacional integrada a sonhos, Hermetismo, Bashar, Gnose, observador, ego, frequência e rotina regulatória/TDAH. Rejeita espiritualidade genérica e psicologização rasa. Responder como espelho factual, profundo, sem validação barata.\nTrechos selecionados:\n- nenhum trecho marcado\nRegras de uso:\n- Use como referência quando o tema envolver espiritualidade, sonho, Hermetismo, Bashar, Gnose, ego, observador ou frequência.\n- Evite espiritualidade genérica, psicologização rasa e validação barata.\n- Responder como espelho factual, profundo e direto.",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "📌 **Memory Card ativo**\n\nConceito 0 - Espiritualidade / Sonhos / Hermetismo\n\nPergunte algo para usar este contexto.",
+      "createdAt": "2026-06-02T18:42:33.572Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-02T18:42:33.572Z",
+  "createdAt": "2026-06-02T18:42:33.572Z",
+  "updatedAt": "2026-06-02T19:09:51.927Z"
+}

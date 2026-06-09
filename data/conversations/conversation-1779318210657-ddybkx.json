@@ -1,0 +1,39 @@
+{
+  "id": "conversation-1779318210657-ddybkx",
+  "title": "pesquise a história de brasilia de minas",
+  "agentId": "worion-assistente",
+  "messages": [
+    {
+      "role": "user",
+      "content": "pesquise a história de brasilia de minas",
+      "createdAt": "2026-05-20T23:03:30.657Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "## História de Brasília de Minas\n\n**Origem do Nome**\n\nO nome atual vem de 1962. Quando a capital federal foi transferida para Brasília (Lei 2694), o município que era conhecido como \"Brasília\" precisou se diferenciar. Passou a chamar-se **Brasília de Minas** para evitar confusão com a capital federal.\n\n**Fundação e Primeiros Povoadores (1704)**\n\nA história começa por volta de **1704**, quando Januário Cardoso fugiu de Ouro Preto com sua família e se estabeleceu na região do norte mineiro, dando início ao povoamento. O local fazia parte das antigas povoações do médio São Francisco, numa desdobramento da freguesia de Morrinhos.\n\n**Desenvolvimento Administrativo (1832 em diante)**\n\nO arraial permaneceu pequeno até **1832**, quando Mariana de Almeida doou terras para a criação da Paróquia de Sant'Ana. Isso marcou o início do desenvolvimento mais acelerado.\n\nA estrutura administrativa evoluiu assim:\n- **1832**: Freguesia criada como **Santana de Contendas**\n- **1890**: Elevada a Vila com o mesmo nome\n- **1901**: Renomeada para **Vila Brasília**\n- **1923**: Passa a ser chamada apenas **Brasília**\n- **1925**: Elevada à condição de **Cidade**\n- **1962**: Recebe o nome definitivo **Brasília de Minas**\n\n**Economia e Consolidação**\n\nO excelente clima e a fertilidade das terras atraíram novos moradores. A economia se baseou em **agricultura e pecuária**, com destaque posterior para produção de grãos (milho, feijão) e criação de gado de corte e leiteiro durante o século XX.\n\n**Configuração Atual**\n\nBrasília de Minas está localizada na **microrregião de Montes Claros**, mesorregião do Norte de Minas. Possui área de 1.394,20 km² e população de 3.714 habitantes, divididos entre o distrito-sede e cinco outros distritos: Angicos de Minas, Fernão Dias, Retiro de Santo Antônio, Vargem Grande do Bom Jesus e Vila de Fátima.\n\n---\n\n<small>**Fontes:** REdescobrindo os Vales (redescobrindoosvales.tur.br) · Cleubi.com (História de Brasília de Minas MG)</small>",
+      "createdAt": "2026-05-20T23:03:51.806Z"
+    }
+  ],
+  "accessLog": [
+    {
+      "openedAt": "2026-05-23T14:28:51.091Z",
+      "previousActivityAt": "2026-05-20T23:03:31.140Z"
+    }
+  ],
+  "agentName": "Worion Assistente",
+  "createdAt": "2026-05-20T23:03:30.115Z",
+  "projectId": null,
+  "updatedAt": "2026-05-20T23:03:51.853Z",
+  "chatSource": "home",
+  "lastOpenedAt": "2026-05-23T14:28:51.091Z",
+  "projectTitle": null,
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "isAgentSession": false,
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "conversationId": "conversation-1779318210657-ddybkx"
+}

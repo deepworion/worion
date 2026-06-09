@@ -1,0 +1,26 @@
+{
+  "id": "conversation-1778770334563-82fkim",
+  "title": "quando eu digitar deve permanecer aqui",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "activeSkillId": "pensador",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-14T14:52:14.558Z",
+  "updatedAt": "2026-05-14T14:52:25.455Z",
+  "lastOpenedAt": "2026-05-14T14:52:14.563Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "quando eu digitar deve permanecer aqui",
+      "createdAt": "2026-05-14T14:52:14.559Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Entendi! Você gostaria que as informações que você digitar permanecessem visíveis aqui. Como posso ajudar você a configurar isso ou qual é a sua necessidade específica?",
+      "createdAt": "2026-05-14T14:52:16.119Z"
+    }
+  ]
+}

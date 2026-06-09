@@ -1,0 +1,20 @@
+{
+  "id": "conversation-1778705805359-kmpn79",
+  "title": "Vc consegue ler meus workflows no n8n?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T20:56:44.427Z",
+  "updatedAt": "2026-05-13T20:57:29.325Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Vc consegue ler meus workflows no n8n?"
+    },
+    {
+      "role": "assistant",
+      "content": "Não consigo acessar diretamente seus workflows no n8n. No entanto, posso ajudar você a configurá-los ou a listar workflows se você fornecer a `base_url` ou `url/host` que está faltando. Você tem essa informação?"
+    }
+  ]
+}

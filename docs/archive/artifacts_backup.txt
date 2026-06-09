@@ -1,0 +1,152 @@
+// ============================================
+// UPLOAD DE ARQUIVOS E ANEXOS
+// ============================================
+
+var attachedFiles = [];
+
+function triggerFileUpload() {
+  const input = document.getElementById('file-upload-input');
+  if (!input) {
+    const newInput = document.createElement('input');
+    newInput.type = 'file';
+    newInput.id = 'file-upload-input';
+    newInput.accept = 'image/*,.json,.txt,application/json,text/plain';
+    newInput.multiple = true;
+    newInput.style.display = 'none';
+    newInput.onchange = handleFileSelect;
+    document.body.appendChild(newInput);
+    newInput.click();
+    return;
+  }
+  input.click();
+}
+
+function handleFileSelect(event) {
+  const files = Array.from(event.target.files || []);
+  files.forEach(file => {
+    if (file.size > 10 * 1024 * 1024) {
+      alert(`Arquivo ${file.name} e muito grande (max 10MB)`);
+      return;
+    }
+
+    if (!file.type.startsWith('image/') && !isSupportedTextFile(file)) {
+      alert(`Formato nao suportado ainda: ${file.name}. Use imagem, .json ou .txt.`);
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const isImage = file.type.startsWith('image/');
+      const rawData = e.target.result;
+      attachedFiles.push({
+        id: makeId('attachment'),
+        name: file.name,
+        type: file.type,
+        kind: isImage ? 'image' : 'text',
+        data: isImage ? rawData : null,
+        text: isImage ? '' : normalizeAttachedText(file, String(rawData || '')),
+        size: file.size
+      });
+      updateAttachmentsPreview();
+    };
+
+    if (file.type.startsWith('image/')) {
+      reader.readAsDataURL(file);
+    } else {
+      reader.readAsText(file);
+    }
+  });
+  event.target.value = '';
+}
+
+function isSupportedTextFile(file) {
+  const name = file.name.toLowerCase();
+  return file.type === 'application/json'
+    || file.type === 'text/plain'
+    || name.endsWith('.json')
+    || name.endsWith('.txt');
+}
+
+function normalizeAttachedText(file, value) {
+  if (!file.name.toLowerCase().endsWith('.json')) return value;
+  try {
+    return JSON.stringify(JSON.parse(value), null, 2);
+  } catch (error) {
+    return value;
+  }
+}
+
+function updateAttachmentsPreview() {
+  const container = document.getElementById('attachments-preview');
+  if (!container) return;
+
+  if (attachedFiles.length === 0) {
+    container.style.display = 'none';
+    container.innerHTML = '';
+    return;
+  }
+
+  container.style.display = 'flex';
+  container.innerHTML = attachedFiles.map((file, index) => {
+    if (file.kind === 'image') {
+      return `
+        <div class="attachment-item">
+          <img src="${file.data}" alt="${escapeHtml(file.name)}">
+          <button class="attachment-remove" onclick="removeAttachment(${index})">x</button>
+        </div>
+      `;
+    }
+    return `
+      <div class="attachment-item attachment-file">
+        <i class="ti ti-file-text"></i>
+        <span class="attachment-name" title="${escapeHtml(file.name)}">${escapeHtml(file.name)}</span>
+        <button class="attachment-remove" onclick="removeAttachment(${index})">x</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function removeAttachment(index) {
+  attachedFiles.splice(index, 1);
+  updateAttachmentsPreview();
+}
+
+function renderAttachmentSummary(attachments = []) {
+  if (!attachments.length) return '';
+  return `<div class="message-attachments">${attachments.map(file => {
+    const icon = file.kind === 'image' ? 'ti-photo' : 'ti-file-text';
+    return `<span><i class="ti ${icon}"></i> ${escapeHtml(file.name)}</span>`;
+  }).join('')}</div>`;
+}
+
+function buildAttachmentPromptText(attachments = []) {
+  const textFiles = attachments.filter(file => file.kind === 'text' && file.text);
+  if (!textFiles.length) return '';
+  return textFiles.map(file => {
+    const body = file.text.length > 60000
+      ? `${file.text.slice(0, 60000)}\n\n[Conteudo truncado pelo Worion em 60000 caracteres.]`
+      : file.text;
+    return `\n\n---\nArquivo anexado: ${file.name}\nTipo: ${file.type || 'texto'}\nConteudo:\n${body}`;
+  }).join('');
+}
+
+function formatMessageForOpenAI(message) {
+  const attachments = Array.isArray(message.attachments) ? message.attachments : [];
+  const imageFiles = attachments.filter(file => file.kind === 'image' && file.data);
+  const textBlock = `${message.content || ''}${buildAttachmentPromptText(attachments)}`;
+
+  if (!imageFiles.length) {
+    return { role: message.role, content: textBlock };
+  }
+
+  return {
+    role: message.role,
+    content: [
+      { type: 'text', text: textBlock || 'Analise os anexos enviados.' },
+      ...imageFiles.map(file => ({
+        type: 'image_url',
+        image_url: { url: file.data }
+      }))
+    ]
+  };
+}

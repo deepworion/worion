@@ -1,0 +1,39 @@
+{
+  "id": "conversation-1779814475294-2h41sc",
+  "title": "https://www.instagram.com/reel/DYvAuJACU_0/?igsh=bWducmR1ZnVxbjl",
+  "agentId": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "https://www.instagram.com/reel/DYvAuJACU_0/?igsh=bWducmR1ZnVxbjls\nFaz a transcrição desse video",
+      "createdAt": "2026-05-26T16:54:35.294Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "⚠️ POST /api/v1/accounts/login/ - 400 Bad Request; The password you entered is incorrect. Please try again.\n\n\n\n**Alternativa:** Tente acessar o post manualmente e copiar o texto.",
+      "createdAt": "2026-05-26T16:54:57.037Z"
+    }
+  ],
+  "agentName": "Novo Chat",
+  "createdAt": "2026-05-26T16:54:33.823Z",
+  "projectId": null,
+  "updatedAt": "2026-05-26T18:58:29.869Z",
+  "chatSource": "home",
+  "projectTitle": "",
+  "activeSkillId": null,
+  "autoSaveNotion": false,
+  "conversationId": "conversation-1779814475294-2h41sc",
+  "deferredActions": [],
+  "activeWorkModeId": null,
+  "sessionStartedAt": "2026-05-26T16:54:33.823Z",
+  "activeWorkModeIds": [],
+  "silentIncorporatedContext": "",
+  "lastOpenedAt": "2026-05-28T17:33:28.310Z",
+  "accessLog": [
+    {
+      "openedAt": "2026-05-28T17:33:28.310Z",
+      "previousActivityAt": "2026-05-26T18:58:29.869Z"
+    }
+  ]
+}

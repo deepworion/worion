@@ -1,0 +1,32 @@
+{
+  "id": "conversation-1779149675119-k3rm3n",
+  "title": "o que você tem pra mim hoje?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "chatSource": "skill",
+  "isAgentSession": false,
+  "activeSkillId": "strategic-oracle",
+  "activeWorkModeId": null,
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-19T00:14:20.653Z",
+  "updatedAt": "2026-05-19T00:14:49.277Z",
+  "lastOpenedAt": "2026-05-19T00:14:35.120Z",
+  "accessLog": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "o que você tem pra mim hoje?",
+      "createdAt": "2026-05-19T00:14:34.874Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Oi, Glaydson.\n\nHoje posso ajudar a:\n\n- Destravar alguma automação (n8n, API, script, integração).\n- Organizar um fluxo prático que está travando.\n- Revisar código, JSON, payload ou lógica de automação.\n- Ler dados de conectores, buscas, históricos ou arquivos se você trouxer algo.\n- Pensar junto alguma decisão estratégica - se tiver tema, traga o eixo.\n\nSe já tem um problema em mente, joga. Se quiser provocar, só fala. Se for só companhia pra organizar o dia, também dá. Escolhe o tom.",
+      "createdAt": "2026-05-19T00:14:40.341Z"
+    }
+  ]
+}

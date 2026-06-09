@@ -1,0 +1,76 @@
+{
+  "id": "conversation-1780450926849-0lhzca",
+  "conversationId": "conversation-1780450926849-0lhzca",
+  "title": "Boa noite.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Boa noite.",
+      "createdAt": "2026-06-03T01:42:06.848Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Boa noite, Glaydson! Como foi seu dia?",
+      "createdAt": "2026-06-03T01:42:11.397Z"
+    },
+    {
+      "role": "user",
+      "content": "foi ótimo. e o seu?",
+      "createdAt": "2026-06-03T01:42:32.389Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Foi tranquilo, obrigado por perguntar. O que você tem em mente para hoje?",
+      "createdAt": "2026-06-03T01:42:35.379Z"
+    },
+    {
+      "role": "user",
+      "content": "gostaria que você sugerisse.",
+      "createdAt": "2026-06-03T01:42:50.549Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Sobre o que você gostaria de sugestões? Pode ser algo relacionado a projetos, automações, ou outra área específica?",
+      "createdAt": "2026-06-03T01:42:56.459Z"
+    },
+    {
+      "role": "user",
+      "content": "Você só sabe responder uma pergunta com outra pergunta?",
+      "createdAt": "2026-06-03T01:47:36.189Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Não é só isso. Estou aqui para ajudar de forma prática. Que tal falarmos sobre automações no n8n ou algum projeto que você esteja desenvolvendo?",
+      "createdAt": "2026-06-03T01:47:45.181Z"
+    },
+    {
+      "role": "user",
+      "content": "vamos falar de filosofia. O que Sócrates defendia?",
+      "createdAt": "2026-06-03T02:15:30.682Z",
+      "attachments": []
+    },
+    {
+      "role": "assistant",
+      "content": "Sócrates defendia várias ideias centrais na filosofia ocidental. Aqui estão alguns pontos principais:\n\n### Conhecimento e Virtude\n- **\"Conhece-te a ti mesmo\"**: Essa máxima sugere que a autocompreensão é fundamental para a sabedoria.\n- **Virtude é conhecimento**: Sócrates acreditava que, se alguém sabe o que é bom, agirá de acordo com isso. Portanto, a ignorância é a raiz do mal.\n\n### Método Socrático\n- **Maiêutica**: Um método de diálogo que busca extrair conhecimento por meio de perguntas, levando o interlocutor a descobrir a verdade por si mesmo.\n\n### Crítica à Sofística\n- Sócrates se opunha aos sofistas, que ensinavam a retórica e a persuasão. Ele acreditava que a verdade era objetiva e não dependia da habilidade de convencer.\n\n### Questões Éticas\n- Ele questionava normas sociais e morais, desafiando as crenças estabelecidas e incentivando uma reflexão profunda sobre a ética.\n\nSe quiser aprofundar em algum desses pontos ou discutir outra figura filosófica, é só avisar!",
+      "createdAt": "2026-06-03T02:15:44.355Z"
+    }
+  ],
+  "sessionStartedAt": "2026-06-03T01:42:06.408Z",
+  "createdAt": "2026-06-03T01:42:06.408Z",
+  "updatedAt": "2026-06-03T02:46:37.924Z"
+}

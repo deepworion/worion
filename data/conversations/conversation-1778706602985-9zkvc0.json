@@ -1,0 +1,20 @@
+{
+  "id": "conversation-1778706602985-9zkvc0",
+  "title": "vc tem acesso ao notion?",
+  "agentId": "worion-assistente",
+  "agentName": "Worion Assistente",
+  "projectId": null,
+  "projectTitle": null,
+  "createdAt": "2026-05-13T21:10:01.605Z",
+  "updatedAt": "2026-05-13T21:11:11.690Z",
+  "messages": [
+    {
+      "role": "user",
+      "content": "vc tem acesso ao notion?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sim, tenho acesso ao Notion e posso ver as páginas disponíveis. Como posso ajudar você com isso?"
+    }
+  ]
+}

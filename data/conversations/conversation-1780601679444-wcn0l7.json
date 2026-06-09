@@ -1,0 +1,45 @@
+{
+  "id": "conversation-1780601679444-wcn0l7",
+  "conversationId": "conversation-1780601679444-wcn0l7",
+  "title": "Oi.",
+  "agentId": null,
+  "agentName": "Novo Chat",
+  "chatSource": "home",
+  "activeSkillId": null,
+  "activeWorkModeId": null,
+  "activeWorkModeIds": [],
+  "projectId": null,
+  "projectTitle": "",
+  "autoSaveNotion": false,
+  "silentIncorporatedContext": "",
+  "deferredActions": [],
+  "messages": [
+    {
+      "role": "user",
+      "content": "Oi.",
+      "quoteContext": "",
+      "createdAt": "2026-06-04T19:34:39.443Z",
+      "attachments": []
+    },
+    {
+      "id": "message-1780601679633-u24w5o",
+      "conversation_id": "conversation-1780601679444-wcn0l7",
+      "conversationId": "conversation-1780601679444-wcn0l7",
+      "role": "assistant",
+      "content": "Erro: sendToModelProvider is not defined",
+      "status": "failed",
+      "provider": null,
+      "model": null,
+      "created_at": "2026-06-04T19:34:39.633Z",
+      "createdAt": "2026-06-04T19:34:39.633Z",
+      "updated_at": "2026-06-04T19:34:39.968Z",
+      "updatedAt": "2026-06-04T19:34:39.968Z",
+      "failedAt": "2026-06-04T19:34:39.968Z",
+      "isTyping": false,
+      "error": "sendToModelProvider is not defined"
+    }
+  ],
+  "sessionStartedAt": "2026-06-04T19:34:38.959Z",
+  "createdAt": "2026-06-04T19:34:38.959Z",
+  "updatedAt": "2026-06-04T19:34:41.995Z"
+}
